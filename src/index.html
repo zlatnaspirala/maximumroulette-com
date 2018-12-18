@@ -18,33 +18,25 @@
 
 <body>
 
-  <h1 class="msgBoxAni2">
-    Developing games with unlimited opportunities
-  </h1>
-  <h2 class="msgBoxAni label">
-    3d/2d graphics, networking, backend.
-  </h2>
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" onclick="loadPage('home.html')" class="">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Products
+      </a>
+      <div class="dropdown-content">
+        <a href="javascript:void(0)" onclick="loadPage('ultimate-anatomy.html')">Ultimate anatomy</a>
+        <a href="#">Hang3d</a>
+        <a href="#">webGL + webRCT</a>
+      </div>
 
-  <div class="dropdown">
-    <button onclick="showDropDown('Products')" class="dropbtn">Products</button>
-    <div id="Products" class="dropdown-content">
-      <a href="#">Ultimate Anatomy</a>
-      <a href="#">Hang space</a>
-      <a href="#">Visual JS game engine</a>
-      <a href="#">Visula TS game engine</a>
     </div>
+    <a href="#news">Developer staff</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <div class="dropdown">
-    <button onclick="showDropDown('Products2')" class="dropbtn">Products2</button>
-    <div id="Products2" class="dropdown-content">
-      <a href="#">Ultimate Anatomy</a>
-      <a href="#">Hang space2</a>
-      <a href="#">Visual JS game engine</a>
-      <a href="#">Visula TS game engine</a>
-    </div>
-  </div>
-
+  <div id="main" style="top:10%;height:89vh;border: solid red 1px; overflow: auto;"> </div>
 </body>
 
 </html>
