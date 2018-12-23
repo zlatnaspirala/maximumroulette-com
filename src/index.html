@@ -12,31 +12,41 @@
   <title>Welcome to game dev personl site Nikola Lukic</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/drop-down.css">
+  <link rel="stylesheet" href="css/slider.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="scripts/drop-down.js"></script>
 </head>
 
 <body>
 
-  <div class="topnav" id="myTopnav">
+  <div class="topnav shadow1" id="myTopnav">
     <a href="javascript:void(0);" onclick="loadPage('home.html')" class="">Home</a>
     <div class="dropdown">
       <a href="#" class="dropbtn">Products
       </a>
       <div class="dropdown-content">
-        <a href="javascript:void(0)" onclick="loadPage('ultimate-anatomy.html')">Ultimate anatomy</a>
+        <a href="javascript:void(0)" onclick="loadPage('ultimate-anatomy.html');setTimeout(function() { showSlides(1) },200);">Ultimate
+          anatomy</a>
         <a href="#">Hang3d</a>
         <a href="#">webGL + webRCT</a>
+        <a href="#">webGL + webRCT2</a>
       </div>
 
     </div>
-    <a href="#news">Developer staff</a>
-    <a href="#contact">Contact</a>
+    <a href="#news">Programming</a>
+    <a href="javascript:void(0)" onclick="loadPage('contact.html')">Contact</a>
     <a href="#about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <div id="main" style="top:10%;height:89vh;border: solid red 1px; overflow: auto;"> </div>
+  <div id="main" class="main shadow2">
+  </div>
+  <div id="footer" class="shadow2 footer text-shadow1">
+    <h4> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="pages/privacy-policy.html">Web site
+        Privacy policy</a></h4>
+  </div>
 </body>
+
+<script src="scripts/slider.js"></script>
 
 </html>

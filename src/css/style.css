@@ -77,6 +77,31 @@ a:hover {
   text-decoration: underline;
 }
 
+.main{
+ position:absolute;width:99.5%;top:10%;height:80%; overflow: auto;
+ left:0.5%;
+
+}
+
+.footer{
+  position:absolute;left:0.5%;width:99%;bottom:0;height:9%;overflow: hidden;text-align:center;
+}
+
+.shadow2{
+   -webkit-box-shadow: 0px 0px 38px 10px rgba(15,68,133,1);
+ -moz-box-shadow: 0px 0px 38px 10px rgba(15,68,133,1);
+ box-shadow: 0px 0px 38px 10px rgba(15,68,133,1);
+}
+.shadow1{
+  color: white;
+  box-shadow: 1px 1px 2px black, 0 0 15px #00a1d2, 0 0 5px darkblue;
+}
+
+.text-shadow1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px #00a1d2, 0 0 5px darkblue;
+}
+
 .login {
   position: relative;
   margin: 60px auto;
@@ -130,42 +155,8 @@ input[type=text]:focus, input[type=password]:focus {
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
 }
 
-.forgot-password {
-  padding-left: 100px;
-  font-size: 13px;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-.login-submit {
-  position: absolute;
-  top: 12px;
-  right: 0;
-  width: 48px;
-  height: 48px;
-  padding: 8px;
-  border-radius: 32px;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
-}
-.login-submit:before, .login-submit:after {
-  content: '';
-  z-index: 1;
-  position: absolute;
-}
-.login-submit:before {
-  top: 28px;
-  left: -4px;
-  width: 4px;
-  height: 10px;
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
-}
-.login-submit:after {
-  top: -4px;
-  bottom: -4px;
-  right: -4px;
-  width: 36px;
+.body-content {
+  padding: 25px 15px 15px 15px;
 }
 
 .login-button {
