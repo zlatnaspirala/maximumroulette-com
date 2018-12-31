@@ -9,9 +9,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Welcome to game dev personl site Nikola Lukic</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/drop-down.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/slider.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="scripts/drop-down.js"></script>
@@ -19,34 +21,71 @@
 
 <body>
 
-  <div class="topnav shadow1" id="myTopnav">
+  <div class="topnav shadow1 text-shadow1" id="myTopnav">
     <a href="javascript:void(0);" onclick="loadPage('home.html')" class="">Home</a>
     <div class="dropdown">
       <a href="#" class="dropbtn">Products
       </a>
       <div class="dropdown-content">
-        <a href="javascript:void(0)" onclick="loadPage('ultimate-anatomy.html');setTimeout(function() { showSlides(1) },200);">Ultimate
-          anatomy</a>
-        <a href="#">Hang3d</a>
-        <a href="#">webGL + webRCT</a>
-        <a href="#">webGL + webRCT2</a>
+        <a href="javascript:void(0)" onclick="loadPage('ultimate-anatomy.html');setTimeout(function() { showSlides(1) },200);">
+          Ultimate anatomy</a>
+        <a href="javascript:void(0)" onclick="loadPage('hang-project.html');setTimeout(function() { showSlides(1) },200);">
+          Hang space project</a>
+        <a href="javascript:void(0)" onclick="loadPage('space-chat.html');setTimeout(function() { showSlides(1) },200);">
+          Space Chat</a>
       </div>
 
     </div>
-    <a href="#news">Programming</a>
+
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Programming
+      </a>
+      <div class="dropdown-content">
+        <a href="javascript:void(0)" onclick="loadPage('demos/follow-path.html');setTimeout(function() { showSlides(1) },200);">Follow
+          path in canvas2d JS</a>
+        <a href="javascript:void(0)" onclick="loadPage('demos/slot-mashine-in-canvas-2d-javascript.html');setTimeout(function() { showSlides(1) },200);">
+          Slot demo mashine canvas javascript</a>
+      </div>
+
+    </div>
+
+    <div class="dropdown">
+      <a href="#" class="dropbtn">Artificial Intelligence
+      </a>
+      <div class="dropdown-content">
+        <a href="javascript:void(0)" onclick="loadPage('demos/8-Queens-in-canvas-javascript.html');setTimeout(function() { showSlides(1) },200);">8
+          Queens in canvas javascript
+        </a>
+
+      </div>
+
+    </div>
+
+
     <a href="javascript:void(0)" onclick="loadPage('contact.html')">Contact</a>
-    <a href="#about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
   <div id="main" class="main shadow2">
+
   </div>
   <div id="footer" class="shadow2 footer text-shadow1">
-    <h4> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="pages/privacy-policy.html">Web site
-        Privacy policy</a></h4>
+    <h4> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="javascript:loadPage('privacy-policy.html')">Web
+        site
+        Privacy policy</a>
+      <a href="javascript:void(0)" onclick="loadPage('cookies.html')">Cookie policy</a></h4>
   </div>
+
 </body>
 
 <script src="scripts/slider.js"></script>
+
+<script>
+  // initial sub page
+  loadPage('home.html');
+  setTimeout(function() {
+    showSlides(1)
+  }, 50)
+</script>
 
 </html>
