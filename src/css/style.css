@@ -125,7 +125,7 @@ a:hover {
   border-color: #2e6da4;
   display: inline-block;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
@@ -142,7 +142,7 @@ a:hover {
 
 input, button, label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 300;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -238,7 +238,7 @@ input[type=text]:focus, input[type=password]:focus {
   height:150px;
   color : #aeaeae;
   background-color:rgba(10,15,10,0.6);
-  font-size: 20px;
+  font-size: 25px;
   -moz-box-shadow:inset -1px -1px 75px #000000;
   -webkit-box-shadow:inset -1px -1px 75px #000000;
   box-shadow:inset -1px -1px 75px #000000;
@@ -267,7 +267,7 @@ input[type=text]:focus, input[type=password]:focus {
   height:auto;
   color : #aeaeae;
   background-color:rgba(10,15,10,0.6);
-  font-size: 20px;
+  font-size: 30px;
   -moz-box-shadow:inset -1px -1px 75px #000000;
   -webkit-box-shadow:inset -1px -1px 75px #000000;
   box-shadow:inset -1px -1px 75px #000000;
@@ -327,7 +327,7 @@ input {
   border-color:#cccccc;
   border-style:solid;
   padding:7px;
-  font-size:15px;
+  font-size:20px;
   text-align:center;
   border-width:3px;
   border-radius:8px;
