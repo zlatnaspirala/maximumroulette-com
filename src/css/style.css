@@ -79,7 +79,7 @@ a:hover {
 }
 
 .main{
- position:absolute;width:99.5%;top:10%;height:80%; overflow: auto;
+ position:absolute;width:99.5%;top: 60px;height:80%; overflow: auto;
  left:0.5%;
 
 }
@@ -100,7 +100,7 @@ a:hover {
 
 .text-shadow1{
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px #00a1d2, 0 0 5px darkblue;
+  box-shadow: 1px 1px 2px black, 0 0 15px #00a1d2, 0 0 5px darkblue;
 }
 
 .login {
@@ -338,4 +338,28 @@ input {
 
 input:focus {
   outline:none;
+}
+
+.respobnseText{
+ width:450px;
+}
+
+.responseImage{
+  width:250px;
+}
+@media screen and (max-width: 600px) {
+
+.responseImage{
+  width:150px;
+}
+
+.respobnseText{
+ width:250px;
+}
+
+
+.main{
+
+}
+
 }
