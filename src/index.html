@@ -23,7 +23,9 @@
 <body>
 
   <div class="topnav shadow1 text-shadow1" id="myTopnav">
+
     <a href="javascript:void(0);" onclick="loadPage('home.html');setTimeout(function() {showSlides(1)}, 200)" class="">Home</a>
+
     <div class="dropdown">
       <a href="#" class="dropbtn">Products
       </a>
@@ -35,7 +37,6 @@
         <a href="javascript:void(0)" onclick="loadPage('chat-space.html');setTimeout(function() { showSlides(1) },200);">
           Space Chat</a>
       </div>
-
     </div>
 
     <div class="dropdown">
@@ -54,11 +55,9 @@
           Planetarium (Rotation) javascript</a>
         <a href="javascript:void(0)" onclick="loadPage('demos/opengles -1.1-first-person-controller.html');setTimeout(function() { showSlides(1) },200);">
           Opengles 1.1 First person controller</a>
-
-
-
+        <a href="javascript:void(0);" onclick="alert('This demo will work only if your browser have a support for webGL2! Thank you for visit.');loadPage('https://maximumroulette.com/webgl2', true);setTimeout(function() {showSlides(1)}, 200)"
+          class="">webGL2 based on glmatrix2</a>
       </div>
-
     </div>
 
     <div class="dropdown">
@@ -68,19 +67,15 @@
         <a href="javascript:void(0)" onclick="loadPage('demos/8-Queens-in-canvas-javascript.html');setTimeout(function() { showSlides(1) },200);">8
           Queens in canvas javascript
         </a>
-
       </div>
-
     </div>
 
-
     <a href="javascript:void(0)" onclick="loadPage('contact.html')">Contact</a>
+
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <div id="main" class="main shadow2">
-
-  </div>
+  <div id="main" class="main shadow2"></div>
   <div id="footer" class="shadow2 footer text-shadow1">
     <h4> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="javascript:loadPage('privacy-policy.html')">Web
         site
@@ -89,15 +84,7 @@
   </div>
 
 </body>
-
 <script src="scripts/slider.js"></script>
-
-<script>
-  // initial sub page
-  loadPage('home.html');
-  setTimeout(function() {
-    showSlides(1)
-  }, 50)
-</script>
+<script src="scripts/system.js"></script>
 
 </html>

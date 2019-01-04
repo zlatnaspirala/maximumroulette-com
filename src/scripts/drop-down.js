@@ -1,4 +1,4 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -8,16 +8,21 @@ function myFunction() {
   }
 }
 
-function loadPage(name) {
+function loadPage(name, absolutePath) {
 
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      // Typical action to be performed when the document is ready:
       document.getElementById("main").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "pages/" + name, true);
+
+  if (typeof absolutePath === 'undefined') {
+    xhttp.open("GET", "pages/" + name, true);
+  } else {
+    xhttp.open("GET", name, true);
+  }
+
   xhttp.send();
 
 }

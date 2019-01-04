@@ -79,11 +79,20 @@ a:hover {
 }
 
 .main{
- position:absolute;width:99.5%;top: 60px;height:80%; overflow: auto;
+ position:absolute;
+ width:99%;
+ top: 60px;
+ height:80%;
+ overflow: auto;
  left:0.5%;
-
 }
 
+.aboutTextContact {
+  float:left;
+  width:72%;
+  height:200px;
+  text-align: center;
+}
 .footer{
   position:absolute;left:0.5%;width:99%;bottom:0;height:9%;overflow: hidden;text-align:center;
 }
@@ -100,7 +109,12 @@ a:hover {
 
 .text-shadow1{
   color: white;
-  box-shadow: 1px 1px 2px black, 0 0 15px #00a1d2, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px black, 0 0 15px #00a1d2, 0 0 5px darkblue;
+}
+
+.text-shadow2{
+  color: white;
+  text-shadow: 1px 1px 5px #00a1d2, 5px 2px 15px #00a1d2, 0 0 5px darkblue;
 }
 
 .login {
@@ -308,19 +322,21 @@ input[type=text]:focus, input[type=password]:focus {
   from { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translateY(-1000px); }
   to { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translateY(0); }
 }
+
 @-moz-keyframes msgBoxAni {
   from { -moz-transform: rotate(0deg) scale(1) skew(1deg) translateY(-80px); }
   to { -moz-transform: rotate(0deg) scale(1) skew(1deg) translateY(0); }
 }
+
 @-o-keyframes msgBoxAni {
   from { -o-transform: rotate(0deg) scale(1) skew(1deg) translateY(-80px); }
   to { -o-transform: rotate(0deg) scale(1) skew(1deg) translateY(0); }
 }
 
 .shadowDiv {
-      -moz-box-shadow: inset 0 0 20px #000000;
-      -webkit-box-shadow: inset 0 0 20px #000000;
-      box-shadow: inset 0 0 20px #000000;
+  -moz-box-shadow: inset 0 0 20px #000000;
+  -webkit-box-shadow: inset 0 0 20px #000000;
+  box-shadow: inset 0 0 20px #000000;
 }
 
 input {
@@ -341,25 +357,26 @@ input:focus {
 }
 
 .respobnseText{
- width:450px;
+  width:450px;
 }
 
 .responseImage{
   width:250px;
 }
-@media screen and (max-width: 600px) {
 
-.responseImage{
-  width:150px;
-}
+@media screen and (max-width: 700px) {
 
-.respobnseText{
- width:250px;
-}
+  .responseImage{
+    width:150px;
+  }
 
+  .respobnseText{
+  width:250px;
+  }
 
-.main{
-
-}
+  .aboutTextContact {
+    width:98%;
+    height: 120px;
+  }
 
 }
