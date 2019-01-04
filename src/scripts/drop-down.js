@@ -20,7 +20,7 @@ function loadPage(name, absolutePath) {
   if (typeof absolutePath === 'undefined') {
     xhttp.open("GET", "pages/" + name, true);
   } else {
-    xhttp.open("GET", name, true);
+    xhttp.open("GET", "pages/" + name, true);
   }
 
   xhttp.send();
