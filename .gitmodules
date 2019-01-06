@@ -1,0 +1,3 @@
+[submodule "src/submodules/visual-ts-game-engine"]
+	path = src/submodules/visual-ts-game-engine
+	url = https://github.com/zlatnaspirala/visual-ts-game-engine
