@@ -124,6 +124,11 @@ a:hover {
   text-shadow: 1px 1px 5px #00a1d2, 5px 2px 15px #00a1d2, 0 0 5px darkblue;
 }
 
+.googleMapIframe{
+  width: 100%;
+  margin-top: 280px;
+}
+
 .login {
   position: relative;
   margin: 60px auto;
@@ -389,6 +394,10 @@ input:focus {
 .body-content{
   padding: 1px 1px 1px 1px;
  }
+
+.googleMapIframe{
+  margin-top: 400px;
+}
 
 
   .responseImage{
