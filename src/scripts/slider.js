@@ -2,6 +2,11 @@
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  //
+  var prev = document.getElementsByClassName("prev");
+  prev[0].style.background = "transparent";
+  var prev = document.getElementsByClassName("next");
+  prev[0].style.background = "transparent";
 }
 
 // Thumbnail image controls

@@ -80,11 +80,11 @@ a:hover {
 
 .main{
  position:absolute;
- width:99%;
- top: 60px;
- height:80%;
+ width:99.4%;
+ top: 53px;
+ height:-webkit-fill-available;
  overflow: auto;
- left:0.5%;
+ left:0.3%;
 }
 
 .aboutTextContact {
@@ -94,7 +94,14 @@ a:hover {
   text-align: center;
 }
 .footer{
-  position:absolute;left:0.5%;width:99%;bottom:0;height:9%;overflow: hidden;text-align:center;
+  position:fixed;
+  background: chocolate;
+  left:0.5%;
+  width:99%;
+  bottom:0;
+  height:60px;
+  overflow: hidden;
+  text-align:center;
 }
 
 .shadow2{
@@ -364,7 +371,25 @@ input:focus {
   width:250px;
 }
 
+.footerText{
+
+}
+
 @media screen and (max-width: 700px) {
+
+  .footer{
+    height: 30px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+.footerText{
+   margin-top:3px;
+}
+
+.body-content{
+  padding: 1px 1px 1px 1px;
+ }
+
 
   .responseImage{
     width:150px;

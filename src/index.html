@@ -43,20 +43,21 @@
       <a href="#" class="dropbtn">Programming
       </a>
       <div class="dropdown-content">
-        <a href="javascript:void(0)" onclick="loadPage('demos/follow-path.html');setTimeout(function() { showSlides(1) },200);">Follow
-          path in canvas2d JS</a>
-        <a href="javascript:void(0)" onclick="loadPage('demos/slot-mashine-in-canvas-2d-javascript.html');setTimeout(function() { showSlides(1) },200);">
+
+        <a class="f" href="javascript:void(0)" onclick="loadPage('demos/slot-mashine-in-canvas-2d-javascript.html');setTimeout(function() { showSlides(1);showMenu() },200);">
           Slot demo mashine canvas javascript</a>
-        <a href="javascript:void(0)" onclick="loadPage('demos/textbox-in-canvas2d.html');setTimeout(function() { showSlides(1) },200);">
+        <a href="javascript:void(0)" onclick="loadPage('demos/textbox-in-canvas2d.html');setTimeout(function() { showSlides(1);showMenu() },200);">
           Textbox canvas 2d javascript</a>
-        <a href="javascript:void(0)" onclick="loadPage('demos/audio-canvas-2d-javascript.html');setTimeout(function() { showSlides(1) },200);">
+        <a href="javascript:void(0)" onclick="loadPage('demos/audio-canvas-2d-javascript.html');setTimeout(function() { showSlides(1);showMenu() },200);">
           Audio canvas2d javascript</a>
-        <a href="javascript:void(0)" onclick="loadPage('demos/planetarium.html');setTimeout(function() { showSlides(1) },200);">
+        <a href="javascript:void(0)" onclick="loadPage('demos/planetarium.html');setTimeout(function() { showSlides(1);showMenu() },200);">
           Planetarium (Rotation) javascript</a>
-        <a href="javascript:void(0)" onclick="loadPage('demos/opengles -1.1-first-person-controller.html');setTimeout(function() { showSlides(1) },200);">
+        <a href="javascript:void(0)" onclick="loadPage('demos/opengles -1.1-first-person-controller.html');setTimeout(function() { showSlides(1);showMenu() },200);">
           Opengles 1.1 First person controller</a>
-        <a href="javascript:void(0);" onclick="alert('This demo will work only if your browser have a support for webGL2! Thank you for visit.');loadPage('webgl2-part.html', true);setTimeout(function() {showSlides(1)}, 200)"
+        <a href="javascript:void(0);" onclick="alert('This demo will work only if your browser have a support for webGL2! Thank you for visit.');loadPage('webgl2-part.html', true);setTimeout(function() {showSlides(1);showMenu()}, 200)"
           class="">webGL2 based on glmatrix2</a>
+        <a href="javascript:void(0)" onclick="loadPage('demos/follow-path.html');setTimeout(function() { showSlides(1);showMenu() },200);">Follow
+          path in canvas2d JS</a>
       </div>
     </div>
 
@@ -64,23 +65,24 @@
       <a href="#" class="dropbtn">Artificial Intelligence
       </a>
       <div class="dropdown-content">
-        <a href="javascript:void(0)" onclick="loadPage('demos/8-Queens-in-canvas-javascript.html');setTimeout(function() { showSlides(1) },200);">8
+        <a href="javascript:void(0)" onclick="loadPage('demos/8-Queens-in-canvas-javascript.html');setTimeout(function() { showSlides(1);showMenu() },200);">8
           Queens in canvas javascript
         </a>
       </div>
     </div>
 
-    <a href="javascript:void(0)" onclick="loadPage('contact.html')">Contact</a>
+    <a href="javascript:void(0)" onclick="loadPage('contact.html');showMenu()">Contact</a>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">&#9776;</a>
   </div>
 
   <div id="main" class="main shadow2"></div>
   <div id="footer" class="shadow2 footer text-shadow1">
-    <h4> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="javascript:loadPage('privacy-policy.html')">Web
+    <h4 class="footerText"> © 2019 maximumroulette.com Nikola Lukic All Rights Reserved <a href="javascript:loadPage('privacy-policy.html')">Web
         site
         Privacy policy</a>
-      <a href="javascript:void(0)" onclick="loadPage('cookies.html')">Cookie policy</a></h4>
+      <a href="javascript:void(0)" onclick="loadPage('cookies.html')">Cookie policy </a><a href="javascript:save('cookiesAccepted', true)">
+        Accept</a></h4>
   </div>
 
 </body>

@@ -2,7 +2,7 @@ body {margin:0;font-family:Arial}
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: chocolate;
   z-index: 1000;
 }
 
@@ -73,9 +73,9 @@ body {margin:0;font-family:Arial}
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/*not(:first-child)*/
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child), .dropdown .dropbtn, .topnav .f a {
     display: none;
   }
   .topnav a.icon {
