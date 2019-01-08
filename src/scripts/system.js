@@ -6,7 +6,7 @@ setTimeout(function() {
   showSlides(1)
 }, 256)
 
-
+// COMMON
 /*
   from init.js
 */
@@ -39,4 +39,13 @@ function load(name) {
     return JSON.parse(localStorage.getItem(name));
   }
 
+}
+
+function addScript(src) {
+  var s = document.createElement("script");
+  s.onload = function() {
+    console.log(src + " Loaded.");
+  };
+  s.setAttribute("src", src);
+  document.body.appendChild(s);
 }

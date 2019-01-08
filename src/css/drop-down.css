@@ -75,7 +75,7 @@ body {margin:0;font-family:Arial}
 }
 /*not(:first-child)*/
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn, .topnav .f a {
+  .topnav .home a:not(:first-child), .dropdown .dropbtn, .dropdown-content a {
     display: none;
   }
   .topnav a.icon {
