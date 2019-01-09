@@ -33,8 +33,9 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  overflow: scroll;
-  line-height: 1;
+  overflow: -webkit-paged-x;
+  overflow-y: hidden;
+  line-height: 1px;
   text-shadow:1px 4px 5px #000000;
   overflow-x:hidden;
    overflow-y: overlay;
@@ -399,9 +400,6 @@ input:focus {
 
 @media screen and (max-width: 700px) {
 
-  body{
-    overflow: scroll;
-  }
 
   .footer{
     height: 30px;
