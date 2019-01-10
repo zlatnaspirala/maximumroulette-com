@@ -94,12 +94,13 @@ a:hover {
 }
 
 .main{
- position:absolute;
- width:99.4%;
- top: 53px;
- height:-webkit-fill-available;
- overflow: hidden;
- left:0.3%;
+    position: absolute;
+    width: 99.4%;
+    top: 53px;
+    height: auto;
+    min-height: -webkit-fill-available;
+    overflow: initial;
+    left: 0.3%;
 }
 
 .aboutTextContact {
@@ -411,7 +412,7 @@ input:focus {
 }
 
 .body-content{
-  padding: 1px 1px 1px 1px;
+  padding: 25px 0px 0px 12px;
  }
 
 .googleMapIframe{
