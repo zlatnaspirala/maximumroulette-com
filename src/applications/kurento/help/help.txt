@@ -1,0 +1,22 @@
+## KMS vs openvidu docker variant : ##
+
+```console
+docker run -d --net="host" -e openvidu.secret=YOUR_SECRET -e openvidu.publicurl=https://IP:4443
+        -e openvidu.cdr=true -e server.port=4443 -e KMS_STUN_IP=IP -e KMS_STUN_PORT=19302
+        -eKMS_TURN_URL=myuser:mypass@IP:3478 --rm -v /var/run/docker.sock:/var/run/docker.sock
+        -v /var/KMS/rec:/var/KMS/rec -e openvidu.recording=true -e MY_UID=$(id -u $USER)
+        -e openvidu.recording.path=/var/KMS/rec -e openvidu.recording.public-access=true openvidu/openvidu-server-kms:latest
+
+
+docker run -d --net="host" -e openvidu.secret=YOUR_SECRET -e openvidu.publicurl=https://IP:4443
+        -e openvidu.cdr=true -e server.port=4443 -e KMS_STUN_IP=IP -e KMS_STUN_PORT=19302
+        -eKMS_TURN_URL=myuser:mypass@IP:3478 --rm -v /var/run/docker.sock:/var/run/docker.sock
+        -v /var/KMS/rec:/var/KMS/rec -e openvidu.recording=true -e MY_UID=$(id -u $USER)
+        -e openvidu.recording.path=/var/KMS/rec -e openvidu.recording.public-access=true openvidu/openvidu-server-kms:latest
+```
+
+ Without TURN :
+
+```console
+  docker run -d --net="host" -e openvidu.secret=YOUR_SECRET -e openvidu.publicurl=https://46.101.172.93:4443 -e openvidu.cdr=true -e server.port=4443 -e --rm -v /var/run/docker.sock:/var/run/docker.sock -v /var/KMS/rec:/var/KMS/rec -e openvidu.recording=true -e MY_UID=$(id -u $USER) -e openvidu.recording.path=/var/KMS/rec -e openvidu.recording.public-access=true openvidu/openvidu-server-kms:latest
+```
