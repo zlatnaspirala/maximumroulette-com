@@ -19,7 +19,7 @@ const port = 2020;
 // Node imports
 var express = require('express');
 var fs = require('fs');
-var https = require('https');
+// var https = require('https');
 var bodyParser = require('body-parser'); // Pull information from HTML POST (express4)
 var app = express(); // Create our app with express
 
@@ -37,7 +37,7 @@ app.get('*', (req, res) => {
     res
         .status(200)
         .json({ message: 'ok' })
-})
+});
 
 // Listen (start app with node server.js)
 var options = {
@@ -72,10 +72,9 @@ var mapSessions = {};
 // Collection to pair session names with tokens
 var mapSessionNamesTokens = {};
 
-console.log("App listening on port 5000");
-
-
-
+console.log(".........................");
+console.log("..node.recorder.started..");
+console.log(".........................");
 
 /* Session API */
 
