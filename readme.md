@@ -25,15 +25,16 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
 
 ### Structure ###
 
- src/applications "Old and new demos any kind."
-   3d slot - need fix -old
-   3d tshirts desing - Three.js vs visual JS game engine 2d
-   Monsters - TPS basic demo with three.js and cannon.js
-   kurento - multiplatfor video chat
- css/             "General style for site"
- imgs/            "Image resources"
- pages/           "Pages on site like Home , about + demos"
- scripts/         "JavaScript files"
+ src/applications "Old and new demos any kind."<br/>
+   3d slot - need fix -old<br/>
+   3d tshirts desing - Three.js vs visual JS game engine 2d<br/>
+   Monsters - TPS basic demo with three.js and cannon.js<br/>
+   kurento - multiplatfor video chat<br/>
+ css/             "General style for site"<br/>
+ imgs/            "Image resources"<br/>
+ pages/           "Pages on site like Home , about + demos"<br/>
+ scripts/         "JavaScript files"<br/>
+<br/>
 
 
 ### Initial actions for deploying VPS ###
@@ -53,6 +54,6 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
   sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
-```
+```console
   sudo yum install mod24_ssl
 ```
