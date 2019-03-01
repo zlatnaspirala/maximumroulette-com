@@ -2129,7 +2129,7 @@ function bytesToUuid(buf, offset) {
   var i = offset || 0;
   var bth = byteToHex;
   // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
-  return ([bth[buf[i++]], bth[buf[i++]],
+  return ([bth[buf[i++]], bth[buf[i++]], 
 	bth[buf[i++]], bth[buf[i++]], '-',
 	bth[buf[i++]], bth[buf[i++]], '-',
 	bth[buf[i++]], bth[buf[i++]], '-',
@@ -6470,7 +6470,7 @@ var JsonRpcClient = require('./jsonrpcclient');
 exports.JsonRpcClient = JsonRpcClient;
 
 },{"./jsonrpcclient":42}],42:[function(require,module,exports){
-var RpcBuilder = require('../../server');
+var RpcBuilder = require('../');
 var WebSocketWithReconnection = require('./transports/webSocketWithReconnection');
 Date.now = Date.now || function () {
     return +new Date;
