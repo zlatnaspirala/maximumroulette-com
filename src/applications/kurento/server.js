@@ -2,6 +2,7 @@
 
 var OpenVidu = require('openvidu-node-client').OpenVidu;
 var OpenViduRole = require('openvidu-node-client').OpenViduRole;
+var compression = require('compression');
 
 // Check launch arguments: must receive openvidu-server URL and the secret
 if (process.argv.length != 4) {
@@ -38,6 +39,22 @@ app.get('*', (req, res) => {
         .status(200)
         .json({ message: 'ok' })
 });
+
+app.use(compression());
+
+// or
+/**
+ * app.use(compression({filter: shouldCompress}))
+    function shouldCompress (req, res) {
+    if (req.headers['x-no-compression']) {
+        // don't compress responses with this request header
+        return false
+    }
+
+    // fallback to standard filter function
+    return compression.filter(req, res)
+    }
+ */
 
 // Listen (start app with node server.js)
 var options = {

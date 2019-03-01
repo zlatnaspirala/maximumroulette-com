@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--html manifest=""  -->
+<html>
+<head>
+<title>Tshirts 3d Desing HTML5</title>
+<intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" > </intercept-url>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="manifest/manifest.js"></script>
+<script type="text/javascript" src="lib/io/socket.io.js"></script>
+<script type="text/javascript" src="lib/proto_modify.js"></script>
+<script type="text/javascript" src="lib/math.js"></script>
+<script type="text/javascript" src="lib/init.js"></script>
+<script type="text/javascript" src="lib/draw_functions/systems.js"></script>
+<script type="text/javascript" src="lib/draw_functions/animation.js"></script>
+<script type="text/javascript" src="lib/draw_functions/rect.js"></script>
+<script type="text/javascript" src="lib/system.js"></script>
+<script type="text/javascript" src="lib/account/account.js"></script>
+
+<script>
+//NOT INTEGRATED , STAND ALONE FILE
+SYS.SCRIPT.LOAD("lib/events/mobile_multitouch.js")
+SYS.SCRIPT.LOAD("res/animations/resource.nidza")
+SYS.SCRIPT.LOAD("lib/particule/particule.js")
+</script>
+
+<script type="text/javascript" src="lib/multilanguage/ml.js"></script>
+<script type="text/javascript" src="lib/game_object/game_object_events.js"></script>
+
+<style>
+
+
+
+
+div.upload {
+    width: 157px;
+    height:auto;
+    background: url(res/system/images/upload.png);
+    overflow: hidden;
+	height:auto;
+}
+div.upload input {
+    display: block !important;
+    width: 157px !important;
+    height:57px;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+div.colorPick {
+    width: 157px;
+   
+    background: #666666;
+   
+}
+
+</style>
+
+</head>
+<body style="margin:0;padding:0;border:none;background-color:black;">
+<div id="COLOR_PICK" style="z-index:100001;display:block;position:absolute;left:60%;top:0;font-size:150%;color:gold"  >
+<input id="PICKCOLOR" type="color" width="200px" onchange=" COLOR_FILL=this.value;REFRESH()  " />SELECT COLOR
+</div>
+<div id="UPLOAD_BOX" style="z-index:100000;display:none;position:absolute;left:50%;" class="upload">
+</div>
+
+
+
+<div id="experiment" style="display:block;position:absolute;left:51%;top:2%;z-index: 10000;" >
+<video id="webcam" autoplay width="640" height="480" style="display:none;position:absolute;left:0;top:0;"></video>
+<canvas id="canvas-blended" width="640" height="480" style="position:absolute;left:0;top:0;display:none;"></canvas>
+<canvas id="canvas-render" width="640" height="480" style="position:absolute;left:0;top:0;display:none;"></canvas>
+<canvas id="WEBGL_TEX" width="512" height="512" style="z-index:100000;position:absolute;left:-712px;top:-1330px;width:512px;height:512px;display:block;"></canvas>
+</div>
+
+
+
+<canvas tabindex='1' width="1" height="1" id="HELLO_WORLD" style="position:absolute;left:50%;top:0;cursor:normal;border:none; outline: #000000 dotted thick;" ></canvas>
+
+<iframe id="d3" src="../project_instance_webgl/tshirts.html" style="position:absolute;left:0;width:50%;height:100%;"></iframe>
+
+<script>
+
+	SYS.DOM.E("d3").style.height = "" + VIEW.H() + "px";
+
+	SYS.DOM.E("COLOR_PICK").style.top = "" + VIEW.H(90) + "px";
+	
+	 
+	
+
+</script>
+
+<div style="display:block;"> 
+<!--audio controls id="audio_ambient"  >
+<source src="http://radio.nessradio.net:8000/nessradio.mp3" type="audio/mpeg">
+<source src="http://radio.nessradio.net:8000/nessradio.ogg" type="audio/ogg">
+</audio-->
+</div>
+
+<script type="text/javascript" src="lib/game_object/game_object.js"></script>
+<script type="text/javascript" src="lib/modules/modules.js"></script>
+<script type="text/javascript" src="lib/engine.js"></script>
+<script type="text/javascript" src="lib/program.js"></script>
+<script type="text/javascript" src="lib/system_events.js"></script>
+
+<!--script type="text/javascript" src="starter/run.js"></script-->
+
+</body>
+</html>
