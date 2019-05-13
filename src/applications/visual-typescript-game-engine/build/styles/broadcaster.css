@@ -1,0 +1,27 @@
+
+.room-section {
+  background: deepskyblue;
+  min-height: 400px;
+}
+
+.broadcaster {
+  width:80%;
+  margin: 0 auto;
+}
+
+.video-container {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin: 0 auto;
+  width: 35%;
+  height: auto;
+}
+
+.media-elements {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-between;
+}

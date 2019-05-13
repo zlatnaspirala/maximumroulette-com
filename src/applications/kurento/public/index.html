@@ -2,30 +2,42 @@
 <html lang="en">
 
 <head>
+	<script>
+		if (location.protocol !== "https:") {
+				location.protocol = "https:";
+			}
+	</script>
 	<title>Maximum Chat</title>
 	<link rel="manifest" href="manifest.webmanifest">
 	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 	<meta name="Description" content="Multiplatform video recorder.">
+	<meta name="theme-color" content="#000" />
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous" async></script>
+		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
-		media="screen">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"
+		media="screen" defer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"
 		defer></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		media="screen">
+		media="screen" defer>
 	<!-- Bootstrap -->
-	<link rel="styleSheet" href="style.css" type="text/css" media="screen">
+	<link rel="styleSheet" href="style.css" type="text/css" media="screen" defer>
 	<script src="openvidu-browser-2.8.0.min.js" defer></script>
 	<script src="app.js" defer></script>
 </head>
 
 <body>
-
+<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('sw.js');
+	}
+</script>
+<noscript>
+	<h1>Please enble javascript on this page</h1>
+</noscript>>
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
