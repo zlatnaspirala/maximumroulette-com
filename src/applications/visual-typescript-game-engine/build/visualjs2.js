@@ -2064,7 +2064,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline;\r\n}\r\n\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block;\r\n}\r\n\r\nbody {\r\n  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  color: lime;\r\n  margin: 0;\r\n  padding: 0;\r\n  border:none;\r\n  background-color:black;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}\r\n\r\ncanvas {\r\n    margin:0 auto;\r\n    font-family: Helvetica, Arial, sans-serif;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background: #14151f;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    height: 100vmin;\r\n  \tmax-width: 99vw;\r\n  \tmax-height: 100vh;\r\n}\r\n\r\n/* Scroll bars */\r\n/* width */\r\n::-webkit-scrollbar {\r\n    width: 20px;\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    box-shadow: inset 0 0 5px grey;\r\n    border-radius: 6px;\r\n}\r\n\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n    background: silver;\r\n    border-radius: 10px;\r\n}\r\n\r\n/* Handle on hover */\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: green;\r\n}\r\n\r\n.log-network {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  width: 480px;\r\n}\r\n\r\n.logger {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 5%;\r\n  height: 200px;\r\n  overflow: auto;\r\n}\r\n\r\n.log-chat {\r\n  position: absolute;\r\n  top: 12%;\r\n  height: 182px !important;\r\n  width: 100%;\r\n  overflow: auto;\r\n  margin-top: 38px;\r\n}\r\n\r\n.textMessageNode {\r\n  word-break: break-all;\r\n}\r\n\r\n.new-message {\r\n  width: 100%;\r\n  float: left;\r\n}\r\n\r\n.user-info {\r\n  width: auto;\r\n  float: left;\r\n}\r\n\r\n.user-info img {\r\n  padding-top: 1px;\r\n  width: 55px;\r\n  height: 55px;\r\n}\r\n\r\n.whoIsTyping {\r\n  position: absolute;\r\n  left: 45%;\r\n  top: 1%;\r\n  height: 50px;\r\n  overflow: auto;\r\n}\r\n\r\n.webCamView {\r\n  position: absolute;\r\n  background: transparent;\r\n  width: 33%;\r\n  bottom: 0;\r\n}\r\n\r\n.controls {\r\n  margin: auto;\r\n  position: absolute;\r\n  padding-left: 28px;\r\n  right: 0;\r\n  background: transparent;\r\n  width: 111px;\r\n}\r\n\r\n.controls span {\r\n  padding-top: 20px\r\n}\r\n\r\n.icon {\r\n  width: 45px;\r\n  height: 45px;\r\n  vertical-align:bottom !important;\r\n}\r\n\r\n.chatIcon {\r\n  width: 35px;\r\n  height: 35px;\r\n}\r\n\r\n.myButton {\r\n\t-moz-box-shadow: 0px 0px 11px 3px #3dc21b;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px #3dc21b;\r\n\tbox-shadow: 0px 0px 11px 3px #3dc21b;\r\n\tbackground-color:#44c767;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid #18ab29;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family:Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n\ttext-shadow:0px 1px 8px #2f6627;\r\n}\r\n.myButton:hover {\r\n\tbackground-color:#5cbf2a;\r\n}\r\n\r\n.myError {\r\n  display: none;\r\n\t-moz-box-shadow: 0px 0px 11px 3px darkred;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px darkred;\r\n\tbox-shadow: 0px 0px 11px 3px darkred;\r\n\tbackground-color:darkred;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid red;\r\n\tcursor:pointer;\r\n\tcolor:lightcoral;\r\n\tfont-family:Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n  text-shadow:0px 1px 8px #14151f;\r\n  width: 100%;\r\n}\r\n.myError:hover {\r\n  background-color:lightcoral;\r\n  color:white;\r\n}\r\n\r\n#allow-webcam {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/webcam.png */ "./src/icon/permission/webcam.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n\r\n}\r\n\r\n#allow-mic {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/microphone.png */ "./src/icon/permission/microphone.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#allow-screen {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/screen.png */ "./src/icon/permission/screen.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#share-files {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/share-files.png */ "./src/icon/permission/share-files.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n/**\r\n  DOM Components CSS\r\n  - register form\r\n  - login form\r\n*/\r\n\r\n.make-center {\r\n  height: 480px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.popup {\r\n  position: absolute;\r\n  margin: 0;\r\n  left : 0;\r\n  top: 0;\r\n  width: 99.5vw;\r\n  height: 100%;\r\n  background-color: rgba(32,112,132,0.5);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  z-index: 200;\r\n}\r\n\r\n .container{\r\n  display: block;\r\n  position: relative;\r\n  z-index: 0;\r\n  margin: 1rem auto 0;\r\n  padding: 2rem 1rem 1rem 1rem;\r\n  width: 100%;\r\n  max-width: 700px;\r\n  height: auto;\r\n  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n}\r\n\r\n.container:after{\r\n  content: '';\r\n  display: inline-block;\r\n  position: absolute;\r\n  z-index: 0;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-image: radial-gradient(ellipse at left bottom, rgba(134, 9, 9, 1) 0%, rgba(150, 15, 15, 0.9) 60%, rgba(159, 14, 14, 0.9) 100%);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  border-radius: 20px;\r\n}\r\n\r\n.form-app{\r\n  position: relative;\r\n  z-index: 1;\r\n  padding-bottom: 4.5rem;\r\n  border-bottom: 1px solid rgba(255,255,255, 0.25);\r\n}\r\n\r\n.nav {\r\n  position: relative;\r\n  padding: 0;\r\n  margin: 0 0 6em 1rem;\r\n}\r\n\r\n.nav-item {\r\n  list-style: none;\r\n  display: inline-block;\r\n}\r\n\r\n.nav-item + .nav-item{\r\n  margin-left: 2.25rem;\r\n}\r\n\r\n.nav-item a {\r\n  position: relative;\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\r\n  font-size: 1.25rem;\r\n  padding-bottom: .5rem;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.nav-item.active a, .nav-item a:hover{\r\n  color: #FFFFFF;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:after{\r\n  content: '';\r\n  display: inline-block;\r\n  height: 10px;\r\n  background-color: rgb(255, 255, 255);\r\n  position: absolute;\r\n  right: 100%;\r\n  bottom: -1px;\r\n  left: 0;\r\n  border-radius: 50%;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:hover:after, .nav-item.active a:after{\r\n  background-color: rgb(208, 183, 181);\r\n  height: 2px;\r\n  right: 0;\r\n  bottom: 2px;\r\n  border-radius: 0;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.form-label, .form-checkbox-label{\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-transform: uppercase;\r\n  font-size: .75rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.form-checkbox-label{\r\n  display: inline-block;\r\n  position: relative;\r\n  padding-left: 1.5rem;\r\n  margin-top: 2rem;\r\n  margin-left: 1rem;\r\n  color: #FFFFFF;\r\n  font-size: .75rem;\r\n  text-transform: inherit;\r\n}\r\n\r\n.form-input-text{\r\n  color: white;\r\n  font-size: 1.15rem;\r\n  width: 100%;\r\n  padding: .5rem 1rem;\r\n  border: 2px solid transparent;\r\n  outline: none;\r\n  border-radius: 1.5rem;\r\n  background-color: rgba(255, 255, 255, 0.25);\r\n  letter-spacing: 1px;\r\n}\r\n\r\n.form-input-text:hover,\r\n.form-input-text:focus{\r\n\tcolor: white;\r\n\tborder: 2px solid rgba(255, 255, 255, 0.5);\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.form-input-text + .form-label {\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\n.form-input-checkbox {\r\n\tposition: absolute;\r\n\ttop: .1rem;\r\n\tleft: 0;\r\n\tmargin: 0;\r\n}\r\n\r\n.login-button {\r\n\tcolor: #ffffff;\r\n\tfont-size: 18px;\r\n\tfont-family: 'Montserrat', sans-serif;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 1px;\r\n\tmargin-top: 1rem;\r\n\tpadding: .75rem;\r\n\tborder-radius: 2rem;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tbackground-color: rgba(237, 17, 17, 0.75);\r\n\tborder: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.login-button:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link {\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n  color:white;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n\tfont-size: 16px;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\tz-index: 1;\r\n}\r\n\r\n.link:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline;\r\n}\r\n\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block;\r\n}\r\n\r\nbody {\r\n  font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  color: lime;\r\n  margin: 0;\r\n  padding: 0;\r\n  border:none;\r\n  background-color:black;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n}\r\n\r\ncanvas {\r\n    margin:0 auto;\r\n    font-family: Helvetica, Arial, sans-serif;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background: #14151f;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    height: 100vmin;\r\n    border-radius: 8px;\r\n    border: solid peru 10px;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n/* Scroll bars */\r\n/* width */\r\n::-webkit-scrollbar {\r\n    width: 20px;\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    box-shadow: inset 0 0 5px grey;\r\n    border-radius: 6px;\r\n}\r\n\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n    background: silver;\r\n    border-radius: 10px;\r\n}\r\n\r\n/* Handle on hover */\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: green;\r\n}\r\n\r\n.log-network {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  width: 480px;\r\n  height: 100%;\r\n}\r\n\r\n.logger {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 5%;\r\n  height: 200px;\r\n  overflow: auto;\r\n}\r\n\r\n.log-chat {\r\n  position: absolute;\r\n  top: 6%;\r\n  height: 182px !important;\r\n  width: 100%;\r\n  overflow: auto;\r\n}\r\n\r\n.log-sender {\r\n  position:absolute;\r\n  bottom:10%;\r\n  left:0;\r\n  width:64%;\r\n  z-index: 100;\r\n}\r\n\r\n.textMessageNode {\r\n  word-break: break-all;\r\n}\r\n\r\n.new-message {\r\n  width: 100%;\r\n  float: left;\r\n}\r\n\r\n.user-info {\r\n  width: auto;\r\n  float: left;\r\n}\r\n\r\n.user-info img {\r\n  padding-top: 1px;\r\n  width: 55px;\r\n  height: 55px;\r\n}\r\n\r\n.whoIsTyping {\r\n  position: absolute;\r\n  left: 45%;\r\n  top: 1%;\r\n  height: 50px;\r\n  overflow: auto;\r\n}\r\n\r\n.webCamView {\r\n  position: absolute;\r\n  background: transparent;\r\n  width: 33%;\r\n  bottom: 0;\r\n}\r\n\r\n.controls {\r\n  margin: auto;\r\n  position: absolute;\r\n  padding-left: 28px;\r\n  right: 0;\r\n  background: transparent;\r\n  width: 111px;\r\n}\r\n\r\n.controls span {\r\n  padding-top: 20px\r\n}\r\n\r\n.icon {\r\n  width: 45px;\r\n  height: 45px;\r\n  vertical-align:bottom !important;\r\n}\r\n\r\n.chatIcon {\r\n  width: 35px;\r\n  height: 35px;\r\n}\r\n\r\n.myButton {\r\n\t-moz-box-shadow: 0px 0px 11px 3px #3dc21b;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px #3dc21b;\r\n\tbox-shadow: 0px 0px 11px 3px #3dc21b;\r\n\tbackground-color:#44c767;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid #18ab29;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family:Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n\ttext-shadow:0px 1px 8px #2f6627;\r\n}\r\n.myButton:hover {\r\n\tbackground-color:#5cbf2a;\r\n}\r\n\r\n.myError {\r\n  display: none;\r\n\t-moz-box-shadow: 0px 0px 11px 3px darkred;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px darkred;\r\n\tbox-shadow: 0px 0px 11px 3px darkred;\r\n\tbackground-color:darkred;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid red;\r\n\tcursor:pointer;\r\n\tcolor:lightcoral;\r\n\tfont-family:Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n  text-shadow:0px 1px 8px #14151f;\r\n  width: 100%;\r\n}\r\n.myError:hover {\r\n  background-color:lightcoral;\r\n  color:white;\r\n}\r\n\r\n#allow-webcam {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/webcam.png */ "./src/icon/permission/webcam.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n\r\n}\r\n\r\n#allow-mic {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/microphone.png */ "./src/icon/permission/microphone.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#allow-screen {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/screen.png */ "./src/icon/permission/screen.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#share-files {\r\n  background-image: url(" + escape(__webpack_require__(/*! ../icon/permission/share-files.png */ "./src/icon/permission/share-files.png")) + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n/**\r\n  DOM Components CSS\r\n  - register form\r\n  - login form\r\n*/\r\n\r\n.make-center {\r\n  height: 480px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.popup {\r\n  position: absolute;\r\n  margin: 0;\r\n  left : 0;\r\n  top: 0;\r\n  width: 99.5vw;\r\n  height: 100%;\r\n  background-color: rgba(32,112,132,0.5);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  z-index: 200;\r\n}\r\n\r\n .container{\r\n  display: block;\r\n  position: relative;\r\n  z-index: 0;\r\n  margin: 1rem auto 0;\r\n  padding: 2rem 1rem 1rem 1rem;\r\n  width: 100%;\r\n  max-width: 700px;\r\n  height: auto;\r\n  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n}\r\n\r\nbutton:focus {outline:0;}\r\n\r\n.noselect {\r\n  -webkit-touch-callout: none; /* iOS Safari */\r\n  -webkit-user-select: none; /* Safari */\r\n  -khtml-user-select: none; /* Konqueror HTML */\r\n  -moz-user-select: none; /* Firefox */\r\n  -ms-user-select: none; /* Internet Explorer/Edge */\r\n  user-select: none; /* Non-prefixed version, currently\r\n                        supported by Chrome and Opera */\r\n}\r\n\r\n.leftPanelUni {\r\n  display: block;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  z-index: 10;\r\n  margin: auto 0;\r\n  padding: 0;\r\n  width: 20%;\r\n  height: 100%;\r\n  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n  font-size: 80%;\r\n}\r\n\r\n.container:after{\r\n  content: '';\r\n  display: inline-block;\r\n  position: absolute;\r\n  z-index: 0;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-image: radial-gradient(ellipse at left bottom, rgba(134, 9, 9, 1) 0%, rgba(150, 15, 15, 0.9) 60%, rgba(159, 14, 14, 0.9) 100%);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  border-radius: 20px;\r\n}\r\n\r\n.form-app{\r\n  position: relative;\r\n  z-index: 1;\r\n  padding-bottom: 4.5rem;\r\n  border-bottom: 1px solid rgba(255,255,255, 0.25);\r\n}\r\n\r\n.nav {\r\n  position: relative;\r\n  padding: 0;\r\n  margin: 0 0 6em 1rem;\r\n}\r\n\r\n.nav-item {\r\n  list-style: none;\r\n  display: inline-block;\r\n}\r\n\r\n.nav-item + .nav-item{\r\n  margin-left: 2.25rem;\r\n}\r\n\r\n.nav-item a {\r\n  position: relative;\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\r\n  font-size: 1.25rem;\r\n  padding-bottom: .5rem;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.nav-item.active a, .nav-item a:hover{\r\n  color: #FFFFFF;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:after{\r\n  content: '';\r\n  display: inline-block;\r\n  height: 10px;\r\n  background-color: rgb(255, 255, 255);\r\n  position: absolute;\r\n  right: 100%;\r\n  bottom: -1px;\r\n  left: 0;\r\n  border-radius: 50%;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:hover:after, .nav-item.active a:after{\r\n  background-color: rgb(208, 183, 181);\r\n  height: 2px;\r\n  right: 0;\r\n  bottom: 2px;\r\n  border-radius: 0;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.form-label, .form-checkbox-label{\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-transform: uppercase;\r\n  font-size: .75rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.form-checkbox-label{\r\n  display: inline-block;\r\n  position: relative;\r\n  padding-left: 1.5rem;\r\n  margin-top: 2rem;\r\n  margin-left: 1rem;\r\n  color: #FFFFFF;\r\n  font-size: .75rem;\r\n  text-transform: inherit;\r\n}\r\n\r\n.form-input-text{\r\n  color: white;\r\n  font-size: 1.15rem;\r\n  width: 100%;\r\n  padding: .5rem 1rem;\r\n  border: 2px solid transparent;\r\n  outline: none;\r\n  border-radius: 1.5rem;\r\n  background-color: rgba(255, 255, 255, 0.25);\r\n  letter-spacing: 1px;\r\n}\r\n\r\n.form-input-text:hover,\r\n.form-input-text:focus{\r\n\tcolor: white;\r\n\tborder: 2px solid rgba(255, 255, 255, 0.5);\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.form-input-text + .form-label {\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\n.form-input-checkbox {\r\n\tposition: absolute;\r\n\ttop: .1rem;\r\n\tleft: 0;\r\n\tmargin: 0;\r\n}\r\n\r\n.login-button {\r\n\tcolor: #ffffff;\r\n\tfont-size: 18px;\r\n\tfont-family: 'Montserrat', sans-serif;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 1px;\r\n\tmargin-top: 1rem;\r\n\tpadding: .75rem;\r\n\tborder-radius: 2rem;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tbackground-color: rgba(237, 17, 17, 0.75);\r\n\tborder: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.login-button:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link {\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n  color:white;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n\tfont-size: 16px;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\tz-index: 1;\r\n}\r\n\r\n.link:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -23290,7 +23290,7 @@ var Vector = _dereq_('../geometry/Vector');
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(global) {/**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.14.3
+ * @version 1.15.0
  * @license
  * Copyright (c) 2016 Federico Zivolo and contributors
  *
@@ -23387,7 +23387,8 @@ function getStyleComputedProperty(element, property) {
     return [];
   }
   // NOTE: 1 DOM access here
-  var css = getComputedStyle(element, null);
+  var window = element.ownerDocument.defaultView;
+  var css = window.getComputedStyle(element, null);
   return property ? css[property] : css;
 }
 
@@ -23475,7 +23476,7 @@ function getOffsetParent(element) {
   var noOffsetParent = isIE(10) ? document.body : null;
 
   // NOTE: 1 DOM access here
-  var offsetParent = element.offsetParent;
+  var offsetParent = element.offsetParent || null;
   // Skip hidden elements which don't have an offsetParent
   while (offsetParent === noOffsetParent && element.nextElementSibling) {
     offsetParent = (element = element.nextElementSibling).offsetParent;
@@ -23487,9 +23488,9 @@ function getOffsetParent(element) {
     return element ? element.ownerDocument.documentElement : document.documentElement;
   }
 
-  // .offsetParent will return the closest TD or TABLE in case
+  // .offsetParent will return the closest TH, TD or TABLE in case
   // no offsetParent is present, I hate this job...
-  if (['TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
+  if (['TH', 'TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
     return getOffsetParent(offsetParent);
   }
 
@@ -23627,10 +23628,10 @@ function getBordersSize(styles, axis) {
 }
 
 function getSize(axis, body, html, computedStyle) {
-  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE(10) ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
+  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE(10) ? parseInt(html['offset' + axis]) + parseInt(computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')]) + parseInt(computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')]) : 0);
 }
 
-function getWindowSizes() {
+function getWindowSizes(document) {
   var body = document.body;
   var html = document.documentElement;
   var computedStyle = isIE(10) && getComputedStyle(html);
@@ -23747,7 +23748,7 @@ function getBoundingClientRect(element) {
   };
 
   // subtract scrollbar size from sizes
-  var sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
+  var sizes = element.nodeName === 'HTML' ? getWindowSizes(element.ownerDocument) : {};
   var width = sizes.width || element.clientWidth || result.right - result.left;
   var height = sizes.height || element.clientHeight || result.bottom - result.top;
 
@@ -23782,7 +23783,7 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
   var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10);
 
   // In cases where the parent is fixed, we must ignore negative scroll in offset calc
-  if (fixedPosition && parent.nodeName === 'HTML') {
+  if (fixedPosition && isHTML) {
     parentRect.top = Math.max(parentRect.top, 0);
     parentRect.left = Math.max(parentRect.left, 0);
   }
@@ -23857,7 +23858,11 @@ function isFixed(element) {
   if (getStyleComputedProperty(element, 'position') === 'fixed') {
     return true;
   }
-  return isFixed(getParentNode(element));
+  var parentNode = getParentNode(element);
+  if (!parentNode) {
+    return false;
+  }
+  return isFixed(parentNode);
 }
 
 /**
@@ -23920,7 +23925,7 @@ function getBoundaries(popper, reference, padding, boundariesElement) {
 
     // In case of HTML, we need a different computation
     if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
-      var _getWindowSizes = getWindowSizes(),
+      var _getWindowSizes = getWindowSizes(popper.ownerDocument),
           height = _getWindowSizes.height,
           width = _getWindowSizes.width;
 
@@ -23935,10 +23940,12 @@ function getBoundaries(popper, reference, padding, boundariesElement) {
   }
 
   // Add paddings
-  boundaries.left += padding;
-  boundaries.top += padding;
-  boundaries.right -= padding;
-  boundaries.bottom -= padding;
+  padding = padding || 0;
+  var isPaddingNumber = typeof padding === 'number';
+  boundaries.left += isPaddingNumber ? padding : padding.left || 0;
+  boundaries.top += isPaddingNumber ? padding : padding.top || 0;
+  boundaries.right -= isPaddingNumber ? padding : padding.right || 0;
+  boundaries.bottom -= isPaddingNumber ? padding : padding.bottom || 0;
 
   return boundaries;
 }
@@ -24035,9 +24042,10 @@ function getReferenceOffsets(state, popper, reference) {
  * @returns {Object} object containing width and height properties
  */
 function getOuterSizes(element) {
-  var styles = getComputedStyle(element);
-  var x = parseFloat(styles.marginTop) + parseFloat(styles.marginBottom);
-  var y = parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
+  var window = element.ownerDocument.defaultView;
+  var styles = window.getComputedStyle(element);
+  var x = parseFloat(styles.marginTop || 0) + parseFloat(styles.marginBottom || 0);
+  var y = parseFloat(styles.marginLeft || 0) + parseFloat(styles.marginRight || 0);
   var result = {
     width: element.offsetWidth + y,
     height: element.offsetHeight + x
@@ -24263,7 +24271,7 @@ function getSupportedPropertyName(property) {
 }
 
 /**
- * Destroy the popper
+ * Destroys the popper.
  * @method
  * @memberof Popper
  */
@@ -24370,7 +24378,7 @@ function removeEventListeners(reference, state) {
 
 /**
  * It will remove resize/scroll events and won't recalculate popper position
- * when they are triggered. It also won't trigger onUpdate callback anymore,
+ * when they are triggered. It also won't trigger `onUpdate` callback anymore,
  * unless you call `update` method manually.
  * @method
  * @memberof Popper
@@ -24489,6 +24497,57 @@ function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
 
 /**
  * @function
+ * @memberof Popper.Utils
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Boolean} shouldRound - If the offsets should be rounded at all
+ * @returns {Object} The popper's position offsets rounded
+ *
+ * The tale of pixel-perfect positioning. It's still not 100% perfect, but as
+ * good as it can be within reason.
+ * Discussion here: https://github.com/FezVrasta/popper.js/pull/715
+ *
+ * Low DPI screens cause a popper to be blurry if not using full pixels (Safari
+ * as well on High DPI screens).
+ *
+ * Firefox prefers no rounding for positioning and does not have blurriness on
+ * high DPI screens.
+ *
+ * Only horizontal placement and left/right values need to be considered.
+ */
+function getRoundedOffsets(data, shouldRound) {
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+  var round = Math.round,
+      floor = Math.floor;
+
+  var noRound = function noRound(v) {
+    return v;
+  };
+
+  var referenceWidth = round(reference.width);
+  var popperWidth = round(popper.width);
+
+  var isVertical = ['left', 'right'].indexOf(data.placement) !== -1;
+  var isVariation = data.placement.indexOf('-') !== -1;
+  var sameWidthParity = referenceWidth % 2 === popperWidth % 2;
+  var bothOddWidth = referenceWidth % 2 === 1 && popperWidth % 2 === 1;
+
+  var horizontalToInteger = !shouldRound ? noRound : isVertical || isVariation || sameWidthParity ? round : floor;
+  var verticalToInteger = !shouldRound ? noRound : round;
+
+  return {
+    left: horizontalToInteger(bothOddWidth && !isVariation && shouldRound ? popper.left - 1 : popper.left),
+    top: verticalToInteger(popper.top),
+    bottom: verticalToInteger(popper.bottom),
+    right: horizontalToInteger(popper.right)
+  };
+}
+
+var isFirefox = isBrowser && /Firefox/i.test(navigator.userAgent);
+
+/**
+ * @function
  * @memberof Modifiers
  * @argument {Object} data - The data object generated by `update` method
  * @argument {Object} options - Modifiers configuration and options
@@ -24517,15 +24576,7 @@ function computeStyle(data, options) {
     position: popper.position
   };
 
-  // Avoid blurry text by using full pixel integers.
-  // For pixel-perfect positioning, top/bottom prefers rounded
-  // values, while left/right prefers floored values.
-  var offsets = {
-    left: Math.floor(popper.left),
-    top: Math.round(popper.top),
-    bottom: Math.round(popper.bottom),
-    right: Math.floor(popper.right)
-  };
+  var offsets = getRoundedOffsets(data, window.devicePixelRatio < 2 || !isFirefox);
 
   var sideA = x === 'bottom' ? 'top' : 'bottom';
   var sideB = y === 'right' ? 'left' : 'right';
@@ -24547,12 +24598,22 @@ function computeStyle(data, options) {
   var left = void 0,
       top = void 0;
   if (sideA === 'bottom') {
-    top = -offsetParentRect.height + offsets.bottom;
+    // when offsetParent is <html> the positioning is relative to the bottom of the screen (excluding the scrollbar)
+    // and not the bottom of the html element
+    if (offsetParent.nodeName === 'HTML') {
+      top = -offsetParent.clientHeight + offsets.bottom;
+    } else {
+      top = -offsetParentRect.height + offsets.bottom;
+    }
   } else {
     top = offsets.top;
   }
   if (sideB === 'right') {
-    left = -offsetParentRect.width + offsets.right;
+    if (offsetParent.nodeName === 'HTML') {
+      left = -offsetParent.clientWidth + offsets.right;
+    } else {
+      left = -offsetParentRect.width + offsets.right;
+    }
   } else {
     left = offsets.left;
   }
@@ -24661,7 +24722,7 @@ function arrow(data, options) {
 
   //
   // extends keepTogether behavior making sure the popper and its
-  // reference have enough pixels in conjuction
+  // reference have enough pixels in conjunction
   //
 
   // top/left side
@@ -24731,7 +24792,7 @@ function getOppositeVariation(variation) {
  * - `top-end` (on top of reference, right aligned)
  * - `right-start` (on right of reference, top aligned)
  * - `bottom` (on bottom, centered)
- * - `auto-right` (on the side with more space available, alignment depends by placement)
+ * - `auto-end` (on the side with more space available, alignment depends by placement)
  *
  * @static
  * @type {Array}
@@ -24833,7 +24894,14 @@ function flip(data, options) {
 
     // flip the variation if required
     var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
-    var flippedVariation = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
+
+    // flips variation if reference element overflows boundaries
+    var flippedVariationByRef = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
+
+    // flips variation if popper content overflows boundaries
+    var flippedVariationByContent = !!options.flipVariationsByContent && (isVertical && variation === 'start' && overflowsRight || isVertical && variation === 'end' && overflowsLeft || !isVertical && variation === 'start' && overflowsBottom || !isVertical && variation === 'end' && overflowsTop);
+
+    var flippedVariation = flippedVariationByRef || flippedVariationByContent;
 
     if (overlapsRef || overflowsBoundaries || flippedVariation) {
       // this boolean to detect any flip loop
@@ -25273,7 +25341,7 @@ var modifiers = {
    * The `offset` modifier can shift your popper on both its axis.
    *
    * It accepts the following units:
-   * - `px` or unitless, interpreted as pixels
+   * - `px` or unit-less, interpreted as pixels
    * - `%` or `%r`, percentage relative to the length of the reference element
    * - `%p`, percentage relative to the length of the popper element
    * - `vw`, CSS viewport width unit
@@ -25281,7 +25349,7 @@ var modifiers = {
    *
    * For length is intended the main axis relative to the placement of the popper.<br />
    * This means that if the placement is `top` or `bottom`, the length will be the
-   * `width`. In case of `left` or `right`, it will be the height.
+   * `width`. In case of `left` or `right`, it will be the `height`.
    *
    * You can provide a single value (as `Number` or `String`), or a pair of values
    * as `String` divided by a comma or one (or more) white spaces.<br />
@@ -25302,7 +25370,7 @@ var modifiers = {
    * ```
    * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
    * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
+   * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
    *
    * @memberof modifiers
    * @inner
@@ -25323,7 +25391,7 @@ var modifiers = {
   /**
    * Modifier used to prevent the popper from being positioned outside the boundary.
    *
-   * An scenario exists where the reference itself is not within the boundaries.<br />
+   * A scenario exists where the reference itself is not within the boundaries.<br />
    * We can say it has "escaped the boundaries" — or just "escaped".<br />
    * In this case we need to decide whether the popper should either:
    *
@@ -25353,23 +25421,23 @@ var modifiers = {
     /**
      * @prop {number} padding=5
      * Amount of pixel used to define a minimum distance between the boundaries
-     * and the popper this makes sure the popper has always a little padding
+     * and the popper. This makes sure the popper always has a little padding
      * between the edges of its container
      */
     padding: 5,
     /**
      * @prop {String|HTMLElement} boundariesElement='scrollParent'
-     * Boundaries used by the modifier, can be `scrollParent`, `window`,
+     * Boundaries used by the modifier. Can be `scrollParent`, `window`,
      * `viewport` or any DOM element.
      */
     boundariesElement: 'scrollParent'
   },
 
   /**
-   * Modifier used to make sure the reference and its popper stay near eachothers
-   * without leaving any gap between the two. Expecially useful when the arrow is
-   * enabled and you want to assure it to point to its reference element.
-   * It cares only about the first axis, you can still have poppers with margin
+   * Modifier used to make sure the reference and its popper stay near each other
+   * without leaving any gap between the two. Especially useful when the arrow is
+   * enabled and you want to ensure that it points to its reference element.
+   * It cares only about the first axis. You can still have poppers with margin
    * between the popper and its reference element.
    * @memberof modifiers
    * @inner
@@ -25387,7 +25455,7 @@ var modifiers = {
    * This modifier is used to move the `arrowElement` of the popper to make
    * sure it is positioned between the reference element and its popper element.
    * It will read the outer size of the `arrowElement` node to detect how many
-   * pixels of conjuction are needed.
+   * pixels of conjunction are needed.
    *
    * It has no effect if no `arrowElement` is provided.
    * @memberof modifiers
@@ -25426,7 +25494,7 @@ var modifiers = {
      * @prop {String|Array} behavior='flip'
      * The behavior used to change the popper's placement. It can be one of
      * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
-     * placements (with optional variations).
+     * placements (with optional variations)
      */
     behavior: 'flip',
     /**
@@ -25436,11 +25504,27 @@ var modifiers = {
     padding: 5,
     /**
      * @prop {String|HTMLElement} boundariesElement='viewport'
-     * The element which will define the boundaries of the popper position,
-     * the popper will never be placed outside of the defined boundaries
-     * (except if keepTogether is enabled)
+     * The element which will define the boundaries of the popper position.
+     * The popper will never be placed outside of the defined boundaries
+     * (except if `keepTogether` is enabled)
      */
-    boundariesElement: 'viewport'
+    boundariesElement: 'viewport',
+    /**
+     * @prop {Boolean} flipVariations=false
+     * The popper will switch placement variation between `-start` and `-end` when
+     * the reference element overlaps its boundaries.
+     *
+     * The original placement should have a set variation.
+     */
+    flipVariations: false,
+    /**
+     * @prop {Boolean} flipVariationsByContent=false
+     * The popper will switch placement variation between `-start` and `-end` when
+     * the popper element overlaps its reference boundaries.
+     *
+     * The original placement should have a set variation.
+     */
+    flipVariationsByContent: false
   },
 
   /**
@@ -25502,8 +25586,8 @@ var modifiers = {
     fn: computeStyle,
     /**
      * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
+     * If true, it uses the CSS 3D transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties
      */
     gpuAcceleration: true,
     /**
@@ -25530,7 +25614,7 @@ var modifiers = {
    * Note that if you disable this modifier, you must make sure the popper element
    * has its position set to `absolute` before Popper.js can do its work!
    *
-   * Just disable this modifier and define you own to achieve the desired effect.
+   * Just disable this modifier and define your own to achieve the desired effect.
    *
    * @memberof modifiers
    * @inner
@@ -25547,27 +25631,27 @@ var modifiers = {
     /**
      * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
      * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
+     * If true, it uses the CSS 3D transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties
      */
     gpuAcceleration: undefined
   }
 };
 
 /**
- * The `dataObject` is an object containing all the informations used by Popper.js
- * this object get passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
+ * The `dataObject` is an object containing all the information used by Popper.js.
+ * This object is passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
  * @name dataObject
  * @property {Object} data.instance The Popper.js instance
  * @property {String} data.placement Placement applied to popper
  * @property {String} data.originalPlacement Placement originally defined on init
  * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
- * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper.
+ * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper
  * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
- * @property {Object} data.styles Any CSS property defined here will be applied to the popper, it expects the JavaScript nomenclature (eg. `marginBottom`)
- * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow, it expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.styles Any CSS property defined here will be applied to the popper. It expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow. It expects the JavaScript nomenclature (eg. `marginBottom`)
  * @property {Object} data.boundaries Offsets of the popper boundaries
- * @property {Object} data.offsets The measurements of popper, reference and arrow elements.
+ * @property {Object} data.offsets The measurements of popper, reference and arrow elements
  * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
  * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
  * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
@@ -25575,9 +25659,9 @@ var modifiers = {
 
 /**
  * Default options provided to Popper.js constructor.<br />
- * These can be overriden using the `options` argument of Popper.js.<br />
- * To override an option, simply pass as 3rd argument an object with the same
- * structure of this object, example:
+ * These can be overridden using the `options` argument of Popper.js.<br />
+ * To override an option, simply pass an object with the same
+ * structure of the `options` object, as the 3rd argument. For example:
  * ```
  * new Popper(ref, pop, {
  *   modifiers: {
@@ -25591,7 +25675,7 @@ var modifiers = {
  */
 var Defaults = {
   /**
-   * Popper's placement
+   * Popper's placement.
    * @prop {Popper.placements} placement='bottom'
    */
   placement: 'bottom',
@@ -25603,7 +25687,7 @@ var Defaults = {
   positionFixed: false,
 
   /**
-   * Whether events (resize, scroll) are initially enabled
+   * Whether events (resize, scroll) are initially enabled.
    * @prop {Boolean} eventsEnabled=true
    */
   eventsEnabled: true,
@@ -25617,17 +25701,17 @@ var Defaults = {
 
   /**
    * Callback called when the popper is created.<br />
-   * By default, is set to no-op.<br />
+   * By default, it is set to no-op.<br />
    * Access Popper.js instance with `data.instance`.
    * @prop {onCreate}
    */
   onCreate: function onCreate() {},
 
   /**
-   * Callback called when the popper is updated, this callback is not called
+   * Callback called when the popper is updated. This callback is not called
    * on the initialization/creation of the popper, but only on subsequent
    * updates.<br />
-   * By default, is set to no-op.<br />
+   * By default, it is set to no-op.<br />
    * Access Popper.js instance with `data.instance`.
    * @prop {onUpdate}
    */
@@ -25635,7 +25719,7 @@ var Defaults = {
 
   /**
    * List of modifiers used to modify the offsets before they are applied to the popper.
-   * They provide most of the functionalities of Popper.js
+   * They provide most of the functionalities of Popper.js.
    * @prop {modifiers}
    */
   modifiers: modifiers
@@ -25655,10 +25739,10 @@ var Defaults = {
 // Methods
 var Popper = function () {
   /**
-   * Create a new Popper.js instance
+   * Creates a new Popper.js instance.
    * @class Popper
-   * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
-   * @param {HTMLElement} popper - The HTML element used as popper.
+   * @param {Element|referenceObject} reference - The reference element used to position the popper
+   * @param {Element} popper - The HTML / XML element used as the popper
    * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
    * @return {Object} instance - The generated Popper.js instance
    */
@@ -25754,7 +25838,7 @@ var Popper = function () {
     }
 
     /**
-     * Schedule an update, it will run on the next UI update available
+     * Schedules an update. It will run on the next UI update available.
      * @method scheduleUpdate
      * @memberof Popper
      */
@@ -25791,7 +25875,7 @@ var Popper = function () {
  * new Popper(referenceObject, popperNode);
  * ```
  *
- * NB: This feature isn't supported in Internet Explorer 10
+ * NB: This feature isn't supported in Internet Explorer 10.
  * @name referenceObject
  * @property {Function} data.getBoundingClientRect
  * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
@@ -26514,7 +26598,7 @@ g = (function() {
 
 try {
 	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1, eval)("this");
+	g = g || new Function("return this")();
 } catch (e) {
 	// This works if the window reference is available
 	if (typeof window === "object") g = window;
@@ -26544,6 +26628,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             __webpack_require__(/*! ./icon/favicon.ico */ "./src/icon/favicon.ico");
             __webpack_require__(/*! ./icon/favicon-96x96.png */ "./src/icon/favicon-96x96.png");
             __webpack_require__(/*! ./icon/android-icon.png */ "./src/icon/android-icon.png");
+            __webpack_require__(/*! ./icon/apple-icon.png */ "./src/icon/apple-icon.png");
             __webpack_require__(/*! ./icon/permission/warning.png */ "./src/icon/permission/warning.png");
             __webpack_require__(/*! ./icon/permission/webcam.png */ "./src/icon/permission/webcam.png");
             __webpack_require__(/*! ./icon/permission/gcheckmark.png */ "./src/icon/permission/gcheckmark.png");
@@ -26564,7 +26649,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./app-icon */ "./src/app-icon.ts"), __webpack_require__(/*! ./examples/platformer/platformer */ "./src/examples/platformer/platformer.ts"), __webpack_require__(/*! ./libs/ioc */ "./src/libs/ioc.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, app_icon_1, platformer_1, ioc_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./app-icon */ "./src/app-icon.ts"), __webpack_require__(/*! ./examples/platformer/scripts/game-play */ "./src/examples/platformer/scripts/game-play.ts"), __webpack_require__(/*! ./libs/ioc */ "./src/libs/ioc.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, app_icon_1, game_play_1, ioc_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     __webpack_require__(/*! ./style/styles.css */ "./src/style/styles.css");
@@ -26577,14 +26662,25 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     ];
     var master = new ioc_1.default(gamesList);
     var appIcon = new app_icon_1.default(master.get.Browser);
-    master.singlton(platformer_1.default, master.get.Starter);
-    console.warn("Platformer: ", master.get.Platformer);
-    master.get.Platformer.attachAppEvents();
-    setTimeout(function () {
-    }, 3000);
+    master.singlton(game_play_1.default, master.get.Starter);
+    console.log("Platformer: ", master.get.GamePlay);
+    master.get.GamePlay.attachAppEvents();
+    window.master = master;
+    window.platformer = master.get.GamePlay;
 }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
+
+/***/ }),
+
+/***/ "./src/examples/platformer/imgs/chopper/chopper.png":
+/*!**********************************************************!*\
+  !*** ./src/examples/platformer/imgs/chopper/chopper.png ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/chopper.png";
 
 /***/ }),
 
@@ -26599,25 +26695,47 @@ module.exports = __webpack_require__.p + "imgs/bitcoin.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer/imgs/floor.png":
-/*!************************************************!*\
-  !*** ./src/examples/platformer/imgs/floor.png ***!
-  \************************************************/
+/***/ "./src/examples/platformer/imgs/crapmunch/crapmunch.png":
+/*!**************************************************************!*\
+  !*** ./src/examples/platformer/imgs/crapmunch/crapmunch.png ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/floor.png";
+module.exports = __webpack_require__.p + "imgs/crapmunch.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer/imgs/target.png":
+/***/ "./src/examples/platformer/imgs/explosion/explosion.png":
+/*!**************************************************************!*\
+  !*** ./src/examples/platformer/imgs/explosion/explosion.png ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/explosion.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer/imgs/flame2.png":
 /*!*************************************************!*\
-  !*** ./src/examples/platformer/imgs/target.png ***!
+  !*** ./src/examples/platformer/imgs/flame2.png ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/target.png";
+module.exports = __webpack_require__.p + "imgs/flame2.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer/imgs/floor2.png":
+/*!*************************************************!*\
+  !*** ./src/examples/platformer/imgs/floor2.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/floor2.png";
 
 /***/ }),
 
@@ -26632,55 +26750,183 @@ module.exports = __webpack_require__.p + "imgs/walk-boy2.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer/imgs/wall3.jpg":
+/***/ "./src/examples/platformer/imgs/wall3.png":
 /*!************************************************!*\
-  !*** ./src/examples/platformer/imgs/wall3.jpg ***!
+  !*** ./src/examples/platformer/imgs/wall3.png ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/wall3.jpg";
+module.exports = __webpack_require__.p + "imgs/wall3.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer/platformer.ts":
-/*!***********************************************!*\
-  !*** ./src/examples/platformer/platformer.ts ***!
-  \***********************************************/
+/***/ "./src/examples/platformer/scripts/Platformer.ts":
+/*!*******************************************************!*\
+  !*** ./src/examples/platformer/scripts/Platformer.ts ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./scripts/level1/level1 */ "./src/examples/platformer/scripts/level1/level1.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, level1_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/text */ "./src/libs/class/visual-methods/text.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, system_1, sprite_animation_1, text_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Platformer = (function () {
         function Platformer(starter) {
             var _this = this;
             this.gameName = "platformer";
-            this.version = 0.02;
+            this.version = 0.2;
+            this.playerCategory = 0x0002;
+            this.staticCategory = 0x0004;
             this.grounds = [];
-            this.player = {};
-            this.levelAccess = {};
+            this.enemys = [];
+            this.deadLines = [];
+            this.player = null;
+            this.hudLives = null;
+            this.lives = 3;
+            this.preventDoubleExecution = false;
+            this.playerStartPositions = [{ x: 120, y: 200 }];
+            this.playerDeadPauseInterval = 550;
             this.attachAppEvents = function () {
                 var myInstance = _this;
                 window.addEventListener("game-init", function (e) {
-                    console.log(e);
-                    myInstance.init("level1");
+                    console.log("Event triggered: ", e);
                 });
             };
-            this.init = function (level) {
-                var root = _this;
-                _this.levelAccess[level](root);
+            this.showPlayerBoardUI = function () {
+                var myInstance = _this;
+                fetch("./templates/ui/player-board.html", {
+                    headers: system_1.htmlHeader,
+                }).
+                    then(function (res) {
+                    return res.text();
+                }).then(function (html) {
+                    myInstance.UIPlayerBoard = system_1.byId("UIPlayerBoard");
+                    myInstance.UIPlayerBoard.innerHTML = html;
+                    myInstance.UIPlayerBoard.style.display = "block";
+                });
             };
             this.starter = starter;
             this.v = starter.getView();
-            this.levelAccess.level1 = level1_1.level1;
-            if (this.starter.ioc.getConfig().getAutoStartGamePlay()) {
-                this.init("level1");
-            }
+            this.UIPlayerBoard = document.createElement("div");
+            this.UIPlayerBoard.id = "UIPlayerBoard";
+            this.UIPlayerBoard.className = "leftPanelUni";
+            document.getElementsByTagName("body")[0].appendChild(this.UIPlayerBoard);
+            this.showPlayerBoardUI();
         }
+        Platformer.prototype.createHud = function () {
+            var playerRadius = 50;
+            this.hudLives = Matter.Bodies.rectangle(50, 220, 300, 200, {
+                label: "HUD",
+                isStatic: true,
+                render: {
+                    visualComponent: new text_1.default("Platformer demo"),
+                    fillStyle: "blue",
+                    sprite: {
+                        xScale: 1,
+                        yScale: 1,
+                    },
+                },
+            });
+            this.hudLives.collisionFilter.group = -1;
+            this.starter.AddNewBodies(this.hudLives);
+        };
+        Platformer.prototype.createPlayer = function () {
+            var imgResMyPlayerSprite = [
+                __webpack_require__(/*! ../imgs/walk-boy2.png */ "./src/examples/platformer/imgs/walk-boy2.png"),
+                __webpack_require__(/*! ../imgs/explosion/explosion.png */ "./src/examples/platformer/imgs/explosion/explosion.png"),
+            ];
+            var playerRadius = 50;
+            this.player = Matter.Bodies.circle(this.playerStartPositions[0].x, this.playerStartPositions[0].y, playerRadius, {
+                label: "player",
+                density: 0.0005,
+                friction: 0.01,
+                frictionAir: 0.06,
+                restitution: 0.3,
+                ground: true,
+                jumpCD: 0,
+                portal: -1,
+                collisionFilter: {
+                    category: this.playerCategory,
+                },
+                render: {
+                    visualComponent: new sprite_animation_1.default("playerImage", imgResMyPlayerSprite, { byX: 5, byY: 2 }),
+                    fillStyle: "blue",
+                    sprite: {
+                        xScale: 1,
+                        yScale: 1,
+                    },
+                },
+            });
+            this.player.collisionFilter.group = -1;
+            this.player.render.visualComponent.assets.SeqFrame.setNewSeqFrameRegimeType("CONST");
+            this.player.render.visualComponent.keepAspectRatio = true;
+            this.player.render.visualComponent.setHorizontalFlip(true);
+            if (this.lives < 1) {
+                this.starter.AddNewBodies(this.player);
+                console.info("Player body added to the stage from hard 'dead'.");
+            }
+        };
+        Platformer.prototype.playerSpawn = function () {
+            if (this.player === null) {
+                this.createPlayer();
+            }
+            else if (this.player.type === "body") {
+            }
+        };
+        Platformer.prototype.collisionCheck = function (event, ground) {
+            var _this = this;
+            var pairs = event.pairs;
+            for (var i = 0, j = pairs.length; i !== j; ++i) {
+                var pair = pairs[i];
+                if (pair.activeContacts) {
+                    if (pair.bodyA.label === "player" && pair.bodyB.label === "bitcoin") {
+                        var collectitem = pair.bodyB;
+                        this.starter.destroyBody(collectitem);
+                    }
+                    if (pair.bodyA.label === "player" && pair.bodyB.label === "enemy_crapmunch") {
+                        var collectitem = pair.bodyA;
+                        this.playerDie(collectitem);
+                    }
+                    else if (pair.bodyB.label === "player" && pair.bodyA.label === "enemy_crapmunch") {
+                        var collectitem = pair.bodyB;
+                        this.playerDie(collectitem);
+                    }
+                    pair.activeContacts.forEach(function (element) {
+                        if (element.vertex.body.label === "player" &&
+                            element.vertex.index > 5 && element.vertex.index < 8) {
+                            _this.player.ground = ground;
+                        }
+                        else if (element.vertex.body.label === "player") {
+                            _this.player.ground = false;
+                        }
+                    });
+                }
+            }
+        };
+        Platformer.prototype.playerDie = function (collectitem) {
+            if (!this.preventDoubleExecution) {
+                var root_1 = this;
+                this.preventDoubleExecution = true;
+                this.player.render.visualComponent.shema = { byX: 4, byY: 4 };
+                this.player.render.visualComponent.assets.SeqFrame.setNewValue(1);
+                this.lives = this.lives - 1;
+                this.UIPlayerBoard.getElementsByClassName("UIPlayerLives")[0].innerText = this.lives.toString();
+                if (this.lives === 0) {
+                    this.starter.destroyBody(collectitem);
+                    this.player = null;
+                    return;
+                }
+                setTimeout(function () {
+                    root_1.player.render.visualComponent.assets.SeqFrame.setNewValue(0);
+                    root_1.player.render.visualComponent.shema = { byX: 5, byY: 2 };
+                    Matter.Body.setPosition(root_1.player, root_1.playerStartPositions[0]);
+                    root_1.playerSpawn();
+                    root_1.preventDoubleExecution = false;
+                }, this.playerDeadPauseInterval);
+            }
+        };
         Platformer.prototype.destroyGamePlay = function () {
-            this.levelAccess = null;
             this.starter.destroyGamePlay();
         };
         return Platformer;
@@ -26692,215 +26938,236 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./src/examples/platformer/scripts/common.ts":
-/*!***************************************************!*\
-  !*** ./src/examples/platformer/scripts/common.ts ***!
-  \***************************************************/
+/***/ "./src/examples/platformer/scripts/game-play.ts":
+/*!******************************************************!*\
+  !*** ./src/examples/platformer/scripts/game-play.ts ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/bot-behavior */ "./src/libs/class/bot-behavior.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/texture */ "./src/libs/class/visual-methods/texture.ts"), __webpack_require__(/*! ./map */ "./src/examples/platformer/scripts/map.ts"), __webpack_require__(/*! ./Platformer */ "./src/examples/platformer/scripts/Platformer.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, bot_behavior_1, sprite_animation_1, texture_1, map_1, Platformer_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    function collisionCheck(event, ground, r) {
-        var pairs = event.pairs;
-        for (var i = 0, j = pairs.length; i !== j; ++i) {
-            var pair = pairs[i];
-            if (pair.activeContacts) {
-                if (pair.bodyA.label === "player" && pair.bodyB.label === "bitcoin") {
-                    var collectitem = pair.bodyB;
-                    r.starter.destroyBody(collectitem);
-                }
-                pair.activeContacts.forEach(function (element) {
-                    if (element.vertex.body.label === "player" &&
-                        element.vertex.index > 5 && element.vertex.index < 8) {
-                        r.player.ground = ground;
-                    }
-                    else {
-                        r.player.ground = false;
-                    }
-                });
+    var GamePlay = (function (_super) {
+        __extends(GamePlay, _super);
+        function GamePlay(starter) {
+            var _this = _super.call(this, starter) || this;
+            if (_this.starter.ioc.getConfig().getAutoStartGamePlay()) {
+                _this.load();
             }
+            return _this;
         }
-    }
-    exports.collisionCheck = collisionCheck;
+        GamePlay.prototype.attachMatterEvents = function () {
+            var root = this;
+            var globalEvent = this.starter.ioc.get.GlobalEvent;
+            var playerSpeed = 0.005;
+            var deadZoneByY = 2700;
+            this.enemys.forEach(function (item) {
+                var test = new bot_behavior_1.default(item);
+                test.patrol();
+            });
+            Matter.Events.on(this.starter.getEngine(), "beforeUpdate", function (event) {
+                if (root.player.position.y > deadZoneByY) {
+                    root.playerDie(root.player);
+                }
+                Matter.Body.setAngle(root.player, -Math.PI * 0);
+                Matter.Bounds.shift(root.starter.getRender().bounds, {
+                    x: root.player.position.x - 400,
+                    y: root.player.position.y - 300,
+                });
+            });
+            var limit = 0.3;
+            Matter.Events.on(this.starter.getEngine(), "collisionStart", function (event) {
+                root.collisionCheck(event, true);
+            });
+            Matter.Events.on(this.starter.getEngine(), "collisionActive", function (event) {
+                root.collisionCheck(event, true);
+            });
+            Matter.Events.on(this.starter.getEngine(), "collisionEnd", function (event) {
+                root.collisionCheck(event, false);
+            });
+            Matter.Events.on(this.starter.getEngine(), "afterTick", function (event) {
+                if (globalEvent.activeKey[38] && root.player.ground) {
+                    var s = (root.player.circleRadius * playerSpeed);
+                    root.player.ground = false;
+                    root.player.force = {
+                        x: 0,
+                        y: -(s),
+                    };
+                    Matter.Body.setVelocity(root.player, { x: 0, y: -s });
+                }
+                else if (globalEvent.activeKey[37] && root.player.angularVelocity > -limit) {
+                    root.player.render.visualComponent.setHorizontalFlip(false);
+                    root.player.force = {
+                        x: -playerSpeed,
+                        y: 0,
+                    };
+                    Matter.Body.applyForce(root.player, { x: root.player.position.x, y: root.player.position.y }, root.player.force);
+                }
+                else if (globalEvent.activeKey[39] && root.player.angularVelocity < limit) {
+                    root.player.render.visualComponent.setHorizontalFlip(true);
+                    root.player.force = {
+                        x: playerSpeed,
+                        y: 0,
+                    };
+                    Matter.Body.applyForce(root.player, { x: root.player.position.x, y: root.player.position.y }, root.player.force);
+                }
+            });
+            globalEvent.activateKeyDetection();
+        };
+        GamePlay.prototype.load = function () {
+            var _this = this;
+            var root = this;
+            var gameMap = new map_1.default();
+            this.starter.setWorldBounds(-300, -300, 10000, 2700);
+            this.playerSpawn();
+            gameMap.getStaticBackgrounds().forEach(function (item) {
+                var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
+                    isStatic: true,
+                    label: "background",
+                    render: {
+                        visualComponent: new texture_1.default("wall", item.tex),
+                        sprite: {
+                            olala: true,
+                        },
+                    },
+                });
+                newStaticElement.collisionFilter.group = -1;
+                _this.grounds.push(newStaticElement);
+                _this.grounds[_this.grounds.length - 1].render.visualComponent.setVerticalTiles(item.tiles.tilesY).
+                    setHorizontalTiles(item.tiles.tilesX);
+            });
+            gameMap.getStaticGrounds().forEach(function (item) {
+                var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
+                    isStatic: true,
+                    label: "ground",
+                    collisionFilter: {
+                        group: _this.staticCategory,
+                    },
+                    render: {
+                        visualComponent: new texture_1.default("imgGround", item.tex),
+                        sprite: {
+                            olala: true,
+                        },
+                    },
+                });
+                _this.grounds.push(newStaticElement);
+                _this.grounds[_this.grounds.length - 1].render.visualComponent.setVerticalTiles(item.tiles.tilesX).
+                    setHorizontalTiles(item.tiles.tilesY);
+            });
+            gameMap.getCollectItems().forEach(function (item) {
+                var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
+                    isStatic: true,
+                    label: item.colectionLabel,
+                    collisionFilter: {
+                        group: _this.staticCategory,
+                        mask: _this.playerCategory,
+                    },
+                    render: {
+                        visualComponent: new texture_1.default("imgCollectItem1", item.tex),
+                        sprite: {
+                            olala: true,
+                            xScale: 1,
+                            yScale: 1,
+                        },
+                    },
+                });
+                newStaticElement.render.visualComponent.setVerticalTiles(item.tiles.tilesY).
+                    setHorizontalTiles(item.tiles.tilesX);
+                _this.grounds.push(newStaticElement);
+            });
+            gameMap.getEnemys().forEach(function (item) {
+                var enemySprite;
+                if (item.colectionLabel === "enemy_crapmunch") {
+                    enemySprite = new sprite_animation_1.default("enemy", item.tex, { byX: 10, byY: 1 });
+                }
+                else if (item.colectionLabel === "enemy_chopper") {
+                    enemySprite = new sprite_animation_1.default("enemy", item.tex, { byX: 5, byY: 1 });
+                }
+                var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
+                    isStatic: false,
+                    label: item.colectionLabel,
+                    density: 0.0005,
+                    friction: 0.01,
+                    frictionAir: 0.06,
+                    restitution: 0.3,
+                    collisionFilter: {
+                        group: _this.staticCategory,
+                        mask: _this.playerCategory,
+                    },
+                    render: {
+                        visualComponent: enemySprite,
+                        sprite: {
+                            olala: true,
+                            xScale: 1,
+                            yScale: 1,
+                        },
+                    },
+                });
+                newStaticElement.render.visualComponent.keepAspectRatio = true;
+                newStaticElement.render.visualComponent.setHorizontalFlip(true);
+                _this.enemys.push(newStaticElement);
+            });
+            gameMap.getDeadLines().forEach(function (item) {
+                var enemySprite;
+                enemySprite = new sprite_animation_1.default("deadline", item.tex, { byX: item.tiles.tilesX, byY: item.tiles.tilesY });
+                var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
+                    isStatic: true,
+                    label: item.colectionLabel,
+                    density: 0.0005,
+                    friction: 0.01,
+                    frictionAir: 0.06,
+                    restitution: 0.3,
+                    collisionFilter: {
+                        group: -1,
+                        mask: _this.playerCategory,
+                    },
+                    render: {
+                        visualComponent: enemySprite,
+                        sprite: {
+                            olala: true,
+                            xScale: 1,
+                            yScale: 1,
+                        },
+                    },
+                });
+                newStaticElement.render.visualComponent.keepAspectRatio = true;
+                newStaticElement.render.visualComponent.setHorizontalFlip(true);
+                _this.deadLines.push(newStaticElement);
+            });
+            this.starter.AddNewBodies(this.grounds);
+            this.starter.AddNewBodies(this.enemys);
+            this.starter.AddNewBodies(this.deadLines);
+            this.starter.AddNewBodies(this.player);
+            this.createHud();
+            this.attachMatterEvents();
+        };
+        return GamePlay;
+    }(Platformer_1.default));
+    exports.default = GamePlay;
 }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 
 /***/ }),
 
-/***/ "./src/examples/platformer/scripts/level1/level1.ts":
-/*!**********************************************************!*\
-  !*** ./src/examples/platformer/scripts/level1/level1.ts ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../../libs/class/visual-methods/texture */ "./src/libs/class/visual-methods/texture.ts"), __webpack_require__(/*! ../common */ "./src/examples/platformer/scripts/common.ts"), __webpack_require__(/*! ./map */ "./src/examples/platformer/scripts/level1/map.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, sprite_animation_1, texture_1, common_1, map_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    function level1(r) {
-        var globalEvent = r.starter.ioc.get.GlobalEvent;
-        var gameMap = new map_1.default(r.starter);
-        r.starter.setWorldBounds(-r.starter.getView().getWidth(100), -r.starter.getView().getWidth(100), r.starter.getView().getHeight(100) * 3, r.starter.getView().getHeight(100) * 3);
-        var imgRes = [
-            __webpack_require__(/*! ../../imgs/floor.png */ "./src/examples/platformer/imgs/floor.png"),
-            __webpack_require__(/*! ../../imgs/target.png */ "./src/examples/platformer/imgs/target.png"),
-        ];
-        var imgResMyPlayerSprite = [
-            __webpack_require__(/*! ../../imgs/walk-boy2.png */ "./src/examples/platformer/imgs/walk-boy2.png"),
-        ];
-        var playerRadius = 5;
-        r.player = Matter.Bodies.circle(r.v.getWidth(50), r.v.getHeight(30), r.v.getWidth(playerRadius), {
-            label: "player",
-            density: 0.0005,
-            friction: 0.01,
-            frictionAir: 0.06,
-            restitution: 0.3,
-            ground: true,
-            jumpCD: 0,
-            portal: -1,
-            collisionFilter: {
-                category: 1,
-                group: 1,
-                mask: 1,
-            },
-            render: {
-                visualComponent: new sprite_animation_1.default("playerImage", imgResMyPlayerSprite, { byX: 5, byY: 2 }),
-                fillStyle: "blue",
-                sprite: {
-                    xScale: 1,
-                    yScale: 1,
-                },
-            },
-        });
-        r.player.collisionFilter.group = -1;
-        r.player.render.visualComponent.keepAspectRatio = true;
-        r.player.render.visualComponent.setHorizontalFlip(true);
-        gameMap.getStaticBackgrounds().forEach(function (item) {
-            var newStaticElement = Matter.Bodies.rectangle(r.v.getWidth(item.x), r.v.getHeight(item.y), r.v.getWidth(item.w), r.v.getHeight(item.h), {
-                isStatic: true,
-                label: "background",
-                collisionFilter: {
-                    category: item.collisionFilter.category,
-                    group: item.collisionFilter.group,
-                    mask: item.collisionFilter.mask,
-                },
-                render: {
-                    visualComponent: new texture_1.default("wall", item.tex),
-                    sprite: {
-                        olala: true,
-                    },
-                },
-            });
-            newStaticElement.collisionFilter.group = -1;
-            r.grounds.push(newStaticElement);
-            r.grounds[r.grounds.length - 1].render.visualComponent.setVerticalTiles(item.tiles).
-                setHorizontalTiles(item.tiles);
-        });
-        gameMap.getStaticGrounds().forEach(function (item) {
-            var newStaticElement = Matter.Bodies.rectangle(r.v.getWidth(item.x), r.v.getHeight(item.y), r.v.getWidth(item.w), r.v.getHeight(item.h), {
-                isStatic: true,
-                label: "ground",
-                collisionFilter: {
-                    category: 1,
-                    group: 1,
-                    mask: 1,
-                },
-                render: {
-                    visualComponent: new texture_1.default("imgGround", item.tex),
-                    sprite: {
-                        olala: true,
-                    },
-                },
-            });
-            r.grounds.push(newStaticElement);
-            r.grounds[r.grounds.length - 1].render.visualComponent.setVerticalTiles(item.tiles).
-                setHorizontalTiles(item.tiles);
-        });
-        gameMap.getCollectitems().forEach(function (item) {
-            var newStaticElement = Matter.Bodies.rectangle(r.v.getWidth(item.x), r.v.getHeight(item.y), r.v.getWidth(item.w), r.v.getHeight(item.h), {
-                isStatic: true,
-                label: item.colectionLabel,
-                collisionFilter: {
-                    category: 1,
-                    group: 0,
-                    mask: 1,
-                },
-                render: {
-                    visualComponent: new texture_1.default("imgCollectItem", item.tex),
-                    sprite: {
-                        olala: true,
-                    },
-                },
-            });
-            r.grounds.push(newStaticElement);
-            r.grounds[r.grounds.length - 1].render.visualComponent.setVerticalTiles(item.tiles).
-                setHorizontalTiles(item.tiles);
-        });
-        r.starter.AddNewBodies(r.grounds);
-        r.starter.AddNewBodies(r.player);
-        Matter.Events.on(r.starter.getEngine(), "beforeUpdate", function (event) {
-            Matter.Body.setAngle(r.player, -Math.PI * 0);
-            Matter.Bounds.shift(r.starter.getRender().bounds, {
-                x: r.player.position.x - window.innerWidth / 5,
-                y: r.player.position.y - window.innerHeight / 2,
-            });
-        });
-        var limit = 0.3;
-        Matter.Events.on(r.starter.getEngine(), "collisionStart", function (event) {
-            common_1.collisionCheck(event, true, r);
-        });
-        Matter.Events.on(r.starter.getEngine(), "collisionActive", function (event) {
-            common_1.collisionCheck(event, true, r);
-        });
-        Matter.Events.on(r.starter.getEngine(), "collisionEnd", function (event) {
-            common_1.collisionCheck(event, false, r);
-        });
-        Matter.Events.on(r.starter.getEngine(), "afterTick", function (event) {
-            if (globalEvent.activeKey[38] && r.player.ground) {
-                var s = (r.player.circleRadius / 500);
-                r.player.ground = false;
-                r.player.force = {
-                    x: 0,
-                    y: -(s),
-                };
-                Matter.Body.setVelocity(r.player, { x: 0, y: -s });
-                console.log("test", s);
-            }
-            else if (globalEvent.activeKey[37] && r.player.angularVelocity > -limit) {
-                r.player.render.visualComponent.setHorizontalFlip(false);
-                r.player.force = {
-                    x: -r.starter.getView().getHeight(0.0005),
-                    y: 0,
-                };
-                Matter.Body.applyForce(r.player, { x: r.player.position.x, y: r.player.position.y }, r.player.force);
-            }
-            else if (globalEvent.activeKey[39] && r.player.angularVelocity < limit) {
-                r.player.render.visualComponent.setHorizontalFlip(true);
-                r.player.force = {
-                    x: r.starter.getView().getHeight(0.0005),
-                    y: 0,
-                };
-                Matter.Body.applyForce(r.player, { x: r.player.position.x, y: r.player.position.y }, r.player.force);
-            }
-        });
-        globalEvent.activateKeyDetection();
-        Matter.Events.on(r.starter.getEngine(), "beforeTick", function (event) {
-        });
-    }
-    exports.level1 = level1;
-}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ }),
-
-/***/ "./src/examples/platformer/scripts/level1/map.ts":
-/*!*******************************************************!*\
-  !*** ./src/examples/platformer/scripts/level1/map.ts ***!
-  \*******************************************************/
+/***/ "./src/examples/platformer/scripts/map.ts":
+/*!************************************************!*\
+  !*** ./src/examples/platformer/scripts/map.ts ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26908,25 +27175,35 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var GameMap = (function () {
-        function GameMap(r) {
-            this.starter = r;
+        function GameMap() {
         }
         GameMap.prototype.getStaticGrounds = function () {
-            var imgRes = [__webpack_require__(/*! ../../imgs/floor.png */ "./src/examples/platformer/imgs/floor.png")];
+            var LocalWidth = 650;
+            var imgRes = [__webpack_require__(/*! ../imgs/floor2.png */ "./src/examples/platformer/imgs/floor2.png")];
+            var tileXLocal = 10;
             return [
-                { x: 20, y: 10, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 20, y: 40, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 20, y: 60, w: 150, h: 6, tex: imgRes, tiles: 1 },
-                { x: 40, y: 80, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 100, y: 80, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 160, y: 150, w: 150, h: 6, tex: imgRes, tiles: 1 },
-                { x: 170, y: 120, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 180, y: 60, w: 50, h: 6, tex: imgRes, tiles: 2 },
-                { x: 190, y: 20, w: 150, h: 6, tex: imgRes, tiles: 1 },
+                { x: 100, y: 0, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 100, y: 500, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 100, y: 1000, w: 150, h: 60, tex: imgRes, tiles: { tilesX: 2, tilesY: 1 } },
+                { x: 100, y: 1500, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 100, y: 2000, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 100, y: 2500, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 500, y: 0, w: 150, h: 60, tex: imgRes, tiles: { tilesX: 2, tilesY: 1 } },
+                { x: 500, y: 200, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 500, y: 400, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 500, y: 800, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 500, y: 1500, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 1800, y: 0, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 1800, y: 300, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 1800, y: 800, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 1800, y: 1200, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 1800, y: 1800, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 2800, y: 250, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
+                { x: 2800, y: 3100, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 } },
             ];
         };
         GameMap.prototype.getStaticBackgrounds = function () {
-            var backgroundWall = __webpack_require__(/*! ../../imgs/wall3.jpg */ "./src/examples/platformer/imgs/wall3.jpg");
+            var backgroundWall = __webpack_require__(/*! ../imgs/wall3.png */ "./src/examples/platformer/imgs/wall3.png");
             var shema = {
                 byX: 3,
                 byY: 3,
@@ -26935,25 +27212,128 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             for (var x = 0; x < shema.byX; x++) {
                 for (var y = 0; y < shema.byY; y++) {
                     b.push({
-                        x: this.starter.getView().getWidth(x * 10),
-                        y: this.starter.getView().getWidth(y * 10),
-                        w: this.starter.getView().getWidth(10),
-                        h: this.starter.getView().getWidth(10),
-                        tex: backgroundWall, tiles: 1,
-                        collisionFilter: { category: 1, group: 1, mask: 1 },
+                        x: x * 1000,
+                        y: y * 1000,
+                        w: 1000,
+                        h: 1000,
+                        tex: backgroundWall, tiles: { tilesX: 4, tilesY: 2 },
                     });
                 }
             }
             return b;
         };
-        GameMap.prototype.getCollectitems = function () {
-            var imgRes = [__webpack_require__(/*! ../../imgs/collect-items/bitcoin.png */ "./src/examples/platformer/imgs/collect-items/bitcoin.png")];
+        GameMap.prototype.getCollectItems = function () {
+            var LocalWidth = 60;
+            var tileXLocal = 1;
+            var deltaYLocal = -200;
+            var imgRes = [__webpack_require__(/*! ../imgs/collect-items/bitcoin.png */ "./src/examples/platformer/imgs/collect-items/bitcoin.png")];
             return [
-                { x: 20, y: 10, w: 5, h: 6, tex: imgRes, tiles: 2, colectionLabel: "bitcoin", points: 2 },
-                { x: 50, y: 16, w: 5, h: 6, tex: imgRes, tiles: 1, colectionLabel: "bitcoin", points: 1 },
-                { x: 10, y: 40, w: 5, h: 5, tex: imgRes, tiles: 1, colectionLabel: "bitcoin", points: 1 },
-                { x: 20, y: 40, w: 5, h: 5, tex: imgRes, tiles: 1, colectionLabel: "bitcoin", points: 1 },
-                { x: 30, y: 40, w: 5, h: 5, tex: imgRes, tiles: 1, colectionLabel: "bitcoin", points: 1 },
+                { x: 0, y: 0, w: 50, h: 60, tex: imgRes, tiles: { tilesX: 2, tilesY: 2 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 0 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 500 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 1000 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 1500 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 2000 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 100, y: 2500 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 500, y: 0 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 500, y: 200 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 500, y: 400 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 500, y: 800 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 500, y: 1500 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 1800, y: 0 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 1800, y: 300 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 1800, y: 800 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 1800, y: 1200 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 1800, y: 1800 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 2800, y: 250 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+                { x: 2800, y: 3100 + deltaYLocal, w: LocalWidth, h: 60, tex: imgRes, tiles: { tilesX: tileXLocal, tilesY: 1 }, colectionLabel: "bitcoin", points: 2 },
+            ];
+        };
+        GameMap.prototype.getEnemys = function () {
+            var imgCrap = [__webpack_require__(/*! ../imgs/crapmunch/crapmunch.png */ "./src/examples/platformer/imgs/crapmunch/crapmunch.png")];
+            var imgCooper = [__webpack_require__(/*! ../imgs/chopper/chopper.png */ "./src/examples/platformer/imgs/chopper/chopper.png")];
+            var deltaYLocal = 100;
+            var enemyWidth = 100;
+            var enemyHeight = 100;
+            return [
+                {
+                    x: 0, y: -300 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 0, y: 500 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 0, y: 1000 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 0, y: 1500 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 0, y: 2000 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 100, y: 2500 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 500, y: 0 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 500, y: 200 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 500, y: 400 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 500, y: 800 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 500, y: 1500 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 1800, y: 0 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 1800, y: 300 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 1800, y: 800 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 1800, y: 1200 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 1800, y: 1800 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 2800, y: 250 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+                {
+                    x: 2800, y: 3100 + deltaYLocal, w: enemyWidth, h: enemyHeight,
+                    tex: imgCrap, tiles: { tilesX: 1, tilesY: 1 }, colectionLabel: "enemy_crapmunch"
+                },
+            ];
+        };
+        GameMap.prototype.getDeadLines = function () {
+            var img = [__webpack_require__(/*! ../imgs/flame2.png */ "./src/examples/platformer/imgs/flame2.png")];
+            return [
+                { x: 500, y: 2500, w: 9000, h: 50, tex: img, tiles: { tilesX: 3, tilesY: 3 }, colectionLabel: "deadline" },
             ];
         };
         return GameMap;
@@ -27005,6 +27385,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery v3.4.
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "imgs/android-icon.png";
+
+/***/ }),
+
+/***/ "./src/icon/apple-icon.png":
+/*!*********************************!*\
+  !*** ./src/icon/apple-icon.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/apple-icon.png";
 
 /***/ }),
 
@@ -27093,6 +27484,75 @@ module.exports = __webpack_require__.p + "imgs/warning.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "imgs/webcam.png";
+
+/***/ }),
+
+/***/ "./src/libs/class/bot-behavior.ts":
+/*!****************************************!*\
+  !*** ./src/libs/class/bot-behavior.ts ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var BotBehavior = (function () {
+        function BotBehavior(enemy, options) {
+            this.patrolType = "left-right";
+            this.patrolPeriod = 3000;
+            this.patrolLoop = true;
+            this.intesity = 20;
+            this.patrolDirection = 1;
+            this.imageFlip = false;
+            this.enemy = enemy;
+            if (options) {
+                this.patrolType = options.patrolType;
+                if (this.patrolType === "left-right") {
+                    this.patrol = this.patrolLeftRight;
+                }
+                else if (this.patrolType === "up-down") {
+                    this.patrol = this.patrolUpDown;
+                }
+                this.patrolPeriod = options.patrolPeriod;
+                this.patrolLoop = options.patrolLoop;
+                console.log("Bot options loaded.");
+            }
+            else {
+                console.log("Bot default options loaded.");
+                this.patrol = this.patrolLeftRight;
+            }
+        }
+        BotBehavior.prototype.patrolUpDown = function () {
+            var root = this;
+            setTimeout(function () {
+                root.imageFlip = !root.imageFlip;
+                root.enemy.render.visualComponent.setHorizontalFlip(root.imageFlip);
+                Matter.Body.setVelocity(root.enemy, { x: 0, y: root.intesity * root.patrolDirection });
+                root.checkPatrol();
+            }, this.patrolPeriod);
+        };
+        BotBehavior.prototype.patrolLeftRight = function () {
+            var root = this;
+            setTimeout(function () {
+                root.imageFlip = !root.imageFlip;
+                root.enemy.render.visualComponent.setHorizontalFlip(root.imageFlip);
+                Matter.Body.setVelocity(root.enemy, { x: root.intesity * root.patrolDirection, y: -1 });
+                root.checkPatrol();
+            }, this.patrolPeriod);
+        };
+        BotBehavior.prototype.checkPatrol = function () {
+            if (this.patrolLoop) {
+                this.patrolDirection *= -1;
+                this.patrol();
+            }
+        };
+        return BotBehavior;
+    }());
+    exports.default = BotBehavior;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
 
 /***/ }),
 
@@ -27231,15 +27691,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         }
         LocalStorageMemory.prototype.save = function (name, obj) {
             try {
-                localStorage.setItem(name, JSON.stringify(obj));
+                return localStorage.setItem(name, JSON.stringify(obj));
             }
             catch (e) {
                 console.log("Something wrong in LocalStorageMemory class , method save!");
+                return false;
             }
         };
         LocalStorageMemory.prototype.load = function (name) {
             if (localStorage.getItem(name) === "undefined" || localStorage.getItem(name) == null || localStorage.getItem(name) === "") {
-                console.warn("LocalStorageMemory method load return false!");
+                console.warn("LocalStorageMemory method load return's: ", localStorage.getItem(name));
                 return false;
             }
             else {
@@ -27283,6 +27744,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 this.regimeType = regimeType;
             }
         }
+        Counter.prototype.setNewSeqFrameRegimeType = function (newSeqType) {
+            this.regimeType = newSeqType;
+        };
+        Counter.prototype.setNewValue = function (newValue) {
+            this.value = newValue;
+        };
         Counter.prototype.setDelay = function (newDelay) {
             this.delay = newDelay;
             this.delayInitial = newDelay;
@@ -27306,16 +27773,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 }
                 else {
                     switch (this.regimeType) {
-                        case "STOP":
-                            {
-                                return this.value;
-                            }
-                        case "REPEAT":
-                            {
-                                this.value = this.start;
-                                this.onRepeat();
-                                return this.value;
-                            }
+                        case "STOP": {
+                            return this.value;
+                        }
+                        case "REPEAT": {
+                            this.value = this.start;
+                            this.onRepeat();
+                            return this.value;
+                        }
                         default:
                             console.warn("NO CASE");
                     }
@@ -27399,8 +27864,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             this.rtcBroadcaster = new RTCMultiConnection3();
             this.rtcBroadcaster.autoCloseEntireSession = true;
             this.rtcBroadcaster.publicRoomIdentifier = window.params.publicRoomIdentifier;
-            console.log(" TEST connection.publicRoomIdentifier: ", this.rtcBroadcaster.publicRoomIdentifier);
-            this.rtcBroadcaster.socketURL = "http://localhost:9001/";
+            this.rtcBroadcaster.socketURL =
+                broadcaster.engineConfig.getProtocolFromAddressBar() +
+                    broadcaster.engineConfig.getDomain() + ":" +
+                    broadcaster.engineConfig.getBroadcasterPort() + "/";
             this.rtcBroadcaster.socketMessageEvent = "video-conference-demo";
             this.rtcBroadcaster.session = {
                 audio: true,
@@ -27515,9 +27982,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                                 alert("Invalid password.");
                                 return;
                             }
-                            root.rtcBroadcaster.join(root.params.sessionid, function (isRoomJoined, roomid, error) {
-                                if (error) {
-                                    alert(error);
+                            root.rtcBroadcaster.join(root.params.sessionid, function (__, _, err) {
+                                if (err) {
+                                    alert(err);
                                 }
                             });
                             return;
@@ -27561,11 +28028,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         function Broadcaster(config) {
             var _this = this;
             this.popupUI = null;
+            this.showBroadcastOnInit = false;
             this.initWebRtc = function () {
                 var root = _this;
                 _this.publicRoomIdentifier = "video-conference-dashboard";
                 _this.rtcMultiConnection = new RTCMultiConnection3();
-                _this.rtcMultiConnection.socketURL = "http://localhost:9001/";
+                _this.rtcMultiConnection.socketURL =
+                    location.protocol + "//" +
+                        root.engineConfig.getDomain() + ":" +
+                        root.engineConfig.getBroadcasterPort() + "/";
                 _this.rtcMultiConnection.publicRoomIdentifier = _this.publicRoomIdentifier;
                 _this.rtcMultiConnection.socketMessageEvent = _this.publicRoomIdentifier;
                 _this.rtcMultiConnection.autoCloseEntireSession = true;
@@ -27644,15 +28115,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             };
             this.openInNewWindow = function () {
                 var root = _this;
+                var hrefLocal;
                 $("#startRoomModel").modal("hide");
                 var params = "?open=" +
                     root.rtcMultiConnection.isInitiator + "&sessionid=" + root.rtcMultiConnection.sessionid +
                     "&publicRoomIdentifier=" + root.rtcMultiConnection.publicRoomIdentifier +
                     "&userFullName=" + root.rtcMultiConnection.extra.userFullName;
                 if (!!root.rtcMultiConnection.password) {
-                    href += "&password=" + root.rtcMultiConnection.password;
+                    hrefLocal += "&password=" + root.rtcMultiConnection.password;
                 }
-                var TEST = new broadcaster_media_1.default(root, params);
+                var broadcasterMedia = new broadcaster_media_1.default(root, params);
             };
             this.showBroadcaster = function () {
                 var myInstance = _this;
@@ -27672,8 +28144,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             window.io = io;
             var root = this;
             this.engineConfig = config;
-            this.showBroadcaster();
+            if (this.showBroadcastOnInit) {
+                this.showBroadcaster();
+            }
         }
+        Broadcaster.prototype.closeAllPeers = function () {
+            this.rtcMultiConnection.close();
+        };
         Broadcaster.prototype.alertBox = function (message, title, specialMessage, callback) {
             callback = callback || function () { };
             $(".btn-alert-close").unbind("click").bind("click", function (e) {
@@ -27875,6 +28352,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     if (data && data.data && data.data.test) {
                         system_1.byId("error-msg-login").innerHTML = data.data.text;
                     }
+                }).catch(function (err) {
+                    console.warn("Error in showLoginForm : ", err);
                 });
             };
             this.registerUser = function (e) {
@@ -27887,7 +28366,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 }
                 if (system_1.validatePassword(localPassword) === false) {
                     system_1.byId("error-msg-reg").style.display = "block";
-                    system_1.byId("error-msg-reg").innerText += "Password is not valid! length!";
+                    system_1.byId("error-msg-reg").innerText = "Password is not valid! length!";
                 }
                 if (system_1.validateEmail(localEmail) === null && system_1.validatePassword(localPassword) === true) {
                     var userData = {
@@ -27921,9 +28400,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     localMsg = null;
                 }
             };
+            this.fastLogin = function () {
+                var userData = {
+                    email: _this.memo.load("localUserData"),
+                    token: _this.memo.load("token"),
+                };
+                var localMsg = { action: "FLOGIN", data: { userLoginData: userData } };
+                _this.sendObject(localMsg);
+                localMsg = null;
+            };
             this.onOpen = function () {
-                console.warn("Session controller connected.");
+                console.info("Session controller connected.");
                 _this.webSocketController.send(JSON.stringify({ data: "i am here" }));
+                _this.fastLogin();
             };
             this.sendObject = function (message) {
                 try {
@@ -27944,39 +28433,34 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             this.onMessage = function (evt) {
                 try {
                     var dataReceive = JSON.parse(evt.data);
+                    console.log("Connector : dataReceive raw : ", evt.data);
                     switch (dataReceive.action) {
-                        case "CHECK_EMAIL":
-                            {
-                                _this.onMsgCheckEmail(dataReceive);
-                                break;
-                            }
-                        case "VERIFY_SUCCESS":
-                            {
-                                _this.showLoginForm(dataReceive);
-                                break;
-                            }
-                        case "ONLINE":
-                            {
-                                _this.memo.save("online", true);
-                                _this.memo.save("accessToken", dataReceive.data.accessToken);
-                                _this.showUserAccountProfilePage(dataReceive);
-                                break;
-                            }
-                        case "GET_USER_DATA":
-                            {
-                                _this.showUserAccountProfilePage(dataReceive);
-                                break;
-                            }
-                        case "NICKNAME_UPDATED":
-                            {
-                                _this.showNewNickname(dataReceive);
-                                break;
-                            }
-                        case "ERROR_EMAIL":
-                            {
-                                system_1.byId("notify").innerHTML = dataReceive.data.errMsg;
-                                break;
-                            }
+                        case "CHECK_EMAIL": {
+                            _this.onMsgCheckEmail(dataReceive);
+                            break;
+                        }
+                        case "VERIFY_SUCCESS": {
+                            _this.showLoginForm(dataReceive);
+                            break;
+                        }
+                        case "ONLINE": {
+                            _this.memo.save("online", true);
+                            _this.memo.save("accessToken", dataReceive.data.accessToken);
+                            _this.showUserAccountProfilePage(dataReceive);
+                            break;
+                        }
+                        case "GET_USER_DATA": {
+                            _this.showUserAccountProfilePage(dataReceive);
+                            break;
+                        }
+                        case "NICKNAME_UPDATED": {
+                            _this.showNewNickname(dataReceive);
+                            break;
+                        }
+                        case "ERROR_EMAIL": {
+                            system_1.byId("notify").innerHTML = dataReceive.data.errMsg;
+                            break;
+                        }
                         default:
                             console.log("Connector : dataReceive action : ", dataReceive.action);
                     }
@@ -28034,6 +28518,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     myInstance.memo.save("localUserData", dataReceive.data.user.email);
                     var localToken = system_1.encodeString(dataReceive.data.user.email);
                     myInstance.memo.save("localUserDataE", localToken);
+                    myInstance.memo.save("token", dataReceive.data.user.token);
                 });
                 _this.memo.save("online", true);
             };
@@ -28115,6 +28600,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                         data: {
                             newNickname: system_1.byId("nick-name").value,
                             accessToken: _this.memo.load("accessToken"),
+                            email: _this.memo.load("localUserData"),
                         },
                     };
                     _this.sendObject(localMsg);
@@ -28143,8 +28629,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             console.log("Forgot password !");
         };
         ConnectorClient.prototype.onClose = function (evt) {
-            alert("Server session is disconnected.Please refresh this page. Automate refresh after 10 secounds.");
-            console.error("Session controller disconnected", evt);
+            console.warn("Server session is disconnected.Please refresh this page. Automate refresh after 10 secounds.");
+            console.warn("Session controller disconnected", evt);
             setTimeout(function () {
                 location.reload();
             }, 10000);
@@ -28175,13 +28661,18 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         function Network(config) {
             this.numbersOfUsers = 0;
             this.engineConfig = config;
-            if (this.engineConfig.isAppUseAccountsSystem()) {
+            if (this.engineConfig.didAppUseAccountsSystem()) {
                 this.connector = new connector_1.default(config);
+                this.connector.showRegisterForm();
                 this.popupUI = system_1.byId("popup");
                 this.popupUI.style.display = "block";
             }
             this.loggerUI = system_1.byId("network-panel");
+            this.loggerMediaUI = system_1.byId("media-rtc2-controls");
+            this.loggerMediaUI.style.display = "block";
+            this.loggerUI.style.display = "block";
             this.webCamView = system_1.byId("webCamView");
+            this.webCamView.style.display = "block";
             this.senderUI = system_1.byId("sender");
             this.nameUI = this.loggerUI.querySelector("#your-name");
             this.roomUI = this.loggerUI.querySelector("#room-name");
@@ -35536,15 +36027,14 @@ var RTCMultiConnection3 = function(roomid, forceOptions) {
         }
 
         if (connection.socketURL.substr(connection.socketURL.length - 1, 1) != '/') {
-            // connection.socketURL = 'https://domain.com:9001/';
-            throw '"socketURL" MUST end with a slash.';
+            throw '"socketURL" must end with a slash!';
         }
 
         if (connection.enableLogs) {
             if (connection.socketURL == '/') {
-                console.info('socket.io url is: ', location.origin + '/');
+                console.info('socket.io url: ', location.origin + '/');
             } else {
-                console.info('socket.io url is: ', connection.socketURL);
+                console.info('socket.io url: ', connection.socketURL);
             }
         }
 
@@ -41531,6 +42021,7 @@ if (true) {
 
 
 window.getHTMLMediaElement = function(mediaElement, config) {
+
     config = config || {};
 
     if (!mediaElement.nodeName || (mediaElement.nodeName.toLowerCase() != 'audio' && mediaElement.nodeName.toLowerCase() != 'video')) {
@@ -41572,6 +42063,8 @@ window.getHTMLMediaElement = function(mediaElement, config) {
 
     var mediaElementContainer = document.createElement('div');
     mediaElementContainer.className = 'media-container';
+    mediaElementContainer.id = "mediaHolder" + config.title;
+    mediaElementContainer.setAttribute('style', 'position:absolute;');
 
     var mediaControls = document.createElement('div');
     mediaControls.className = 'media-controls';
@@ -41770,7 +42263,9 @@ window.getHTMLMediaElement = function(mediaElement, config) {
     }
 
     var mediaBox = document.createElement('div');
-    mediaBox.className = 'media-box';
+    mediaBox.className = 'dragging';
+    mediaBox.onmousedown = function() { dragging.startMoving(this, mediaElementContainer.id, event) };
+    mediaBox.onmouseup = function() { dragging.stopMoving(mediaElementContainer.id) };
     mediaElementContainer.appendChild(mediaBox);
 
     if (config.title) {
@@ -42314,8 +42809,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             var s = document.createElement("script");
             s.onload = function () {
                 exports.scriptManager.scriptManager_ID++;
-                console.log("Script id loaded : "
-                    + exports.scriptManager.scriptManager_ID + " >>> " + this.src);
+                console.log("Async script id loaded: " + this.src);
                 if (typeof this.src !== "undefined") {
                     var filename = this.src.substring(this.src.lastIndexOf("/") + 1, this.src.lastIndexOf("."));
                     filename = filename.replace(".", "_");
@@ -42438,6 +42932,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         function ViewPort(config) {
             this.aspectRatio = 1.333;
             this.config = config;
+            this.aspectRatio = this.config.getAspectRatio();
             if (this.config.getDrawRefference() === "diametric-fullscreen") {
                 this.reperH = function () {
                     return window.innerHeight;
@@ -42510,9 +43005,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -42536,7 +43034,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
             var localSumY = shema.byY - 1;
             _this.seqFrameX = new math_1.Counter(0, localSumX, 1);
             _this.seqFrameY = new math_1.Counter(0, localSumY, 1);
-            _this.seqFrameX.setDelay(20);
+            _this.seqFrameX.setDelay(10);
             _this.seqFrameY.onRepeat = _this.nextColumn;
             _this.seqFrameX.onRepeat = _this.nextRow;
             return _this;
@@ -42589,6 +43087,57 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
         return SpriteTextureComponent;
     }(texture_1.default));
     exports.default = SpriteTextureComponent;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+
+/***/ "./src/libs/class/visual-methods/text.ts":
+/*!***********************************************!*\
+  !*** ./src/libs/class/visual-methods/text.ts ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ../math */ "./src/libs/class/math.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, math_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var TextComponent = (function () {
+        function TextComponent(textArg) {
+            this.bufferText = [];
+            this.text = "Player";
+            if (textArg === undefined) {
+                throw console.error("You miss arg : name in TextComponent instancing...");
+            }
+            if (typeof textArg !== "string") {
+                if (textArg.length > 1) {
+                    this.bufferText = textArg;
+                }
+                else {
+                    this.text = textArg[0];
+                }
+            }
+            else {
+                this.text = textArg;
+            }
+        }
+        TextComponent.prototype.drawComponent = function (c, part) {
+            var dist1 = math_1.getDistance(part.vertices[0], part.vertices[1]);
+            var dist2 = math_1.getDistance(part.vertices[0], part.vertices[3]);
+            var originX = dist1 * -part.render.sprite.xOffset * part.render.sprite.xScale;
+            var originY = dist2 * -part.render.sprite.yOffset * part.render.sprite.yScale;
+            var originW = dist1;
+            var originH = dist2;
+            originX += originH / 2;
+            originY += originH / 2;
+            c.font = "50px sans-serif";
+            c.fillStyle = "rgba(255,255,255,1)";
+            c.fillText(this.text, originX, originY, originW);
+        };
+        return TextComponent;
+    }());
+    exports.default = TextComponent;
 }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
@@ -42800,19 +43349,32 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         function ClientConfig(gameList) {
             this.addson = [
                 {
+                    name: "cache",
+                    enabled: true,
+                    scriptPath: "externals/cacheInit.ts",
+                },
+                {
                     name: "hackerTimer",
                     enabled: true,
                     scriptPath: "externals/hack-timer.js",
                 },
+                {
+                    name: "dragging",
+                    enabled: true,
+                    scriptPath: "externals/drag.ts",
+                },
             ];
             this.drawReference = "frame";
             this.aspectRatio = 1.333;
-            this.domain = "127.0.0.1";
+            this.domain = "maximumroulette.com";
             this.networkDeepLogs = false;
-            this.rtcServerPort = 12034;
             this.masterServerKey = "multi-platformer-sever1.maximum";
+            this.rtcServerPort = 12034;
             this.connectorPort = 1234;
-            this.appUseAccountsSystem = false;
+            this.broadcasterPort = 9001;
+            this.appUseNetwork = true;
+            this.appUseAccountsSystem = true;
+            this.appUseBroadcaster = true;
             this.startUpHtmlForm = "register";
             this.defaultGamePlayLevelName = "level1";
             this.autoStartGamePlay = true;
@@ -42830,14 +43392,26 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         ClientConfig.prototype.getDefaultGamePlayLevelName = function () {
             return this.defaultGamePlayLevelName;
         };
-        ClientConfig.prototype.isAppUseAccountsSystem = function () {
+        ClientConfig.prototype.didAppUseNetwork = function () {
+            return this.appUseNetwork;
+        };
+        ClientConfig.prototype.didAppUseAccountsSystem = function () {
             return this.appUseAccountsSystem;
+        };
+        ClientConfig.prototype.didAppUseBroadcast = function () {
+            return this.appUseBroadcaster;
         };
         ClientConfig.prototype.getStartUpHtmlForm = function () {
             return this.startUpHtmlForm;
         };
         ClientConfig.prototype.getDomain = function () {
+            if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+                return window.location.hostname;
+            }
             return this.domain;
+        };
+        ClientConfig.prototype.getBroadcasterPort = function () {
+            return this.broadcasterPort;
         };
         ClientConfig.prototype.getConnectorPort = function () {
             return this.connectorPort;
@@ -42850,6 +43424,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         };
         ClientConfig.prototype.setAspectRatio = function (newAspectRatio) {
             this.aspectRatio = newAspectRatio;
+        };
+        ClientConfig.prototype.getProtocolFromAddressBar = function () {
+            return (location.protocol === "https:" ? "https://" : "http://");
         };
         ClientConfig.prototype.getRemoteServerAddress = function () {
             return (location.protocol === "https:" ? "wss" : "ws") + "://" + document.domain + ":" + this.rtcServerPort + "/";
@@ -42875,6 +43452,56 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./src/libs/events/global-event.ts":
+/*!*****************************************!*\
+  !*** ./src/libs/events/global-event.ts ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var GlobalEvent = (function () {
+        function GlobalEvent(browser) {
+            var _this = this;
+            this.get = {};
+            this.activeKey = {};
+            this.onKeyDownHandler = function (e) {
+                var root = _this;
+                root.activeKey[e.keyCode] = true;
+            };
+            this.onKeyUpHandler = function (e) {
+                var root = _this;
+                root.activeKey[e.keyCode] = false;
+            };
+            this.browser = browser;
+            console.log("Is mobile: ", this.browser.isMobile);
+        }
+        GlobalEvent.prototype.activateKeyDetection = function () {
+            document.body.addEventListener("keydown", this.onKeyDownHandler, true);
+            document.body.addEventListener("keyup", this.onKeyUpHandler, true);
+        };
+        GlobalEvent.prototype.deactivateKeyDetection = function () {
+            document.body.removeEventListener("keydown", this.onKeyDownHandler, true);
+            document.body.removeEventListener("keyup", this.onKeyUpHandler, true);
+        };
+        GlobalEvent.prototype.attachEvent = function (name, callback) {
+            var _this = this;
+            this.get[name] = callback;
+            window[name] = function (event) {
+                _this.get[name](event);
+            };
+        };
+        return GlobalEvent;
+    }());
+    exports.default = GlobalEvent;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+
 /***/ "./src/libs/ioc.ts":
 /*!*************************!*\
   !*** ./src/libs/ioc.ts ***!
@@ -42882,7 +43509,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./class/browser */ "./src/libs/class/browser.ts"), __webpack_require__(/*! ./class/networking/broadcaster */ "./src/libs/class/networking/broadcaster.ts"), __webpack_require__(/*! ./class/networking/network */ "./src/libs/class/networking/network.ts"), __webpack_require__(/*! ./class/view-port */ "./src/libs/class/view-port.ts"), __webpack_require__(/*! ./class/visual-render */ "./src/libs/class/visual-render.ts"), __webpack_require__(/*! ./client-config */ "./src/libs/client-config.ts"), __webpack_require__(/*! ./multiplatform/global-event */ "./src/libs/multiplatform/global-event.ts"), __webpack_require__(/*! ./starter */ "./src/libs/starter.ts"), __webpack_require__(/*! ./class/system */ "./src/libs/class/system.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, browser_1, broadcaster_1, network_1, view_port_1, visual_render_1, client_config_1, global_event_1, starter_1, system_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./class/browser */ "./src/libs/class/browser.ts"), __webpack_require__(/*! ./class/networking/broadcaster */ "./src/libs/class/networking/broadcaster.ts"), __webpack_require__(/*! ./class/networking/network */ "./src/libs/class/networking/network.ts"), __webpack_require__(/*! ./class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ./class/view-port */ "./src/libs/class/view-port.ts"), __webpack_require__(/*! ./class/visual-render */ "./src/libs/class/visual-render.ts"), __webpack_require__(/*! ./client-config */ "./src/libs/client-config.ts"), __webpack_require__(/*! ./events/global-event */ "./src/libs/events/global-event.ts"), __webpack_require__(/*! ./starter */ "./src/libs/starter.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, browser_1, broadcaster_1, network_1, system_1, view_port_1, visual_render_1, client_config_1, global_event_1, starter_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Ioc = (function () {
@@ -42894,8 +43521,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             this.singlton(view_port_1.default, this.config);
             this.singlton(global_event_1.default, this.get.Browser);
             this.singlton(visual_render_1.default, undefined);
-            this.singlton(network_1.default, this.config);
-            this.singlton(broadcaster_1.default, this.config);
+            if (this.config.didAppUseNetwork()) {
+                this.singlton(network_1.default, this.config);
+                if (this.config.didAppUseBroadcast()) {
+                    this.singlton(broadcaster_1.default, this.config);
+                }
+            }
             this.singlton(starter_1.default, this);
         }
         Ioc.prototype.singlton = function (Singlton, args) {
@@ -42929,55 +43560,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./src/libs/multiplatform/global-event.ts":
-/*!************************************************!*\
-  !*** ./src/libs/multiplatform/global-event.ts ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var GlobalEvent = (function () {
-        function GlobalEvent(browser) {
-            var _this = this;
-            this.get = {};
-            this.activeKey = {};
-            this.onKeyDownHandler = function (e) {
-                var root = _this;
-                root.activeKey[e.keyCode] = true;
-            };
-            this.onKeyUpHandler = function (e) {
-                var root = _this;
-                root.activeKey[e.keyCode] = false;
-            };
-            this.browser = browser;
-        }
-        GlobalEvent.prototype.activateKeyDetection = function () {
-            document.body.addEventListener("keydown", this.onKeyDownHandler, true);
-            document.body.addEventListener("keyup", this.onKeyUpHandler, true);
-        };
-        GlobalEvent.prototype.deactivateKeyDetection = function () {
-            document.body.removeEventListener("keydown", this.onKeyDownHandler, true);
-            document.body.removeEventListener("keyup", this.onKeyUpHandler, true);
-        };
-        GlobalEvent.prototype.attachEvent = function (name, callback) {
-            var _this = this;
-            this.get[name] = callback;
-            window[name] = function (event) {
-                _this.get[name](event);
-            };
-        };
-        return GlobalEvent;
-    }());
-    exports.default = GlobalEvent;
-}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-
-/***/ }),
-
 /***/ "./src/libs/starter.ts":
 /*!*****************************!*\
   !*** ./src/libs/starter.ts ***!
@@ -42992,6 +43574,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         function Starter(ioc) {
             this.get = {};
             this.mapView = {};
+            var root = this;
             this.ioc = ioc;
             var Engine = Matter.Engine, Render = Matter.Render, Runner = Matter.Runner, Events = Matter.Events, Bounds = Matter.Bounds, MouseConstraint = Matter.MouseConstraint, Mouse = Matter.Mouse, World = Matter.World, Bodies = Matter.Bodies;
             this.engine = Engine.create();
@@ -43001,10 +43584,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 element: document.body,
                 engine: this.engine,
                 options: {
+                    width: 800,
+                    height: 600,
                     wireframes: false,
                 },
             });
-            this.setWorldBounds(-this.view.getWidth(100), -this.view.getWidth(100), this.view.getWidth(100), 3 * this.view.getHeight(100));
+            this.setWorldBounds(-300, -300, 1100, 900);
             this.render.options.background = "black";
             Render.run(this.render);
             this.runner = Runner.create({
@@ -43012,7 +43597,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 isFixed: false,
             });
             Runner.run(this.runner, this.engine);
-            console.log("xxx");
             var mouse = Mouse.create(this.render.canvas);
             this.mouseConstraint = MouseConstraint.create(this.engine, {
                 mouse: mouse,
@@ -43031,8 +43615,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     y: 0,
                 },
                 max: {
-                    x: this.view.getWidth(100),
-                    y: this.view.getHeight(100),
+                    x: 800,
+                    y: 600,
                 },
             });
             if (this.view.config.getDrawRefference() === "diametric-fullscreen") {
