@@ -1,0 +1,21 @@
+{
+  "name": "3dchat",
+  "version": "1.0.0",
+  "description": "webRTC vs webGL , zlatnaspirala@gmail.com",
+  "main": "signaler.js",
+  "dependencies": {
+    "node-static": "^0.7.11",
+    "websocket": "^1.0.28"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webRTC",
+    "vs",
+    "webGL"
+  ],
+  "author": "Nikola Lukic zlatnaspirala@gmail.com",
+  "license": "ISC"
+}
