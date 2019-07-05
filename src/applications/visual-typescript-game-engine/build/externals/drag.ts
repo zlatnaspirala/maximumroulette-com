@@ -1,5 +1,5 @@
 
-let dragging = function () {
+var dragging = function () {
 
   return {
     move (divid, xpos, ypos) {

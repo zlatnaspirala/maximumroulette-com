@@ -93,6 +93,10 @@ a:hover {
   text-decoration: underline;
 }
 
+#main {
+   height: auto;
+}
+
 .main{
     position: absolute;
     width: 99.4%;
@@ -224,6 +228,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 .body-content {
   padding: 25px 15px 15px 15px;
+  height: 100%;
 }
 
 .login-button {
@@ -411,8 +416,9 @@ input:focus {
    margin-top:3px;
 }
 
-.body-content{
+.body-content {
   padding: 25px 0px 0px 12px;
+  height: 100%;
  }
 
 .googleMapIframe{
