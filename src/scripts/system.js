@@ -1,3 +1,6 @@
+if (location.protocol !== "https:") {
+  location.protocol = "https:";
+}
 
 // initial sub page
 loadPage('home.html');
@@ -218,4 +221,12 @@ function DETECTBROWSER() {
   this.NOMOBILE = NOMOBILE;
 }
 
-
+if ("serviceWorker" in navigator) {
+  // Recommended to register onLoad
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("worker.js");
+    console.info("log worker");
+  });
+} else {
+  console.warn("maximumroulette: No support for web workers in this browser.");
+}
