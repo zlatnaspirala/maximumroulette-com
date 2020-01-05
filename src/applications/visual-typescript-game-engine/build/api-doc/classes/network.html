@@ -28,7 +28,9 @@
 					<img src="../assets/images/sensenet-logo.png" alt="sn-theme" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala/visual-ts-game-engine" title="Github Repository">
+					<a class="site-header-nav-item active" href="../../../../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../../../../releases">Releases</a>
+					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
 				</nav>
@@ -92,7 +94,7 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="network.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#chatui" class="tsd-kind-icon">chatUI</a></li>
@@ -101,13 +103,14 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#engineconfig" class="tsd-kind-icon">engine<wbr>Config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#fireclickevent" class="tsd-kind-icon">fire<wbr>Click<wbr>Event</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#getuserinfo" class="tsd-kind-icon">get<wbr>Userinfo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="network.html#injector" class="tsd-kind-icon">injector</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#loggermediaui" class="tsd-kind-icon">logger<wbr>MediaUI</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#loggerui" class="tsd-kind-icon">loggerUI</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#nameui" class="tsd-kind-icon">nameUI</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#numbersofusers" class="tsd-kind-icon">numbers<wbr>OfUsers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#popupui" class="tsd-kind-icon">popupUI</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#roomui" class="tsd-kind-icon">roomUI</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#rtcmulticonnection" class="tsd-kind-icon">rtc<wbr>Multi<wbr>Connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="network.html#rtcmulticonnection" class="tsd-kind-icon">rtc<wbr>Multi<wbr>Connection</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#senderui" class="tsd-kind-icon">senderUI</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#webcamview" class="tsd-kind-icon">web<wbr>Cam<wbr>View</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="network.html#whoistyping" class="tsd-kind-icon">who<wbr>IsTyping</a></li>
@@ -116,10 +119,13 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#reconnectandjoingamechannel" class="tsd-kind-icon">Reconnect<wbr>And<wbr>Join<wbr>Game<wbr>Channel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#addnewmessage" class="tsd-kind-icon">add<wbr>New<wbr>Message</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#attachsharefiles" class="tsd-kind-icon">attach<wbr>Share<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#attachuievents" class="tsd-kind-icon">attachUIEvents</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#attachwebrtc" class="tsd-kind-icon">attach<wbr>Web<wbr>Rtc</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#attactloggerui" class="tsd-kind-icon">attact<wbr>LoggerUI</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="network.html#toggledisplaynetworkpanel" class="tsd-kind-icon">toggle<wbr>Display<wbr>Network<wbr>Panel</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,7 +143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L26">src/libs/class/networking/network.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L28">src/libs/class/networking/network.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,7 +157,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="chatui" class="tsd-anchor"></a>
@@ -159,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">chatUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L21">src/libs/class/networking/network.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L23">src/libs/class/networking/network.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">connectUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLButtonElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L20">src/libs/class/networking/network.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L22">src/libs/class/networking/network.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -179,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">connector<span class="tsd-signature-symbol">:</span> <a href="connectorclient.html" class="tsd-signature-type">ConnectorClient</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L26">src/libs/class/networking/network.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L28">src/libs/class/networking/network.ts:28</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -189,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">engine<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L10">src/libs/class/networking/network.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L12">src/libs/class/networking/network.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">fire<wbr>Click<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L24">src/libs/class/networking/network.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L26">src/libs/class/networking/network.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +215,17 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Userinfo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L23">src/libs/class/networking/network.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L25">src/libs/class/networking/network.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="injector" class="tsd-anchor"></a>
+					<h3>injector</h3>
+					<div class="tsd-signature tsd-kind-icon">injector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L9">src/libs/class/networking/network.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +235,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<wbr>MediaUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L13">src/libs/class/networking/network.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L15">src/libs/class/networking/network.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -229,7 +245,7 @@
 					<div class="tsd-signature tsd-kind-icon">loggerUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L12">src/libs/class/networking/network.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L14">src/libs/class/networking/network.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">nameUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLInputElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L17">src/libs/class/networking/network.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L19">src/libs/class/networking/network.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +265,7 @@
 					<div class="tsd-signature tsd-kind-icon">numbers<wbr>OfUsers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L15">src/libs/class/networking/network.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L17">src/libs/class/networking/network.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">popupUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L11">src/libs/class/networking/network.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L13">src/libs/class/networking/network.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,17 +285,17 @@
 					<div class="tsd-signature tsd-kind-icon">roomUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLInputElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L18">src/libs/class/networking/network.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L20">src/libs/class/networking/network.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="rtcmulticonnection" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rtc<wbr>Multi<wbr>Connection</h3>
+					<h3>rtc<wbr>Multi<wbr>Connection</h3>
 					<div class="tsd-signature tsd-kind-icon">rtc<wbr>Multi<wbr>Connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L9">src/libs/class/networking/network.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L11">src/libs/class/networking/network.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -289,7 +305,7 @@
 					<div class="tsd-signature tsd-kind-icon">senderUI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLTextAreaElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L19">src/libs/class/networking/network.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L21">src/libs/class/networking/network.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">web<wbr>Cam<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L14">src/libs/class/networking/network.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L16">src/libs/class/networking/network.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -309,13 +325,30 @@
 					<div class="tsd-signature tsd-kind-icon">who<wbr>IsTyping<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLDivElement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L22">src/libs/class/networking/network.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L24">src/libs/class/networking/network.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="reconnectandjoingamechannel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Reconnect<wbr>And<wbr>Join<wbr>Game<wbr>Channel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">Reconnect<wbr>And<wbr>Join<wbr>Game<wbr>Channel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L100">src/libs/class/networking/network.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="addnewmessage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>New<wbr>Message</h3>
@@ -326,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L615">src/libs/class/networking/network.ts:615</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L695">src/libs/class/networking/network.ts:695</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -349,7 +382,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L74">src/libs/class/networking/network.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L117">src/libs/class/networking/network.ts:117</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="attachuievents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> attachUIEvents</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">attachUIEvents<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L79">src/libs/class/networking/network.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -366,7 +416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L135">src/libs/class/networking/network.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L178">src/libs/class/networking/network.ts:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -383,9 +433,32 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/libs/class/networking/network.ts#L411">src/libs/class/networking/network.ts:411</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L491">src/libs/class/networking/network.ts:491</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="toggledisplaynetworkpanel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> toggle<wbr>Display<wbr>Network<wbr>Panel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Display<wbr>Network<wbr>Panel<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/libs/class/networking/network.ts#L84">src/libs/class/networking/network.ts:84</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <span class="tsd-signature-type">MouseEvent</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -428,6 +501,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#getuserinfo" class="tsd-kind-icon">get<wbr>Userinfo</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="network.html#injector" class="tsd-kind-icon">injector</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#loggermediaui" class="tsd-kind-icon">logger<wbr>MediaUI</a>
 							</li>
@@ -446,7 +522,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#roomui" class="tsd-kind-icon">roomUI</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="network.html#rtcmulticonnection" class="tsd-kind-icon">rtc<wbr>Multi<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
@@ -459,16 +535,25 @@
 								<a href="network.html#whoistyping" class="tsd-kind-icon">who<wbr>IsTyping</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="network.html#reconnectandjoingamechannel" class="tsd-kind-icon">Reconnect<wbr>And<wbr>Join<wbr>Game<wbr>Channel</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#addnewmessage" class="tsd-kind-icon">add<wbr>New<wbr>Message</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#attachsharefiles" class="tsd-kind-icon">attach<wbr>Share<wbr>Files</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="network.html#attachuievents" class="tsd-kind-icon">attachUIEvents</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#attachwebrtc" class="tsd-kind-icon">attach<wbr>Web<wbr>Rtc</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="network.html#attactloggerui" class="tsd-kind-icon">attact<wbr>LoggerUI</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="network.html#toggledisplaynetworkpanel" class="tsd-kind-icon">toggle<wbr>Display<wbr>Network<wbr>Panel</a>
 							</li>
 						</ul>
 					</li>

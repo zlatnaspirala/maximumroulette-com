@@ -28,7 +28,9 @@
 					<img src="../assets/images/sensenet-logo.png" alt="sn-theme" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala/visual-ts-game-engine" title="Github Repository">
+					<a class="site-header-nav-item active" href="../../../../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../../../../releases">Releases</a>
+					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
 				</nav>
@@ -78,7 +80,9 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Static body elements, backgrounds, enemys returns
-						Prepared for next level, &#39;loading from generated content&#39;</p>
+							Prepared for next level, &#39;loading from generated content&#39;
+							Path for images <code>../imgs/</code>
+						Inject or predefine here</p>
 					</div>
 				</div>
 			</section>
@@ -106,6 +110,15 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="gamemap.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gamemap.html#collectenemies" class="tsd-kind-icon">collect<wbr>Enemies</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gamemap.html#collectitems" class="tsd-kind-icon">collect<wbr>Items</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gamemap.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gamemap.html#staticgrounds" class="tsd-kind-icon">static<wbr>Grounds</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -113,7 +126,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamemap.html#getdeadlines" class="tsd-kind-icon">get<wbr>Dead<wbr>Lines</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamemap.html#getenemys" class="tsd-kind-icon">get<wbr>Enemys</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamemap.html#getstaticbackgrounds" class="tsd-kind-icon">get<wbr>Static<wbr>Backgrounds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamemap.html#getstaticbanners" class="tsd-kind-icon">get<wbr>Static<wbr>Banners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamemap.html#getstaticgrounds" class="tsd-kind-icon">get<wbr>Static<wbr>Grounds</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gamemap.html#loadgeneratedmap" class="tsd-kind-icon">load<wbr>Generated<wbr>Map</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,18 +140,67 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gamemap.html" class="tsd-signature-type">GameMap</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<wbr>Map<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gamemap.html" class="tsd-signature-type">GameMap</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L8">src/examples/platformer/scripts/map.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L16">src/examples/platformer/scripts/map.ts:16</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="gamemap.html" class="tsd-signature-type">GameMap</a></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="collectenemies" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> collect<wbr>Enemies</h3>
+					<div class="tsd-signature tsd-kind-icon">collect<wbr>Enemies<span class="tsd-signature-symbol">:</span> <a href="../interfaces/icollectionenemies.html" class="tsd-signature-type">ICollectionEnemies</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L16">src/examples/platformer/scripts/map.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="collectitems" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> collect<wbr>Items</h3>
+					<div class="tsd-signature tsd-kind-icon">collect<wbr>Items<span class="tsd-signature-symbol">:</span> <a href="../interfaces/icollectionitem.html" class="tsd-signature-type">ICollectionItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L15">src/examples/platformer/scripts/map.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L13">src/examples/platformer/scripts/map.ts:13</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="staticgrounds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> static<wbr>Grounds</h3>
+					<div class="tsd-signature tsd-kind-icon">static<wbr>Grounds<span class="tsd-signature-symbol">:</span> <a href="../interfaces/istaticitem.html" class="tsd-signature-type">IStaticItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L14">src/examples/platformer/scripts/map.ts:14</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -152,7 +216,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/igameplayplatformermap.html">IGamePlayPlatformerMap</a>.<a href="../interfaces/igameplayplatformermap.html#getcollectitems">getCollectItems</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L65">src/examples/platformer/scripts/map.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L100">src/examples/platformer/scripts/map.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionitem.html" class="tsd-signature-type">ICollectionItem</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -163,16 +227,16 @@
 					<a name="getdeadlines" class="tsd-anchor"></a>
 					<h3>get<wbr>Dead<wbr>Lines</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dead<wbr>Lines<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/icollectionenemys.html" class="tsd-signature-type">ICollectionEnemys</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dead<wbr>Lines<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/icollectionenemies.html" class="tsd-signature-type">ICollectionEnemies</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L163">src/examples/platformer/scripts/map.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L140">src/examples/platformer/scripts/map.ts:140</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionenemys.html" class="tsd-signature-type">ICollectionEnemys</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionenemies.html" class="tsd-signature-type">ICollectionEnemies</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -180,17 +244,17 @@
 					<a name="getenemys" class="tsd-anchor"></a>
 					<h3>get<wbr>Enemys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Enemys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/icollectionenemys.html" class="tsd-signature-type">ICollectionEnemys</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Enemys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/icollectionenemies.html" class="tsd-signature-type">ICollectionEnemies</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/igameplayplatformermap.html">IGamePlayPlatformerMap</a>.<a href="../interfaces/igameplayplatformermap.html#getenemys">getEnemys</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L95">src/examples/platformer/scripts/map.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L121">src/examples/platformer/scripts/map.ts:121</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionenemys.html" class="tsd-signature-type">ICollectionEnemys</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/icollectionenemies.html" class="tsd-signature-type">ICollectionEnemies</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -205,10 +269,27 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/igameplayplatformermap.html">IGamePlayPlatformerMap</a>.<a href="../interfaces/igameplayplatformermap.html#getstaticbackgrounds">getStaticBackgrounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L39">src/examples/platformer/scripts/map.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L67">src/examples/platformer/scripts/map.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/istaticitem.html" class="tsd-signature-type">IStaticItem</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getstaticbanners" class="tsd-anchor"></a>
+					<h3>get<wbr>Static<wbr>Banners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Static<wbr>Banners<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/istaticlabel.html" class="tsd-signature-type">IStaticLabel</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L149">src/examples/platformer/scripts/map.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/istaticlabel.html" class="tsd-signature-type">IStaticLabel</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -223,10 +304,34 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/igameplayplatformermap.html">IGamePlayPlatformerMap</a>.<a href="../interfaces/igameplayplatformermap.html#getstaticgrounds">getStaticGrounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/map.ts#L12">src/examples/platformer/scripts/map.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L53">src/examples/platformer/scripts/map.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/istaticitem.html" class="tsd-signature-type">IStaticItem</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="loadgeneratedmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> load<wbr>Generated<wbr>Map</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Generated<wbr>Map<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/map.ts#L35">src/examples/platformer/scripts/map.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Important method, we call only if object
+										<code>generatedMap</code> is imported. I append generatedMap and object
+									<code>from code</code> created in same array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -250,6 +355,18 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="gamemap.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gamemap.html#collectenemies" class="tsd-kind-icon">collect<wbr>Enemies</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gamemap.html#collectitems" class="tsd-kind-icon">collect<wbr>Items</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gamemap.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gamemap.html#staticgrounds" class="tsd-kind-icon">static<wbr>Grounds</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="gamemap.html#getcollectitems" class="tsd-kind-icon">get<wbr>Collect<wbr>Items</a>
 							</li>
@@ -263,7 +380,13 @@
 								<a href="gamemap.html#getstaticbackgrounds" class="tsd-kind-icon">get<wbr>Static<wbr>Backgrounds</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="gamemap.html#getstaticbanners" class="tsd-kind-icon">get<wbr>Static<wbr>Banners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="gamemap.html#getstaticgrounds" class="tsd-kind-icon">get<wbr>Static<wbr>Grounds</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="gamemap.html#loadgeneratedmap" class="tsd-kind-icon">load<wbr>Generated<wbr>Map</a>
 							</li>
 						</ul>
 					</li>

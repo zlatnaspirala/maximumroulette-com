@@ -28,7 +28,9 @@
 					<img src="../assets/images/sensenet-logo.png" alt="sn-theme" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala/visual-ts-game-engine" title="Github Repository">
+					<a class="site-header-nav-item active" href="../../../../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../../../../releases">Releases</a>
+					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
 				</nav>
@@ -103,6 +105,7 @@
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
 					<li><a href="../interfaces/igameplaymodel.html" class="tsd-signature-type">IGamePlayModel</a></li>
+					<li><a href="../interfaces/imultiplayer.html" class="tsd-signature-type">IMultiplayer</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -115,14 +118,19 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="gameplay.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#deadlines" class="tsd-kind-icon">dead<wbr>Lines</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gameplay.html#deadzoneforbottom" class="tsd-kind-icon">dead<wbr>Zone<wbr>For<wbr>Bottom</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#enemys" class="tsd-kind-icon">enemys</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#gamename" class="tsd-kind-icon">game<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="gameplay.html#gameplaywelcomenote" class="tsd-kind-icon">game<wbr>Play<wbr>Welcome<wbr>Note</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#grounds" class="tsd-kind-icon">grounds</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#hudlives" class="tsd-kind-icon">hud<wbr>Lives</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#labels" class="tsd-kind-icon">labels</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#netbodies" class="tsd-kind-icon">net<wbr>Bodies</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#network" class="tsd-kind-icon">network</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#player" class="tsd-kind-icon">player</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#playercategory" class="tsd-kind-icon">player<wbr>Category</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#starter" class="tsd-kind-icon">starter</a></li>
@@ -134,15 +142,22 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#attachappevents" class="tsd-kind-icon">attach<wbr>App<wbr>Events</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#addnetplayer" class="tsd-kind-icon">add<wbr>Net<wbr>Player</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gameplay.html#attachappevents" class="tsd-kind-icon">attach<wbr>App<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gameplay.html#attachmatterevents" class="tsd-kind-icon">attach<wbr>Matter<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#collisioncheck" class="tsd-kind-icon">collision<wbr>Check</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#createhud" class="tsd-kind-icon">create<wbr>Hud</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#createplayer" class="tsd-kind-icon">create<wbr>Player</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gameplay.html#deattachmatterevents" class="tsd-kind-icon">deattach<wbr>Matter<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="gameplay.html#load" class="tsd-kind-icon">load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="gameplay.html#playerdie" class="tsd-kind-icon">player<wbr>Die</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#playerspawn" class="tsd-kind-icon">player<wbr>Spawn</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="gameplay.html#showplayerboardui" class="tsd-kind-icon">show<wbr>Player<wbr>BoardUI</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="gameplay.html#multiplayerref" class="tsd-kind-icon">multi<wbr>Player<wbr>Ref</a></li>
 							</ul>
 						</section>
 					</div>
@@ -161,7 +176,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides Platformer.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/game-play.ts#L15">src/examples/platformer/scripts/game-play.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L97">src/examples/platformer/scripts/game-play.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -175,7 +190,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="deadlines" class="tsd-anchor"></a>
@@ -184,9 +199,31 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.deadLines</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:28</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:31</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="deadzoneforbottom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> dead<wbr>Zone<wbr>For<wbr>Bottom</h3>
+					<div class="tsd-signature tsd-kind-icon">dead<wbr>Zone<wbr>For<wbr>Bottom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;4500</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L36">src/examples/platformer/scripts/game-play.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dd><p>deadZoneForBottom Definition and Default value</p>
+								<ul>
+									<li>overrided from map or map2d(generated) by deadLines object
+										DeadLines object in future can be used for enemy static action
+										Next : deadZoneForLeft , deadZoneForRight
+									this.starter.setWorldBounds(-300, -300, 10000, root.deadZoneForBottom);</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="enemys" class="tsd-anchor"></a>
@@ -195,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.enemys</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:27</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +244,17 @@
 						<p>Implementation of <a href="../interfaces/igameplaymodel.html">IGamePlayModel</a>.<a href="../interfaces/igameplaymodel.html#gamename">gameName</a></p>
 						<p>Inherited from Platformer.gameName</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:20</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:23</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="gameplaywelcomenote" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> game<wbr>Play<wbr>Welcome<wbr>Note</h3>
+					<div class="tsd-signature tsd-kind-icon">game<wbr>Play<wbr>Welcome<wbr>Note<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;This application was created on visual-ts &lt;br/&gt;                                         Example: Real time multiplayer &#x60;Platformer&#x60; zlatnaspirala@gmail.com &lt;br/&gt;                                         General: MIT License &lt;br/&gt;                                         Copyright (c) 2019 Nikola Lukic zlatnaspirala@gmail.com Serbia Nis &lt;br/&gt;                                         Except: Folder src/libs with licence: &lt;br/&gt;                                         GNU LESSER GENERAL PUBLIC LICENSE Version 3 &lt;br/&gt;                                         Copyright (c) 2019 maximumroulette.com &quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L21">src/examples/platformer/scripts/game-play.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -218,7 +265,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.grounds</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:26</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -229,19 +276,53 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.hudLives</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:34</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="labels" class="tsd-anchor"></a>
+					<h3>labels</h3>
+					<div class="tsd-signature tsd-kind-icon">labels<span class="tsd-signature-symbol">:</span> <a href="../globals.html#worldelement" class="tsd-signature-type">worldElement</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Platformer.labels</p>
+						<ul>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:32</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="netbodies" class="tsd-anchor"></a>
+					<h3>net<wbr>Bodies</h3>
+					<div class="tsd-signature tsd-kind-icon">net<wbr>Bodies<span class="tsd-signature-symbol">:</span> <a href="../globals.html#univector" class="tsd-signature-type">UniVector</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/imultiplayer.html">IMultiplayer</a>.<a href="../interfaces/imultiplayer.html#netbodies">netBodies</a></p>
+						<p>Inherited from Platformer.netBodies</p>
+						<ul>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:41</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="network" class="tsd-anchor"></a>
+					<h3>network</h3>
+					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="network.html" class="tsd-signature-type">Network</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from Platformer.network</p>
+						<ul>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:40</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="player" class="tsd-anchor"></a>
 					<h3>player</h3>
-					<div class="tsd-signature tsd-kind-icon">player<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Body</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">player<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Body</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/igameplaymodel.html">IGamePlayModel</a>.<a href="../interfaces/igameplaymodel.html#player">player</a></p>
 						<p>Inherited from Platformer.player</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:31</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:35</li>
 						</ul>
 					</aside>
 				</section>
@@ -252,7 +333,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.playerCategory</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:22</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:25</li>
 						</ul>
 					</aside>
 				</section>
@@ -264,7 +345,7 @@
 						<p>Implementation of <a href="../interfaces/igameplaymodel.html">IGamePlayModel</a>.<a href="../interfaces/igameplaymodel.html#starter">starter</a></p>
 						<p>Inherited from Platformer.starter</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:25</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:28</li>
 						</ul>
 					</aside>
 				</section>
@@ -275,7 +356,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.staticCategory</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:23</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:26</li>
 						</ul>
 					</aside>
 				</section>
@@ -286,19 +367,19 @@
 					<aside class="tsd-sources">
 						<p>Inherited from Platformer.v</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:29</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:33</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="version" class="tsd-anchor"></a>
 					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0.2</span></div>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0.3</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/igameplaymodel.html">IGamePlayModel</a>.<a href="../interfaces/igameplaymodel.html#version">version</a></p>
 						<p>Inherited from Platformer.version</p>
 						<ul>
-							<li>Defined in src/examples/platformer/scripts/Platformer.ts:21</li>
+							<li>Defined in src/examples/platformer/scripts/Platformer.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -306,17 +387,43 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="attachappevents" class="tsd-anchor"></a>
-					<h3>attach<wbr>App<wbr>Events</h3>
+					<a name="addnetplayer" class="tsd-anchor"></a>
+					<h3>add<wbr>Net<wbr>Player</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">attach<wbr>App<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Net<wbr>Player<span class="tsd-signature-symbol">(</span>myInstance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rtcEvent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from (Anonymous function)</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:57</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:61</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>myInstance: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> rtcEvent: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="attachappevents" class="tsd-anchor"></a>
+					<h3>attach<wbr>App<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">attach<wbr>App<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L115">src/examples/platformer/scripts/game-play.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -333,7 +440,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/game-play.ts#L27">src/examples/platformer/scripts/game-play.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L180">src/examples/platformer/scripts/game-play.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -351,7 +458,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Platformer.collisionCheck</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:140</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:184</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -368,35 +475,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="createhud" class="tsd-anchor"></a>
-					<h3>create<wbr>Hud</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Hud<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from Platformer.createHud</p>
-								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:64</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="createplayer" class="tsd-anchor"></a>
 					<h3>create<wbr>Player</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Player<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Player<span class="tsd-signature-symbol">(</span>addToScene<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Platformer.createPlayer</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:85</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:126</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>addToScene: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="deattachmatterevents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> deattach<wbr>Matter<wbr>Events</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">deattach<wbr>Matter<wbr>Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L176">src/examples/platformer/scripts/game-play.ts:176</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -413,7 +525,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/b06697f/src/examples/platformer/scripts/game-play.ts#L115">src/examples/platformer/scripts/game-play.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L283">src/examples/platformer/scripts/game-play.ts:283</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -431,7 +543,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Platformer.playerDie</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:189</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:247</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,16 +560,22 @@
 					<a name="playerspawn" class="tsd-anchor"></a>
 					<h3>player<wbr>Spawn</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">player<wbr>Spawn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">player<wbr>Spawn<span class="tsd-signature-symbol">(</span>recreatePlayer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Platformer.playerSpawn</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:130</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:174</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>recreatePlayer: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -473,12 +591,114 @@
 							<aside class="tsd-sources">
 								<p>Inherited from (Anonymous function)</p>
 								<ul>
-									<li>Defined in src/examples/platformer/scripts/Platformer.ts:173</li>
+									<li>Defined in src/examples/platformer/scripts/Platformer.ts:219</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="multiplayerref" class="tsd-anchor"></a>
+					<h3>multi<wbr>Player<wbr>Ref</h3>
+					<div class="tsd-signature tsd-kind-icon">multi<wbr>Player<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/imultiplayer.html">IMultiplayer</a>.<a href="../interfaces/imultiplayer.html#multiplayerref">multiPlayerRef</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L38">src/examples/platformer/scripts/game-play.ts:38</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="multiplayerref.root" class="tsd-anchor"></a>
+						<h3>root</h3>
+						<div class="tsd-signature tsd-kind-icon">root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">this</span><span class="tsd-signature-symbol"> =&nbsp;this</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L39">src/examples/platformer/scripts/game-play.ts:39</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="multiplayerref.init" class="tsd-anchor"></a>
+						<h3>init</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>rtcEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L40">src/examples/platformer/scripts/game-play.ts:40</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>rtcEvent: <span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="multiplayerref.leavegameplay" class="tsd-anchor"></a>
+						<h3>leave<wbr>Game<wbr>Play</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">leave<wbr>Game<wbr>Play<span class="tsd-signature-symbol">(</span>rtcEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L89">src/examples/platformer/scripts/game-play.ts:89</a></li>
+									</ul>
+								</aside>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>If someone leaves all client actions is here</p>
+										<ul>
+											<li>remove from scene</li>
+											<li>clear object from netObject_x</li>
+										</ul>
+									</div>
+								</div>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>rtcEvent: <span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="multiplayerref.update" class="tsd-anchor"></a>
+						<h3>update</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>multiplayer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/zlatnaspirala/visual-ts-game-engine/blob/8099a44/src/examples/platformer/scripts/game-play.ts#L47">src/examples/platformer/scripts/game-play.ts:47</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>multiplayer: <span class="tsd-signature-type">any</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</li>
+						</ul>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -503,17 +723,32 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#deadlines" class="tsd-kind-icon">dead<wbr>Lines</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gameplay.html#deadzoneforbottom" class="tsd-kind-icon">dead<wbr>Zone<wbr>For<wbr>Bottom</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#enemys" class="tsd-kind-icon">enemys</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#gamename" class="tsd-kind-icon">game<wbr>Name</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="gameplay.html#gameplaywelcomenote" class="tsd-kind-icon">game<wbr>Play<wbr>Welcome<wbr>Note</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#grounds" class="tsd-kind-icon">grounds</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#hudlives" class="tsd-kind-icon">hud<wbr>Lives</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="gameplay.html#labels" class="tsd-kind-icon">labels</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="gameplay.html#netbodies" class="tsd-kind-icon">net<wbr>Bodies</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="gameplay.html#network" class="tsd-kind-icon">network</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#player" class="tsd-kind-icon">player</a>
@@ -534,6 +769,9 @@
 								<a href="gameplay.html#version" class="tsd-kind-icon">version</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="gameplay.html#addnetplayer" class="tsd-kind-icon">add<wbr>Net<wbr>Player</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="gameplay.html#attachappevents" class="tsd-kind-icon">attach<wbr>App<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -543,10 +781,10 @@
 								<a href="gameplay.html#collisioncheck" class="tsd-kind-icon">collision<wbr>Check</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="gameplay.html#createhud" class="tsd-kind-icon">create<wbr>Hud</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#createplayer" class="tsd-kind-icon">create<wbr>Player</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="gameplay.html#deattachmatterevents" class="tsd-kind-icon">deattach<wbr>Matter<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="gameplay.html#load" class="tsd-kind-icon">load</a>
@@ -559,6 +797,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="gameplay.html#showplayerboardui" class="tsd-kind-icon">show<wbr>Player<wbr>BoardUI</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="gameplay.html#multiplayerref" class="tsd-kind-icon">multi<wbr>Player<wbr>Ref</a>
 							</li>
 						</ul>
 					</li>

@@ -28,7 +28,9 @@
 					<img src="assets/images/sensenet-logo.png" alt="sn-theme" />
 				</a>
 				<nav class="sn-menu">
-					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala/visual-ts-game-engine" title="Github Repository">
+					<a class="site-header-nav-item active" href="../../../../../../../docs">Docs</a>
+					<a class="site-header-nav-item " href="../../../../../../../releases">Releases</a>
+					<a class="site-header-nav-item" href="https://github.com/zlatnaspirala" title="Github Repository">
 						<i class="fa fa-github" aria-hidden="true"></i>
 					</a>
 				</nav>
@@ -72,29 +74,241 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<p>Prepare server for running:</p>
+				<a href="#prepare-server-for-running" id="prepare-server-for-running" style="color: inherit; text-decoration: none;">
+					<h3>Prepare server for running:</h3>
+				</a>
 				<p>javascript</p>
-				<pre><code>npm <span class="hljs-keyword">install</span></code></pre><p>Fix and report if something missing in dependency.</p>
-				<h3 id="run-data-media-server-based-on-multirtc2-2-vs-socket-io-">Run data/media server based on MultiRTC2.2 vs socket.io :</h3>
-				<p>javascript</p>
-				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> rtc</span></code></pre><p>You can use this server also for video-chat it is already implemented.
-					It is still better to use &#39;npm run broadcaster&#39; for video chat. I use this server
-				for data communication and session staff also any other use...</p>
-				<h3 id="run-data-media-server-based-on-multirtc3-ptp-">Run data/media server based on MultiRTC3 PTP:</h3>
-				<p> For now broadcaster use &#39;server\broadcaster-config.json&#39; for input data.
-				This will be replaced with uniq server config file.</p>
-				<p> Features comes with broadcaster:</p>
-				<ul>
-					<li><p>Multiplatform video chat works with other hybrid frameworks or custom implementation throw the native
-						mobile application web control (Chrome implementation usually).</p>
-					</li>
-					<li><p>Implemented dragable video containers.</p>
-					</li>
-				</ul>
+				<pre><code>npm <span class="hljs-keyword">install</span></code></pre><p>  Fix and report if something missing in dependency if there&#39;s a msg like
+				&#39;missinig module&#39;.</p>
+				<a href="#run-datamedia-server-based-on-multirtc22-vs-socketio-" id="run-datamedia-server-based-on-multirtc22-vs-socketio-" style="color: inherit; text-decoration: none;">
+					<h3>Run data/media server based on MultiRTC2.2 vs socket.io :</h3>
+				</a>
+				<p>Run this command from root project folder:
+				javascript</p>
+				<pre><code>npm <span class="hljs-keyword">run</span><span class="bash"> rtc</span></code></pre><p> or use :</p>
+				<pre><code>  <span class="hljs-keyword">node</span> <span class="hljs-title">./server</span>/rtc/server.js</code></pre><pre>
+  You can use this server also for video-chat it is already implemented but it is no recommended for latest version of modern browser's.For UTF networking it is ok.
+  It is still better to use 'npm run broadcaster' for video chat. I use this server
+  for data communication and session staff also any other use...
+</pre>
+				<a href="#run-datamedia-server-based-on-multirtc3-ptp" id="run-datamedia-server-based-on-multirtc3-ptp" style="color: inherit; text-decoration: none;">
+					<h3>Run data/media server based on MultiRTC3 PTP:</h3>
+				</a>
+				<p>  For now broadcaster use &#39;server\broadcaster-config.json&#39; for input data.</p>
+				<pre><code>  {
+  <span class="hljs-attr">"socketURL"</span>: <span class="hljs-string">"http://localhost:9001/"</span>,
+  <span class="hljs-attr">"dirPath"</span>: <span class="hljs-string">"/"</span>,
+  <span class="hljs-attr">"homePage"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"socketMessageEvent"</span>: <span class="hljs-string">"RTCMultiConnection-Message"</span>,
+  <span class="hljs-attr">"socketCustomEvent"</span>: <span class="hljs-string">"RTCMultiConnection-Custom-Message"</span>,
+  <span class="hljs-attr">"port"</span>: <span class="hljs-string">"9001"</span>,
+  <span class="hljs-attr">"enableLogs"</span>: <span class="hljs-string">"false"</span>,
+  <span class="hljs-attr">"autoRebootServerOnFailure"</span>: <span class="hljs-string">"false"</span>,
+  <span class="hljs-attr">"isUseHTTPs"</span>: <span class="hljs-string">"false"</span>,
+  <span class="hljs-attr">"sslKey"</span>: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette.com.key"</span>,
+  <span class="hljs-attr">"sslCert"</span>: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette_com.crt"</span>,
+  <span class="hljs-attr">"sslCabundle"</span>: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette.ca-bundle"</span>,
+  <span class="hljs-attr">"enableAdmin"</span>: <span class="hljs-string">"false"</span>,
+  <span class="hljs-attr">"adminUserName"</span>: <span class="hljs-string">"username"</span>,
+  <span class="hljs-attr">"adminPassword"</span>: <span class="hljs-string">"password"</span>
+}</code></pre><pre>
+ Most important fields are:
+
+For dev:
+   - socketURL => http://localhost:9001/
+   - isUseHTTPs => false
+
+For prodc:
+  - socketURL => http://YOUR_DOMAIN:9001/
+  - isUseHTTPs => false
+</pre>
+				<p>Features comes with broadcaster:</p>
+				<pre>
+ - Multiplatform video chat works with other hybrid frameworks or custom implementation throw the native
+   mobile application web control (Chrome implementation usually).
+ - Chat in real time, share files with minimum server usage.
+ - Implemented dragable video containers with addons script.
+</pre>
 				<pre><code class="language-javascript">  npm run broadcaster</code></pre>
-				<h3 id="install-mongodb-follow-link-">Install MongoDB follow link:</h3>
+				<a href="#install-mongodb-follow-link" id="install-mongodb-follow-link" style="color: inherit; text-decoration: none;">
+					<h3>Install MongoDB follow link:</h3>
+				</a>
 				<p> <a href="https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-centos-7">Install mongoDB</a></p>
-				<p>mongod --dbpath data --bind_ip <IPADDRESS></p>
+				<p>  If you wanna deploy database &amp; server code on same host (without chanse for remote connection)
+				then use next setup:</p>
+				<p>For dev:
+				javascript</p>
+				<pre><code>  <span class="hljs-keyword">this</span>.databaseRoot = <span class="hljs-string">"mongodb://localhost:27017"</span>;</code></pre><p>For prod:
+				javascript</p>
+				<pre><code>  <span class="hljs-keyword">this</span>.databaseRoot = <span class="hljs-string">"mongodb://YOUR_DOMAIN:27017"</span>;</code></pre><p> Must be in samo folder or input full path to the data folder.
+				Run :</p>
+				<p>javascript</p>
+				<pre><code>  mongod <span class="hljs-comment">--dbpath data</span></code></pre><ul>
+					<li>Deploy mongo on public server looks like:</li>
+				</ul>
+				<p>First action is setup serverMode to &#39;prod&#39;. In server-config.js file.</p>
+				<p>javascript</p>
+				<pre><code>  <span class="hljs-keyword">this</span>.databaseRoot = <span class="hljs-string">"mongodb://DOMAIN:27017"</span>;
+
+  or
+
+  <span class="hljs-keyword">this</span>.databaseRoot = <span class="hljs-string">"mongodb://IPADDRESS:27017"</span>;</code></pre><p>javascript</p>
+				<pre><code>  mongod --dbpath <span class="hljs-meta">data</span> --<span class="hljs-keyword">bind_ip </span>&lt;IPADDRESS&gt;</code></pre><p> or</p>
+				<p>javascript</p>
+				<pre><code>  mongod --dbpath <span class="hljs-meta">data</span> --<span class="hljs-keyword">bind_ip </span>&lt;DOMAIN&gt;</code></pre><p> After running database mongo service you can use :</p>
+				<pre><code>  <span class="hljs-selector-tag">mongo</span> <span class="hljs-selector-tag">--host</span> <span class="hljs-selector-tag">maximumroulette</span><span class="hljs-selector-class">.com</span><span class="hljs-selector-pseudo">:27017</span></code></pre><p> to connect with mongo terminal.</p>
+				<p>  Basic commands :</p>
+				<pre><code>   <span class="hljs-keyword">show</span> dbs
+
+   <span class="hljs-keyword">use</span> &lt;database_name&gt;
+
+   db.dropDatabase()
+</code></pre><p> Adding password :</p>
+				<p> Start mongod normally.</p>
+				<p> Attach mongo console :</p>
+				<pre><code>  <span class="hljs-comment">mongo</span> --<span class="hljs-comment">host</span> <span class="hljs-comment">maximumroulette</span><span class="hljs-string">.</span><span class="hljs-comment">com</span> --<span class="hljs-comment">port</span> <span class="hljs-comment">27017</span></code></pre><p> Then exec this :</p>
+				<pre><code><span class="hljs-keyword">use</span> <span class="hljs-keyword">admin</span>
+ db.createUser({
+   <span class="hljs-keyword">user</span>: <span class="hljs-string">"userAdmin"</span>,
+   pwd: <span class="hljs-string">"*****"</span>,
+   <span class="hljs-keyword">roles</span>: [ { <span class="hljs-keyword">role</span>: <span class="hljs-string">"userAdminAnyDatabase"</span>, db: <span class="hljs-string">"admin"</span>}, <span class="hljs-string">"readWriteAnyDatabase"</span>]})</code></pre><p>Restart mongod with :</p>
+				<pre><code><span class="hljs-comment">mongod</span> --<span class="hljs-comment">auth</span> --<span class="hljs-comment">dbpath</span> <span class="hljs-comment">data</span> --<span class="hljs-comment">bind_ip</span> <span class="hljs-comment">maximumroulette</span><span class="hljs-string">.</span><span class="hljs-comment">com</span></code></pre><p>Next attach will be :</p>
+				<pre><code> <span class="hljs-string">mongo </span><span class="hljs-built_in">--host</span> <span class="hljs-string">maximumroulette.</span><span class="hljs-string">com </span><span class="hljs-built_in">--port</span> <span class="hljs-string">27017 </span>-u <span class="hljs-string">"userAdmin"</span> <span class="hljs-built_in">--authenticationDatabase</span> <span class="hljs-string">"admin"</span> -p</code></pre><p>Source :</p>
+				<p><a href="https://docs.mongodb.com/manual/tutorial/enable-authentication/">https://docs.mongodb.com/manual/tutorial/enable-authentication/</a></p>
+				<p>Config file - server-config:</p>
+				<pre><code>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServerConfig</span> </span>{
+
+  <span class="hljs-keyword">constructor</span>() {
+
+    <span class="hljs-comment">/**
+     * Define backend staff
+     */</span>
+
+     <span class="hljs-comment">// enum : 'dev' or 'prod'</span>
+    <span class="hljs-keyword">this</span>.serverMode = <span class="hljs-string">"dev"</span>;
+
+    <span class="hljs-keyword">this</span>.networkDeepLogs = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">this</span>.rtcServerPort = <span class="hljs-number">12034</span>;
+    <span class="hljs-keyword">this</span>.rtc3ServerPort = <span class="hljs-number">9001</span>;
+    <span class="hljs-keyword">this</span>.connectorPort = <span class="hljs-number">1234</span>;
+
+    <span class="hljs-keyword">this</span>.domain = {
+      dev: <span class="hljs-string">"localhost"</span>,
+      prod: <span class="hljs-string">"maximumroulette.com"</span>
+    };
+
+    <span class="hljs-keyword">this</span>.masterServerKey = <span class="hljs-string">"maximumroulette.server1"</span>;
+    <span class="hljs-keyword">this</span>.protocol = <span class="hljs-string">"http"</span>;
+    <span class="hljs-keyword">this</span>.isSecure = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-comment">// localhost</span>
+    <span class="hljs-keyword">this</span>.certPathSelf = {
+      pKeyPath: <span class="hljs-string">"./server/rtc/self-cert/privatekey.pem"</span>,
+      pCertPath: <span class="hljs-string">"./server/rtc/self-cert/certificate.pem"</span>,
+      pCBPath: <span class="hljs-string">"./server/rtc/self-cert/certificate.pem"</span>,
+    };
+
+    <span class="hljs-comment">// production</span>
+    <span class="hljs-keyword">this</span>.certPathProd = {
+      pKeyPath: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette.com.key"</span>,
+      pCertPath: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette_com.crt"</span>,
+      pCBPath: <span class="hljs-string">"/etc/httpd/conf/ssl/maximumroulette.ca-bundle"</span>
+    };
+
+    <span class="hljs-keyword">this</span>.appUseAccountsSystem = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.appUseBroadcaster = <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">this</span>.databaseName = <span class="hljs-string">"masterdatabase"</span>;
+
+    <span class="hljs-keyword">this</span>.databaseRoot = {
+      dev: <span class="hljs-string">"mongodb://localhost:27017"</span> ,
+      prod: <span class="hljs-string">"mongodb://userAdmin:********@maximumroulette.com:27017/admin"</span>
+    };
+
+    <span class="hljs-keyword">this</span>.specialRoute = {
+      <span class="hljs-string">"default"</span>: <span class="hljs-string">"/var/www/html/applications/visual-typescript-game-engine/build/app.html"</span>
+    };
+
+    <span class="hljs-comment">// this.dataServeRoutes = ["../data-serve/platformer/class/activeplayers"];</span>
+
+    console.log(<span class="hljs-string">"Server running under configuration =&gt; "</span>, <span class="hljs-keyword">this</span>.serverMode);
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"dev"</span>) {
+      console.log(<span class="hljs-string">"-rtc domain dev"</span>, <span class="hljs-keyword">this</span>.domain.dev);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"prod"</span>) {
+      console.log(<span class="hljs-string">"-rtc domain prod"</span>, <span class="hljs-keyword">this</span>.domain.prod);
+    }
+
+  }
+
+  <span class="hljs-comment">/**
+   * <span class="hljs-doctag">@returns</span> {any}
+   */</span>
+  <span class="hljs-keyword">get</span> getAppUseBroadcaster() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.appUseBroadcaster;
+  };
+
+  <span class="hljs-keyword">get</span> getProtocol() {
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isSecure) {
+      <span class="hljs-keyword">this</span>.protocol = <span class="hljs-string">"https"</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">this</span>.protocol = <span class="hljs-string">"http"</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.protocol;
+  }
+
+  <span class="hljs-keyword">get</span> getRtcServerPort() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.rtcServerPort;
+  }
+
+  <span class="hljs-keyword">get</span> getRtc3ServerPort() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.rtc3ServerPort;
+  }
+
+  <span class="hljs-keyword">get</span> getDatabaseRoot() {
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"dev"</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.databaseRoot.dev;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"prod"</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.databaseRoot.prod;
+    }
+
+  }
+
+  <span class="hljs-keyword">get</span> IsDatabaseActive() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.appUseAccountsSystem;
+  }
+
+  <span class="hljs-keyword">get</span> getConnectorPort() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.connectorPort;
+  }
+
+  <span class="hljs-keyword">get</span> getRemoteServerAddress() {
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"dev"</span>) {
+      <span class="hljs-keyword">return</span> (<span class="hljs-keyword">this</span>.isSecure ? <span class="hljs-string">"wss"</span> : <span class="hljs-string">"ws"</span>) + <span class="hljs-string">"://"</span> + <span class="hljs-keyword">this</span>.domain.dev + <span class="hljs-string">":"</span> + <span class="hljs-keyword">this</span>.rtcServerPort + <span class="hljs-string">"/"</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.serverMode == <span class="hljs-string">"prod"</span>) {
+    <span class="hljs-keyword">return</span> (<span class="hljs-keyword">this</span>.isSecure ? <span class="hljs-string">"wss"</span> : <span class="hljs-string">"ws"</span>) + <span class="hljs-string">"://"</span> + <span class="hljs-keyword">this</span>.domain.prod + <span class="hljs-string">":"</span> + <span class="hljs-keyword">this</span>.rtcServerPort + <span class="hljs-string">"/"</span>;
+    }
+
+  }
+
+  <span class="hljs-keyword">set</span> setNetworkDeepLog(newState) {
+    <span class="hljs-keyword">this</span>.networkDeepLogs = newState;
+  }
+
+  <span class="hljs-keyword">get</span> getNetworkDeepLog() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.networkDeepLogs;
+  }
+
+  <span class="hljs-keyword">get</span> getMasterServerKey() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.masterServerKey;
+  }
+
+}
+module.exports = ServerConfig;
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -107,6 +321,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/default_player_data.html" class="tsd-kind-icon">DEFAULT_<wbr>PLAYER_<wbr>DATA</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/appicon.html" class="tsd-kind-icon">App<wbr>Icon</a>
 					</li>
@@ -115,9 +332,6 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/broadcaster.html" class="tsd-kind-icon">Broadcaster</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/broadcastermedia.html" class="tsd-kind-icon">Broadcaster<wbr>Media</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/browser.html" class="tsd-kind-icon">Browser</a>
@@ -145,6 +359,9 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/localstoragememory.html" class="tsd-kind-icon">Local<wbr>Storage<wbr>Memory</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/messagebox.html" class="tsd-kind-icon">Message<wbr>Box</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/network.html" class="tsd-kind-icon">Network</a>
@@ -180,7 +397,7 @@
 						<a href="interfaces/ibotbehavioroptions.html" class="tsd-kind-icon">IBot<wbr>Behavior<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icollectionenemys.html" class="tsd-kind-icon">ICollection<wbr>Enemys</a>
+						<a href="interfaces/icollectionenemies.html" class="tsd-kind-icon">ICollection<wbr>Enemies</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/icollectionitem.html" class="tsd-kind-icon">ICollection<wbr>Item</a>
@@ -207,6 +424,9 @@
 						<a href="interfaces/imessagereceived.html" class="tsd-kind-icon">IMessage<wbr>Received</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/imultiplayer.html" class="tsd-kind-icon">IMultiplayer</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/ipoint.html" class="tsd-kind-icon">IPoint</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-is-not-exported">
@@ -217,6 +437,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/istaticitem.html" class="tsd-kind-icon">IStatic<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/istaticlabel.html" class="tsd-kind-icon">IStatic<wbr>Label</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/iunivector.html" class="tsd-kind-icon">IUni<wbr>Vector</a>
@@ -252,9 +475,6 @@
 						<a href="globals.html#worldelement" class="tsd-kind-icon">world<wbr>Element</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="globals.html#_" class="tsd-kind-icon">$</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#appicon" class="tsd-kind-icon">app<wbr>Icon</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
@@ -262,6 +482,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#gameslist" class="tsd-kind-icon">games<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#generatedmap" class="tsd-kind-icon">generated<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#htmlheader" class="tsd-kind-icon">html<wbr>Header</a>
