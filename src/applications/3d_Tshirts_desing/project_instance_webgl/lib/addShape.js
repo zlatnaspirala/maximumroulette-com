@@ -1,41 +1,41 @@
-  
-				function addShape(  name , shape, color, x, y, z, rx, ry, rz, s ) {
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 
-					 var ROOT = this;
-					 
-				    ROOT.group = new THREE.Group();
-					// flat shape
-                     
-					var geometry = new THREE.ShapeGeometry( shape );
-					var material = new THREE.MeshBasicMaterial( { color: color, overdraw: 0.5 } );
+function addShape(  name , shape, color, x, y, z, rx, ry, rz, s, ) {
 
-					ROOT.mesh = new THREE.Mesh( geometry, material );
-					ROOT.mesh.position.set( x, y, z );
-					ROOT.mesh.rotation.set( rx, ry, rz );
-					ROOT.mesh.scale.set( s, s, s );
-					ROOT.group.add( ROOT.mesh );
+  var ROOT = this;
+  ROOT.group = new THREE.Group();
+  // flat shape
 
-					// line
+  var geometry = new THREE.ShapeGeometry( shape, );
+  var material = new THREE.MeshBasicMaterial( { color: color, overdraw: 0.5, }, );
 
-					var geometry = shape.createPointsGeometry();
-					var material = new THREE.LineBasicMaterial( { linewidth: 10, color: 0x333333, transparent: true } );
+  ROOT.mesh = new THREE.Mesh( geometry, material );
+  ROOT.mesh.position.set( x, y, z, );
+  ROOT.mesh.rotation.set( rx, ry, rz, );
+  ROOT.mesh.scale.set( s, s, s );
+  ROOT.group.add( ROOT.mesh );
 
-					var line = new THREE.Line( geometry, material );
-					line.position.set( x, y, z );
-					line.rotation.set( rx, ry, rz );
-					line.scale.set( s, s, s );
-					ROOT.group.add( line );
-					
-					scene.add(ROOT.group);
-					window[ name ] = ROOT.group;
-					ROOT.name = name;
-					
-					ROOT.DESTROY = function(){
-					
-						scene.remove(ROOT.group);
-						delete window[ ROOT.name ];
-					
-					};
-					
+  // line
 
-				}
+  var geometry = shape.createPointsGeometry();
+  var material = new THREE.LineBasicMaterial( { linewidth: 10, color: 0x333333, transparent: true, }, );
+
+  var line = new THREE.Line( geometry, material, );
+  line.position.set( x, y, z, );
+  line.rotation.set( rx, ry, rz, );
+  line.scale.set( s, s, s, );
+  ROOT.group.add( line, );
+
+  scene.add(ROOT.group,);
+  window[ name ] = ROOT.group;
+  ROOT.name = name;
+
+  ROOT.DESTROY = function(){
+
+    scene.remove(ROOT.group,);
+    delete window[ ROOT.name ];
+
+  };
+
+}

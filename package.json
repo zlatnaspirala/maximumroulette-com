@@ -4,6 +4,9 @@
   "description": "Personal web site also with web services",
   "main": "site.js",
   "scripts": {
+    "eslintinit": "node node_modules\\eslint\\bin\\eslint.js --init",
+    "eslint": "node node_modules\\eslint\\bin\\eslint.js **/*.js",
+    "format": "node node_modules\\jslint\\bin\\jslint.js '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/zlatnaspirala/maximumroulette-com/issues"
   },
-  "homepage": "https://github.com/zlatnaspirala/maximumroulette-com#readme"
+  "homepage": "https://github.com/zlatnaspirala/maximumroulette-com#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0",
+    "jslint": "^0.12.1"
+  },
+  "dependencies": {
+    "save-dev": "0.0.1-security",
+    "typescript": "^3.7.4"
+  }
 }

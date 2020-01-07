@@ -1,17 +1,16 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 
+function GRID_INIT() {
 
+  if (PROGRAM.GRID == true) {
 
-			
-			function GRID_INIT() {
+    var helper = new THREE.GridHelper( 5000, 5000, );
+    helper.color1.setHex( 0xffffff, );
+    helper.color2.setHex( 0x00ffff, );
+    helper.name = "GRID";
+    scene.add( helper, );
 
-			 if (PROGRAM.GRID == true) {
-			 
-				var helper = new THREE.GridHelper( 5000, 5000 );
-				helper.color1.setHex( 0xffffff );
-				helper.color2.setHex( 0x00ffff );
-				helper.name = "GRID";
-				scene.add( helper );
-				
-				}
+  }
 
-			}
+}

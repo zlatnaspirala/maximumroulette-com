@@ -1,81 +1,67 @@
+/* eslint-disable no-unused-vars */
+/* global scene camera INTERSECTED PROGRAM mouse THREE */
 
+function  Raycaster()  {
 
+  var ROOT = this;
+  ROOT.RECALL = function(){};
+  ROOT.raycaster = new THREE.Raycaster();
 
+  ROOT.onDocumentMouseMove  = function ( event ) {
 
+    event.preventDefault();
 
+    // mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    // mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
+  };
 
+  ROOT.onDocumentclick  = function ( event ) {
 
-			function  Raycaster()  {
+    event.preventDefault();
 
-              			
-						var ROOT = this;
-						
-						ROOT.RECALL = function(){};
-						ROOT.raycaster = new THREE.Raycaster();
-                        
-  		 ROOT.onDocumentMouseMove  = function ( event ) {
+    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
-				event.preventDefault();
+  };
 
-			//	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-			//	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+  document.addEventListener( "mousemove", ROOT.onDocumentMouseMove, false );
 
-			};
-			
-			ROOT.onDocumentclick  = function ( event ) {
+  document.addEventListener( "click", ROOT.onDocumentclick, false );
 
-				event.preventDefault();
+  ROOT.AUTO_UPDATE = function(){
 
-				mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+    ROOT.raycaster.setFromCamera( mouse, camera );
+    var intersects = ROOT.raycaster.intersectObjects( scene.children );
 
-			};
-			
-		document.addEventListener( 'mousemove', ROOT.onDocumentMouseMove, false );
-		
-		document.addEventListener( 'click', ROOT.onDocumentclick, false );
-		
+    if ( intersects.length > 0 ) {
 
-			ROOT.AUTO_UPDATE = function(){
-	 
-							ROOT.raycaster.setFromCamera( mouse, camera );
+      if ( INTERSECTED != intersects[ 0 ].object ) {
 
-									var intersects = ROOT.raycaster.intersectObjects( scene.children );
+        try {
 
-									if ( intersects.length > 0 ) {
+          // eslint-disable-next-line no-global-assign
+          INTERSECTED = intersects[ 0 ].object;
+          ROOT.RECALL(INTERSECTED);
+          console.log( INTERSECTED );
+          console.log (INTERSECTED.material );
 
-										if ( INTERSECTED != intersects[ 0 ].object ) {
+        }catch(e){console.log("error in raycaster" + e);}
 
-											try {
-											
-									
-											
-											INTERSECTED = intersects[ 0 ].object;
-											ROOT.RECALL(INTERSECTED)
-											console.log( INTERSECTED );
-											console.log (INTERSECTED.material );
-											
-									         }catch(e){console.log("error in raycaster" + e)}
+      }
 
-										     } 
-											 
+    }
+    else {
 
-									}
-									else {
+      //if ( INTERSECTED ) INTERSECTED.material.color.setRGB( INTERSECTED.currentHex );
 
-										//if ( INTERSECTED ) INTERSECTED.material.color.setRGB( INTERSECTED.currentHex );
+      // eslint-disable-next-line no-global-assign
+      INTERSECTED = null;
 
-										INTERSECTED = null;
+    }
 
-									}
- 
-	
-	};	
+  };
 
-			   PROGRAM.AUTO_UPDATE.push(ROOT);
-			    
- }
+  PROGRAM.AUTO_UPDATE.push(ROOT);
 
-			
-			
+}

@@ -1,10 +1,11 @@
+/* global THREE */
 /**
  * @author alteredq / http://alteredqualia.com/
  */
 
 THREE.Gyroscope = function () {
 
-	THREE.Object3D.call( this );
+  THREE.Object3D.call( this );
 
 };
 
@@ -13,53 +14,47 @@ THREE.Gyroscope.prototype.constructor = THREE.Gyroscope;
 
 THREE.Gyroscope.prototype.updateMatrixWorld = ( function () {
 
-	var translationObject = new THREE.Vector3();
-	var quaternionObject = new THREE.Quaternion();
-	var scaleObject = new THREE.Vector3();
+  var translationObject = new THREE.Vector3();
+  var quaternionObject = new THREE.Quaternion();
+  var scaleObject = new THREE.Vector3();
 
-	var translationWorld = new THREE.Vector3();
-	var quaternionWorld = new THREE.Quaternion();
-	var scaleWorld = new THREE.Vector3();
+  var translationWorld = new THREE.Vector3();
+  var quaternionWorld = new THREE.Quaternion();
+  var scaleWorld = new THREE.Vector3();
 
-	return function updateMatrixWorld( force ) {
+  return function updateMatrixWorld( force ) {
 
-		this.matrixAutoUpdate && this.updateMatrix();
+    this.matrixAutoUpdate && this.updateMatrix();
 
-		// update matrixWorld
+    // update matrixWorld
+    if ( this.matrixWorldNeedsUpdate || force ) {
 
-		if ( this.matrixWorldNeedsUpdate || force ) {
+      if ( this.parent !== null ) {
 
-			if ( this.parent !== null ) {
+        this.matrixWorld.multiplyMatrices( this.parent.matrixWorld, this.matrix );
+        this.matrixWorld.decompose( translationWorld, quaternionWorld, scaleWorld );
+        this.matrix.decompose( translationObject, quaternionObject, scaleObject );
+        this.matrixWorld.compose( translationWorld, quaternionObject, scaleWorld );
 
-				this.matrixWorld.multiplyMatrices( this.parent.matrixWorld, this.matrix );
+      } else {
 
-				this.matrixWorld.decompose( translationWorld, quaternionWorld, scaleWorld );
-				this.matrix.decompose( translationObject, quaternionObject, scaleObject );
+        this.matrixWorld.copy( this.matrix );
 
-				this.matrixWorld.compose( translationWorld, quaternionObject, scaleWorld );
+      }
 
+      this.matrixWorldNeedsUpdate = false;
+      force = true;
 
-			} else {
+    }
 
-				this.matrixWorld.copy( this.matrix );
+    // update children
 
-			}
+    for ( var i = 0, l = this.children.length; i < l; i ++ ) {
 
+      this.children[ i ].updateMatrixWorld( force );
 
-			this.matrixWorldNeedsUpdate = false;
+    }
 
-			force = true;
+  };
 
-		}
-
-		// update children
-
-		for ( var i = 0, l = this.children.length; i < l; i ++ ) {
-
-			this.children[ i ].updateMatrixWorld( force );
-
-		}
-
-	};
-
-}() );
+}());

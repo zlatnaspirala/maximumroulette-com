@@ -1,13 +1,14 @@
 
-'use strict';
+"use strict";
 
 var cacheVersion = 1;
-var staticCacheName = 'maxi-version-1';
+var staticCacheName = "maxi-version-1";
 
+// eslint-disable-next-line no-unused-vars
 var currentCache = {
-  offline: 'offline-cache' + cacheVersion
+  offline: "offline-cache" + cacheVersion
 };
-const offlineUrl = 'offline.html';
+const offlineUrl = "offline.html";
 
 self.addEventListener("install", function (event) {
   self.skipWaiting();
@@ -17,23 +18,6 @@ self.addEventListener("install", function (event) {
         "/",
         offlineUrl,
         "index.html",
-        "scripts/drop-down.js",
-        "scripts/fix.js",
-        "scripts/slider.js",
-        "scripts/system.js",
-        "css/style.css",
-        "css/drop-down.css",
-        "css/animations.css",
-        "css/image-effect.css",
-        "css/slider.css",
-        "pages/webgl2-part.html",
-        "pages/ultimate-anatomy.html",
-        "pages/privacy-policy.html",
-        "pages/home.html",
-        "pages/contact.html",
-        "pages/cookies.html",
-        "pages/hang-project.html",
-        "pages/chat-space.html",
         "imgs/ua/1.png",
         "imgs/ua/2.png",
         "imgs/ua/3.png",
@@ -42,9 +26,6 @@ self.addEventListener("install", function (event) {
         "imgs/ua/6.png",
         "imgs/ua/7.png",
         "imgs/ua/8.png",
-        "imgs/social/stack.png",
-        "imgs/social/git.png",
-        "imgs/social/linkedin.png"
       ]);
     })
   );
@@ -54,7 +35,7 @@ self.addEventListener("fetch", function (event) {
 
   event.respondWith(
     caches.match(event.request).then(function (response) {
-      return response || fetch(event.request)
+      return response || fetch(event.request);
     })
   );
 });
@@ -75,8 +56,9 @@ self.addEventListener("fetch", function (event) {
     })
   );
 
-  if (event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
+  if (event.request.mode === "navigate" || (event.request.method === "GET" && event.request.headers.get("accept").includes("text/html"))) {
     event.respondWith(
+      // eslint-disable-next-line no-unused-vars
       fetch(event.request.url).catch(error => {
         // Return the offline page
         return caches.match(offlineUrl);

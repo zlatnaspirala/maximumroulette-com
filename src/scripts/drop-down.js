@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 
 function showMenu() {
   var x = document.getElementById("myTopnav");
@@ -17,6 +18,7 @@ function loadPage(name, absolutePath) {
     }
   };
 
+  // eslint-disable-next-line quotes
   if (typeof absolutePath === 'undefined') {
     xhttp.open("GET", "pages/" + name, true);
   } else {
@@ -25,6 +27,5 @@ function loadPage(name, absolutePath) {
 
   xhttp.send();
 
-  //showMenu();
 }
 

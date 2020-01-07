@@ -1,11 +1,12 @@
+/* global showSlides */
+/* eslint-disable no-unused-vars */
 
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  //
   var prev = document.getElementsByClassName("prev");
   prev[0].style.background = "transparent";
-  var prev = document.getElementsByClassName("next");
+  prev = document.getElementsByClassName("next");
   prev[0].style.background = "transparent";
 }
 
@@ -22,8 +23,8 @@ function defineSlider() {
       var i;
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
@@ -34,8 +35,7 @@ function defineSlider() {
       dots[slideIndex - 1].className += " active";
     } catch (e) {/*not tag*/ }
 
-  }
-
+  };
 
 }
 
@@ -43,4 +43,3 @@ defineSlider();
 
 var slideIndex = 1;
 showSlides(slideIndex);
-

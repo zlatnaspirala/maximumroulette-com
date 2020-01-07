@@ -1,27 +1,5 @@
 
+function NETWORK_ASSET() {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			function NETWORK_ASSET() {
- 
- 
-
-			}
-
-			
+}
 			

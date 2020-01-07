@@ -1,13 +1,15 @@
+/* eslint-disable no-unused-vars */
+/* global loadPage showSlides */
 if (location.protocol !== "https:") {
   location.protocol = "https:";
 }
 
 // initial sub page
-loadPage('home.html');
+loadPage("home.html");
 
 setTimeout(function() {
-  showSlides(1)
-}, 256)
+  showSlides(1);
+}, 256);
 
 // COMMON
 /*
@@ -15,6 +17,7 @@ setTimeout(function() {
   from init.js
 */
 
+// eslint-disable-next-line no-unused-vars
 var E = function(id) {
   return document.getElementById(id);
 };
