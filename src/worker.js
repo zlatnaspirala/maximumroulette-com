@@ -1,8 +1,8 @@
 
 "use strict";
 
-var cacheVersion = 1;
-var staticCacheName = "maxi-version-1";
+var cacheVersion = 2;
+var staticCacheName = "maxi-version-2";
 
 // eslint-disable-next-line no-unused-vars
 var currentCache = {
