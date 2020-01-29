@@ -12020,6 +12020,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 root.selectedPlayer.spriteTileCurrent = root.selectedPlayer.spriteTile[0];
                 root.player.render.visualComponent.setNewShema(root.selectedPlayer.spriteTileCurrent);
                 root.player.render.visualComponent.seqFrameX.setDelay(8);
+                Matter.Body.setPosition(root.player, root.playerStartPositions[0]);
                 setTimeout(function () {
                     var appStartGamePlay = system_1.createAppEvent("game-init", {
                         mapName: data,
