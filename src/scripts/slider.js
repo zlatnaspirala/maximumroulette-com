@@ -5,9 +5,11 @@
 function plusSlides(n) {
   showSlides(slideIndex += n);
   var prev = document.getElementsByClassName("prev");
-  prev[0].style.background = "transparent";
+  prev[0].style.background = "#ff45002b";
+  prev[0].style.cursor = "pointer";
   prev = document.getElementsByClassName("next");
-  prev[0].style.background = "transparent";
+  prev[0].style.background = "#ff45002b";
+  prev[0].style.cursor = "pointer";
 }
 
 // Thumbnail image controls

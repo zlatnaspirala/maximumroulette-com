@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* MessageBox animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes autohide {\r\n  0%   {background-color:rgba(255, 0, 0, 0.5); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  25%  {background-color:rgba(255, 255, 0, 0.5); right:-100px; top:0px; transform: scale(1, 1);}\r\n  50%  {background-color:rgba(30, 30, 175, 0.5); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  75%  {background-color:rgba(0, 128, 0, 0.5); right:60px; top:0px; transform: scale(0.8, 0.8);}\r\n  100% {background-color:rgba(255, 0, 0, 0.1); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes autohide {\r\n  0%   {background-color:rgba(255, 0, 0, 0.164); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  25%  {background-color:rgba(255, 255, 0, 0.164); right:-100px; top:0px; transform: scale(1, 1);}\r\n  50%  {background-color:rgba(30, 30, 175, 0.26); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  75%  {background-color:rgba(0, 128, 0, 0.164); right:60px; top:0px; transform: scale(0.8, 0.8);}\r\n  100% {background-color:rgba(255, 0, 0, 0.15); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes scaleToCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(1, 1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(0.01, 0.1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes scaleToCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(1, 1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(0.01, 0.1);}\r\n}\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes scaleFromCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(0.1, 0.1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes scaleFromCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(0.1, 0.1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Network-Panel animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes rightmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:0%; top:0px;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:-26%; top:95%;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes rightmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:0%; top:0px;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:-26%; top:95%;}\r\n}\r\n\r\n@-webkit-keyframes leftmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:-26%; top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:0%; top:0px;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes leftmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:-26%; top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:0%; top:0px;}\r\n}\r\n\r\n/* Vertical */\r\n/* Network-Panel animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes goBottom {\r\n  0%   {background-color:rgba(155, 101, 10, 0.9); top:0px;}\r\n  100%  {background-color:rgba(155, 155, 0, 0.9); top:95%;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes goBottom {\r\n  0%   {background-color:rgba(255, 120, 0, 0.9); top:0px;}\r\n  100%  {background-color:rgba(255, 25, 112, 0.9); top:95%;}\r\n}\r\n\r\n@-webkit-keyframes goUp {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); top:0px;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes goUp {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); top:0px;}\r\n}\r\n", ""]);
+exports.push([module.i, "/* MessageBox animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes autohide {\r\n  0%   {background-color:rgba(255, 0, 0, 0.5); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  25%  {background-color:rgba(255, 255, 0, 0.5); right:-100px; top:0px; transform: scale(1, 1);}\r\n  50%  {background-color:rgba(30, 30, 175, 0.5); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  75%  {background-color:rgba(0, 128, 0, 0.5); right:60px; top:0px; transform: scale(0.8, 0.8);}\r\n  100% {background-color:rgba(255, 0, 0, 0.1); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes autohide {\r\n  0%   {background-color:rgba(255, 0, 0, 0.164); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  25%  {background-color:rgba(255, 255, 0, 0.164); right:-100px; top:0px; transform: scale(1, 1);}\r\n  50%  {background-color:rgba(30, 30, 175, 0.26); right:0px; top:0px; transform: scale(0.5, 0.5);}\r\n  75%  {background-color:rgba(0, 128, 0, 0.164); right:60px; top:0px; transform: scale(0.8, 0.8);}\r\n  100% {background-color:rgba(255, 0, 0, 0.15); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes scaleToCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(1, 1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(0.01, 0.1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes scaleToCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(1, 1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(0.01, 0.1);}\r\n}\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes scaleFromCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(0.1, 0.1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes scaleFromCenter {\r\n  0%   {background-color:rgba(21, 0, 0, 0.9); right:0px; top:0px; transform: scale(0.1, 0.1);}\r\n  100% {background-color:rgba(21, 0, 0, 0.9); right:88px; top:0px; transform: scale(1, 1);}\r\n}\r\n\r\n/* Network-Panel animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes rightmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:0%; top:0px;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:-26%; top:95%;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes rightmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:0%; top:0px;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:-26%; top:95%;}\r\n}\r\n\r\n@-webkit-keyframes leftmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:-26%; top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:0%; top:0px;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes leftmove {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); right:-26%; top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); right:0%; top:0px;}\r\n}\r\n\r\n/* Vertical */\r\n/* Network-Panel animation */\r\n\r\n/* Safari 4.0 - 8.0 */\r\n@-webkit-keyframes goBottom {\r\n  0%   {background-color:rgba(155, 101, 10, 0.9); top:0px;}\r\n  100%  {background-color:rgba(155, 155, 0, 0.9); top:95%;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes goBottom {\r\n  0%   {background-color:rgba(255, 120, 0, 0.9); top:0px;}\r\n  100%  {background-color:rgba(255, 25, 112, 0.9); top:95%;}\r\n}\r\n\r\n@-webkit-keyframes goUp {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); top:0px;}\r\n}\r\n\r\n/* Standard syntax */\r\n@keyframes goUp {\r\n  0%   {background-color:rgba(255, 0, 0, 0.9); top:95%;}\r\n  100%  {background-color:rgba(255, 255, 0, 0.9); top:0px;}\r\n}\r\n\r\n/* bounceIn */\r\n.bounceIn {\r\n  border: none;\r\n  -webkit-animation-name: bounceIn;\r\n  animation-name: bounceIn;\r\n  -webkit-animation-duration: .75s;\r\n  animation-duration: .75s;\r\n  -webkit-animation-duration: 1s;\r\n  animation-duration: 1s;\r\n  animation-iteration-count: 1;\r\n  -webkit-animation-fill-mode: none;\r\n  animation-fill-mode: none;\r\n  animation-play-state: running;\r\n}\r\n\r\ndiv.bounceIn:hover {\r\n  border: solid red 1px;\r\n}\r\n\r\n@-webkit-keyframes bounceIn {\r\n0%, 20%, 40%, 60%, 80%, 100% {\r\n  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\r\n  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\r\n}\r\n0% {\r\n  opacity: 0;\r\n  -webkit-transform: scale3d(.3, .3, .3);\r\n  transform: scale3d(.3, .3, .3);\r\n}\r\n20% {\r\n  -webkit-transform: scale3d(1.1, 1.1, 1.1);\r\n  transform: scale3d(1.1, 1.1, 1.1);\r\n}\r\n40% {\r\n  -webkit-transform: scale3d(.9, .9, .9);\r\n  transform: scale3d(.9, .9, .9);\r\n}\r\n60% {\r\n  opacity: 1;\r\n  -webkit-transform: scale3d(1.03, 1.03, 1.03);\r\n  transform: scale3d(1.03, 1.03, 1.03);\r\n}\r\n80% {\r\n  -webkit-transform: scale3d(.97, .97, .97);\r\n  transform: scale3d(.97, .97, .97);\r\n}\r\n100% {\r\n  opacity: 1;\r\n  -webkit-transform: scale3d(1, 1, 1);\r\n  transform: scale3d(1, 1, 1);\r\n}\r\n}\r\n@keyframes bounceIn {\r\n0%, 20%, 40%, 60%, 80%, 100% {\r\n  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\r\n  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\r\n}\r\n0% {\r\nopacity: 0;\r\n  -webkit-transform: scale3d(.3, .3, .3);\r\n  transform: scale3d(.3, .3, .3);\r\n}\r\n20% {\r\n  -webkit-transform: scale3d(1.1, 1.1, 1.1);\r\n  transform: scale3d(1.1, 1.1, 1.1);\r\n}\r\n40% {\r\n  -webkit-transform: scale3d(.9, .9, .9);\r\n  transform: scale3d(.9, .9, .9);\r\n}\r\n60% {\r\n  opacity: 1;\r\n  -webkit-transform: scale3d(1.03, 1.03, 1.03);\r\n  transform: scale3d(1.03, 1.03, 1.03);\r\n}\r\n80% {\r\n  -webkit-transform: scale3d(.97, .97, .97);\r\n  transform: scale3d(.97, .97, .97);\r\n}\r\n100% {\r\n  opacity: 1;\r\n  -webkit-transform: scale3d(1, 1, 1);\r\n  transform: scale3d(1, 1, 1);\r\n}\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -124,7 +124,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-exports.push([module.i, "html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline;\r\n}\r\n\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block;\r\n}\r\n\r\nbody {\r\n  font: 14px/20px Impact, Helvetica, Arial, sans-serif;\r\n  color: lime;\r\n  margin: 0;\r\n  padding: 0;\r\n  border:none;\r\n  background-color:black;\r\n  overflow: hidden;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n  font-family: Impact, Arial;\r\n}\r\n\r\n.hide {\r\n  display:none;\r\n}\r\n\r\ncanvas {\r\n    margin:0 auto;\r\n    font-family: Impact, Helvetica, Arial, sans-serif;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background: #14151f;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    height: 100vmin;\r\n    border-radius: 8px;\r\n    border: solid peru 10px;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n/* Scroll bars */\r\n/* width */\r\n::-webkit-scrollbar {\r\n    width: 20px;\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    box-shadow: inset 0 0 5px grey;\r\n    border-radius: 6px;\r\n}\r\n\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n  background: silver;\r\n  border-radius: 10px;\r\n}\r\n\r\n/* Handle on hover */\r\n::-webkit-scrollbar-thumb:hover {\r\n  background: green;\r\n}\r\n\r\n#msgbox {\r\n  position: absolute;\r\n  top:15%;\r\n  left:30%;\r\n  width: 40%;\r\n  height: 50%;\r\n  text-align: center;\r\n  margin: 0 0 0 0 auto;\r\n  vertical-align: middle;\r\n}\r\n\r\n.log-network {\r\n  position: absolute;\r\n  z-index: 150;\r\n  right: 0%;\r\n  width: 30%;\r\n  height: 100%;\r\n  -webkit-animation-name: autohide; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */\r\n  animation-name: autohide;\r\n  animation-duration: 2s;\r\n}\r\n\r\n.network-panel-hide-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: rightmove;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: rightmove;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-show-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: leftmove;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: leftmove;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-hide-ver-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: goBottom;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: goBottom;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-show-ver-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: goUp;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: goUp;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box {\r\n  position: absolute;\r\n  background: black;\r\n  padding: 20px;\r\n  opacity: 1;\r\n  z-index: 1500000;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  -webkit-animation-name: autohide; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */\r\n  animation-name: autohide;\r\n  animation-duration: 2s;\r\n  font-size: normal;\r\n}\r\n\r\n.message-box-content {\r\n  text-align: center;\r\n  font-size: 140%;\r\n}\r\n\r\n.message-box-hide-animation {\r\n  -webkit-animation-name: scaleToCenter;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-name: scaleToCenter;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box-show-animation {\r\n  -webkit-animation-name: scaleFromCenter;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-name: scaleFromCenter;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box-btn {\r\n  text-align: center;\r\n  position: absolute;\r\n  color: #ffffff;\r\n  bottom: 10px;\r\n  font-family: Impact, sans-serif;\r\n  text-transform: uppercase;\r\n  margin-bottom: 10px;\r\n  padding: .75rem;\r\n  display: flow-root;\r\n  width: 100%;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n  border: none;\r\n  cursor: pointer;\r\n  font-size: 130%;\r\n}\r\n\r\n.logger {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 5%;\r\n  height: 200px;\r\n  overflow: auto;\r\n}\r\n\r\n.log-chat {\r\n  position: absolute;\r\n  top: 6%;\r\n  height: 89% !important;\r\n  width: 100%;\r\n  overflow: auto;\r\n  opacity: 0.7;\r\n  background: rgba(2,2,222,0.2);\r\n}\r\n\r\n.log-sender {\r\n  position:absolute;\r\n  bottom:10%;\r\n  left:0;\r\n  width:64%;\r\n  z-index: 100;\r\n}\r\n\r\n.textMessageNode {\r\n  word-break: break-all;\r\n}\r\n\r\n.new-message {\r\n  width: 100%;\r\n  float: left;\r\n}\r\n\r\n.user-info {\r\n  width: auto;\r\n  float: left;\r\n}\r\n\r\n.user-info img {\r\n  padding-top: 1px;\r\n  width: 55px;\r\n  height: 55px;\r\n}\r\n\r\n.whoIsTyping {\r\n  position: absolute;\r\n  left: 45%;\r\n  top: 1%;\r\n  height: 50px;\r\n  overflow: auto;\r\n}\r\n\r\n.webCamView {\r\n  position: absolute;\r\n  background: transparent;\r\n  width: 33%;\r\n  z-index: 20;\r\n  bottom: 0;\r\n}\r\n\r\n.controls {\r\n  margin: auto;\r\n  position: absolute;\r\n  padding-left: 28px;\r\n  right: 0;\r\n  background: transparent;\r\n  width: 111px;\r\n}\r\n\r\n.controls span {\r\n  padding-top: 20px\r\n}\r\n\r\n.icon {\r\n  width: 45px;\r\n  height: 45px;\r\n  vertical-align:bottom !important;\r\n}\r\n\r\n.chatIcon {\r\n  width: 35px;\r\n  height: 35px;\r\n}\r\n\r\n#user-profile-btn-ok {\r\n  position: absolute;\r\n  width: 10%;\r\n  min-width: 200px;\r\n  bottom: 0;\r\n  left: 40%;\r\n  z-index: 1000;\r\n  text-align: center;\r\n}\r\n\r\n.myButton {\r\n\tbackground-color:#d41111;\r\n\tborder:1px solid #9412219b;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n  text-decoration:none;\r\n  outline: none;\r\n}\r\n.myButton:hover {\r\n  background-color:#ffffff;\r\n  color:#d41111;\r\n}\r\n\r\n.myButtonChat {\r\n\tbackground-color:transparent;\r\n\tborder:1px solid #9412219b;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n  text-decoration:none;\r\n  outline: none;\r\n}\r\n\r\n.myButtonChat:hover {\r\n  background-color:rgba(123,12,33,0.3);\r\n  color:#d41111;\r\n}\r\n\r\n.myError {\r\n  display: none;\r\n\t-moz-box-shadow: 0px 0px 11px 3px darkred;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px darkred;\r\n\tbox-shadow: 0px 0px 11px 3px darkred;\r\n\tbackground-color:darkred;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid red;\r\n\tcursor:pointer;\r\n\tcolor:lightcoral;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n  text-shadow:0px 1px 8px #14151f;\r\n  width: 100%;\r\n}\r\n.myError:hover {\r\n  background-color:lightcoral;\r\n  color:white;\r\n}\r\n\r\n#allow-webcam {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n\r\n}\r\n\r\n#allow-mic {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#allow-screen {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#share-files {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n/**\r\n  DOM Components CSS\r\n  - register form\r\n  - login form\r\n*/\r\n\r\n.make-center {\r\n  height: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.popup {\r\n  position: absolute;\r\n  margin: 0;\r\n  left : 0;\r\n  top: 0;\r\n  width: 99.5vw;\r\n  height: 100%;\r\n  background-color: rgba(32,112,132,0.5);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  z-index: 200;\r\n}\r\n\r\n .container {\r\n  display: block;\r\n  position: relative;\r\n  z-index: 0;\r\n  margin: 1rem auto 0;\r\n  padding: 1rem 1rem 1rem 1rem;\r\n  width: 100%;\r\n  max-width: 700px;\r\n  height: auto;\r\n  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n}\r\n\r\nbutton:focus {outline:0;}\r\n\r\n.noselect {\r\n  -webkit-touch-callout: none; /* iOS Safari */\r\n  -webkit-user-select: none; /* Safari */\r\n  -khtml-user-select: none; /* Konqueror HTML */\r\n  -moz-user-select: none; /* Firefox */\r\n  -ms-user-select: none; /* Internet Explorer/Edge */\r\n  user-select: none; /* Non-prefixed version, currently\r\n                        supported by Chrome and Opera */\r\n}\r\n\r\n.leftPanelUni {\r\n  display: block;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  z-index: 10;\r\n  margin: auto 0;\r\n  padding: 0;\r\n  width: 20%;\r\n  height: 100%;\r\n  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n  font-size: 80%;\r\n}\r\n\r\n.container:after {\r\n  content: '';\r\n  display: inline-block;\r\n  position: absolute;\r\n  z-index: 0;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-image: radial-gradient(ellipse at left bottom, rgba(134, 9, 9, 1) 0%, rgba(150, 15, 15, 0.9) 60%, rgba(159, 14, 14, 0.9) 100%);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.form-app {\r\n  position: relative;\r\n  z-index: 1;\r\n  padding: 5% 1% 4% 1%;\r\n  border-bottom: 1px solid rgba(255,255,255, 0.25);\r\n  font-size: x-large;\r\n}\r\n\r\n.nav {\r\n    position: relative;\r\n    padding: 0;\r\n    margin: 0 0 2em 1rem;\r\n}\r\n\r\n.nav-item {\r\n  list-style: none;\r\n  display: inline-block;\r\n}\r\n\r\n.nav-item + .nav-item{\r\n  margin-left: 2.25rem;\r\n}\r\n\r\n.nav-item a {\r\n  position: relative;\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\r\n  font-size: 1.25rem;\r\n  padding-bottom: .5rem;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.nav-item.active a, .nav-item a:hover{\r\n  color: #FFFFFF;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:after{\r\n  content: '';\r\n  display: inline-block;\r\n  height: 10px;\r\n  background-color: rgb(255, 255, 255);\r\n  position: absolute;\r\n  right: 100%;\r\n  bottom: -1px;\r\n  left: 0;\r\n  border-radius: 50%;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:hover:after, .nav-item.active a:after{\r\n  background-color: rgb(208, 183, 181);\r\n  height: 2px;\r\n  right: 0;\r\n  bottom: 2px;\r\n  border-radius: 0;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.form-label, .form-checkbox-label{\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-transform: uppercase;\r\n  font-size: .75rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.form-checkbox-label{\r\n  display: inline-block;\r\n  position: relative;\r\n  padding-left: 1.5rem;\r\n  margin-top: 2rem;\r\n  margin-left: 1rem;\r\n  color: #FFFFFF;\r\n  font-size: .75rem;\r\n  text-transform: inherit;\r\n}\r\n\r\n.form-input-text{\r\n  color: white;\r\n  font-size: 1.15rem;\r\n  width: 100%;\r\n  padding: .5rem 1rem;\r\n  border: 2px solid transparent;\r\n  outline: none;\r\n  border-radius: 0.2rem;\r\n  background-color: rgb(169, 11, 13);\r\n  letter-spacing: 1px;\r\n}\r\n\r\n.form-input-text:hover,\r\n.form-input-text:focus{\r\n\tcolor: white;\r\n\tborder: 2px solid rgba(255, 255, 255, 0.5);\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.form-input-text + .form-label {\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\n.form-input-checkbox {\r\n\tposition: absolute;\r\n\ttop: .1rem;\r\n\tleft: 0;\r\n\tmargin: 0;\r\n}\r\n\r\n.login-button {\r\n\tcolor: #ffffff;\r\n\tfont-size: 18px;\r\n\tfont-family: Impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 1px;\r\n\tmargin-top: 1rem;\r\n\tpadding: .75rem;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tbackground-color: rgba(237, 17, 17, 0.75);\r\n\tborder: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.login-button:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link {\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n  color:white;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n\tfont-size: 16px;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\tz-index: 1;\r\n}\r\n\r\n.link:disabled {\r\n  background: #462d2d;\r\n}\r\n\r\n.link:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link:hover:disabled {\r\n  background: #4b2323;\r\n}\r\n", ""]);
+exports.push([module.i, "html, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed,\r\nfigure, figcaption, footer, header, hgroup,\r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline;\r\n}\r\n\r\narticle, aside, details, figcaption, figure,\r\nfooter, header, hgroup, menu, nav, section {\r\n  display: block;\r\n}\r\n\r\nbody {\r\n  font: 14px/20px Impact, Helvetica, Arial, sans-serif;\r\n  color: lime;\r\n  margin: 0;\r\n  padding: 0;\r\n  border:none;\r\n  background-color:black;\r\n  overflow: hidden;\r\n}\r\n\r\n* {\r\n  box-sizing: border-box;\r\n  font-family: Impact, Arial;\r\n}\r\n\r\n.hide {\r\n  display:none;\r\n}\r\n\r\ncanvas {\r\n    margin:0 auto;\r\n    font-family: Impact, Helvetica, Arial, sans-serif;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background: #14151f;\r\n    -webkit-box-align: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: center;\r\n    -ms-flex-pack: center;\r\n    justify-content: center;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    height: 100vmin;\r\n    border-radius: 8px;\r\n    border: solid peru 10px;\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}\r\n\r\n/* Scroll bars */\r\n/* width */\r\n::-webkit-scrollbar {\r\n    width: 20px;\r\n}\r\n\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n    box-shadow: inset 0 0 5px grey;\r\n    border-radius: 6px;\r\n}\r\n\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n  background: silver;\r\n  border-radius: 10px;\r\n}\r\n\r\n/* Handle on hover */\r\n::-webkit-scrollbar-thumb:hover {\r\n  background: green;\r\n}\r\n\r\n#msgbox {\r\n  position: absolute;\r\n  top:15%;\r\n  left:30%;\r\n  width: 40%;\r\n  height: 50%;\r\n  text-align: center;\r\n  margin: 0 0 0 0 auto;\r\n  vertical-align: middle;\r\n}\r\n\r\n.log-network {\r\n  position: absolute;\r\n  z-index: 150;\r\n  right: 0%;\r\n  width: 30%;\r\n  height: 100%;\r\n  -webkit-animation-name: autohide; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */\r\n  animation-name: autohide;\r\n  animation-duration: 2s;\r\n}\r\n\r\n.network-panel-hide-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: rightmove;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: rightmove;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-show-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: leftmove;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: leftmove;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-hide-ver-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: goBottom;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: goBottom;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.network-panel-show-ver-animation {\r\n  -webkit-animation-fill-mode: forwards;\r\n  -webkit-animation-name: goUp;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-fill-mode: forwards;\r\n  animation-name: goUp;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box {\r\n  position: absolute;\r\n  background: black;\r\n  padding: 20px;\r\n  opacity: 1;\r\n  z-index: 1500000;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  -webkit-animation-name: autohide; /* Safari 4.0 - 8.0 */\r\n  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */\r\n  animation-name: autohide;\r\n  animation-duration: 2s;\r\n  font-size: normal;\r\n}\r\n\r\n.message-box-content {\r\n  text-align: center;\r\n  font-size: 140%;\r\n}\r\n\r\n.message-box-hide-animation {\r\n  -webkit-animation-name: scaleToCenter;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-name: scaleToCenter;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box-show-animation {\r\n  -webkit-animation-name: scaleFromCenter;\r\n  -webkit-animation-duration: 1.2s;\r\n  animation-name: scaleFromCenter;\r\n  animation-duration: 1.2s;\r\n}\r\n\r\n.message-box-btn {\r\n  text-align: center;\r\n  position: absolute;\r\n  color: #ffffff;\r\n  bottom: 10px;\r\n  font-family: Impact, sans-serif;\r\n  text-transform: uppercase;\r\n  margin-bottom: 10px;\r\n  padding: .75rem;\r\n  display: flow-root;\r\n  width: 100%;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n  border: none;\r\n  cursor: pointer;\r\n  font-size: 130%;\r\n}\r\n\r\n.logger {\r\n  position: absolute;\r\n  left: 0;\r\n  top: 5%;\r\n  height: 200px;\r\n  overflow: auto;\r\n}\r\n\r\n.log-chat {\r\n  position: absolute;\r\n  top: 6%;\r\n  height: 89% !important;\r\n  width: 100%;\r\n  overflow: auto;\r\n  opacity: 0.7;\r\n  background: rgba(2,2,222,0.2);\r\n}\r\n\r\n.log-sender {\r\n  position:absolute;\r\n  bottom:10%;\r\n  left:0;\r\n  width:64%;\r\n  z-index: 100;\r\n}\r\n\r\n.textMessageNode {\r\n  word-break: break-all;\r\n}\r\n\r\n.new-message {\r\n  width: 100%;\r\n  float: left;\r\n}\r\n\r\n.user-info {\r\n  width: auto;\r\n  float: left;\r\n}\r\n\r\n.user-info img {\r\n  padding-top: 1px;\r\n  width: 55px;\r\n  height: 55px;\r\n}\r\n\r\n.whoIsTyping {\r\n  position: absolute;\r\n  left: 45%;\r\n  top: 1%;\r\n  height: 50px;\r\n  overflow: auto;\r\n}\r\n\r\n.webCamView {\r\n  position: absolute;\r\n  background: transparent;\r\n  width: 33%;\r\n  z-index: 20;\r\n  bottom: 0;\r\n}\r\n\r\n.controls {\r\n  margin: auto;\r\n  position: absolute;\r\n  padding-left: 28px;\r\n  right: 0;\r\n  background: transparent;\r\n  width: 111px;\r\n}\r\n\r\n.controls span {\r\n  padding-top: 20px\r\n}\r\n\r\n.icon {\r\n  width: 45px;\r\n  height: 45px;\r\n  vertical-align:bottom !important;\r\n}\r\n\r\n.chatIcon {\r\n  width: 35px;\r\n  height: 35px;\r\n}\r\n\r\n#user-profile-btn-ok {\r\n  position: absolute;\r\n  width: 10%;\r\n  min-width: 200px;\r\n  bottom: 0;\r\n  left: 40%;\r\n  z-index: 1000;\r\n  text-align: center;\r\n}\r\n\r\n.myButton {\r\n\tbackground-color:#d41111;\r\n\tborder:1px solid #9412219b;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n  text-decoration:none;\r\n  outline: none;\r\n}\r\n.myButton:hover {\r\n  background-color:#ffffff;\r\n  color:#d41111;\r\n}\r\n\r\n.myButtonChat {\r\n\tbackground-color:transparent;\r\n\tborder:1px solid #9412219b;\r\n\tdisplay:inline-block;\r\n\tcursor:pointer;\r\n\tcolor:#ffffff;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n  text-decoration:none;\r\n  outline: none;\r\n}\r\n\r\n.myButtonChat:hover {\r\n  background-color:rgba(123,12,33,0.3);\r\n  color:#d41111;\r\n}\r\n\r\n.myError {\r\n  display: none;\r\n\t-moz-box-shadow: 0px 0px 11px 3px darkred;\r\n\t-webkit-box-shadow: 0px 0px 11px 3px darkred;\r\n\tbox-shadow: 0px 0px 11px 3px darkred;\r\n\tbackground-color:darkred;\r\n\t-moz-border-radius:28px;\r\n\t-webkit-border-radius:28px;\r\n\tborder-radius:28px;\r\n\tborder:1px solid red;\r\n\tcursor:pointer;\r\n\tcolor:lightcoral;\r\n\tfont-family: Impact, Arial;\r\n\tfont-size:17px;\r\n\tpadding:5px 33px;\r\n\ttext-decoration:none;\r\n  text-shadow:0px 1px 8px #14151f;\r\n  width: 100%;\r\n}\r\n.myError:hover {\r\n  background-color:lightcoral;\r\n  color:white;\r\n}\r\n\r\n#allow-webcam {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n\r\n}\r\n\r\n#allow-mic {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#allow-screen {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n#share-files {\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\r\n  background-repeat: no-repeat;\r\n  background-position-x: center;\r\n  background-position-y: top;\r\n}\r\n\r\n/**\r\n  DOM Components CSS\r\n  - register form\r\n  - login form\r\n*/\r\n\r\n.make-center {\r\n  height: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.popup {\r\n  position: absolute;\r\n  margin: 0;\r\n  left : 0;\r\n  top: 0;\r\n  width: 99.5vw;\r\n  height: 100%;\r\n  background-color: rgba(32,112,132,0.5);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n  z-index: 200;\r\n}\r\n\r\n .container {\r\n  display: block;\r\n  position: relative;\r\n  z-index: 0;\r\n  margin: 1rem auto 0;\r\n  padding: 1rem 1rem 1rem 1rem;\r\n  width: 100%;\r\n  max-width: 700px;\r\n  height: auto;\r\n  box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n}\r\n\r\nbutton:focus {outline:0;}\r\n\r\n.noselect {\r\n  -webkit-touch-callout: none; /* iOS Safari */\r\n  -webkit-user-select: none; /* Safari */\r\n  -khtml-user-select: none; /* Konqueror HTML */\r\n  -moz-user-select: none; /* Firefox */\r\n  -ms-user-select: none; /* Internet Explorer/Edge */\r\n  user-select: none; /* Non-prefixed version, currently\r\n                        supported by Chrome and Opera */\r\n}\r\n\r\n.leftPanelUni {\r\n  display: block;\r\n  position: absolute;\r\n  left: 0;\r\n  top: 0;\r\n  z-index: 10;\r\n  margin: auto 0;\r\n  padding: 0;\r\n  width: 20%;\r\n  height: 100%;\r\n  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.8);\r\n  border-radius: 20px;\r\n  font-size: 80%;\r\n}\r\n\r\n.container:after {\r\n  content: '';\r\n  display: inline-block;\r\n  position: absolute;\r\n  z-index: 0;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-image: radial-gradient(ellipse at left bottom, rgba(134, 9, 9, 1) 0%, rgba(150, 15, 15, 0.9) 60%, rgba(159, 14, 14, 0.9) 100%);\r\n  box-shadow: 0 -20px 150px -20px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.form-app {\r\n  position: relative;\r\n  z-index: 1;\r\n  padding: 5% 1% 4% 1%;\r\n  border-bottom: 1px solid rgba(255,255,255, 0.25);\r\n  font-size: x-large;\r\n}\r\n\r\n.form-selectplayer {\r\n  position: relative;\r\n  text-align: center;\r\n  z-index: 1;\r\n  padding: 1% 1% 4% 1%;\r\n  border-bottom: 1px solid rgba(255,255,255, 0.25);\r\n  font-size: x-large;\r\n}\r\n\r\n.nav {\r\n    position: relative;\r\n    padding: 0;\r\n    margin: 0 0 2em 1rem;\r\n}\r\n\r\n.nav-item {\r\n  list-style: none;\r\n  display: inline-block;\r\n}\r\n\r\n.nav-item + .nav-item{\r\n  margin-left: 2.25rem;\r\n}\r\n\r\n.nav-item a {\r\n  position: relative;\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-weight: 500;\r\n  font-size: 1.25rem;\r\n  padding-bottom: .5rem;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.nav-item.active a, .nav-item a:hover{\r\n  color: #FFFFFF;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:after{\r\n  content: '';\r\n  display: inline-block;\r\n  height: 10px;\r\n  background-color: rgb(255, 255, 255);\r\n  position: absolute;\r\n  right: 100%;\r\n  bottom: -1px;\r\n  left: 0;\r\n  border-radius: 50%;\r\n  transition: .15s all ease;\r\n}\r\n\r\n.nav-item a:hover:after, .nav-item.active a:after{\r\n  background-color: rgb(208, 183, 181);\r\n  height: 2px;\r\n  right: 0;\r\n  bottom: 2px;\r\n  border-radius: 0;\r\n  transition: .20s all ease;\r\n}\r\n\r\n.form-label, .form-checkbox-label{\r\n  color: rgba(255, 255, 255, 0.5);\r\n  text-transform: uppercase;\r\n  font-size: .75rem;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.form-checkbox-label{\r\n  display: inline-block;\r\n  position: relative;\r\n  padding-left: 1.5rem;\r\n  margin-top: 2rem;\r\n  margin-left: 1rem;\r\n  color: #FFFFFF;\r\n  font-size: .75rem;\r\n  text-transform: inherit;\r\n}\r\n\r\n.form-input-text{\r\n  color: white;\r\n  font-size: 1.15rem;\r\n  width: 100%;\r\n  padding: .5rem 1rem;\r\n  border: 2px solid transparent;\r\n  outline: none;\r\n  border-radius: 0.2rem;\r\n  background-color: rgb(169, 11, 13);\r\n  letter-spacing: 1px;\r\n}\r\n\r\n.form-input-text:hover,\r\n.form-input-text:focus{\r\n\tcolor: white;\r\n\tborder: 2px solid rgba(255, 255, 255, 0.5);\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.form-input-text + .form-label {\r\n\tmargin-top: 1.5rem;\r\n}\r\n\r\n.form-input-checkbox {\r\n\tposition: absolute;\r\n\ttop: .1rem;\r\n\tleft: 0;\r\n\tmargin: 0;\r\n}\r\n\r\n.login-button {\r\n\tcolor: #ffffff;\r\n\tfont-size: 18px;\r\n\tfont-family: Impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\tletter-spacing: 1px;\r\n\tmargin-top: 1rem;\r\n\tpadding: .75rem;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\tbackground-color: rgba(237, 17, 17, 0.75);\r\n\tborder: none;\r\n\tcursor: pointer;\r\n}\r\n\r\n.login-button:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link {\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n  color:white;\r\n  background-color: rgba(237, 17, 17, 0.75);\r\n\tfont-size: 16px;\r\n\ttext-decoration: none;\r\n\tposition: relative;\r\n\tz-index: 1;\r\n}\r\n\r\n.link:disabled {\r\n  background: #462d2d;\r\n}\r\n\r\n.link:hover {\r\n\tbackground-color: rgba(237, 17, 17, 1);\r\n}\r\n\r\n.link:hover:disabled {\r\n  background: #4b2323;\r\n}\r\n\r\n.selectPlayerItemBox {\r\n  margin-top: 5%;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11378,7 +11378,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ../libs/class/browser */ "./src/libs/class/browser.ts"), __webpack_require__(/*! ../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../libs/class/view-port */ "./src/libs/class/view-port.ts"), __webpack_require__(/*! ../libs/class/visual-render */ "./src/libs/class/visual-render.ts"), __webpack_require__(/*! ../client-config */ "./src/client-config.ts"), __webpack_require__(/*! ../libs/events/global-event */ "./src/libs/events/global-event.ts"), __webpack_require__(/*! ../libs/starter */ "./src/libs/starter.ts"), __webpack_require__(/*! ../libs/class/messager-box */ "./src/libs/class/messager-box.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, browser_1, system_1, view_port_1, visual_render_1, client_config_1, global_event_1, starter_1, messager_box_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ../libs/class/browser */ "./src/libs/class/browser.ts"), __webpack_require__(/*! ../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../libs/class/view-port */ "./src/libs/class/view-port.ts"), __webpack_require__(/*! ../libs/class/visual-render */ "./src/libs/class/visual-render.ts"), __webpack_require__(/*! ../client-config */ "./src/client-config.ts"), __webpack_require__(/*! ../libs/events/global-event */ "./src/libs/events/global-event.ts"), __webpack_require__(/*! ../libs/starter */ "./src/libs/starter.ts"), __webpack_require__(/*! ../libs/class/messager-box */ "./src/libs/class/messager-box.ts"), __webpack_require__(/*! ../libs/class/sound */ "./src/libs/class/sound.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, browser_1, system_1, view_port_1, visual_render_1, client_config_1, global_event_1, starter_1, messager_box_1, sound_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var Ioc = (function () {
@@ -11386,6 +11386,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             this.get = {};
             this.config = new client_config_1.default(gamesList);
             this.loadAddson();
+            this.singlton(sound_1.default, undefined);
             this.singlton(messager_box_1.default, undefined);
             this.singlton(browser_1.default, undefined);
             this.singlton(view_port_1.default, this.config);
@@ -11425,6 +11426,17 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./src/examples/platformer-single-player/audios/map-themes/mishief-stroll.mp4":
+/*!************************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/audios/map-themes/mishief-stroll.mp4 ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/audios/mishief-stroll.mp4";
+
+/***/ }),
+
 /***/ "./src/examples/platformer-single-player/imgs/backgrounds/wall3.png":
 /*!**************************************************************************!*\
   !*** ./src/examples/platformer-single-player/imgs/backgrounds/wall3.png ***!
@@ -11432,7 +11444,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/wall3.png";
+module.exports = __webpack_require__.p + "imgs/6b050f0bb5b933f82099cac57d716610wall3.png";
 
 /***/ }),
 
@@ -11443,7 +11455,51 @@ module.exports = __webpack_require__.p + "imgs/wall3.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/bitcoin.png";
+module.exports = __webpack_require__.p + "imgs/c7c8c111d27597d5d1bad464d12f6abcbitcoin.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png":
+/*!*****************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/collect-items/coin-1.png ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/427ca77792a478c5e1da508575060ca6coin-1.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/collect-items/hudKey_red.png":
+/*!*********************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/collect-items/hudKey_red.png ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/191399ceac4eb84694a93f05e7acb835hudKey_red.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/collect-items/hudKey_yellow.png":
+/*!************************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/collect-items/hudKey_yellow.png ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/4bb48c5e85759cf4cedb5d3fb1c73954hudKey_yellow.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/collect-items/tileRed_12.png":
+/*!*********************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/collect-items/tileRed_12.png ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/86319b272b59464ca4d8a73cb7f87a4ctileRed_12.png";
 
 /***/ }),
 
@@ -11454,7 +11510,7 @@ module.exports = __webpack_require__.p + "imgs/bitcoin.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/flame2.png";
+module.exports = __webpack_require__.p + "imgs/8dd5bdaf4eb9060226a86cc79cdb36ebflame2.png";
 
 /***/ }),
 
@@ -11465,7 +11521,7 @@ module.exports = __webpack_require__.p + "imgs/flame2.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/chopper.png";
+module.exports = __webpack_require__.p + "imgs/1eec36918eea9705145165d363349a73chopper.png";
 
 /***/ }),
 
@@ -11476,7 +11532,7 @@ module.exports = __webpack_require__.p + "imgs/chopper.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/crapmunch.png";
+module.exports = __webpack_require__.p + "imgs/ff42e4663491d439079f9fa7c68fe8e0crapmunch.png";
 
 /***/ }),
 
@@ -11487,18 +11543,73 @@ module.exports = __webpack_require__.p + "imgs/crapmunch.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/explosion.png";
+module.exports = __webpack_require__.p + "imgs/4310b53845b066f1bd7419726a1d787dexplosion.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png":
-/*!************************************************************************************!*\
-  !*** ./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png ***!
-  \************************************************************************************/
+/***/ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png":
+/*!***********************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/boxAlt.png ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/chocoCenter_rounded.png";
+module.exports = __webpack_require__.p + "imgs/55435003f66f3611af6efe66fc23ce80boxAlt.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png":
+/*!*************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/f12e7282598d6d6da5eef816874f6069boxEmpty.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/grounds/brickWall.png":
+/*!**************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/brickWall.png ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/4bd728248e2154429f50417a50e658bfbrickWall.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/grounds/castle.png":
+/*!***********************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/castle.png ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/1f057d5bb83389f6f5126dee68ab3854castle.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png":
+/*!**************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/castleMid.png ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/d487cf1a810021ad544d65b9a5ceab0ccastleMid.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png":
+/*!****************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/9a80eca833ff1293217291496364a23bchocoCenter.png";
 
 /***/ }),
 
@@ -11509,7 +11620,7 @@ module.exports = __webpack_require__.p + "imgs/chocoCenter_rounded.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/elementGlass019.png";
+module.exports = __webpack_require__.p + "imgs/3774add031b2c2020b69a18f41bb5853elementGlass019.png";
 
 /***/ }),
 
@@ -11520,18 +11631,7 @@ module.exports = __webpack_require__.p + "imgs/elementGlass019.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/floor2.png";
-
-/***/ }),
-
-/***/ "./src/examples/platformer-single-player/imgs/grounds/floor3.png":
-/*!***********************************************************************!*\
-  !*** ./src/examples/platformer-single-player/imgs/grounds/floor3.png ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "imgs/floor3.png";
+module.exports = __webpack_require__.p + "imgs/be9f1ef01636e914e49f583b5193fdf7floor2.png";
 
 /***/ }),
 
@@ -11542,18 +11642,7 @@ module.exports = __webpack_require__.p + "imgs/floor3.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/grass.png";
-
-/***/ }),
-
-/***/ "./src/examples/platformer-single-player/imgs/grounds/grassCliffRight.png":
-/*!********************************************************************************!*\
-  !*** ./src/examples/platformer-single-player/imgs/grounds/grassCliffRight.png ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "imgs/grassCliffRight.png";
+module.exports = __webpack_require__.p + "imgs/20b0b34073879122548aaf156c99728cgrass.png";
 
 /***/ }),
 
@@ -11564,18 +11653,73 @@ module.exports = __webpack_require__.p + "imgs/grassCliffRight.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/lollipopRed.png";
+module.exports = __webpack_require__.p + "imgs/190bf4b440aeb418362c5fbd6a1cb718lollipopRed.png";
 
 /***/ }),
 
-/***/ "./src/examples/platformer-single-player/imgs/walk-boy2.png":
-/*!******************************************************************!*\
-  !*** ./src/examples/platformer-single-player/imgs/walk-boy2.png ***!
-  \******************************************************************/
+/***/ "./src/examples/platformer-single-player/imgs/players/reaper/poster.png":
+/*!******************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/reaper/poster.png ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/walk-boy2.png";
+module.exports = __webpack_require__.p + "imgs/eb36c42bd4bc3548a088ebce5fc5052eposter.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/players/reaper/reaper-idle.png":
+/*!***********************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/reaper/reaper-idle.png ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/8370285072f8630118fada27335ef655reaper-idle.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/players/reaper/reaper-running.png":
+/*!**************************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/reaper/reaper-running.png ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/62cec67c68bca3f78c5ef2f1c52c28f2reaper-running.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/players/smart-girl/poster.png":
+/*!**********************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/smart-girl/poster.png ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/4381d93b6dbbd12fd03e0ee8589ba9b1poster.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl-idle.png":
+/*!*******************************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl-idle.png ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/566c5388433c6bcd8bf06649f471c563smart-girl-idle.png";
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl.png":
+/*!**************************************************************************************!*\
+  !*** ./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl.png ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "imgs/566c5388433c6bcd8bf06649f471c563smart-girl.png";
 
 /***/ }),
 
@@ -11586,9 +11730,10 @@ module.exports = __webpack_require__.p + "imgs/walk-boy2.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, system_1, sprite_animation_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/texture */ "./src/libs/class/visual-methods/texture.ts"), __webpack_require__(/*! ../../../libs/defaults */ "./src/libs/defaults.ts"), __webpack_require__(/*! ./packs/level1 */ "./src/examples/platformer-single-player/scripts/packs/level1.ts"), __webpack_require__(/*! ./packs/level2 */ "./src/examples/platformer-single-player/scripts/packs/level2.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, system_1, sprite_animation_1, texture_1, defaults_1, level1_1, level2_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    __webpack_require__(/*! ../audios/map-themes/mishief-stroll.mp4 */ "./src/examples/platformer-single-player/audios/map-themes/mishief-stroll.mp4");
     var Platformer = (function () {
         function Platformer(starter) {
             var _this = this;
@@ -11602,10 +11747,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             this.labels = [];
             this.player = undefined;
             this.hudLives = null;
+            this.selectPlayerArray = [];
             this.lives = 3;
             this.preventDoubleExecution = false;
             this.playerStartPositions = [{ x: 120, y: 200 }];
             this.playerDeadPauseInterval = 550;
+            this.levelMaps = {
+                generatedMap: level1_1.default,
+                Level1: level1_1.default,
+                Level2: level2_1.default
+            };
             this.showPlayerBoardUI = function () {
                 var myInstance = _this;
                 fetch("./templates/ui/player-board.html", {
@@ -11620,10 +11771,47 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     myInstance.UIPlayAgainBtn = system_1.byId("playAgainBtn");
                     myInstance.UIPlayAgainBtn.addEventListener("click", function () {
                         var appStartGamePlay = system_1.createAppEvent("game-init", {
+                            mapName: "Level1",
                             game: myInstance.player,
                         });
                         window.dispatchEvent(appStartGamePlay);
+                        myInstance.player.render.visualComponent.assets.SeqFrame.setNewValue(0);
+                        myInstance.selectedPlayer.spriteTileCurrent = myInstance.selectedPlayer.spriteTile[0];
+                        myInstance.player.render.visualComponent.setNewShema(myInstance.selectedPlayer.spriteTileCurrent);
+                        myInstance.player.render.visualComponent.seqFrameX.setDelay(8);
                     }, false);
+                });
+                fetch("./templates/ui/select-player.html", {
+                    headers: system_1.htmlHeader,
+                }).
+                    then(function (res) {
+                    return res.text();
+                }).then(function (html) {
+                    var popup = system_1.byId("popup");
+                    popup.innerHTML = html;
+                    popup.style.display = "block";
+                    myInstance.selectPlayerArray.forEach(function (itemPlayer) {
+                        var local = document.createElement("div");
+                        local.id = "" + itemPlayer.labelName;
+                        local.className = "bounceIn";
+                        local.setAttribute("style", "width:30%;display:inline-block;cursor:pointer;text-align:center;padding: 9px;");
+                        local.innerHTML = "<span> Name:" +
+                            itemPlayer.labelName +
+                            "</span> <img src='" +
+                            itemPlayer.poster +
+                            "' width='150px' height='150px' class='selectPlayerItemBox' />";
+                        local.addEventListener("click", function () {
+                            myInstance.selectPlayer(itemPlayer.labelName);
+                            var appStartGamePlay = system_1.createAppEvent("game-init", {
+                                mapName: "Level1",
+                                game: myInstance.levelMaps.Level1,
+                            });
+                            window.dispatchEvent(appStartGamePlay);
+                            popup.innerHTML = "";
+                            document.body.removeChild(popup);
+                        }, false);
+                        system_1.byId('listOfPlayers').appendChild(local);
+                    });
                 });
             };
             this.attachUpdateLives = function () {
@@ -11639,16 +11827,59 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 document.getElementsByTagName("body")[0].appendChild(_this.UIPlayerBoard);
             };
             this.starter = starter;
+            this.initSelectPlayer();
             this.addUIPlayerBoard();
             this.showPlayerBoardUI();
             this.attachUpdateLives();
         }
+        Platformer.prototype.startGamplayAudioSystem = function () {
+            this.starter.ioc.get.Sound.createAudio("audios/mishief-stroll.mp4", "surfaceLevel", true);
+        };
+        Platformer.prototype.initSelectPlayer = function () {
+            this.selectPlayerArray.push({
+                labelName: "reaper",
+                poster: __webpack_require__(/*! ../imgs/players/reaper/poster.png */ "./src/examples/platformer-single-player/imgs/players/reaper/poster.png"),
+                resource: [
+                    __webpack_require__(/*! ../imgs/players/reaper/reaper-running.png */ "./src/examples/platformer-single-player/imgs/players/reaper/reaper-running.png"),
+                    __webpack_require__(/*! ../imgs/explosion/explosion.png */ "./src/examples/platformer-single-player/imgs/explosion/explosion.png"),
+                    __webpack_require__(/*! ../imgs/players/reaper/reaper-idle.png */ "./src/examples/platformer-single-player/imgs/players/reaper/reaper-idle.png"),
+                ],
+                type: "sprite",
+                spriteTile: [{ byX: 5, byY: 1 }, { byX: 3, byY: 1 }],
+                spriteTileCurrent: { byX: 5, byY: 1 }
+            });
+            this.selectPlayerArray.push({
+                labelName: "smartGirl",
+                poster: __webpack_require__(/*! ../imgs/players/smart-girl/poster.png */ "./src/examples/platformer-single-player/imgs/players/smart-girl/poster.png"),
+                resource: [
+                    __webpack_require__(/*! ../imgs/players/smart-girl/smart-girl.png */ "./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl.png"),
+                    __webpack_require__(/*! ../imgs/explosion/explosion.png */ "./src/examples/platformer-single-player/imgs/explosion/explosion.png"),
+                    __webpack_require__(/*! ../imgs/players/smart-girl/smart-girl-idle.png */ "./src/examples/platformer-single-player/imgs/players/smart-girl/smart-girl-idle.png"),
+                ],
+                type: "sprite",
+                spriteTile: [{ byX: 5, byY: 1 }, { byX: 5, byY: 1 }],
+                spriteTileCurrent: { byX: 5, byY: 1 }
+            });
+        };
+        Platformer.prototype.selectPlayer = function (labelName) {
+            var _this = this;
+            if (labelName === void 0) { labelName = "reaper"; }
+            this.selectPlayerArray.forEach(function (element, index) {
+                if (element.labelName == labelName) {
+                    _this.selectedPlayer = element;
+                    if (element.type == "frameByFrame") {
+                        _this.selectedPlayer.texCom = new texture_1.default("playerImage", _this.selectedPlayer.resource);
+                    }
+                    else if (element.type == "sprite") {
+                        _this.selectedPlayer.texCom = new sprite_animation_1.default("playerImage", _this.selectedPlayer.resource, _this.selectedPlayer.spriteTileCurrent);
+                    }
+                }
+            });
+        };
         Platformer.prototype.createPlayer = function (addToScene) {
+            var root = this;
+            var TEST = new sprite_animation_1.default("playerImage", this.selectedPlayer.resource, this.selectedPlayer.spriteTileCurrent);
             this.preventDoubleExecution = false;
-            var imgResMyPlayerSprite = [
-                __webpack_require__(/*! ../imgs/walk-boy2.png */ "./src/examples/platformer-single-player/imgs/walk-boy2.png"),
-                __webpack_require__(/*! ../imgs/explosion/explosion.png */ "./src/examples/platformer-single-player/imgs/explosion/explosion.png"),
-            ];
             var playerRadius = 50;
             this.player = Matter.Bodies.circle(this.playerStartPositions[0].x, this.playerStartPositions[0].y, playerRadius, {
                 label: "player",
@@ -11663,7 +11894,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     category: this.playerCategory,
                 },
                 render: {
-                    visualComponent: new sprite_animation_1.default("playerImage", imgResMyPlayerSprite, { byX: 5, byY: 2 }),
+                    visualComponent: TEST,
                     fillStyle: "blue",
                     sprite: {
                         xScale: 1,
@@ -11672,9 +11903,16 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 },
             });
             this.player.collisionFilter.group = -1;
-            this.player.render.visualComponent.assets.SeqFrame.setNewSeqFrameRegimeType("CONST");
-            this.player.render.visualComponent.keepAspectRatio = true;
-            this.player.render.visualComponent.setHorizontalFlip(true);
+            if (this.player.render.visualComponent instanceof sprite_animation_1.default) {
+                this.player.render.visualComponent.assets.SeqFrame.setNewSeqFrameRegimeType("CONST");
+                this.player.render.visualComponent.keepAspectRatio = true;
+            }
+            else {
+                this.player.render.visualComponent.keepAspectRatio = true;
+                this.player.render.sprite.xScale = 0.2;
+                this.player.render.sprite.yScale = 0.2;
+            }
+            this.player.render.visualComponent.setHorizontalFlip(false);
             if (addToScene) {
                 this.player.id = 2;
                 this.starter.AddNewBodies(this.player);
@@ -11690,10 +11928,15 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         };
         Platformer.prototype.collisionCheck = function (event, ground) {
             var _this = this;
+            var myInstance = this;
             var pairs = event.pairs;
             for (var i = 0, j = pairs.length; i !== j; ++i) {
                 var pair = pairs[i];
                 if (pair.activeContacts) {
+                    if (pair.bodyA.label === "player" && pair.bodyB.label.indexOf("Level") !== -1) {
+                        var nextLevelItem = pair.bodyB.label;
+                        myInstance.nextLevel(nextLevelItem);
+                    }
                     if (pair.bodyA.label === "player" && pair.bodyB.label === "collectItemPoint") {
                         var collectitem = pair.bodyB;
                         this.starter.destroyBody(collectitem);
@@ -11726,6 +11969,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             if (!this.preventDoubleExecution) {
                 var root_1 = this;
                 this.preventDoubleExecution = true;
+                console.info("D>>>>>>>>>>>>>>>>>>>>");
                 this.player.render.visualComponent.shema = { byX: 4, byY: 4 };
                 this.player.render.visualComponent.assets.SeqFrame.setNewValue(1);
                 this.lives = this.lives - 1;
@@ -11740,15 +11984,36 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 }
                 setTimeout(function () {
                     root_1.player.render.visualComponent.assets.SeqFrame.setNewValue(0);
-                    root_1.player.render.visualComponent.shema = { byX: 5, byY: 2 };
+                    root_1.selectedPlayer.spriteTileCurrent = root_1.selectedPlayer.spriteTile[0];
+                    root_1.player.render.visualComponent.setNewShema(root_1.selectedPlayer.spriteTileCurrent);
                     Matter.Body.setPosition(root_1.player, root_1.playerStartPositions[0]);
                     root_1.playerSpawn(false);
                     root_1.preventDoubleExecution = false;
                 }, this.playerDeadPauseInterval);
             }
         };
-        Platformer.prototype.destroyGamePlay = function () {
+        Platformer.prototype.destroyGamePlayPlatformer = function () {
             this.starter.destroyGamePlay();
+            this.starter.deattachMatterEvents();
+            this.grounds = [];
+            this.enemys = [];
+            this.deadLines = [];
+            this.labels = [];
+        };
+        Platformer.prototype.nextLevel = function (data) {
+            var root = this;
+            if (data.indexOf("Level") !== -1) {
+                var appEndGamePlay = system_1.createAppEvent("game-end", { game: "Level1" });
+                window.dispatchEvent(appEndGamePlay);
+                this.player = null;
+                setTimeout(function () {
+                    var appStartGamePlay = system_1.createAppEvent("game-init", {
+                        mapName: data,
+                        game: root.levelMaps[data]
+                    });
+                    window.dispatchEvent(appStartGamePlay);
+                }, defaults_1.DEFAULT_GAMEPLAY_ROLES.RESPAWN_INTERVAL);
+            }
         };
         return Platformer;
     }());
@@ -11779,7 +12044,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/bot-behavior */ "./src/libs/class/bot-behavior.ts"), __webpack_require__(/*! ../../../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/text */ "./src/libs/class/visual-methods/text.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/texture */ "./src/libs/class/visual-methods/texture.ts"), __webpack_require__(/*! ./map */ "./src/examples/platformer-single-player/scripts/map.ts"), __webpack_require__(/*! ./Platformer */ "./src/examples/platformer-single-player/scripts/Platformer.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, bot_behavior_1, system_1, sprite_animation_1, text_1, texture_1, map_1, Platformer_1) {
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! matter-js */ "./node_modules/matter-js/build/matter.js"), __webpack_require__(/*! ../../../libs/class/bot-behavior */ "./src/libs/class/bot-behavior.ts"), __webpack_require__(/*! ../../../libs/class/system */ "./src/libs/class/system.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/sprite-animation */ "./src/libs/class/visual-methods/sprite-animation.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/text */ "./src/libs/class/visual-methods/text.ts"), __webpack_require__(/*! ../../../libs/class/visual-methods/texture */ "./src/libs/class/visual-methods/texture.ts"), __webpack_require__(/*! ./map */ "./src/examples/platformer-single-player/scripts/map.ts"), __webpack_require__(/*! ./Platformer */ "./src/examples/platformer-single-player/scripts/Platformer.ts"), __webpack_require__(/*! ./packs/level1 */ "./src/examples/platformer-single-player/scripts/packs/level1.ts"), __webpack_require__(/*! ../../../libs/defaults */ "./src/libs/defaults.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, Matter, bot_behavior_1, system_1, sprite_animation_1, text_1, texture_1, map_1, Platformer_1, level1_1, defaults_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var GamePlay = (function (_super) {
@@ -11793,7 +12058,8 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
                                          Except: Folder src/libs with licence: <br/>\
                                          GNU LESSER GENERAL PUBLIC LICENSE Version 3 <br/>\
                                          Copyright (c) 2020 maximumroulette.com ";
-            _this.deadZoneForBottom = 4500;
+            _this.deadZoneForBottom = defaults_1.DEFAULT_GAMEPLAY_ROLES.MAP_MARGIN_BOTTOM;
+            _this.deadZoneForRight = defaults_1.DEFAULT_GAMEPLAY_ROLES.MAP_MARGIN_RIGHT;
             _this.attachAppEvents = function () {
                 var myInstance = _this;
                 window.addEventListener("game-init", function (e) {
@@ -11801,52 +12067,79 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
                         if (e.detail &&
                             (e.detail.data.game !== "undefined" &&
                                 e.detail.data.game !== null &&
+                                typeof e.detail.data.game.label !== "undefined" &&
                                 e.detail.data.game.label === "player")) {
-                            console.warn("Bad #00002 game-init attempt.");
+                            console.warn("Bad #2 game-init attempt.");
                             return;
                         }
                         else if (e.detail &&
                             e.detail.data.game === null) {
-                            console.info("game-init Player spawn. data.game === null");
+                            console.info("game-init Player spawn. Player are not destroyed at this moment...");
                             myInstance.playerSpawn(true);
+                            myInstance.initSelectPlayer();
+                            myInstance.selectPlayer("reaper");
                             return;
                         }
-                        myInstance.load();
-                        console.info("Player spawn. game-init .startNewGame");
+                        myInstance.load(e.detail.data.game);
+                        console.info("Player spawn on game-init");
                     }
                     catch (err) {
-                        console.error("Very bad #00001", err);
+                        console.error("Very bad in game-init #1", err);
                     }
                 });
                 window.addEventListener("game-end", function (e) {
                     try {
                         if (e.detail &&
                             e.detail.data.game !== "undefined" &&
-                            e.detail.data.game !== null &&
-                            e.detail.data.game === myInstance.gameName) {
-                            myInstance.starter.destroyGamePlay();
-                            system_1.byId("playAgainBtn").disabled = true;
-                            system_1.byId("openGamePlay").disabled = false;
+                            e.detail.data.game !== null) {
+                            myInstance.destroyGamePlayPlatformer();
+                            system_1.byId("playAgainBtn").disabled = false;
                             system_1.byId("out-of-game").disabled = true;
-                            myInstance.deattachMatterEvents();
-                            console.info("game-end global event. Destroying game play. DISCONNECT");
+                            console.info("game-end global event. Destroying game play.");
                         }
                     }
                     catch (err) {
-                        console.error("Very bad #00003", err);
+                        console.error("Very bad #00003 ", err);
                     }
                 });
             };
-            _this.load();
+            _this.overrideOnKeyDown = function () {
+                if (typeof _this.player === "undefined" || _this.player === null) {
+                    return;
+                }
+                var vc = _this.player.render.visualComponent;
+                if (vc.assets.SeqFrame.getValue() === 0) {
+                    return;
+                }
+                _this.selectedPlayer.spriteTileCurrent = _this.selectedPlayer.spriteTile[0];
+                _this.player.render.visualComponent.setNewShemaByX(_this.selectedPlayer.spriteTileCurrent.byX);
+                _this.player.render.visualComponent.assets.SeqFrame.setNewValue(0);
+                _this.player.render.visualComponent.seqFrameX.setDelay(8);
+            };
+            _this.overrideOnKeyUp = function () {
+                if (typeof _this.player === "undefined" || _this.player === null) {
+                    return;
+                }
+                var vc = _this.player.render.visualComponent;
+                if (vc.assets.SeqFrame.getValue() === 2) {
+                    return;
+                }
+                vc.assets.SeqFrame.setNewValue(2);
+                vc.seqFrameX.setDelay(8);
+                _this.selectedPlayer.spriteTileCurrent = _this.selectedPlayer.spriteTile[1];
+                vc.setNewShemaByX(_this.selectedPlayer.spriteTileCurrent.byX);
+            };
+            _this.deadZoneForBottom = 2500;
+            if (_this.starter.ioc.getConfig().getAutoStartGamePlay()) {
+            }
             _this.starter.ioc.get.MessageBox.show(_this.gamePlayWelcomeNote);
             return _this;
         }
-        GamePlay.prototype.deattachMatterEvents = function () {
-            Matter.Events.off(this.starter.getEngine(), undefined, undefined);
-        };
         GamePlay.prototype.attachMatterEvents = function () {
             var root = this;
             var globalEvent = this.starter.ioc.get.GlobalEvent;
+            globalEvent.providers.onkeydown = this.overrideOnKeyDown;
+            globalEvent.providers.onkeyup = this.overrideOnKeyUp;
             var playerSpeed = 0.005;
             this.enemys.forEach(function (item) {
                 var test = new bot_behavior_1.default(item);
@@ -11894,7 +12187,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
                     Matter.Body.setVelocity(root.player, { x: 0, y: -s });
                 }
                 else if (globalEvent.activeKey[37] && root.player.angularVelocity > -limit) {
-                    root.player.render.visualComponent.setHorizontalFlip(false);
+                    root.player.render.visualComponent.setHorizontalFlip(true);
                     root.player.force = {
                         x: -playerSpeed,
                         y: 0,
@@ -11903,7 +12196,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
                     root.player.currentDir = "left";
                 }
                 else if (globalEvent.activeKey[39] && root.player.angularVelocity < limit) {
-                    root.player.render.visualComponent.setHorizontalFlip(true);
+                    root.player.render.visualComponent.setHorizontalFlip(false);
                     root.player.force = {
                         x: playerSpeed,
                         y: 0,
@@ -11917,15 +12210,19 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
             });
             globalEvent.activateKeyDetection();
         };
-        GamePlay.prototype.load = function () {
+        GamePlay.prototype.load = function (mapPack) {
             var _this = this;
             var root = this;
-            var gameMap = new map_1.default();
-            this.starter.setWorldBounds(-300, -300, 10000, root.deadZoneForBottom);
+            if (typeof mapPack === "undefined") {
+                mapPack = level1_1.default;
+            }
+            var gameMap = new map_1.default(mapPack);
+            this.starter.setWorldBounds(defaults_1.DEFAULT_GAMEPLAY_ROLES.MAP_MARGIN_LEFT, defaults_1.DEFAULT_GAMEPLAY_ROLES.MAP_MARGIN_TOP, root.deadZoneForRight, root.deadZoneForBottom);
             this.playerSpawn(false);
             gameMap.getStaticBackgrounds().forEach(function (item) {
                 var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
                     isStatic: true,
+                    isSleeping: false,
                     label: "background",
                     render: {
                         visualComponent: new texture_1.default("wall", item.tex),
@@ -11942,6 +12239,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
             gameMap.getStaticGrounds().forEach(function (item) {
                 var newStaticElement = Matter.Bodies.rectangle(item.x, item.y, item.w, item.h, {
                     isStatic: true,
+                    isSleeping: false,
                     label: "ground",
                     collisionFilter: {
                         group: _this.staticCategory,
@@ -12075,31 +12373,33 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ./packs/map2d */ "./src/examples/platformer-single-player/scripts/packs/map2d.ts")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, map2d_1) {
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var GameMap = (function () {
         function GameMap(options) {
-            this.options = null;
+            this.options = {};
             this.staticGrounds = [];
             this.collectItems = [];
             this.collectEnemies = [];
+            this.collectLabels = [];
             if (typeof options !== 'undefined') {
-                this.options = options;
+                this.options.mapPack = options;
+                this.loadGeneratedMap(this.options.mapPack);
             }
-            if (typeof map2d_1.default === 'undefined')
-                return this;
-            this.loadGeneratedMap();
         }
-        GameMap.prototype.loadGeneratedMap = function () {
+        GameMap.prototype.loadGeneratedMap = function (gMap) {
             var root = this;
-            map2d_1.default.forEach(function (item) {
+            gMap.forEach(function (item) {
                 if (typeof item.colectionLabel !== 'undefined') {
                     root.collectItems.push(item);
                 }
                 else if (typeof item.enemyLabel !== 'undefined') {
                     root.collectEnemies.push(item);
                     console.log("next feature ENEMY");
+                }
+                else if (typeof item.text !== 'undefined') {
+                    root.collectLabels.push(item);
                 }
                 else {
                     root.staticGrounds.push(item);
@@ -12157,17 +12457,32 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         GameMap.prototype.getDeadLines = function () {
             var img = [__webpack_require__(/*! ../imgs/deadlines/flame2.png */ "./src/examples/platformer-single-player/imgs/deadlines/flame2.png")];
             return [
-                { x: 0, y: 4500, w: 9000, h: 50, tex: img, tiles: { tilesX: 3, tilesY: 3 }, enemyLabel: "deadline", enemyOptions: "" },
+                { x: 0, y: 2500, w: 9000, h: 50, tex: img, tiles: { tilesX: 3, tilesY: 3 }, enemyLabel: "deadline", enemyOptions: "" },
             ];
         };
         GameMap.prototype.getStaticBanners = function () {
-            return [
-                { x: 0, y: -120, w: 400, h: 50, text: "Collect virtual bitcoins", options: { color: "black" } },
-                { x: -120, y: 170, w: 400, h: 150, text: "Welcome `Platformer` social chat app", options: { color: "black" } },
-                { x: -120, y: 210, w: 400, h: 100, text: "Created with visual ts game engine", options: { color: "black" } },
-                { x: 1000, y: 900, w: 400, h: 100, text: "Run & explore", options: { color: "blue" } },
-                { x: 1400, y: 200, w: 400, h: 100, text: "Love is in the air", options: { color: "red" } },
-            ];
+            this.collectLabels.forEach(function (item, i, array) {
+                array[i].x = parseFloat(array[i].x);
+                array[i].y = parseFloat(array[i].y);
+                array[i].w = 200.0;
+                array[i].h = 150;
+                if (typeof array[i].options === "undefined") {
+                    array[i].options = {
+                        color: "lime",
+                        size: 20
+                    };
+                }
+                array[i].options.color = item.textColor;
+                array[i].options.size = item.textSize;
+            });
+            this.collectLabels.push({ x: 0, y: 200, w: 400, h: 150,
+                text: " `Platformer` single player mod ",
+                options: {
+                    color: "black",
+                    size: 20
+                }
+            });
+            return this.collectLabels;
         };
         return GameMap;
     }());
@@ -12178,631 +12493,2243 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./src/examples/platformer-single-player/scripts/packs/map2d.ts":
-/*!**********************************************************************!*\
-  !*** ./src/examples/platformer-single-player/scripts/packs/map2d.ts ***!
-  \**********************************************************************/
+/***/ "./src/examples/platformer-single-player/scripts/packs/level1.ts":
+/*!***********************************************************************!*\
+  !*** ./src/examples/platformer-single-player/scripts/packs/level1.ts ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    var generatedMap = [{ "x": 900.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+    var Level1 = [{ "x": 700.0,
+            "y": 475.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 1800.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 1400.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 2700.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 1400.0,
+            "y": 675.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 3600.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 2300.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 4650.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 2300.0,
+            "y": 675.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 5550.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 3000.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 6456.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 3000.0,
+            "y": 675.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 7344.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
+        { "x": 3800.0,
+            "y": 475.0,
+            "w": 700.0,
+            "h": 50.0,
             "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
+            "tiles": { "tilesX": 14.0,
                 "tilesY": 1.0 } },
-        { "x": 8238.0,
-            "y": 712.5,
-            "w": 900.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
-                "tilesY": 1.0 } },
-        { "x": 9162.0,
-            "y": 412.5,
-            "w": 900.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 12.0,
-                "tilesY": 1.0 } },
-        { "x": 7797.0,
-            "y": 600.0,
-            "w": 75.0,
-            "h": 300.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter_rounded.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 4.0 } },
-        { "x": 8694.0,
-            "y": 600.0,
-            "w": 75.0,
-            "h": 300.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter_rounded.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 4.0 } },
-        { "x": 9603.0,
-            "y": 300.0,
-            "w": 75.0,
-            "h": 300.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter_rounded.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 4.0 } },
-        { "x": 10194.0,
-            "y": 300.0,
-            "w": 75.0,
-            "h": 300.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter_rounded.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 4.0 } },
-        { "x": 10503.0,
-            "y": 600.0,
-            "w": 75.0,
-            "h": 300.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter_rounded.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter_rounded.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 4.0 } },
-        { "x": 9906.0,
-            "y": 204.0,
-            "w": 300.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 4.0,
-                "tilesY": 1.0 } },
-        { "x": 10356.0,
-            "y": 412.5,
-            "w": 300.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 4.0,
-                "tilesY": 1.0 } },
-        { "x": 10680.0,
-            "y": 712.5,
-            "w": 300.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 4.0,
-                "tilesY": 1.0 } },
-        { "x": 9891.0,
-            "y": 1012.5,
-            "w": 1275.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 17.0,
-                "tilesY": 1.0 } },
-        { "x": 9258.0,
-            "y": 937.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 10524.0,
-            "y": 937.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 1350.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 1800.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 2700.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 3600.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 4200.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 6021.0,
-            "y": 337.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 4650.0,
-            "y": 141.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 4800.0,
-            "y": 180.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 4950.0,
-            "y": 165.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5100.0,
-            "y": 162.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5250.0,
-            "y": 129.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5400.0,
-            "y": 90.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5550.0,
-            "y": 60.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5700.0,
-            "y": 111.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 5850.0,
-            "y": 180.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 6153.0,
-            "y": 168.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 6447.0,
-            "y": 105.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 6747.0,
-            "y": 141.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 7029.0,
-            "y": 262.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 7344.0,
-            "y": 168.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 7644.0,
-            "y": 153.0,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 11100.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 11706.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 12306.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 12903.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 13494.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 14100.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 14700.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 15303.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 15900.0,
-            "y": 562.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 16500.0,
-            "y": 412.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 17097.0,
-            "y": 262.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 17691.0,
-            "y": 412.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 18306.0,
-            "y": 562.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 18903.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 19506.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 20103.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 20697.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 21306.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 21741.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 22344.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 22953.0,
-            "y": 712.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 23286.0,
-            "y": 712.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/grassCliffRight.png */ "./src/examples/platformer-single-player/imgs/grounds/grassCliffRight.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 23724.0,
-            "y": 712.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/floor3.png */ "./src/examples/platformer-single-player/imgs/grounds/floor3.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 24156.0,
-            "y": 862.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/floor3.png */ "./src/examples/platformer-single-player/imgs/grounds/floor3.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 24759.0,
-            "y": 712.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/floor3.png */ "./src/examples/platformer-single-player/imgs/grounds/floor3.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 25203.0,
-            "y": 1162.5,
-            "w": 75.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/floor3.png */ "./src/examples/platformer-single-player/imgs/grounds/floor3.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 } },
-        { "x": 25791.0,
-            "y": 1612.5,
-            "w": 600.0,
-            "h": 75.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/floor3.png */ "./src/examples/platformer-single-player/imgs/grounds/floor3.png"),
-            "tiles": { "tilesX": 8.0,
-                "tilesY": 1.0 } },
-        { "x": 22647.0,
-            "y": 487.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 21453.0,
-            "y": 487.5,
-            "w": 75.0,
-            "h": 225.0,
-            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 3.0 } },
-        { "x": 900.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
-            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 },
-            "enemyLabel": "crapmunch",
-            "enemyOptions": 10 },
-        { "x": 1650.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
-            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 },
-            "enemyLabel": "crapmunch",
-            "enemyOptions": 10 },
-        { "x": 2250.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
-            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 },
-            "enemyLabel": "crapmunch",
-            "enemyOptions": 10 },
-        { "x": 3150.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
-            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 },
-            "enemyLabel": "crapmunch",
-            "enemyOptions": 10 },
-        { "x": 3900.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
-            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
-            "tiles": { "tilesX": 1.0,
-                "tilesY": 1.0 },
-            "enemyLabel": "crapmunch",
-            "enemyOptions": 10 },
         { "x": 4500.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
+            "y": 475.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 5196.0,
+            "y": 475.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 5586.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 5900.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 6396.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 7104.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 7404.0,
+            "y": 350.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 7694.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 7408.0,
+            "y": 1175.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 7586.0,
+            "y": 1875.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 6152.0,
+            "y": 675.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 6794.0,
+            "y": 575.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 7396.0,
+            "y": 975.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 7638.0,
+            "y": 875.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 7450.0,
+            "y": 675.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 7900.0,
+            "y": 575.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 8196.0,
+            "y": 375.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 8590.0,
+            "y": 575.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 8994.0,
+            "y": 975.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 9202.0,
+            "y": 875.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 9482.0,
+            "y": 675.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 9800.0,
+            "y": 475.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 10200.0,
+            "y": 375.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 10698.0,
+            "y": 475.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 11692.0,
+            "y": 1275.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/grass.png */ "./src/examples/platformer-single-player/imgs/grounds/grass.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 12304.0,
+            "y": 975.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 12004.0,
+            "y": 1175.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 12600.0,
+            "y": 775.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 12892.0,
+            "y": 575.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 13116.0,
+            "y": 775.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 13308.0,
+            "y": 975.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 13502.0,
+            "y": 775.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 13706.0,
+            "y": 575.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 13900.0,
+            "y": 375.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 14094.0,
+            "y": 175.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 14194.0,
+            "y": 1375.0,
+            "w": 100.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/lollipopRed.png */ "./src/examples/platformer-single-player/imgs/grounds/lollipopRed.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 1.0 } },
+        { "x": 14798.0,
+            "y": 1375.0,
+            "w": 650.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 13.0,
+                "tilesY": 1.0 } },
+        { "x": 15998.0,
+            "y": 1300.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 15990.0,
+            "y": 900.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 17006.0,
+            "y": 800.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 16998.0,
+            "y": 1100.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 17938.0,
+            "y": 1000.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 18526.0,
+            "y": 600.0,
+            "w": 200.0,
+            "h": 800.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 4.0,
+                "tilesY": 16.0 } },
+        { "x": 18404.0,
+            "y": 1800.0,
+            "w": 200.0,
+            "h": 800.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 4.0,
+                "tilesY": 16.0 } },
+        { "x": 17892.0,
+            "y": 1800.0,
+            "w": 200.0,
+            "h": 800.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 4.0,
+                "tilesY": 16.0 } },
+        { "x": 18144.0,
+            "y": 2300.0,
+            "w": 800.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 4.0 } },
+        { "x": 18148.0,
+            "y": 2175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/hudKey_red.png */ "./src/examples/platformer-single-player/imgs/collect-items/hudKey_red.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "Level2",
+            "points": 10 },
+        { "x": 6282.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 6026.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 6780.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 7092.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 4398.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 4504.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 4596.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 3000.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 3100.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 3000.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 3100.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 11998.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 12286.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 12600.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 12886.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 13102.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 13296.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 13494.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 13698.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 13900.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 14188.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/coin-1.png */ "./src/examples/platformer-single-player/imgs/collect-items/coin-1.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": "9069.0",
+            "y": "1037.5",
+            "text": "Level2",
+            "textColor": "orange",
+            "textSize": "22" },
+        { "x": 800.0,
+            "y": 350.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 1100.0,
+            "y": 550.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 1700.0,
+            "y": 550.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 2000.0,
+            "y": 550.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 3300.0,
+            "y": 550.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 3300.0,
+            "y": 150.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 2000.0,
+            "y": 150.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 1100.0,
+            "y": 150.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 1700.0,
+            "y": 150.0,
+            "w": 50.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 2.0 } },
+        { "x": 3600.0,
+            "y": 350.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 5402.0,
+            "y": 350.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15604.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 16390.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 16386.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 15602.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 15106.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14502.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/floor2.png */ "./src/examples/platformer-single-player/imgs/grounds/floor2.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": "200.0",
+            "y": "87.5",
+            "text": "Level1",
+            "textColor": "orange",
+            "textSize": "22" },
+        { "x": 1200.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 6417.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 1600.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 8262.0,
-            "y": 562.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 1200.0,
+            "y": 575.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 9336.0,
-            "y": 262.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 1600.0,
+            "y": 575.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 9555.0,
-            "y": 862.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 2100.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 10212.0,
-            "y": 862.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 2600.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 11022.0,
-            "y": 562.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 2400.0,
+            "y": 575.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 },
-        { "x": 12390.0,
-            "y": 562.5,
-            "w": 112.5,
-            "h": 112.5,
+        { "x": 3984.0,
+            "y": 375.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 5066.0,
+            "y": 375.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 7402.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 7280.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14824.0,
+            "y": 1275.0,
+            "w": 75.0,
+            "h": 75.0,
             "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
             "tiles": { "tilesX": 1.0,
                 "tilesY": 1.0 },
             "enemyLabel": "crapmunch",
             "enemyOptions": 10 }];
-    exports.default = generatedMap;
+    exports.default = Level1;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+
+/***/ "./src/examples/platformer-single-player/scripts/packs/level2.ts":
+/*!***********************************************************************!*\
+  !*** ./src/examples/platformer-single-player/scripts/packs/level2.ts ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var Level2 = [{ "x": 600.0,
+            "y": 600.0,
+            "w": 600.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 12.0,
+                "tilesY": 12.0 } },
+        { "x": 1400.0,
+            "y": 600.0,
+            "w": 600.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 12.0,
+                "tilesY": 12.0 } },
+        { "x": 1000.0,
+            "y": 1400.0,
+            "w": 600.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 12.0,
+                "tilesY": 12.0 } },
+        { "x": 2300.0,
+            "y": 600.0,
+            "w": 600.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 12.0,
+                "tilesY": 12.0 } },
+        { "x": 1900.0,
+            "y": 1400.0,
+            "w": 600.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 12.0,
+                "tilesY": 12.0 } },
+        { "x": 3100.0,
+            "y": 1500.0,
+            "w": 1000.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 20.0,
+                "tilesY": 4.0 } },
+        { "x": 4410.0,
+            "y": 1400.0,
+            "w": 1000.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 20.0,
+                "tilesY": 4.0 } },
+        { "x": 5606.0,
+            "y": 1100.0,
+            "w": 1000.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxEmpty.png */ "./src/examples/platformer-single-player/imgs/grounds/boxEmpty.png"),
+            "tiles": { "tilesX": 20.0,
+                "tilesY": 4.0 } },
+        { "x": 6604.0,
+            "y": 800.0,
+            "w": 1000.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/brickWall.png */ "./src/examples/platformer-single-player/imgs/grounds/brickWall.png"),
+            "tiles": { "tilesX": 20.0,
+                "tilesY": 4.0 } },
+        { "x": 6598.0,
+            "y": 1200.0,
+            "w": 1000.0,
+            "h": 200.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/brickWall.png */ "./src/examples/platformer-single-player/imgs/grounds/brickWall.png"),
+            "tiles": { "tilesX": 20.0,
+                "tilesY": 4.0 } },
+        { "x": 7398.0,
+            "y": 500.0,
+            "w": 200.0,
+            "h": 1000.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/brickWall.png */ "./src/examples/platformer-single-player/imgs/grounds/brickWall.png"),
+            "tiles": { "tilesX": 4.0,
+                "tilesY": 20.0 } },
+        { "x": 7796.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 8000.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 8200.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 8396.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 8592.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 8804.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 9002.0,
+            "y": 850.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 9402.0,
+            "y": 650.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 10098.0,
+            "y": 1250.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 10302.0,
+            "y": 1150.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 10504.0,
+            "y": 950.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 10696.0,
+            "y": 750.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 10898.0,
+            "y": 550.0,
+            "w": 50.0,
+            "h": 700.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 14.0 } },
+        { "x": 11600.0,
+            "y": 575.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 11594.0,
+            "y": 875.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 11596.0,
+            "y": 1175.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 11606.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 12602.0,
+            "y": 1175.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 12592.0,
+            "y": 875.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 12598.0,
+            "y": 575.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 12590.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 13600.0,
+            "y": 1175.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 13598.0,
+            "y": 875.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 13584.0,
+            "y": 575.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 13596.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 14592.0,
+            "y": 1175.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 14580.0,
+            "y": 875.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 14594.0,
+            "y": 575.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 14598.0,
+            "y": 275.0,
+            "w": 700.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/chocoCenter.png */ "./src/examples/platformer-single-player/imgs/grounds/chocoCenter.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 1.0 } },
+        { "x": 15396.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15398.0,
+            "y": 750.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15396.0,
+            "y": 950.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15394.0,
+            "y": 1150.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15690.0,
+            "y": 1050.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15696.0,
+            "y": 850.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15690.0,
+            "y": 650.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15700.0,
+            "y": 450.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 15900.0,
+            "y": 250.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 16298.0,
+            "y": 450.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 17302.0,
+            "y": 650.0,
+            "w": 800.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 16.0,
+                "tilesY": 2.0 } },
+        { "x": 16896.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 17694.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 17100.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 17300.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 17500.0,
+            "y": 550.0,
+            "w": 100.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 2.0 } },
+        { "x": 16906.0,
+            "y": 1000.0,
+            "w": 100.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 12.0 } },
+        { "x": 17686.0,
+            "y": 1000.0,
+            "w": 100.0,
+            "h": 600.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 2.0,
+                "tilesY": 12.0 } },
+        { "x": 17300.0,
+            "y": 1250.0,
+            "w": 700.0,
+            "h": 100.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 14.0,
+                "tilesY": 2.0 } },
+        { "x": 17196.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17202.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17304.0,
+            "y": 975.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17382.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17390.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 16996.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17010.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17078.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17094.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17500.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17588.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17476.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17602.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17738.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17650.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17544.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17456.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17342.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17252.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17140.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17058.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 16942.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 16852.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 700.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 1300.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 1600.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 2200.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 2000.0,
+            "y": 275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 2600.0,
+            "y": 275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 1700.0,
+            "y": 275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 1100.0,
+            "y": 275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 2600.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 3600.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 3900.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 4906.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 5112.0,
+            "y": 975.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 6116.0,
+            "y": 675.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7084.0,
+            "y": 675.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7404.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7596.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7700.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7498.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7690.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7510.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7758.0,
+            "y": 675.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7752.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7506.0,
+            "y": 575.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 8294.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 8488.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 8696.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 8884.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 9094.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 9294.0,
+            "y": 1375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 9402.0,
+            "y": 1275.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 9510.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castleMid.png */ "./src/examples/platformer-single-player/imgs/grounds/castleMid.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 9694.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/tileRed_12.png */ "./src/examples/platformer-single-player/imgs/collect-items/tileRed_12.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 9898.0,
+            "y": 975.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/tileRed_12.png */ "./src/examples/platformer-single-player/imgs/collect-items/tileRed_12.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "collectItemPoint",
+            "points": 10 },
+        { "x": 11248.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11952.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11230.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11944.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11234.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11944.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11226.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 11938.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12248.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12242.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12254.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12236.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12952.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12948.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12940.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 12932.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13242.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13924.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13902.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13232.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13254.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13916.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13258.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 13912.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14248.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14928.0,
+            "y": 1075.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14252.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14892.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14260.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14908.0,
+            "y": 475.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14900.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 14266.0,
+            "y": 175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 17298.0,
+            "y": 375.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/collect-items/hudKey_yellow.png */ "./src/examples/platformer-single-player/imgs/collect-items/hudKey_yellow.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "colectionLabel": "Level3",
+            "points": 10 },
+        { "x": 1000.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 1400.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 2300.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 1900.0,
+            "y": 975.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 3100.0,
+            "y": 1275.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 4172.0,
+            "y": 1175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 4674.0,
+            "y": 1175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 5342.0,
+            "y": 875.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 2800.0,
+            "y": 1275.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 5854.0,
+            "y": 875.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 6428.0,
+            "y": 575.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 6904.0,
+            "y": 575.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 6282.0,
+            "y": 975.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 11596.0,
+            "y": 975.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 11582.0,
+            "y": 675.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 11600.0,
+            "y": 375.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 11618.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 12550.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 12604.0,
+            "y": 475.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 12562.0,
+            "y": 675.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 12530.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 13594.0,
+            "y": 975.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 13586.0,
+            "y": 675.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 13614.0,
+            "y": 475.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 13580.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14586.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14504.0,
+            "y": 475.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14622.0,
+            "y": 775.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14566.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 13762.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 12724.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 14450.0,
+            "y": 175.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": 17098.0,
+            "y": 1075.0,
+            "w": 75.0,
+            "h": 75.0,
+            "tex": __webpack_require__(/*! ../../imgs/enemies/crapmunch.png */ "./src/examples/platformer-single-player/imgs/enemies/crapmunch.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 },
+            "enemyLabel": "crapmunch",
+            "enemyOptions": 10 },
+        { "x": "300.0",
+            "y": "87.5",
+            "text": "Level2",
+            "textColor": "red",
+            "textSize": "32" },
+        { "x": "2493.0",
+            "y": "537.5",
+            "text": "jump",
+            "textColor": "red",
+            "textSize": "32" },
+        { "x": "3597.0",
+            "y": "487.5",
+            "text": ">",
+            "textColor": "red",
+            "textSize": "32" },
+        { "x": 4994.0,
+            "y": 1175.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 6016.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/boxAlt.png */ "./src/examples/platformer-single-player/imgs/grounds/boxAlt.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 6892.0,
+            "y": 775.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7570.0,
+            "y": 875.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } },
+        { "x": 7696.0,
+            "y": 675.0,
+            "w": 50.0,
+            "h": 50.0,
+            "tex": __webpack_require__(/*! ../../imgs/grounds/castle.png */ "./src/examples/platformer-single-player/imgs/grounds/castle.png"),
+            "tiles": { "tilesX": 1.0,
+                "tilesY": 1.0 } }];
+    exports.default = Level2;
 }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
@@ -12816,7 +14743,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/android-icon.png";
+module.exports = __webpack_require__.p + "imgs/4b2e6890350da1b000684ed7c44c21f6android-icon.png";
 
 /***/ }),
 
@@ -12827,7 +14754,7 @@ module.exports = __webpack_require__.p + "imgs/android-icon.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/apple-icon.png";
+module.exports = __webpack_require__.p + "imgs/1708266b1ad0f64d4ef5bbc8f91ce6f4apple-icon.png";
 
 /***/ }),
 
@@ -12838,7 +14765,7 @@ module.exports = __webpack_require__.p + "imgs/apple-icon.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/favicon-96x96.png";
+module.exports = __webpack_require__.p + "imgs/92457f964277ed653fd6b8b2351af6b1favicon-96x96.png";
 
 /***/ }),
 
@@ -12860,7 +14787,7 @@ module.exports = __webpack_require__.p + "/styles/favicon.ico";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/gcheckmark.png";
+module.exports = __webpack_require__.p + "imgs/4f6b825ac3039cd30c954907276a882bgcheckmark.png";
 
 /***/ }),
 
@@ -12871,7 +14798,7 @@ module.exports = __webpack_require__.p + "imgs/gcheckmark.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/microphone.png";
+module.exports = __webpack_require__.p + "imgs/9497063c731e3d6e64a70d4c3ff782b2microphone.png";
 
 /***/ }),
 
@@ -12882,7 +14809,7 @@ module.exports = __webpack_require__.p + "imgs/microphone.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/screen.png";
+module.exports = __webpack_require__.p + "imgs/629041088ad05d427dcf74d815be69fascreen.png";
 
 /***/ }),
 
@@ -12893,7 +14820,7 @@ module.exports = __webpack_require__.p + "imgs/screen.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/share-files.png";
+module.exports = __webpack_require__.p + "imgs/2f3ff38b0fcb44d518898c13c00b00dfshare-files.png";
 
 /***/ }),
 
@@ -12904,7 +14831,7 @@ module.exports = __webpack_require__.p + "imgs/share-files.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/warning.png";
+module.exports = __webpack_require__.p + "imgs/491c4a955102981d6f26bfacf3ff5f61warning.png";
 
 /***/ }),
 
@@ -12915,7 +14842,7 @@ module.exports = __webpack_require__.p + "imgs/warning.png";
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "imgs/webcam.png";
+module.exports = __webpack_require__.p + "imgs/450d15e09ed365c4b8f0570b527aab21webcam.png";
 
 /***/ }),
 
@@ -13373,6 +15300,74 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./src/libs/class/sound.ts":
+/*!*********************************!*\
+  !*** ./src/libs/class/sound.ts ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var Sound = (function () {
+        function Sound(name) {
+            this.audioBox = {};
+            this.name = "audio-staff";
+            this.name = name;
+            this.aContainer = document.createElement("div");
+            this.aContainer.setAttribute("id", "audio-box");
+            document.body.appendChild(this.aContainer);
+        }
+        Sound.prototype.createAudio = function (path, idCaller, loop, autoplay) {
+            if (typeof path === undefined || idCaller === undefined) {
+                console.warn("You can't create audio object without src attribute and id value.");
+                return;
+            }
+            var element = document.createElement("audio");
+            if (typeof autoplay === undefined) {
+                autoplay = false;
+            }
+            if (typeof loop === undefined) {
+                loop = false;
+            }
+            element.setAttribute("id", idCaller);
+            if (element.canPlayType("audio/mpeg")) {
+                element.setAttribute("src", path);
+            }
+            else {
+                element.setAttribute("src", path);
+            }
+            this.audioBox[idCaller] = element;
+            this.aContainer.appendChild(this.audioBox[idCaller]);
+            element.addEventListener('canplaythrough', function () {
+                var testPlay = this.play();
+                if (testPlay !== undefined) {
+                    testPlay.then(function () {
+                    }).catch(function (error) {
+                        console.warn("Audio with id can't play at the moment. Error: ", error);
+                    });
+                }
+            }, false);
+        };
+        Sound.prototype.playById = function (id) {
+            var testPlay = this.audioBox[id].play();
+            if (testPlay !== undefined) {
+                testPlay.then(function () {
+                }).catch(function (error) {
+                    console.warn("Audio with id" + id + " can't play at the moment.");
+                });
+            }
+        };
+        return Sound;
+    }());
+    exports.default = Sound;
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+
 /***/ "./src/libs/class/system.ts":
 /*!**********************************!*\
   !*** ./src/libs/class/system.ts ***!
@@ -13618,8 +15613,33 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
             _this.seqFrameX.setDelay(10);
             _this.seqFrameY.onRepeat = _this.nextColumn;
             _this.seqFrameX.onRepeat = _this.nextRow;
+            _this.flipImage = function (image, ctx, sx, sy, sw, sh, dx, dy, dw, dh, flipH, flipV) {
+                var scaleH = flipH ? -1 : 1, scaleV = flipV ? -1 : 1;
+                ctx.save();
+                ctx.scale(scaleH, scaleV);
+                ctx.drawImage(this.assets.getImg(), sx, sy, sw, sh, dx, dy, dw, dh);
+                ctx.restore();
+            };
             return _this;
         }
+        SpriteTextureComponent.prototype.setNewShemaByX = function (byX) {
+            this.shema.byX = byX;
+            var localSumX = this.shema.byX - 1;
+            this.seqFrameX = new math_1.Counter(0, localSumX, 1);
+            this.seqFrameY.onRepeat = this.nextColumn;
+            this.seqFrameX.onRepeat = this.nextRow;
+        };
+        SpriteTextureComponent.prototype.setNewShemaByY = function (byY) {
+            this.shema.byY = byY;
+            var localSumY = this.shema.byY - 1;
+            this.seqFrameY = new math_1.Counter(0, localSumY, 1);
+            this.seqFrameY.onRepeat = this.nextColumn;
+            this.seqFrameX.onRepeat = this.nextRow;
+        };
+        SpriteTextureComponent.prototype.setNewShema = function (shema) {
+            this.setNewShemaByX(shema.byX);
+            this.setNewShemaByY(shema.byY);
+        };
         SpriteTextureComponent.prototype.drawComponent = function (c, part) {
             if (this.keepAspectRatio === true) {
                 var dist2 = math_1.getDistance(part.vertices[part.vertices.length / 2], part.vertices[part.vertices.length - 1]);
@@ -13657,13 +15677,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
             }
         };
         SpriteTextureComponent.prototype.nextColumn = function () {
-        };
-        SpriteTextureComponent.prototype.flipImage = function (image, ctx, sx, sy, sw, sh, dx, dy, dw, dh, flipH, flipV) {
-            var scaleH = flipH ? -1 : 1, scaleV = flipV ? -1 : 1;
-            ctx.save();
-            ctx.scale(scaleH, scaleV);
-            ctx.drawImage(this.assets.getImg(), sx, sy, sw, sh, dx, dy, dw, dh);
-            ctx.restore();
         };
         return SpriteTextureComponent;
     }(texture_1.default));
@@ -13779,12 +15792,12 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                 originY = originY / this.horizontalTiles - originH / 2;
                 for (var x = -this.verticalTiles / 2; x < this.verticalTiles / 2; x++) {
                     for (var j = -this.horizontalTiles / 2; j < this.horizontalTiles / 2; j++) {
-                        c.drawImage(this.assets.getImg(), originX - originW * (x), originY - originH * (j), originW, originH);
+                        this.flipImage(this.assets.getImg(), c, originX - originW * (x), originY - originH * (j), originW, originH, this.horizontalFlip, this.verticalFlip);
                     }
                 }
             }
             else {
-                c.drawImage(this.assets.getImg(), this.assets.getImg().width * -part.render.sprite.xOffset * part.render.sprite.xScale, this.assets.getImg().height * -part.render.sprite.yOffset * part.render.sprite.yScale, this.assets.getImg().width * part.render.sprite.xScale, this.assets.getImg().height * part.render.sprite.yScale);
+                this.flipImage(this.assets.getImg(), c, this.assets.getImg().width * -part.render.sprite.xOffset * part.render.sprite.xScale, this.assets.getImg().height * -part.render.sprite.yOffset * part.render.sprite.yScale, this.assets.getImg().width * part.render.sprite.xScale, this.assets.getImg().height * part.render.sprite.yScale, this.horizontalFlip, this.verticalFlip);
             }
         };
         TextureComponent.prototype.setVerticalTiles = function (newVerticalTiles) {
@@ -13800,6 +15813,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         };
         TextureComponent.prototype.setVerticalFlip = function (newStatus) {
             this.verticalFlip = newStatus;
+        };
+        TextureComponent.prototype.flipImage = function (image, ctx, sx, sy, sw, sh, flipH, flipV) {
+            var scaleH = flipH ? -1 : 1, scaleV = flipV ? -1 : 1;
+            ctx.save();
+            ctx.scale(scaleH, scaleV);
+            ctx.drawImage(this.assets.getImg(), sx, sy, sw, sh);
+            ctx.restore();
         };
         return TextureComponent;
     }());
@@ -13922,6 +15942,35 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
 
 /***/ }),
 
+/***/ "./src/libs/defaults.ts":
+/*!******************************!*\
+  !*** ./src/libs/defaults.ts ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var DEFAULT_PLAYER_DATA;
+    (function (DEFAULT_PLAYER_DATA) {
+        DEFAULT_PLAYER_DATA[DEFAULT_PLAYER_DATA["INITIAL_LIVES"] = 3] = "INITIAL_LIVES";
+        DEFAULT_PLAYER_DATA[DEFAULT_PLAYER_DATA["NEW_GAME_COST"] = 30] = "NEW_GAME_COST";
+    })(DEFAULT_PLAYER_DATA = exports.DEFAULT_PLAYER_DATA || (exports.DEFAULT_PLAYER_DATA = {}));
+    var DEFAULT_GAMEPLAY_ROLES;
+    (function (DEFAULT_GAMEPLAY_ROLES) {
+        DEFAULT_GAMEPLAY_ROLES[DEFAULT_GAMEPLAY_ROLES["MAP_MARGIN_LEFT"] = -300] = "MAP_MARGIN_LEFT";
+        DEFAULT_GAMEPLAY_ROLES[DEFAULT_GAMEPLAY_ROLES["MAP_MARGIN_TOP"] = -300] = "MAP_MARGIN_TOP";
+        DEFAULT_GAMEPLAY_ROLES[DEFAULT_GAMEPLAY_ROLES["MAP_MARGIN_RIGHT"] = 20000] = "MAP_MARGIN_RIGHT";
+        DEFAULT_GAMEPLAY_ROLES[DEFAULT_GAMEPLAY_ROLES["MAP_MARGIN_BOTTOM"] = 4500] = "MAP_MARGIN_BOTTOM";
+        DEFAULT_GAMEPLAY_ROLES[DEFAULT_GAMEPLAY_ROLES["RESPAWN_INTERVAL"] = 1000] = "RESPAWN_INTERVAL";
+    })(DEFAULT_GAMEPLAY_ROLES = exports.DEFAULT_GAMEPLAY_ROLES || (exports.DEFAULT_GAMEPLAY_ROLES = {}));
+}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+
+/***/ }),
+
 /***/ "./src/libs/events/global-event.ts":
 /*!*****************************************!*\
   !*** ./src/libs/events/global-event.ts ***!
@@ -13937,16 +15986,20 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
             var _this = this;
             this.get = {};
             this.activeKey = {};
+            this.providers = {};
             this.onKeyDownHandler = function (e) {
                 var root = _this;
                 root.activeKey[e.keyCode] = true;
+                root.providers.onkeydown();
             };
             this.onKeyUpHandler = function (e) {
                 var root = _this;
                 root.activeKey[e.keyCode] = false;
+                root.providers.onkeyup();
             };
             this.browser = browser;
-            console.log("Is mobile: ", this.browser.isMobile);
+            this.providers.onkeydown = function () { };
+            this.providers.onkeyup = function () { };
         }
         GlobalEvent.prototype.activateKeyDetection = function () {
             document.body.addEventListener("keydown", this.onKeyDownHandler, true);
@@ -14019,7 +16072,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
                     },
                 },
             });
-            World.add(this.world, this.mouseConstraint);
             this.render.mouse = mouse;
             Render.lookAt(this.render, {
                 min: {
@@ -14099,6 +16151,10 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_
         Starter.prototype.destroyGamePlay = function () {
             console.log("destroy world also must be done for events !!!");
             Matter.World.clear(this.world, false);
+        };
+        Starter.prototype.deattachMatterEvents = function () {
+            Matter.Events.off(this.getEngine(), undefined, undefined);
+            console.info("Matter.Events.off");
         };
         return Starter;
     }());

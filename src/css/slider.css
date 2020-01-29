@@ -5,12 +5,13 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-   border-radius: 8px;
+  border-radius: 8px;
 }
 
 /* Next & previous buttons */
