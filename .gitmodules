@@ -1,0 +1,3 @@
+[submodule "src/applications/c-cpp-to-javascript/c-cpp-to-javascript"]
+	path = src/applications/c-cpp-to-javascript/c-cpp-to-javascript
+	url = https://github.com/zlatnaspirala/c-cpp-to-javascript
