@@ -36,6 +36,10 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
  scripts/         "JavaScript files"<br/>
 <br/>
 
+Update submodules command:
+```
+git submodule update --remote
+```
 
 ### Initial actions for deploying VPS ###
 
