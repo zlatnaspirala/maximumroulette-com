@@ -6,7 +6,7 @@
  #### Project is personal dev server for demostration.
  #### Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
  
- Public server host: cent os 8
+ Public server host: cent os 7
 
  ### Skills : ###
  
@@ -64,6 +64,30 @@ Join maximumroulette.com project contribution team at:
   
   - HTML5 Roulette project:
   https://roulette.maximumroulette.com 
+  
+### Standard stable links: 
+
+  - Multiplayer Platformer variant nightly build:
+  https://maximumroulette.com/applications/visual-typescript-game-engine/build/app.html
+  - Single player solution for Platformer `nidzica`
+  https://maximumroulette.com/applications/visual-typescript-game-engine/single-player/app.html
+  - Experimental example for visula ts game engine project
+  https://maximumroulette.com/applications/visual-typescript-game-engine/basket-ball-chat/app.html
+  - Application html index:
+  https://maximumroulette.com/applications/
+  - WIP emsdk implementations
+  https://maximumroulette.com/applications/c-cpp-to-js-tutorials/index.html
+  - WebRTC vs wevGL (three.js vs multiRTC)
+  https://maximumroulette.com/applications/chat/index.html
+  - My own 3d framework:
+  https://maximumroulette.com/webgl2/examples.html
+  - Opengles 1.1 First person controller (my own - first touch with javascript):
+  https://maximumroulette.com/applications/zlatnaspirala/index.html
+  - Tshirts javascript free source: 
+  https://maximumroulette.com/framework/3d_Tshirts_desing/project_instance/tshirts.html?tshirts
+  - TPS basic demo in three.js Shooter game demo:
+  https://maximumroulette.com/framework/monsters/
+  
   
 ### Install screen , apache ssl & other centos staff:
 
