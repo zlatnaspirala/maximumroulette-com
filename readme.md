@@ -5,6 +5,8 @@
 
  #### Project is personal dev server for demostration.
  #### Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
+ 
+ Public server host: cent os 8
 
  ### Skills : ###
  
@@ -33,10 +35,10 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
    3d tshirts desing - Three.js vs visual JS game engine 2d<br/>
    Monsters - TPS basic demo with three.js and cannon.js<br/>
    kurento - multiplatfor video chat<br/>
- css/             "General style for site"<br/>
- imgs/            "Image resources"<br/>
- pages/           "Pages on site like Home , about + demos"<br/>
- scripts/         "JavaScript files"<br/>
+  css/            "General style for site"<br/>
+  imgs/           "Image resources"<br/>
+  pages/          "Pages on site like Home , about + demos"<br/>
+  scripts/        "JavaScript files"<br/>
 <br/>
 </pre>
 
@@ -63,7 +65,7 @@ Join maximumroulette.com project contribution team at:
   - HTML5 Roulette project:
   https://roulette.maximumroulette.com 
   
-### Install screen :
+### Install screen , apache ssl & other centos staff:
 
 ```console
   yum -y install screen
