@@ -6,7 +6,7 @@
  #### Project is personal dev server for demostration.
  #### Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
  
- Public server host: cent os 7
+ #### Public server host: cent os 7
 
  ### Skills : ###
  
@@ -38,8 +38,7 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
   css/            "General style for site"<br/>
   imgs/           "Image resources"<br/>
   pages/          "Pages on site like Home , about + demos"<br/>
-  scripts/        "JavaScript files"<br/>
-<br/>
+  scripts/        "JavaScript files"
 </pre>
 
 Update submodules command:
@@ -47,7 +46,7 @@ Update submodules command:
 git submodule update --remote
 ```
 
-Join maximumroulette.com project contribution team at:
+#### Join maximumroulette.com project contribution team at:
 - https://join.slack.com/t/maximumroulette/shared_invite/zt-ffcgl80x-CYu4s~YC0bD9Od9_bkqmzw
 
 ### Initial actions for deploying VPS ###
@@ -59,15 +58,15 @@ Join maximumroulette.com project contribution team at:
 
  Some sub project are encoded. You can try demo it's free.
   
-  - Kure video chat link:
+  - Kure video chat link:</BR>
   https://maximumroulette.com:2020  
   
-  - HTML5 Roulette project:
+  - HTML5 Roulette project:</BR>
   https://roulette.maximumroulette.com 
   
 ### Standard stable links: 
 
-  - Multiplayer Platformer variant nightly build:
+  - Multiplayer Platformer variant nightly build:</BR>
   https://maximumroulette.com/applications/visual-typescript-game-engine/build/app.html
   - Single player solution for Platformer `nidzica`
   https://maximumroulette.com/applications/visual-typescript-game-engine/single-player/app.html
