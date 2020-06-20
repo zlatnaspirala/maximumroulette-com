@@ -1,11 +1,13 @@
 
 ### Project maximumroulette.com ###
 
- Project is personal dev server for demostration.
- Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
+ https://maximumroulette.com
 
- Skills :
+ #### Project is personal dev server for demostration.
+ #### Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
 
+ ### Skills : ###
+ 
 JavaScript advanced (opengles 1.1/2.0/3.0-webGL2,websockets,native 2dcanvas,real-time app/multiplayer <br/>
 games with full response for all modern desktop or mobile browsers). From scratch with or without <br/>
 frameworks.JQ,http request,100% response or fixing specific response bugs.Xml,json,glmatrix,three.js.Pure<br/>
@@ -20,11 +22,12 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
 -Unity3d js/c# script solid knowledge<br/>
 -Ue 4.x blueprint solid knowledge<br/>
 -Blender - beginner/mid<br/>
--Android Studio - solid (native canvas2d,opengles,UI,sockets, classic app, services, no framework implementation web hybrid app)<br/>
+-Android Studio - solid (native canvas2d,opengles,UI,sockets, classic app,
+ services, no framework implementation web hybrid app)<br/>
 <br/>
 
 ### Structure ###
-
+<pre>
  src/applications "Old and new demos any kind."<br/>
    3d slot - need fix -old<br/>
    3d tshirts desing - Three.js vs visual JS game engine 2d<br/>
@@ -35,26 +38,37 @@ without plugins). sip.js run with freeswitch, kurento, web voip client.<br/>
  pages/           "Pages on site like Home , about + demos"<br/>
  scripts/         "JavaScript files"<br/>
 <br/>
+</pre>
 
 Update submodules command:
-```
+```bash
 git submodule update --remote
 ```
+
+Join maximumroulette.com project contribution team at:
+- https://join.slack.com/t/maximumroulette/shared_invite/zt-ffcgl80x-CYu4s~YC0bD9Od9_bkqmzw
 
 ### Initial actions for deploying VPS ###
 
  OS : cent 7.5
  public address : maximumroulette.com
 
- Install screen :
+### About commercial projetcs
+
+ Some sub project are encoded. You can try demo it's free.
+  
+  - Kure video chat link:
+  https://maximumroulette.com:2020  
+  
+  - HTML5 Roulette project:
+  https://roulette.maximumroulette.com 
+  
+### Install screen :
 
 ```console
   yum -y install screen
-
   sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-
   sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
   sudo yum install docker-ce docker-ce-cli containerd.io
 ```
 
