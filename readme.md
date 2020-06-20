@@ -68,23 +68,23 @@ git submodule update --remote
 
   - Multiplayer Platformer variant nightly build:</BR>
   https://maximumroulette.com/applications/visual-typescript-game-engine/build/app.html
-  - Single player solution for Platformer `nidzica`
+  - Single player solution for Platformer `nidzica`</BR>
   https://maximumroulette.com/applications/visual-typescript-game-engine/single-player/app.html
-  - Experimental example for visula ts game engine project
+  - Experimental example for visula ts game engine project</BR>
   https://maximumroulette.com/applications/visual-typescript-game-engine/basket-ball-chat/app.html
-  - Application html index:
+  - Application html index:</BR>
   https://maximumroulette.com/applications/
-  - WIP emsdk implementations
+  - WIP emsdk implementations</BR>
   https://maximumroulette.com/applications/c-cpp-to-js-tutorials/index.html
-  - WebRTC vs wevGL (three.js vs multiRTC)
+  - WebRTC vs wevGL (three.js vs multiRTC)</BR>
   https://maximumroulette.com/applications/chat/index.html
-  - My own 3d framework:
+  - My own 3d framework:</BR>
   https://maximumroulette.com/webgl2/examples.html
-  - Opengles 1.1 First person controller (my own - first touch with javascript):
+  - Opengles 1.1 First person controller (my own - first touch with javascript):</BR>
   https://maximumroulette.com/applications/zlatnaspirala/index.html
-  - Tshirts javascript free source: 
+  - Tshirts javascript free source: </BR>
   https://maximumroulette.com/framework/3d_Tshirts_desing/project_instance/tshirts.html?tshirts
-  - TPS basic demo in three.js Shooter game demo:
+  - TPS basic demo in three.js Shooter game demo:</BR>
   https://maximumroulette.com/framework/monsters/
   
   
