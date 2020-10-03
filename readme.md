@@ -5,11 +5,11 @@
 
  #### Project is personal dev server for demostration.
  #### Owned by Nikola Lukic zlatnaspirala@gmail.com 2019 Serbia Nis.
- 
+
  #### Public server host: cent os 7
 
  ### Skills : ###
- 
+
 JavaScript advanced (opengles 1.1/2.0/3.0-webGL2,websockets,native 2dcanvas,real-time app/multiplayer <br/>
 games with full response for all modern desktop or mobile browsers). From scratch with or without <br/>
 frameworks.JQ,http request,100% response or fixing specific response bugs.Xml,json,glmatrix,three.js.Pure<br/>
@@ -54,17 +54,26 @@ git submodule update --remote
  OS : cent 7.5
  public address : maximumroulette.com
 
+#### Apache centos 7.5 setup renew ssl letsencrypt ####
+
+```bash
+sudo /usr/bin/letsencrypt --apache -d maximumroulette.com -d apps.maximumroulette.com -d kure.maximumroulette.com -d roulette.maximumroulette.com -d artificialintelligence.maximumroulette.com
+```
+
 ### About commercial projetcs
 
  Some sub project are encoded. You can try demo it's free.
-  
+
   - Kure video chat link:</BR>
-  https://maximumroulette.com:2020  
-  
+  https://maximumroulette.com:2020
+
   - HTML5 Roulette project:</BR>
-  https://roulette.maximumroulette.com 
-  
-### Standard stable links: 
+  https://roulette.maximumroulette.com
+
+  [WIP] VuleBule YTube service
+  https://maximumroulette.com:3000
+
+### Standard stable links:
 
   - Multiplayer Platformer variant nightly build:</BR>
   https://maximumroulette.com/applications/visual-typescript-game-engine/build/app.html
@@ -86,9 +95,13 @@ git submodule update --remote
   https://maximumroulette.com/framework/3d_Tshirts_desing/project_instance/tshirts.html?tshirts
   - TPS basic demo in three.js Shooter game demo:</BR>
   https://maximumroulette.com/framework/monsters/
-  
-  
-### Install screen , apache ssl & other centos staff:
+
+
+### Gallery ###
+
+![roulette]()
+
+### Install screen , apache ssl & other centos staff: ###
 
 ```console
   yum -y install screen
