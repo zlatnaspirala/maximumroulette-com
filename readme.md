@@ -99,7 +99,10 @@ sudo /usr/bin/letsencrypt --apache -d maximumroulette.com -d apps.maximumroulett
 
 ### Gallery ###
 
-![roulette]()
+![roulette](https://github.com/zlatnaspirala/maximumroulette-com/blob/master/promo-material/ultimate-roulette.jpg)
+![3d-slot-based on three.js](https://github.com/zlatnaspirala/maximumroulette-com/blob/master/promo-material/3d_slot_source_code.png)
+![platformer - based on matter.ts ](https://github.com/zlatnaspirala/maximumroulette-com/blob/master/promo-material/platformer.png)
+![House](https://github.com/zlatnaspirala/maximumroulette-com/blob/master/promo-material/house.jpg)
 
 ### Install screen , apache ssl & other centos staff: ###
 
