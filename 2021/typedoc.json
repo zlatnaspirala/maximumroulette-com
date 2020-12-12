@@ -1,0 +1,9 @@
+{
+    "mode": "file",
+    "out": "docs",
+    "exclude": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/submodules/**"
+    ]
+}

@@ -1,5 +1,0 @@
-
-function NETWORK_ASSET() {
-
-}
-			
