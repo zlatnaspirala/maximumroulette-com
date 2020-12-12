@@ -1,0 +1,36 @@
+{
+  "name": "Ultimate roulette",
+  "short_name": "UR 1.0",
+  "start_url": "index.html",
+  "version": "1.0",
+  "orientation": "landscape",
+  "theme_color": "aliceblue",
+  "background_color": "black",
+  "description": "NativeJS variant",
+  "display": "standalone",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "imgs/icon/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "imgs/icon/96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "imgs/icon/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "author": {
+      "name": "Nikola Lukic",
+      "email": "zlatnaspirala@gmail.com",
+      "website": "https://maximumroulette.com",
+      "github": "https://github.com/zlatnaspirala",
+      "source-repo": "https://github.com/zlatnaspirala/ultimate-roulette/"
+  }
+}

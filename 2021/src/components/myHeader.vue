@@ -5,17 +5,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <md-menu md-size="medium" md-align-trigger>
       <md-button class="md-primary md-raised" md-menu-trigger>
-        Application
+        Maximumroulette Software Engineering
         <md-icon class="fa fa-rocket md-accent" />
       </md-button>
       <md-menu-content>
         <md-menu-item>
-          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="visibilityAccountTestRoute">
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://roulette.maximumroulette.com', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            Test 1
+            Ultimate Roulette
           </md-button>
         </md-menu-item>
-  
+          <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com:3000', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            VuleTube - YT Client
+          </md-button>
+        </md-menu-item>
       </md-menu-content>
     </md-menu>
     <md-menu>
@@ -56,12 +61,12 @@
           </md-content>
         </md-tab>
 
-        <md-tab md-label="About RocketCraftServer Service">
+        <md-tab md-label="About Maximumroulette Service">
           <md-content class="md-scrollbar" v-bind:style="optionsStyle">
             <img style="width:200px;margin: -5px -5px -5px -5px;" src="/assets/vule-logo1.png" />
-            <h3> Project name: Rocket Craft Server</h3>
+            <h3> Project name: Maximumroulette.com </h3>
             <br>
-              <span>https://maximumroulette:30100</span>
+              <span>https://maximumroulette.com</span>
               <p>This project is open source :</p>
               <a target="_blank" href="https://github.com/zlatnaspirala//blob/master/LICENSE">LICENCE</a>
               <br>
@@ -69,9 +74,11 @@
           </md-content>
         </md-tab>
       </md-tabs>
+
       <md-dialog-actions>
         <md-button color="md-primary" @click="showAboutDialog = false">HIDE</md-button>
       </md-dialog-actions>
+
     </md-dialog>
   </div>
 </template>

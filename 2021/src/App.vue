@@ -1,22 +1,22 @@
 
 <template>
   <div id="app">
-    <myHeader slogan='Rocket-craft server - Admin Panel web app'></myHeader>
+    <myHeader slogan='Maximumroulette web site'></myHeader>
     <div ref="mybodycontent" class="myshadows" v-bind:style="styleObject">
 
       <div class="loader" ref="loader" style="display: block;">
         <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
       </div>
 
-      <emailService v-show="visibility.welcomeNote"
+      <!--emailService v-show="visibility.welcomeNote"
                     slogan="Welcome slogan." >
-      </emailService>
+      </emailService-->
 
       <!--country-selector>
       </country-selector-->
 
     </div>
-    <myFooter textContent='https://maximumroulette.com:30100 Rocket-Craft-Server 2021'></myFooter>
+    <myFooter textContent='https://maximumroulette.com 2021 Software Services and Developing from zero.'></myFooter>
   </div>
 </template>
 
@@ -26,18 +26,13 @@
   import { Component } from 'vue-property-decorator'
   import myHeader from './components/myHeader.vue'
   import myFooter from './components/myFooter.vue'
-  import RocketAccounts from './components/administrator/accounts.vue'
   import { mapState, mapMutations } from 'vuex'
   import IApp from './IApp'
   import LocalStorageMemory from './local-storage/local-storage'
   import VueMaterial from 'vue-material'
   import 'vue-material/dist/vue-material.min.css'
   import './styles/style.scss'
-  import EmailService from './components/administrator/email-service.vue'
   import CountrySelector from './components/countries-selector/country-selector.vue'
-  import Users from './components/administrator/users.vue'
-  import userRocketProfile from './components/profile/profile.vue'
-  import GenericComponent from './components/generic/generic.vue'
 
   Vue.use(VueMaterial as any)
 
@@ -57,12 +52,7 @@
     components: {
       myHeader,
       myFooter,
-      RocketAccounts,
-      EmailService,
-      CountrySelector,
-      Users,
-      GenericComponent,
-      userRocketProfile
+      CountrySelector
     },
     computed: mapState([
       'permission'
@@ -80,7 +70,6 @@
      */
     $refs!: {
       myHeader: myHeader,
-      emailService: EmailService,
       countrySelector: CountrySelector,
       mybodycontent: HTMLDivElement,
       loader: HTMLDivElement

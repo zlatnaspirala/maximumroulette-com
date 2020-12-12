@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.web">
+    <title>Ultimate roulette 1.0</title>
+    <meta name="Description" content="Created by Nikola Lukic application based on three.js & cannon.js">
+    <meta name="robots" content="all" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-control" content="public">
+    <link rel="icon" type="image/png" sizes="96x96" href="imgs/icon/96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imgs/icon/192.png">
+    <link rel="icon" href="imgs/icon/favicon.ico" type="image/x-icon">
+    <intercept-url pattern="imgs/icon/favicon.ico" access="ROLE_ANONYMOUS"> </intercept-url>
+    <meta name="msapplication-TileImage" content="imgs/icon/192.png">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="scripts/libs//hacker-timer/hack-timer-worker.js"></script>
+    <script src="scripts/libs//hacker-timer/hack-timer.js"></script>
+  </head>
+  <body>
+    <noscript>
+      You need to allow JavaScript in you browser.
+    </noscript>
+
+    <div id="loader" class="my-loader">
+      <h2> LOADING ULTIMATE </h2>
+      <p>r</p>
+      <p>o</p>
+      <p>u</p>
+      <p>l</p>
+      <p>e</p>
+      <p>t</p>
+      <p>t</p>
+      <p>e</p>
+    </div>
+
+    <canvas id="c"></canvas>
+    <div>
+       <div id="view1" class="split" tabindex="1"></div>
+       <div id="view2" class="camera2" tabindex="2"></div>
+    </div>
+
+    <div style="display: none;">
+      <audio preload="auto" id="chipStackAudio">
+        <source src="assets/audios/chip.ogg" type="audio/ogg">
+        <source src="assets/audios/chip.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio preload="auto" id="removeChipsAudio">
+        <source src="assets/audios/removechips.ogg" type="audio/ogg">
+        <source src="assets/audios/removechips.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio preload="auto" id="spiningAudio">
+        <source src="assets/audios/spining.ogg" type="audio/ogg">
+        <source src="assets/audios/spining.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio preload="auto" id="spiningEndAudio">
+        <source src="assets/audios/spining-end.ogg" type="audio/ogg">
+        <source src="assets/audios/spining-end.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <script src="scripts/libs/common-func.js"></script>
+    <!--script src="scripts/libs/dat.gui.js"></script-->
+    <script src="scripts/libs/build/three.min.js"></script>
+    <!--script src="scripts/libs/loaders/DDSLoader.js"></script-->
+    <!--script src="scripts/libs/loaders/MTLLoader.js"></script-->
+    <!--script src="scripts/libs/loaders/ColladaLoader.js"></script-->
+    <script src="scripts/libs/loaders/GLTFLoader.js"></script>
+    <script src="scripts/libs/loaders/DRACOLoader.js"></script>
+    <script src="scripts/libs/renderers/Projector.js"></script>
+    <script src="scripts/libs/Reflector.js"></script>
+    <script src="scripts/libs/cannon.min.js"></script>
+    <script src="scripts/libs/my-loader-helper.js"></script>
+    <!--script src="scripts/PointerLockControls.js"></script-->
+    <!--script src="scripts/libs/TrackballControls.js"></script-->
+    <script src="scripts/libs/Detector.js"></script>
+    <script src="scripts/libs/smoothie.js"></script>
+    <!--script src="scripts/libs/Stats.js"></script-->
+    <script src="scripts/libs/OrbitControls.js"></script>
+    <script src="scripts/libs/cannon.engine.js"></script>
+
+    <script>
+
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          // navigator.serviceWorker.register("worker.js")
+        })
+      } else {
+        console.warn("No support for web workers in this browser.")
+      }
+
+    </script>
+
+  </body>
+
+  <script src="scripts/bet-map/bet-map.js"></script>
+  <script src="scripts/init.js"></script>
+  <script src="scripts/ball.js"></script>
+  <script src="scripts/wheel.js"></script>
+  <script src="scripts/wheelRoll.js"></script>
+  <script src="scripts/center-roll.js"></script>
+  <script src="scripts/roulette-table.js"></script>
+  <script src="scripts/chips.js"></script>
+  <script src="scripts/lights.js"></script>
+  <script src="scripts/audios.js"></script>
+  <script src="scripts/text.js"></script>
+  <script src="application.js"></script>
+
+</html>
