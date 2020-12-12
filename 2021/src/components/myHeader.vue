@@ -38,6 +38,10 @@
       </md-menu-content>
     </md-menu>
 
+    <md-content class="main-container">
+      Welcome to my personal develop stage web site. <br>
+       .......... under construction ..........
+    </md-content>
     <md-dialog :md-active.sync="showAboutDialog">
       <md-dialog-title>Credits and About</md-dialog-title>
       <md-tabs md-dynamic-height>
