@@ -21,6 +21,24 @@
             VuleTube - YT Client
           </md-button>
         </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/webgl-glmatrix', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            webgl2 glmatrix2
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/tshirts/project_instance/tshirts.html?tshirts', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            t-shirts webgl vs canvas2d
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/monsters', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            Three.js TPS demo
+          </md-button>
+        </md-menu-item>
       </md-menu-content>
     </md-menu>
     <md-menu>
@@ -38,10 +56,6 @@
       </md-menu-content>
     </md-menu>
 
-    <md-content class="main-container">
-      Welcome to my personal develop stage web site. <br>
-       .......... under construction ..........
-    </md-content>
     <md-dialog :md-active.sync="showAboutDialog">
       <md-dialog-title>Credits and About</md-dialog-title>
       <md-tabs md-dynamic-height>
@@ -84,10 +98,23 @@
       </md-dialog-actions>
 
     </md-dialog>
+
   </div>
 </template>
 
 <style lang="scss" scoped>
+
+  .md-menu-content {
+    min-width: 270px;
+    width: 30%;
+  }
+
+  .main-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+  }
 
   .md-menu {
     margin: 1px;
@@ -185,23 +212,6 @@
     visibilityUsersComponent(): void {
       (this.$root.$children[0] as any).setUsersVisibility()
     }
-
-    visibilityEmailService(): void {
-      (this.$root.$children[0] as any).setEmailServiceVisibility()
-    }
-
-    visibilityAccountTestRoute(): void {
-      (this.$root.$children[0] as any).setAccountVisibility()
-    }
-
-    visibilityGenericComponent(): void {
-      (this.$root.$children[0] as any).setGenericComponentVisibility()
-    }
-
-    visibilityProfileComponent(): void {
-      (this.$root.$children[0] as any).setUserProfileComponentVisibility()
-    }
-    
 
     mounted (): void {
 

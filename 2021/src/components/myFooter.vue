@@ -253,6 +253,7 @@
     styleObject: Partial<CSSStyleDeclaration> | any = {
       position: 'absolute',
       display: 'flex',
+      zIndex: 11111,
       alignItems: 'center',
       justifyContent: 'center',
       bottom: '0',

@@ -2,18 +2,15 @@
 <template>
   <div id="app">
     <myHeader slogan='Maximumroulette web site'></myHeader>
-    <div ref="mybodycontent" class="myshadows" v-bind:style="styleObject">
+    <div ref="mybodycontent" v-bind:style="styleObject">
 
       <div class="loader" ref="loader" style="display: block;">
         <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
       </div>
 
-      <!--emailService v-show="visibility.welcomeNote"
-                    slogan="Welcome slogan." >
-      </emailService-->
-
-      <!--country-selector>
-      </country-selector-->
+      <AboutMe v-show="visibility.welcomeNote"
+               slogan="Everything is possible" >
+      </AboutMe>
 
     </div>
     <myFooter textContent='https://maximumroulette.com 2021 Software Services and Developing from zero.'></myFooter>
@@ -33,6 +30,7 @@
   import 'vue-material/dist/vue-material.min.css'
   import './styles/style.scss'
   import CountrySelector from './components/countries-selector/country-selector.vue'
+  import AboutMe from './components/about-me.vue'
 
   Vue.use(VueMaterial as any)
 
@@ -52,7 +50,8 @@
     components: {
       myHeader,
       myFooter,
-      CountrySelector
+      CountrySelector,
+      AboutMe
     },
     computed: mapState([
       'permission'
@@ -113,8 +112,8 @@
       this.styleObject = {
         display: 'flex',
         flexDirection: 'column',
-        height: '100%',
-        width: '10%'
+        height: '92vh',
+        width: '100%'
       }
 
       /**
