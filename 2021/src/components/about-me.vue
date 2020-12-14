@@ -9,6 +9,26 @@
       <md-content class="md-sub-content">
          JavaScript (opengles 1.1/2.0/3.0//webGL webRTC WebSockets 2DCanvas) real-time applications or 
          multiplayer games with full response for all modern desktop or mobile browsers.
+
+        <md-button class="md-primary" @click="window.open('https://github.com/zlatnaspirala', '_blank');">
+            zlatnaspirala  <md-icon class="fa fa-github md-size-2x" ></md-icon>
+        </md-button>
+
+        <md-button class="md-primary" @click="window.open('https://stackoverflow.com/story/3d', '_blank');">
+          stackoverflow.com/story/3d <md-icon class="fa fa-stack-overflow md-size-2x" ></md-icon>
+        </md-button>
+
+        <md-button class="md-primary" @click="window.open('https://www.linkedin.com/in/3dprogramer', '_blank');">
+          linkedin.com/in/3dprogramer <md-icon class="fa fa-linkedin-square md-size-2x"></md-icon>
+        </md-button>
+
+        <md-button class="md-primary" @click="window.open('https://www.hackerrank.com/leaderboard?page=1&track=ai&type=practice', '_blank');">
+          hackerrank.com leaderboard ai practice <md-icon class="fa fa-list-ol md-size-2x"></md-icon>
+        </md-button>
+        
+        
+        
+
       </md-content>
 
       <md-content class="md-sub-content">
@@ -67,8 +87,12 @@
         
       </md-content>
 
+      <md-content class="md-sub-content" style="height:600px">
+        <iframe width="100%" style="height:600px"  src="//jsfiddle.net/zlatnaspirala/0md9o89z/21/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+      </md-content>
+
     </md-content>
-    <md-icon class="fa fa-github" ></md-icon>
+
     <!--
     <md-table v-model="countries" md-sort="name" md-sort-order="asc" md-card>
       <md-table-toolbar>
@@ -84,7 +108,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped> 
   .md-content {
     display: flex;
     flex-direction: row;
@@ -98,8 +122,12 @@
     margin: 15px 15px 15px 15px;
     padding: 15px 15px 15px 15px;
     width: 47%;
-    height: auto;
+    height:fit-content;
     display: flex;
+  }
+
+  .md-sub-content .md-button {
+    height:100px;
   }
 
   p {
