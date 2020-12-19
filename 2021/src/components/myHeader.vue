@@ -8,7 +8,7 @@
         Maximumroulette Software Engineering
         <md-icon class="fa fa-rocket md-accent" />
       </md-button>
-      <md-menu-content>
+      <md-menu-content md-menu-content-large>
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://roulette.maximumroulette.com', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
@@ -105,8 +105,7 @@
 <style lang="scss" scoped>
 
   .md-menu-content {
-    min-width: 270px;
-    width: 30%;
+    
   }
 
   .main-container{

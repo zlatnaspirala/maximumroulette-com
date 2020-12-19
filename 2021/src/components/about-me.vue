@@ -2,11 +2,10 @@
 <template>
   <div v-bind:style="styleObject">
 
-    <h1>welcome to maximumroulette.com</h1>
-
-    <md-content>
-
-      <md-content class="md-sub-content">
+    <h1 style="width:100%">{{ $props.slogan }}</h1>
+ 
+      <md-content class="md-sub-content" style="display:flex;flex-direction: column">
+        <h2>Welcome to my developing stage</h2>
          JavaScript (opengles 1.1/2.0/3.0//webGL webRTC WebSockets 2DCanvas) real-time applications or 
          multiplayer games with full response for all modern desktop or mobile browsers.
 
@@ -26,9 +25,6 @@
           hackerrank.com leaderboard ai practice <md-icon class="fa fa-list-ol md-size-2x"></md-icon>
         </md-button>
         
-        
-        
-
       </md-content>
 
       <md-content class="md-sub-content">
@@ -87,11 +83,15 @@
         
       </md-content>
 
-      <md-content class="md-sub-content" style="height:600px">
-        <iframe width="100%" style="height:600px"  src="//jsfiddle.net/zlatnaspirala/0md9o89z/21/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+      <md-content class="md-sub-content" style="height:auto">
+        <iframe width="100%" style="height:320px"  src="/apps/funny-slot/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+       <p> ECMA5 Vanilla JS</p>
       </md-content>
 
-    </md-content>
+      <md-content class="md-sub-content" style="height:auto;width:23%">
+        <object width="100%" style="height:320px"  data="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object>
+        <p>My first touch with JS, interest fact this app works from android 3.x</p>
+      </md-content>
 
     <!--
     <md-table v-model="countries" md-sort="name" md-sort-order="asc" md-card>
@@ -118,21 +118,34 @@
     flex-wrap: wrap;
   }
 
-  .md-sub-content {
-    margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
-    width: 47%;
-    height:fit-content;
-    display: flex;
+  @media (min-width: 1034px) {
+      .md-sub-content {
+      margin: 10px 10px 10px 10px;
+      padding: 15px 15px 15px 15px;
+      max-width: 48%;
+      min-width: 350px;
+      height:auto;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 1033px) {
+    .md-sub-content {
+      margin: 5px 5px 5px 5px;
+      padding: 5px 5px 5px 5px;
+      max-width: 100%;
+      min-width: 320px;
+      height:auto;
+      display: flex;
+    }
   }
 
   .md-sub-content .md-button {
-    height:100px;
+    height:50px;
   }
 
   p {
-    margin: 1px 1px 1px 1px;
-    width: 45vw;
+    margin: 10px 1px 1px 1px;
     word-wrap: break-word;
   }
 </style>
@@ -156,7 +169,7 @@
 
   const CompProps = Vue.extend({
     props: {
-      textContent: String
+      slogan: String
     }
   });
 
@@ -181,9 +194,13 @@
     }
 
     styleObject: Partial<CSSStyleDeclaration> | any = {
+      display:'flex',
+      flexDirection: 'row',
+      flexWrap: 'wrap',
       width: '100%',
       padding: '10px',
       height: '100vh',
+      overflowY: 'scroll',
       border: 'solid red 1px'
     }
 

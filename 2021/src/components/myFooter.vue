@@ -2,6 +2,7 @@
 <template>
   <div v-bind:style="styleObject" class="md-primary myshadows" >
 
+   <!--object width="100%" style="z-index:-1;position:absolute;height:80px;left:0;button:0"  data="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object-->
     <md-dialog :md-active.sync="showDialog">
       <md-dialog-title>Privacy Policy && Cookies</md-dialog-title>
 
