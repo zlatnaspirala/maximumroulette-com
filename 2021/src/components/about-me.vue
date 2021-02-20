@@ -5,12 +5,13 @@
     <h1 style="width:100%">{{ $props.slogan }}</h1>
  
       <md-content class="md-sub-content" style="display:flex;flex-direction: column">
-        <h2>Welcome to my developing stage</h2>
-         JavaScript (opengles 1.1/2.0/3.0//webGL webRTC WebSockets 2DCanvas) real-time applications or 
-         multiplayer games with full response for all modern desktop or mobile browsers.
+        <h2>Welcome to my developing stage server</h2>
+          <strong>Graphics and Networking</strong>
+          JavaScript (opengles 1.1/2.0/3.0//webGL webRTC WebSockets 2DCanvas) real-time applications or 
+          multiplayer games with full response for all modern desktop or mobile browsers.
 
         <md-button class="md-primary" @click="window.open('https://github.com/zlatnaspirala', '_blank');">
-            zlatnaspirala  <md-icon class="fa fa-github md-size-2x" ></md-icon>
+          zlatnaspirala  <md-icon class="fa fa-github md-size-2x" ></md-icon>
         </md-button>
 
         <md-button class="md-primary" @click="window.open('https://stackoverflow.com/story/3d', '_blank');">
@@ -29,7 +30,6 @@
 
       <md-content class="md-sub-content">
         <h2>From scratch with or without frameworks HTML/JS/CSS role. My favorite tags list:</h2>
-        <p>__________________________</p>
         <md-chip class="md-primary md-accent">vanilla-javascript</md-chip>
         <md-chip class="md-accent md-primary">server-side-nodejs</md-chip>
         <md-chip md-disabled>mongoDB</md-chip>
@@ -93,6 +93,27 @@
         <p>My first touch with JS, interest fact this app works from android 3.x</p>
       </md-content>
 
+      <md-content class="md-sub-content" style="height:auto;width:23%;height:450px;overflow:scroll;overflow-x: hidden;">
+        <p><b>UE4</b> is most powerfull tool why not use it. You can download freeware application human anatomy 3d.</p>
+        <p>Source of 3d objects: </p>
+        <p>"BodyParts3D, © The Database Center for Life
+           Science licensed under CCAttribution-Share Alike 2.1 Japan".</p>
+        <p>Origin license link:</p>
+        <p><a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html">Link</a></p>
+        <p>Modification (optimisation) on origin data</p>
+        <p>CCAttribution-Share Alike 2.1 Japan ©</p>
+        <p>Nikola Lukic maximumroulette.com</p>
+        <p><b>Download link win64 version: </b> <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar"> UltimateAnatomy 0.2 </a></p>
+        <br><br>
+        <img src="/assets/images/ua/1.png" >
+        <img src="/assets/images/ua/2.png" >
+        <img src="/assets/images/ua/3.png" >
+        <img src="/assets/images/ua/4.png" >
+        <img src="/assets/images/ua/5.png" >
+        <img src="/assets/images/ua/6.png" >
+        <img src="/assets/images/ua/7.png" >
+      </md-content>
+
     <!--
     <md-table v-model="countries" md-sort="name" md-sort-order="asc" md-card>
       <md-table-toolbar>
@@ -145,9 +166,10 @@
   }
 
   p {
-    margin: 10px 1px 1px 1px;
+    margin: 7px 1px 1px 1px;
     word-wrap: break-word;
   }
+
 </style>
 
 <script lang="ts">
@@ -200,8 +222,7 @@
       width: '100%',
       padding: '10px',
       height: '100vh',
-      overflowY: 'scroll',
-      border: 'solid red 1px'
+      overflowY: 'scroll'
     }
 
   }

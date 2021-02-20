@@ -1,6 +1,6 @@
 
 <template>
-  <div v-bind:style="styleObject" class="md-primary myshadows" >
+  <div v-bind:style="styleObject" class="footer myshadows" >
 
    <!--object width="100%" style="z-index:-1;position:absolute;height:80px;left:0;button:0"  data="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object-->
     <md-dialog :md-active.sync="showDialog">
@@ -192,6 +192,11 @@
 </template>
 
 <style scoped>
+
+  .footer {
+    background-color: var(--md-theme-Dark-background-variant, #303030);
+  }
+
   .myshadows {
     -webkit-box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.5);
@@ -253,7 +258,7 @@
 
     styleObject: Partial<CSSStyleDeclaration> | any = {
       position: 'absolute',
-      display: 'flex',
+      display: 'block',
       zIndex: 11111,
       alignItems: 'center',
       justifyContent: 'center',

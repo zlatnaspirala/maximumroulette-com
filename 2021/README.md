@@ -21,8 +21,9 @@
 Vue supported with typescrypt.
 
 #### Run on local mashine:
+
 ```js
-  npm run dev 
+  npm run build
   npm run serve
 ```
 

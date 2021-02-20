@@ -16,7 +16,7 @@
           </md-button>
         </md-menu-item>
           <md-menu-item>
-          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com:3000', '_blank');">
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/vuletube', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
             VuleTube - YT Client
           </md-button>

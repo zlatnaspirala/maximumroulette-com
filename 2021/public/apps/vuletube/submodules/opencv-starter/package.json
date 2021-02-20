@@ -1,0 +1,29 @@
+{
+  "name": "opencv-starter",
+  "version": "1.0.1",
+  "description": "NPM Module - load opencvjs lib and create middle app part for better handling...",
+  "main": "index.js",
+  "scripts": {
+    "format": "eslint ./src/ecma6/*.js",
+    "fix": "eslint ./src/ecma6/*.js --fix",
+    "fix-main": "eslint ./src/ecma6/main.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zlatnaspirala/opencv-starter.git"
+  },
+  "keywords": [
+    "opencvjs"
+  ],
+  "author": "Nikola Lukic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zlatnaspirala/opencv-starter/issues"
+  },
+  "homepage": "https://github.com/zlatnaspirala/opencv-starter#readme",
+  "dependencies": {
+    "eslint": "^7.8.1",
+    "webrtc-adapter": "^7.7.0"
+  }
+}

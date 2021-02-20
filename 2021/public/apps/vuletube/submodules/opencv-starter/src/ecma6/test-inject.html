@@ -1,0 +1,68 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+  <style>
+    #vp-debug {
+      display: flex;
+    }
+  </style>
+
+    <h2>How to load cvStarter with external video source.</h2>
+
+    <!-- Must be dynamic on the end -->
+    <div class="text-center">
+      <span>Current Filter: </span><span id="filterName">Pass Through</span>
+    </div>
+    <div id="vp-debug">
+            <canvas class="center-block" id="canvasOutput" width=320 height=240></canvas>
+            <div id="guiContainer"></div>
+      <div class="invisible">
+        <video id="my-video" class="hidden">Your browser does not support the video tag.</video>
+      </div>
+    </div>
+
+    <script type="module">
+
+
+      import { cvjsLoader, asyncLoad } from "./loader.js"
+      import CvStarter from './main.js'
+
+      var externalVideoStream = null,
+          externalVideo = document.getElementById("my-video"),
+          STREAM = null
+
+      function someExternalVideo() {
+
+        navigator.mediaDevices.getUserMedia({video: true, audio: false,})
+          .then((s) => {
+            STREAM = s
+            externalVideo.srcObject = s
+            externalVideo.play()
+          })
+          .catch(function(err) {
+            console.log("An error occured! " + err)
+          })
+
+        externalVideo.addEventListener("canplay", () => {
+
+          cvjsLoader(function() {
+            // `opencvjs` is ready for use.
+            const options = {
+              videoProcessing: true,
+              injectVideo: externalVideo
+            }
+            let cvStarter = new CvStarter(options)
+          })
+
+        }, false)
+      }
+
+      someExternalVideo()
+
+    </script>
+
+  </body>
+</html>
