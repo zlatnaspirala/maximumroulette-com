@@ -4,6 +4,27 @@
 
     <h1 style="width:100%">{{ $props.slogan }}</h1>
  
+    <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
+      <h2>News</h2>
+      <p> <b>RocketCrafting Projects</b> </p>
+      <p>Use Unreal engine to create classic 2d context applications.
+         Similar to the standard web application. Rocket is most powerfull
+         cross platform tool i need to use it. 4.24 version is most interest
+         checkpoint for UE. Last version with opengles 2.0 devices support (mobile).
+         Also is version where we use new feature exstension HTML5 build. Explanation:
+         with opengles 2.0 we can still build our application for old android os.
+         In other way 4.24 is one of the last releases. Future upgrade will be easy.
+         Please join the team and participate: 
+         <a href="https://github.com/orgs/RocketCraftingServer/teams/rocketcraftingteam">
+           RocketCraftingServer/teams/rocketcraftingteam
+         </a>
+         Test beta version direct link:
+         <a href="http://rocketcraft.maximumroulette.com/">rocketcraft.maximumroulette.com</a>
+      </p>
+
+      <a href="http://159.89.8.40:30100/Brm-HTML5-Shipping.html" target="_blank" />
+    </md-content>
+
       <md-content class="md-sub-content" style="display:flex;flex-direction: column">
         <h2>Welcome to my developing stage server</h2>
           <strong>Graphics and Networking</strong>
@@ -93,7 +114,7 @@
         <p>My first touch with JS, interest fact this app works from android 3.x</p>
       </md-content>
 
-      <md-content class="md-sub-content" style="height:auto;width:23%;height:450px;overflow:scroll;overflow-x: hidden;">
+      <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
         <p><b>UE4</b> is most powerfull tool why not use it. You can download freeware application human anatomy 3d.</p>
         <p>Source of 3d objects: </p>
         <p>"BodyParts3D, © The Database Center for Life
