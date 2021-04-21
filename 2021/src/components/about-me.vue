@@ -15,14 +15,29 @@
          with opengles 2.0 we can still build our application for old android os.
          In other way 4.24 is one of the last releases. Future upgrade will be easy.
          Please join the team and participate: 
-         <a href="https://github.com/orgs/RocketCraftingServer/teams/rocketcraftingteam">
+         <a href="https://github.com/orgs/RocketCraftingServer/teams/rocketcraftingteam" target="_blank">
            RocketCraftingServer/teams/rocketcraftingteam
          </a>
          Test beta version direct link:
-         <a href="http://rocketcraft.maximumroulette.com/">rocketcraft.maximumroulette.com</a>
+         <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a>
       </p>
 
-      <a href="http://159.89.8.40:30100/Brm-HTML5-Shipping.html" target="_blank" />
+    </md-content>
+
+    <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
+      <h2>News</h2>
+      <p> <b>CrossK App Engine</b> </p>
+
+      <img src="/assets/images/crossk-app-engine.png" />
+
+      <md-button class="md-primary" @click="window.open('https://github.com/zlatnaspirala/cross-k', '_blank');">
+        Download source code CrossK App engine  <md-icon class="fa fa-github md-size-2x" ></md-icon>
+      </md-button>
+
+      <p>
+
+      </p>
+
     </md-content>
 
       <md-content class="md-sub-content" style="display:flex;flex-direction: column">
