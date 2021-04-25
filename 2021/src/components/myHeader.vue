@@ -3,9 +3,25 @@
   <div ref="myHeader" class="myHeader">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <md-menu md-size="medium" md-align-trigger>
       <md-button class="md-primary md-raised" md-menu-trigger>
-        Maximumroulette Software Engineering
+        Published
+        <md-icon class="fa fa-rocket md-accent" />
+      </md-button>
+      <md-menu-content md-menu-content-large>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/visual-ts/singleplayer/app.html', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            Nidzica Single player
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+
+    <md-menu md-size="medium" md-align-trigger>
+      <md-button class="md-primary md-raised" md-menu-trigger>
+        Software Engineering
         <md-icon class="fa fa-rocket md-accent" />
       </md-button>
       <md-menu-content md-menu-content-large>

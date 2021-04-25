@@ -22,7 +22,33 @@
          <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a>
       </p>
 
-    </md-content>
+      <h2>News</h2>
+      <p> <b>VisualTsGameEngine</b> </p>
+      <p> <b>VisualTS GE prepared for npm service </b> </p>
+      <p>
+          Whats good in this project:<br>
+          No strange logs - No need for forums just follow stackoverflow.com and wc3.
+          Fast console log access, tracking code
+          no single eval ('popular' js frameworks usually are based on eval)
+          Fast rebuild <br>
+          <span>Simple there is nothing between you and making the app.</span>
+          Written in typescript current version 3.7.4. <br>
+          Text editor used and recommended: Last version of Visual Studio Code.<br>
+           Luanch debugger configuration comes with this project (for server part).<br>
+          Physics engine based on Matter.js - Matter.ts (npm project).<br>
+          Multiplatform video chat (for all browsers) implemented. SocketIO used for session staff.<br>
+          MultiRTC2 used for data transfer also for video chat. MultiRTC3 alias 'broadcaster' used for video chat.<br>
+          Mobile controls / Tested on android.<br>
+
+          Please join the team and participate:<br>
+         <a href="https://github.com/zlatnaspirala/visual-ts-game-engine" target="_blank">
+           GitHub hosted open source project
+         </a>
+
+         Live:
+         <a href="https://maximumroulette.com/apps/visual-ts/singleplayer/app.html" target="_blank" >Single player</a>
+      </p>
+      </md-content>
 
     <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
       <h2>News</h2>
