@@ -8,9 +8,19 @@
         <md-progress-spinner md-mode="indeterminate"></md-progress-spinner>
       </div>
 
-      <AboutMe v-show="visibility.welcomeNote"
+      <!--AboutMe v-show="visibility.welcomeNote"
                slogan="Everything is possible" >
       </AboutMe>
+
+      <Downloads v-show="visibility.welcomeNote"
+               slogan="Everything is possible" >
+      </Downloads-->
+
+      <template v-for="(child) in fields">
+        <component :is="child" :key="child.id" v-bind="inputBodyProps">>
+          {{ child.id }}
+        </component>
+      </template>
 
     </div>
     <myFooter textContent='https://maximumroulette.com 2021 Software Services and Developing from zero.'></myFooter>
@@ -23,6 +33,7 @@
   import { Component } from 'vue-property-decorator'
   import myHeader from './components/myHeader.vue'
   import myFooter from './components/myFooter.vue'
+  import Downloads from './components/downloads.vue'
   import { mapState, mapMutations } from 'vuex'
   import IApp from './IApp'
   import LocalStorageMemory from './local-storage/local-storage'
@@ -51,7 +62,8 @@
       myHeader,
       myFooter,
       CountrySelector,
-      AboutMe
+      AboutMe,
+      Downloads
     },
     computed: mapState([
       'permission'
@@ -91,6 +103,9 @@
     increment!: () => void
     saveResponse!: () => void
     permission!: Object
+    inputBodyProps: Object
+
+    fields: any[]
 
     public styleObject;
 
@@ -109,6 +124,12 @@
     constructor() {
       super()
       
+      this.fields = [AboutMe]
+
+      this.inputBodyProps = {
+        slogan: "Everything is possible"
+      }
+
       this.styleObject = {
         display: 'flex',
         flexDirection: 'column',
@@ -165,21 +186,14 @@
       return {
         visibility: {
           welcomeNote: true,
-        }
+        },
       }
     }
-
-    /*
-    public setAccountVisibility() {
-      this.$data.visibility.account = !this.$data.visibility.account
-    }
-    */
 
     setupInstance = () => {
       this.currentRoute = window.location.pathname
       this.$refs.loader.style.display = 'none'
       console.log('Test Application refs mybodycontent => ', this.$refs.mybodycontent)
-      // console.log('Attach Application event this.currentRoute => ', this.currentRoute)
     }
 
     get computedMsg (): string {
@@ -193,7 +207,15 @@
     created (): void {
       console.log("App created.")
     }
-    
+
+    showDownloads (): void {
+      this.fields = [Downloads]
+    }
+
+    showAbouts (): void {
+      this.fields = [AboutMe]
+    }
+
   }
 </script>
 

@@ -2,7 +2,6 @@
 <template>
   <div v-bind:style="styleObject" class="footer myshadows" >
 
-   <!--object width="100%" style="z-index:-1;position:absolute;height:80px;left:0;button:0"  data="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object-->
     <md-dialog :md-active.sync="showDialog">
       <md-dialog-title>Privacy Policy && Cookies</md-dialog-title>
 
@@ -182,7 +181,7 @@
       </md-dialog-actions>
     </md-dialog>
 
-    <md-button class="md-primary">
+    <md-button class="md-primary minimalR">
       {{ $props.textContent }}
     </md-button>
 
@@ -213,6 +212,16 @@
     max-width: 1000px;
     max-height: 520px;
     overflow: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .md-button {
+      font-size: xx-small;
+    }
+
+    .minimalR {
+      display: none;
+    }
   }
 </style>
 
@@ -266,7 +275,8 @@
       textAlign: 'center',
       itemsAlign: 'center',
       height: '40px',
-      width: '100%'
+      width: '100%',
+      fontSize: '10%'
     }
 
   }

@@ -11,9 +11,21 @@
       </md-button>
       <md-menu-content md-menu-content-large>
         <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="showAboutComponent()">
+            <md-icon class="fa fa-shield"></md-icon>
+            Home
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/visual-ts/singleplayer/app.html', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
             Nidzica Single player
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="showDownloadsComponent()">
+            <md-icon class="fa fa-shield"></md-icon>
+            Downloads
           </md-button>
         </md-menu-item>
       </md-menu-content>
@@ -38,9 +50,9 @@
           </md-button>
         </md-menu-item>
         <md-menu-item>
-          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/webgl-glmatrix', '_blank');">
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/matrix-engine/examples-build.html', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            webgl2 glmatrix2
+            matrix-engine
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -120,8 +132,10 @@
 
 <style lang="scss" scoped>
 
-  .md-menu-content {
-    
+  @media only screen and (max-width: 600px) {
+    .md-button {
+      font-size: xx-small;
+    }
   }
 
   .main-container{
@@ -277,6 +291,14 @@
       this.showAboutDialog = true
       this.createPayPalDonateButton()
 
+    }
+
+    public showDownloadsComponent() {
+      (this.$root.$children[0] as any).showDownloads();
+    }
+
+    public showAboutComponent() {
+      (this.$root.$children[0] as any).showAbouts();
     }
 
   }

@@ -22,9 +22,9 @@
          <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a>
       </p>
 
-      <h2>News</h2>
-      <p> <b>VisualTsGameEngine</b> </p>
-      <p> <b>VisualTS GE prepared for npm service </b> </p>
+      <h2 class="marginTopH2 marginTopH2low">News</h2>
+      <p  class="marginTopH2"> <b>VisualTsGameEngine</b> </p>
+      <p class="marginTopH2"> <b>VisualTS GE prepared for npm service </b> </p>
       <p>
           Whats good in this project:<br>
           No strange logs - No need for forums just follow stackoverflow.com and wc3.
@@ -191,7 +191,16 @@
   </div>
 </template>
 
-<style scoped> 
+<style scoped>
+
+  .marginTopH2 {
+    margin-top: 25px;
+  }
+
+  .marginTopH2low {
+    margin-top: 35px;
+  }
+
   .md-content {
     display: flex;
     flex-direction: row;
