@@ -23,6 +23,30 @@
           </md-button>
         </md-menu-item>
         <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="showShooterFrame()">
+            <md-icon class="fa fa-shield"></md-icon>
+            Play Hangd3D
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('http://maximumroulette.com/apps/shooter/hang3d-nightmare.html', '_blank')">
+            <md-icon class="fa fa-shield"></md-icon>
+            FullScreen Hang3D
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/shoot-the-zombie/', '_blank')">
+            <md-icon class="fa fa-shield"></md-icon>
+            Shoot the zombie 2
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/realistic-rendering/', '_blank')">
+            <md-icon class="fa fa-shield"></md-icon>
+            Realistic rendering
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="showDownloadsComponent()">
             <md-icon class="fa fa-shield"></md-icon>
             Downloads
@@ -58,7 +82,7 @@
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/tshirts/project_instance/tshirts.html?tshirts', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            t-shirts webgl vs canvas2d
+            t-shirts webgl vs 2d
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -109,7 +133,7 @@
 
         <md-tab md-label="About Maximumroulette Service">
           <md-content class="md-scrollbar" v-bind:style="optionsStyle">
-            <img style="width:200px;margin: -5px -5px -5px -5px;" src="/assets/vule-logo1.png" />
+            <img style="width:200px;margin: -5px -5px -5px -5px;" src="/assets/images/rocket-image-2.png" />
             <h3> Project name: Maximumroulette.com </h3>
             <br>
               <span>https://maximumroulette.com</span>
@@ -299,6 +323,10 @@
 
     public showAboutComponent() {
       (this.$root.$children[0] as any).showAbouts();
+    }
+
+    public showShooterFrame() {
+      (this.$root.$children[0] as any).showAboutsAndShooterFrame();
     }
 
   }

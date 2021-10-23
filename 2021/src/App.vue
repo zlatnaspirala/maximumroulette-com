@@ -23,7 +23,7 @@
       </template>
 
     </div>
-    <myFooter textContent='https://maximumroulette.com 2021 Software Services and Developing from zero.'></myFooter>
+    <myFooter textContent='https://maximumroulette.com 2021 Software'></myFooter>
   </div>
 </template>
 
@@ -42,6 +42,7 @@
   import './styles/style.scss'
   import CountrySelector from './components/countries-selector/country-selector.vue'
   import AboutMe from './components/about-me.vue'
+  import ShooterFrame from "./components/frames/shooterFrame.vue"
 
   Vue.use(VueMaterial as any)
 
@@ -63,7 +64,8 @@
       myFooter,
       CountrySelector,
       AboutMe,
-      Downloads
+      Downloads,
+      ShooterFrame
     },
     computed: mapState([
       'permission'
@@ -124,7 +126,7 @@
     constructor() {
       super()
       
-      this.fields = [AboutMe]
+      this.fields = [AboutMe, ShooterFrame]
 
       this.inputBodyProps = {
         slogan: "Everything is possible"
@@ -214,6 +216,14 @@
 
     showAbouts (): void {
       this.fields = [AboutMe]
+    }
+
+    showShooterFrame(): void {
+      this.fields = [ShooterFrame]
+    }
+
+    showAboutsAndShooterFrame(): void {
+      this.fields = [AboutMe, ShooterFrame]
     }
 
   }

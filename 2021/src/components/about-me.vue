@@ -18,6 +18,7 @@
          <a href="https://github.com/orgs/RocketCraftingServer/teams/rocketcraftingteam" target="_blank">
            RocketCraftingServer/teams/rocketcraftingteam
          </a>
+
          Test beta version direct link:
          <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a>
       </p>
@@ -54,7 +55,7 @@
       <h2>News</h2>
       <p> <b>CrossK App Engine</b> </p>
 
-      <img src="/assets/images/crossk-app-engine.png" />
+      <img style="width:80%" src="/assets/images/crossk-app-engine.png" />
 
       <md-button class="md-primary" @click="window.open('https://github.com/zlatnaspirala/cross-k', '_blank');">
         Download source code CrossK App engine  <md-icon class="fa fa-github md-size-2x" ></md-icon>

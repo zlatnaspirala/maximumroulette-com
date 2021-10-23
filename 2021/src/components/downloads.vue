@@ -2,13 +2,33 @@
 <template>
   <div v-bind:style="styleObject" class="specialbody">
     <md-content class="md-sub-content">
-
       <div class="brm-logo" > <h3>Ultimate Anatomy 0.2 Freeware</h3> <br>
-      <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar" download>
-        <md-chip class="md-accent md-chip-mini" md-clickable>win64</md-chip>
-      </a>
+        <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar" download>
+          <md-chip class="md-accent md-chip-mini" md-clickable>win64</md-chip>
+        </a>
       </div>
-
+      <div class="brm-logo" > <h3>Hang3d Nightmare Beta</h3> <br>
+        <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/Hang3dNightmareWin64.zip" download>
+          <md-chip class="md-accent md-chip-mini " md-clickable>
+            Hang3d Nightmare Beta for win64
+          </md-chip>
+        </a> <br>
+        <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/Hang3dNightmareWin32.zip" download>
+          <md-chip class="md-accent md-chip-mini " md-clickable>
+            Hang3d Nightmare Beta for win32
+          </md-chip>
+        </a> <br>
+        <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/WindowsDedicatedServer.zip" download>
+          <md-chip class="md-accent md-chip-mini " md-clickable>
+            Hang3d Nightmare windows dedicated server
+          </md-chip>
+        </a> <br>
+        <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/LinuxDedicatedServer.zip" download>
+          <md-chip class="md-accent md-chip-mini " md-clickable>
+            Hang3d Nightmare linux dedicated server
+          </md-chip>
+        </a> <br>
+      </div>
       <div class="brm-logo" > <h3>BarbarianRoadMashines Beta</h3> <br>
       <a href="https://maximumroulette.com/downloads/brm/beta/brm-win32.zip" download>
         <md-chip class="md-accent md-chip-mini " md-clickable>
@@ -40,7 +60,6 @@
           Brm Beta for Linux
         </md-chip>
       </a> <br>
-
       </div>
     </md-content>
   </div>
