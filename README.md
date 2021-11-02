@@ -14,10 +14,12 @@ This repo corespond with:
 Great typescript engine with video chat in real time vs physics,
 full independent.Use Node.js for server part also for signaling.
 MongoDB used.
+
  - https://github.com/zlatnaspirala/visual-ts-game-engine
-   Live:
-   https://maximumroulette.com/apps/visual-ts/singleplayer/app.html
-   https://apps.facebook.com/nidzica
+
+Live:
+https://maximumroulette.com/apps/visual-ts/singleplayer/app.html
+https://apps.facebook.com/nidzica
 
 
 YouTube player in webGL (three.js) with NUI and Voice command, First person walking 
