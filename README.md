@@ -11,7 +11,7 @@ here. Just find it on https://github.com/zlatnaspirala?tab=repositories .
 
 All repos from this list are active dev stage!
 This repo corespond with:
-Great typescript engine with video chat in real time vs physics,
+###`visual-ts-game-engine`### Great typescript engine with video chat in real time vs physics,
 full independent.Use Node.js for server part also for signaling.
 MongoDB used.
 
@@ -26,8 +26,10 @@ Live:
 YouTube player in webGL (three.js) with NUI and Voice command, First person walking 
 through playlist also orbit view, use node.js. Interest concept [fix for cors in webgl context]:
  - https://github.com/zlatnaspirala/vuletube
-   Live [not active always]:
-   https://maximumroulette.com:3000/
+
+Live [not active always]:
+ - https://maximumroulette.com:3000/
+
 
 Visual Editor App engine CrossK GUI - Multiplatform, based on kivy 2.1.0 Python
  - https://github.com/zlatnaspirala/cross-k
