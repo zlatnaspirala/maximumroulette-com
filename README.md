@@ -33,14 +33,27 @@ through playlist also orbit view, use node.js. Interest concept [fix for cors in
 Live [not active always]:
  - https://maximumroulette.com:3000/
 
-
-Visual Editor App engine CrossK GUI - Multiplatform, based on kivy 2.1.0 Python
+### `crossK Visual MultiPlatform Editor`
+Visual Editor App engine CrossK GUI - Multiplatform, based on kivy 2.1.0 Python3.9
  - https://github.com/zlatnaspirala/cross-k
 
 Video presentation:
  - https://www.youtube.com/watch?v=Ci8GNd3FDHw&ab_channel=javascriptfanatic
- 
 
+### `nidza.js`
+Source: https://github.com/zlatnaspirala/nidza
+Npm: `npm i nidza`
+2d canvas engine - Scene Object oriented engine with option smart update system. Events works on indentity level(canvas dom element). Nidza is exclusively for draws staff. Objective is CPU low price of usage. You can move object or start any animation but on finish there is no any draw calls. This is main objective task to make autoupdater with releasing on target/object reach. Project object is also adding all of kind composition video/webcam/images/text in same time and place.
+
+Live:
+ - https://maximumroulette.com/apps/nidza/nidza/examples/example-build.html?u=shader-component-default.js
+
+### `Matrix-Engine`
+Source: https://github.com/zlatnaspirala/matrix-engine
+Npm: `npm i matrix-engine`
+The benefits of this project is offering an overview of the entire application logic, easy native implementations (hybrid app), object structural. Thanks to Mr.Keestu i use (gl-program-structure) new version of glmatrix (2.0). Push&Pop matrix just like in opengles 1.1. First level of customisation is texture part of code. Best view in example custom_texture.js. I implemented webcam quick access call with custom active texture (porting canvas2d to the 3d faces works fine).
+Live:
+ - https://maximumroulette.com/apps/matrix-engine/examples-build.html
 
 ## Standard routes
 
