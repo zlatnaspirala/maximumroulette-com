@@ -19,8 +19,12 @@
            RocketCraftingServer/teams/rocketcraftingteam
          </a>
 
-         Test beta version direct link:
-         <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a>
+         Test beta version direct link: <br>
+         <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a><br>
+         <a href="http://maximumroulette.com/apps/shooter/hang3d-nightmare.html" target="_blank" >Multiplayer hang3d-nightmare</a><br>
+         <a href="https://maximumroulette.com/apps/shoot-the-zombie/" target="_blank" >Shoot-the-zombie</a><br>
+         <a href="https://maximumroulette.com/apps/realistic-rendering/" target="_blank" >Realistic rendering</a><br>
+
       </p>
 
       <h2 class="marginTopH2 marginTopH2low">News</h2>

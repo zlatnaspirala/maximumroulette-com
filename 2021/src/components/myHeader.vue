@@ -80,6 +80,12 @@
           </md-button>
         </md-menu-item>
         <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/nidza/nidza/examples/example-build.html?u=multi-nidza-3dindentity.js', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            Nidza.js
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/tshirts/project_instance/tshirts.html?tshirts', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
             t-shirts webgl vs 2d
