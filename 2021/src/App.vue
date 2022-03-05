@@ -23,7 +23,7 @@
       </template>
 
     </div>
-    <myFooter textContent='https://maximumroulette.com 2021 Software'></myFooter>
+    <myFooter textContent='https://maximumroulette.com 2022 GoldenSpiralSoftware'></myFooter>
   </div>
 </template>
 
@@ -43,6 +43,7 @@
   import CountrySelector from './components/countries-selector/country-selector.vue'
   import AboutMe from './components/about-me.vue'
   import ShooterFrame from "./components/frames/shooterFrame.vue"
+import { isMobile } from './my-common/common-func'
 
   Vue.use(VueMaterial as any)
 
@@ -125,8 +126,12 @@
      */
     constructor() {
       super()
-      
-      this.fields = [AboutMe, ShooterFrame]
+
+      if (isMobile()) {
+        this.fields = [AboutMe]
+      } else {
+        this.fields = [AboutMe]
+      }
 
       this.inputBodyProps = {
         slogan: "Everything is possible"
@@ -146,13 +151,10 @@
       if (this.ls.load("first_time") === null) {
 
         console.info("App starts first time. Prepare storage data...")
-
         /**
          * In future enumerate for global config...
          */
         // this.ls.save("o_camera", false)
-
-
         /**
          * @description Permission staff
          * Cant be read or write
@@ -173,13 +175,11 @@
       }
 
       this.$root.$on('global.copyclipboard', (args: any) => {
-
         try {
           console.info("Event global.copyclipboard => ", args)
         } catch(err) {
           console.warn(err)
         }
-
       })
 
     }
@@ -195,7 +195,7 @@
     setupInstance = () => {
       this.currentRoute = window.location.pathname
       this.$refs.loader.style.display = 'none'
-      console.log('Test Application refs mybodycontent => ', this.$refs.mybodycontent)
+      // console.log('Test Application refs mybodycontent => ', this.$refs.mybodycontent)
     }
 
     get computedMsg (): string {
@@ -223,7 +223,7 @@
     }
 
     showAboutsAndShooterFrame(): void {
-      this.fields = [AboutMe, ShooterFrame]
+      this.fields = [AboutMe]
     }
 
   }

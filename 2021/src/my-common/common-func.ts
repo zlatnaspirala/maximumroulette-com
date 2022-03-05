@@ -47,3 +47,19 @@ export function copyToClipboard(this: any, e) {
   document.body.removeChild(dummy);
   (this as any).$root.$emit('global.copyclipboard', text)
 }
+
+export function isMobile() {
+  const toMatch = [
+    /Mobile/i,
+    /Android/i,
+    /webOS/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+  ];
+  return toMatch.some((toMatchItem) => {
+      return navigator.userAgent.match(toMatchItem)
+  })
+}

@@ -1,9 +1,7 @@
 
 <template>
   <div ref="myHeader" class="myHeader">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <md-menu md-size="medium" md-align-trigger>
       <md-button class="md-primary md-raised" md-menu-trigger>
         Published
@@ -22,8 +20,8 @@
             Nidzica Single player
           </md-button>
         </md-menu-item>
-        <md-menu-item>
-          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="showShooterFrame()">
+        <md-menu-item v-show='!isMobile()'>
+          <md-button class="md-primary md-raised" @click="showShooterFrame()">
             <md-icon class="fa fa-shield"></md-icon>
             Play Hangd3D
           </md-button>
@@ -31,7 +29,7 @@
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('http://maximumroulette.com/apps/shooter/hang3d-nightmare.html', '_blank')">
             <md-icon class="fa fa-shield"></md-icon>
-            FullScreen Hang3D
+            Multiplayer Hang3D Nightmare
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -57,8 +55,8 @@
 
     <md-menu md-size="medium" md-align-trigger>
       <md-button class="md-primary md-raised" md-menu-trigger>
-        Software Engineering
-        <md-icon class="fa fa-rocket md-accent" />
+        Apps
+        <md-icon class="fa f1a-rocket md-accent" />
       </md-button>
       <md-menu-content md-menu-content-large>
         <md-menu-item>
@@ -70,13 +68,13 @@
           <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com:3000', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            VuleTube - YT Client
+            VuleTube-YT Client
           </md-button>
         </md-menu-item>
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/matrix-engine/examples-build.html', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            matrix-engine
+            Matrix Engine
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -207,7 +205,7 @@
            mdIcon,
            mdContent,
            mdProgressSpinner } from 'vue-material'
-  import { switchTheme } from './../my-common/common-func'
+  import { switchTheme, isMobile } from './../my-common/common-func'
   import IHeader from './IHeader'
 
   const CompProps = Vue.extend({
@@ -258,7 +256,8 @@
         myData: "test",
         tyfetchVisibility: true,
         loginBtnVisibility: false,
-        switchThemeBtnLabel: 'Dark'
+        switchThemeBtnLabel: 'Dark',
+        isMobile: isMobile
       }
     }
 

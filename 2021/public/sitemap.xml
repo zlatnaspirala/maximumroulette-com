@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://maximumroulette.com/</loc>
+    <lastmod>2012-01-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>http://maximumroulette.com/apps/shooter/hang3d-nightmare.html</loc>
+    <lastmod>2019-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://maximumroulette.com/apps/visual-ts/singleplayer/app.html</loc>
+    <lastmod>2019-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://maximumroulette.com/apps/visual-ts/multiplayer/app.html</loc>
+    <lastmod>2019-10-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
