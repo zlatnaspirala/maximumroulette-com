@@ -17,19 +17,13 @@
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com/apps/visual-ts/singleplayer/app.html', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            Nidzica Single player
-          </md-button>
-        </md-menu-item>
-        <md-menu-item v-show='!isMobile()'>
-          <md-button class="md-primary md-raised" @click="showShooterFrame()">
-            <md-icon class="fa fa-shield"></md-icon>
-            Play Hangd3D
+            Platformer in TS
           </md-button>
         </md-menu-item>
         <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('http://maximumroulette.com/apps/shooter/hang3d-nightmare.html', '_blank')">
             <md-icon class="fa fa-shield"></md-icon>
-            Multiplayer Hang3D Nightmare
+            Multiplayer Hang3D
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -56,7 +50,7 @@
     <md-menu md-size="medium" md-align-trigger>
       <md-button class="md-primary md-raised" md-menu-trigger>
         Apps
-        <md-icon class="fa f1a-rocket md-accent" />
+        <md-icon class="fa fa-rocket md-accent" />
       </md-button>
       <md-menu-content md-menu-content-large>
         <md-menu-item>
@@ -65,10 +59,16 @@
             Ultimate Roulette
           </md-button>
         </md-menu-item>
+        <md-menu-item>
+          <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://kure.maximumroulette.com', '_blank');">
+            <md-icon class="fa fa-shield"></md-icon>
+            Kure Orange Video Chat
+          </md-button>
+        </md-menu-item>
           <md-menu-item>
           <md-button class="md-primary md-raised" v-show='loginBtnVisibility' @click="window.open('https://maximumroulette.com:3000', '_blank');">
             <md-icon class="fa fa-shield"></md-icon>
-            VuleTube-YT Client
+            VuleTube 3d youtube
           </md-button>
         </md-menu-item>
         <md-menu-item>
@@ -137,7 +137,7 @@
 
         <md-tab md-label="About Maximumroulette Service">
           <md-content class="md-scrollbar" v-bind:style="optionsStyle">
-            <img style="width:200px;margin: -5px -5px -5px -5px;" src="/assets/images/rocket-image-2.png" />
+            <img style="width:100%;max-width:600px;margin: -5px -5px -5px -5px;" src="/assets/about-maxi.png" />
             <h3> Project name: Maximumroulette.com </h3>
             <br>
               <span>https://maximumroulette.com</span>

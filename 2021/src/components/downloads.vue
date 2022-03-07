@@ -7,6 +7,24 @@
           <md-chip class="md-accent md-chip-mini" md-clickable>win64</md-chip>
         </a>
       </div>
+
+      <div class="brm-logo" > <h3>Download Hang3d Dark Places Android on Google Play, Nice for old devices.</h3> <br>
+      <a href='https://play.google.com/store/apps/details?id=com.Zlatnaspirala.hang3d_area&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+      <img width="200" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+      </a>
+      </div>
+
+      <div class="brm-logo" > <h3>Download Hang3d Shot and fear Android App on Google Play, Nice for old devices.</h3> <br>
+      <a href='https://play.google.com/store/apps/details?id=com.CompanyZlatnaspirala.hang3d'>
+         https://play.google.com/store/apps/details?id=com.CompanyZlatnaspirala.hang3d
+      </a>
+      </div>
+      
+      <div class="brm-logo" > <h3>Download Hang3d Space Android App on Google Play</h3> <br>
+      <a href='https://play.google.com/store/apps/details?id=com.nikolalukic.hangspace'>
+         https://play.google.com/store/apps/details?id=com.nikolalukic.hangspace
+      </div>
+
       <div class="brm-logo" > <h3>Hang3d Nightmare Beta</h3> <br>
         <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/Hang3dNightmareWin64.zip" download>
           <md-chip class="md-accent md-chip-mini " md-clickable>

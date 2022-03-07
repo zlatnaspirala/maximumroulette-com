@@ -155,16 +155,19 @@
        <p>ECMA5 Vanilla JS Old Visual-JS</p>
        <p>Press F4 to enter in edit mode.</p>
        <p>More examples for visual-js at <a href="https://jsfiddle.net/user/zlatnaspirala/fiddles/">jsfiddle</a> </p>
+       <p>[not-active-update] visual-js at <a href="https://github.com/zlatnaspirala/visualjs">Source code</a> </p>
       </md-content>
 
-      <md-content class="md-sub-content" style="height:auto;width:23%">
-        <object width="100%" style="height:320px"  data="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object>
-        <p>My first touch with JS, interest fact this app works from android 3.x</p>
+      <md-content class="md-sub-content" style="height:auto;">
+        <iframe width="100%" style="height:320px" src="/apps/zlatnaspirala/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+        <p>My first touch with JS [opengles1.1], interest fact this app works from android 3.x</p>
+        <p>[not-active-update] Download at <a href="https://github.com/zlatnaspirala/zlatnaspirala">Source code</a> </p>
       </md-content>
 
-      <md-content class="md-sub-content" style="height:auto;width:23%">
+      <md-content class="md-sub-content" style="height:auto;">
         <object width="100%" style="height:320px" data="/apps/visual-ts/singleplayer/app.html" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></object>
         <p>Visual-Ts-Game-Engine is matter.js/ts based project with improvments in render component staff. Full duplex multiplayer real time connections with video chat. I preferer MongoDB for database in my projects. Account session login register and gmailsender implemented.</p>
+        <p>Download at <a href="https://github.com/zlatnaspirala/visual-ts-game-engine">Source code</a> </p>
       </md-content>
 
       <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
@@ -176,16 +179,28 @@
         <p><a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html">Link</a></p>
         <p>Modification (optimisation) on origin data</p>
         <p>CCAttribution-Share Alike 2.1 Japan ©</p>
-        <p>Nikola Lukic maximumroulette.com</p>
-        <p><b>Download link win64 version: </b> <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar"> UltimateAnatomy 0.2 </a></p>
-        <br><br>
+        <p>Nikola Lukic maximumroulette.com</p> 
+        <div style="width:100%"><b>Download link win64 version: </b> <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar"> UltimateAnatomy 0.2 </a></div>
+        <div style="width:100%;margin-top:5px;">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/tLkKV6EbvJw"
+                title="YouTube video player" frameborder="0"
+                style="height: inherit;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <img width="200" src="/assets/images/ua/1.png" >
-        <img width="200" src="/assets/images/ua/2.png" >
+        <img width="200" src="/assets/images/ua/8.png" >
         <img width="200" src="/assets/images/ua/3.png" >
         <img width="200" src="/assets/images/ua/4.png" >
         <img width="200" src="/assets/images/ua/5.png" >
         <img width="200" src="/assets/images/ua/6.png" >
         <img width="200" src="/assets/images/ua/7.png" >
+        <img width="200" src="/assets/images/ua/9.png" >
+        <img width="200" src="/assets/images/ua/10.png" >
+        <img width="200" src="/assets/images/ua/11.png" >
+        <img width="200" src="/assets/images/ua/12.png" >
+        <img width="200" src="/assets/images/ua/13.png" >
+        <img width="200" src="/assets/images/ua/14.png" >
       </md-content>
 
     <!--
