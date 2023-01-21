@@ -21,7 +21,8 @@
 
          Test beta version direct link: <br>
          <a href="http://rocketcraft.maximumroulette.com/" target="_blank" >rocketcraft.maximumroulette.com</a><br>
-         <a href="http://maximumroulette.com/apps/shooter/hang3d-nightmare.html" target="_blank" >Multiplayer hang3d-nightmare</a><br>
+         <a href="http://maximumroulette.com/apps/hang3d/" target="_blank" >Multiplayer hang3d-nightmare HQ [opengles3.x]</a><br>
+         <a href="http://maximumroulette.com/apps/shooter/hang3d-nightmare.html" target="_blank" >Multiplayer hang3d-nightmare [opengles2.x]</a><br>
          <a href="https://maximumroulette.com/apps/shoot-the-zombie/" target="_blank" >Shoot-the-zombie</a><br>
          <a href="https://maximumroulette.com/apps/realistic-rendering/" target="_blank" >Realistic rendering</a><br>
 
@@ -56,21 +57,13 @@
       </md-content>
 
     <md-content class="md-sub-content" style="height:auto;height:450px;overflow:scroll;overflow-x: hidden;">
-      <h2>News</h2>
-      <p> <b>CrossK App Engine</b> </p>
-
-      <img style="width:80%" src="/assets/images/crossk-app-engine.png" />
-
+      <h2>My open source area</h2>
+       <b>CrossK App Engine</b> 
+      <img width="650px" height="250px" src="/assets/images/crossk-app-engine.png"/>
       <md-button class="md-primary" @click="window.open('https://github.com/zlatnaspirala/cross-k', '_blank');">
         Download source code CrossK App engine  <md-icon class="fa fa-github md-size-2x" ></md-icon>
       </md-button>
-
-      <p>
-
-      </p>
-
     </md-content>
-
       <md-content class="md-sub-content" style="display:flex;flex-direction: column">
         <h2>Welcome to my developing stage server</h2>
           <strong>Graphics and Networking</strong>
@@ -81,15 +74,15 @@
           zlatnaspirala  <md-icon class="fa fa-github md-size-2x" ></md-icon>
         </md-button>
 
-        <md-button class="md-primary" @click="window.open('https://stackoverflow.com/story/3d', '_blank');">
-          stackoverflow.com/story/3d <md-icon class="fa fa-stack-overflow md-size-2x" ></md-icon>
+        <md-button class="md-primary" @click="window.open('https://stackoverflow.com/users/1513187/nikola-lukic', '_blank');">
+          stackoverflow.com<md-icon class="fa fa-stack-overflow md-size-2x" ></md-icon>
         </md-button>
 
         <md-button class="md-primary" @click="window.open('https://www.linkedin.com/in/3dprogramer', '_blank');">
           linkedin.com/in/3dprogramer <md-icon class="fa fa-linkedin-square md-size-2x"></md-icon>
         </md-button>
 
-        <md-button class="md-primary" @click="window.open('https://www.hackerrank.com/leaderboard?page=1&track=ai&type=practice', '_blank');">
+        <md-button class="md-primary" @click="window.open('https://www.hackerrank.com/leaderboard?page=2&track=ai&type=practice', '_blank');">
           hackerrank.com leaderboard ai practice <md-icon class="fa fa-list-ol md-size-2x"></md-icon>
         </md-button>
         
