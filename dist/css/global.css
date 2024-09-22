@@ -1,6 +1,3 @@
-
-// Specific image styles and other 
-
 /* Scroll bars */
 /* width */
 ::-webkit-scrollbar {
@@ -15,19 +12,19 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: silver;
-border-radius: 10px;
+  background: silver;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: orangered;
+  background: orangered;
 }
 
 .backgroundFractal1 {
-  background-image: url("/assets/images/fractal-1.jpg")
+  background-image: url("/assets/images/fractal-1.jpg");
 }
 
 .md-menu-content {
-	max-width: unset;
-}
+  max-width: unset;
+}/*# sourceMappingURL=global.css.map */
