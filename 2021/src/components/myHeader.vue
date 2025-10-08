@@ -48,7 +48,7 @@
             "
           >
             <md-icon class="fa fa-shield"></md-icon>
-            Platformer in TS
+            3d Jamb deluxe Yatzy/Dice game
           </md-button>
         </md-menu-item>
         <md-menu-item>

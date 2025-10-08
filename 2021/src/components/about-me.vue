@@ -309,8 +309,9 @@
         frameborder="0"
       ></iframe> -->
       <p>
-        <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu/">Source code</a>
-        <a href="https://maximumroulette.com/apps/webgpu/">Live</a>
+        <span><a href="https://github.com/zlatnaspirala/matrix-engine-wgpu/">Source code +</a></span>
+
+        <span><a href="https://maximumroulette.com/apps/webgpu/"> Live demo</a></span>
       </p>
     </md-content>
 
