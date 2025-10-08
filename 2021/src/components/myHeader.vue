@@ -42,6 +42,21 @@
             v-show="loginBtnVisibility"
             @click="
               window.open(
+                'https://maximumroulette.com/apps/webgpu/',
+                '_blank'
+              )
+            "
+          >
+            <md-icon class="fa fa-shield"></md-icon>
+            Platformer in TS
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button
+            class="md-primary md-raised"
+            v-show="loginBtnVisibility"
+            @click="
+              window.open(
                 'http://maximumroulette.com/apps/shooter/hang3d-nightmare.html',
                 '_blank'
               )

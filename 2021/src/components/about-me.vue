@@ -310,6 +310,7 @@
       ></iframe> -->
       <p>
         <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu/">Source code</a>
+        <a href="https://maximumroulette.com/apps/webgpu/">Live</a>
       </p>
     </md-content>
 
