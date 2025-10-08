@@ -2,6 +2,19 @@
 <template>
   <div v-bind:style="styleObject" class="specialbody">
     <md-content class="md-sub-content">
+
+      <div class="brm-logo" > <h3>Matrix Roulette 3d</h3> <br>
+        <iframe frameborder="0" src="https://itch.io/embed/3473366?dark=true" width="552" height="167"><a href="https://goldenspiral.itch.io/matrix-roulette">Matrix-roulette by Game developing</a></iframe>
+      </div>
+
+      <div class="brm-logo" > <h3>Ultimate Roulette 3d</h3> <br>
+        <iframe frameborder="0" src="https://itch.io/embed/1860497?dark=true" width="552" height="167"><a href="https://goldenspiral.itch.io/ultimate-roulette">Ultimate Roulette 3d real physics by Game developing</a></iframe>
+      </div>
+
+      <div class="brm-logo" > <h3>Jamb 3d Deluxe</h3> <br>
+        <iframe frameborder="0" src="https://itch.io/embed/3861545?dark=true" width="552" height="167"><a href="https://goldenspiral.itch.io/jamb-3d-deluxe">Jamb 3d deluxe by Game developing</a></iframe>
+      </div>
+
       <div class="brm-logo" > <h3>Ultimate Anatomy 0.2 Freeware</h3> <br>
         <a href="https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar" download>
           <md-chip class="md-accent md-chip-mini" md-clickable>win64</md-chip>

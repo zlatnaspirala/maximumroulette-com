@@ -277,10 +277,10 @@
       >
     </md-content>
 
-    <md-content class="md-sub-content" style="height: auto">
+    <md-content class="md-sub-content" style="height: 620px;width:100%;">
       <iframe
         width="100%"
-        style="height: 320px"
+        style="height: 600px"
         src="/apps/funny-slot/"
         allowfullscreen="allowfullscreen"
         allowpaymentrequest
@@ -298,22 +298,18 @@
       </p>
     </md-content>
 
-    <md-content class="md-sub-content" style="height: auto">
-      <iframe
+    <md-content class="md-sub-content" style="height: 620px;width: 100%;">
+      <img style="width:90%;" src="/assets/jamb-3d-dice-game.png">
+      <!-- <iframe
         width="100%"
-        style="height: 320px"
-        src="/apps/zlatnaspirala/"
+        style="height: 600px"
+        src="/apps/webgpu/"
         allowfullscreen="allowfullscreen"
         allowpaymentrequest
         frameborder="0"
-      ></iframe>
+      ></iframe> -->
       <p>
-        My first touch with JS [opengles1.1], interest fact this app works from
-        android 3.x
-      </p>
-      <p>
-        [not-active-update] Download at
-        <a href="https://github.com/zlatnaspirala/zlatnaspirala">Source code</a>
+        <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu/">Source code</a>
       </p>
     </md-content>
 
@@ -370,10 +366,10 @@
           UltimateAnatomy 0.2
         </a>
       </div>
-      <div style="width: 100%; margin-top: 5px">
+      <div style="width: 100%; margin-top: 5px;height:100%;">
         <iframe
-          width="560"
-          height="315"
+          width="640"
+          height="480"
           src="https://www.youtube.com/embed/tLkKV6EbvJw"
           title="YouTube video player"
           frameborder="0"

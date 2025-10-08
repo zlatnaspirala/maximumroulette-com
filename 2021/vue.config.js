@@ -23,7 +23,7 @@ module.exports = {
     sourceMap: true
   },
   pwa: {
-    name: 'maximumroulette.com 2021',
+    name: 'maximumroulette.com 2025',
     themeColor: '#000000',
     msTileColor: 'orange',
     appleMobileWebAppCapable: 'yes',
