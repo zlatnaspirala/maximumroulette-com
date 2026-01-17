@@ -27,7 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^3.9.0",
     "@typescript-eslint/parser": "^3.9.0",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.0.3",
+    "copy-webpack-plugin": "^13.0.1",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.22.0",
     "extract-text-webpack-plugin": "^3.0.2",
