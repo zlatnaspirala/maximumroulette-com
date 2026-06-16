@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       background-color: #050505;
       color: #cbd5e1;
@@ -35,7 +36,7 @@
       inset: 0;
       opacity: 0.12;
       pointer-events: none;
-      background-image: 
+      background-image:
         radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
         linear-gradient(rgba(20, 20, 25, 0.4) 1px, transparent 1px);
       background-size: 24px 24px, 100% 4px;
@@ -128,10 +129,30 @@
       opacity: 0.5;
       transition: border-color 0.4s ease;
     }
-    .top-left { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
-    .top-right { top: 12px; right: 12px; border-width: 1px 1px 0 0; }
-    .bottom-left { bottom: 12px; left: 12px; border-width: 0 0 1px 1px; }
-    .bottom-right { bottom: 12px; right: 12px; border-width: 0 1px 1px 0; }
+
+    .top-left {
+      top: 12px;
+      left: 12px;
+      border-width: 1px 0 0 1px;
+    }
+
+    .top-right {
+      top: 12px;
+      right: 12px;
+      border-width: 1px 1px 0 0;
+    }
+
+    .bottom-left {
+      bottom: 12px;
+      left: 12px;
+      border-width: 0 0 1px 1px;
+    }
+
+    .bottom-right {
+      bottom: 12px;
+      right: 12px;
+      border-width: 0 1px 1px 0;
+    }
 
     /* Heading typography */
     h1 {
@@ -211,7 +232,7 @@
     .section-anchor {
       font-size: 10px;
       font-family: 'JetBrains Mono', monospace;
-      color: rgba(255,255,255,0.2);
+      color: rgba(255, 255, 255, 0.2);
     }
 
     h3 {
@@ -265,7 +286,7 @@
     }
 
     .feature-card:hover {
-      border-color: rgba(255,255,255,0.08);
+      border-color: rgba(255, 255, 255, 0.08);
     }
 
     .feature-card .icon {
@@ -323,7 +344,8 @@
     }
 
     /* Code blocks */
-    pre, code {
+    pre,
+    code {
       font-family: 'JetBrains Mono', monospace;
       font-size: 12px;
     }
@@ -396,7 +418,7 @@
       margin-bottom: 8px;
       list-style-type: square;
     }
-    
+
     li::marker {
       color: var(--accent-color, #00f3ff);
     }
@@ -473,6 +495,7 @@
       .view-wrapper {
         grid-template-columns: 1fr;
       }
+
       .spec-sidebar {
         position: relative;
         top: 0;
@@ -484,22 +507,46 @@
       h1 {
         font-size: 30px;
       }
+
       .container {
         padding: 30px 18px;
       }
+
       .links-grid {
         grid-template-columns: 1fr;
       }
     }
+
+    /* Project Logo Image styling with subtle scale zoom on hover */
+    .project-image-container {
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin: 15px 0 25px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .project-image-container:hover img {
+      transform: scale(1.5);
+    }
   </style>
 </head>
+
 <body>
   <div class="net-background" id="net-bg"></div>
   <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas>
 
   <!-- Outer layout wrapper -->
   <div class="view-wrapper">
-    
+
     <!-- Sidebar Navigation -->
     <aside class="spec-sidebar">
       <div class="sidebar-title">NAVIGATION INDEX</div>
@@ -532,7 +579,7 @@
       </div>
 
       <h1>matrix-engine-wgpu</h1>
-      <div class="subtitle" id="subtitle">High Performance Rust & WebGPU Engine</div>
+      <div class="subtitle" id="subtitle">High Performance WebGPU Engine</div>
 
       <div class="project-meta">
         <div class="meta-item">🧑‍💻 <strong>Author:</strong> Nikola Lukić</div>
@@ -547,10 +594,11 @@
       <section id="introduction">
         <h2>Engine Overview <span class="section-anchor">01 // INTRODUCTION</span></h2>
         <p>
-          The <strong class="badge-webgpu">matrix-engine-wgpu</strong> is a stable, high-performance, and continually evolving WebGPU rendering platform written in Rust. Inspired by the designs of the original WebGL-based matrix-engine, it has been fully rebuilt from the ground up for the next-generation WebGPU hardware standard.
+          The <strong class="badge-webgpu">matrix-engine-wgpu</strong> is a stable, high-performance, and continually evolving WebGPU rendering platform written in JavaScript. Inspired by the designs of the original WebGL-based matrix-engine, it has been fully rebuilt from the ground up for the
+          next-generation WebGPU hardware standard.
         </p>
         <p>
-          By dropping legacy gl-matrix bindings in favor of the optimized <code class="inline-code">wgpu-matrix</code> mathematical pipeline, "The Beast" handles heavy model-view-projection translations with absolute memory spatial layout maps and minimal thread latency. It compiles smoothly across native client drivers (Vulkan, Metal, Direct3D 12) or to web targets via WASM.
+          By dropping legacy gl-matrix bindings in favor of the optimized <code class="inline-code">wgpu-matrix</code> mathematical pipeline, "The Beast" handles heavy model-view-projection translations with absolute memory spatial layout maps and minimal thread latency. It compiles smoothly across all supported web targets via WASM specially mobile devices.
         </p>
       </section>
 
@@ -558,7 +606,7 @@
       <section id="benchmarks">
         <h2>Architecture Specs <span class="section-anchor">02 // STABLE FEATURES</span></h2>
         <p>
-          The graphics core orchestrates buffers and shaders elegantly to deliver peak rendering optimization across standard desktop environments including Chrome, Edge, and Opera <em>(Note: v1.1x.0 Firefox pipeline renders are currently undergoing active optimization)</em>.
+          The graphics core orchestrates buffers and shaders elegantly to deliver peak rendering optimization across standard desktop environments including Chrome, Edge, Firefox(desktop) and Opera <em>(Note: v1.1x.0 Firefox pipeline renders are currently undergoing active optimization)</em>.
         </p>
 
         <div class="grid-features">
@@ -573,7 +621,7 @@
             <span class="icon">⚛️</span>
             <div class="feature-card-content">
               <h4>Offloaded Web-Worker Physics</h4>
-              <p>Built-in integrations for Ammo.js, cannonES, and Jolt Physics engines. Physics computations are performed cleanly via secondary worker threads to prevent main thread blocking.</p>
+              <p>Built-in integrations for Ammo.js, cannonES, matterjs and Jolt Physics engines. Physics computations are performed cleanly via secondary worker threads to prevent main thread blocking.</p>
             </div>
           </div>
           <div class="feature-card">
@@ -595,7 +643,7 @@
 
       <!-- FluxCodex Scripting suite -->
       <section id="editorx">
-        <h2>FluxCodex Scripting <span class="section-anchor">03 // FLOW_EDITORS</span></h2>
+        <h2>FluxCodexVertex Scripting <span class="section-anchor">03 // FLOW_EDITORS</span></h2>
         <p>
           Available when executing the workspace environment directly from source using the alias <code class="inline-code">npm run editorx</code>, Nikola Lukić's platform features two dual-graph visual node environments designed for rapid prototype flows:
         </p>
@@ -608,6 +656,39 @@
         <p>
           Saved layouts are cached directly on localStorage or outputted to physical filesystem JSON descriptors, compiling to clean JS nodes injected into target runtimes.
         </p>
+
+        <p> FluxCodexVertex Editor API Docs
+          Creating project
+          Clone engine from https://github.com/zlatnaspirala/matrix-engine-wgpu (Must be from source no support for npm i matrix-engine-wgpu).
+          Run npm i intro root folder also in src/tools/editor/backend/
+          Run npm run editorx
+          Run local any web server (like xampp) Go to https://localhost/PATH_TO_ENGINE./public/ or if you wanna web server from engine with npm run hosts and navigate to http://127.0.0.1:3000/matrix-engine.html
+          Editor is visible on startup if you hide editor after that Pressing F4 to make editor visible again.
+        </p>
+
+        <div class="project-image-container">
+          <img src="/assets/images/onLoad.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
+
+        <div class="project-image-container">
+          <img src="/assets/images/getSubObject.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
+
+        <div class="project-image-container">
+          <img src="/assets/images/oscilator.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
+
+        <div class="project-image-container">
+          <img src="/assets/images/onkey.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
+
+        <div class="project-image-container">
+          <img src="/assets/images/onDraw.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
+        
+        <div class="project-image-container">
+          <img src="/assets/images/visual-scripting-math.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+        </div>
       </section>
 
       <!-- API - Scene & Camera -->
@@ -688,7 +769,8 @@ app.lightContainer[0].updater.push(item => {
       <section id="api-materials">
         <h2>Materials & Env Mapping <span class="section-anchor">07 // TEXTURES</span></h2>
         <p>
-          The pipeline supports dedicated materials such as <code class="inline-code">standard</code>, <code class="inline-code">pong</code>, <code class="inline-code">power</code>, <code class="inline-code">water</code>, <code class="inline-code">metal</code>, and <code class="inline-code">mirror</code>.
+          The pipeline supports dedicated materials such as <code class="inline-code">standard</code>, <code class="inline-code">pong</code>, <code class="inline-code">power</code>, <code class="inline-code">water</code>, <code class="inline-code">metal</code>, and <code
+            class="inline-code">mirror</code>.
         </p>
         <h3>Highly Configurable Water Parameters</h3>
         <p>
@@ -838,17 +920,17 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
     let width = 0;
     let height = 0;
     let activeColor = '#00f3ff';
-    let activeRgb = { r: 0, g: 243, b: 255 };
+    let activeRgb = {r: 0, g: 243, b: 255};
 
     function parseHexToRgb(hex) {
       let c = hex.startsWith('#') ? hex.substring(1) : hex;
-      if (c.length === 3) {
+      if(c.length === 3) {
         c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
       }
       const r = parseInt(c.slice(0, 2), 16) || 0;
       const g = parseInt(c.slice(2, 4), 16) || 0;
       const b = parseInt(c.slice(4, 6), 16) || 0;
-      return { r, g, b };
+      return {r, g, b};
     }
 
     class Particle {
@@ -875,7 +957,7 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
         this.pulseTime += this.pulseSpeed;
         this.alpha = this.originalAlpha * (0.6 + 0.4 * Math.sin(this.pulseTime));
 
-        if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+        if(this.y < -10 || this.x < -10 || this.x > width + 10) {
           this.reset(false);
         }
       }
@@ -891,7 +973,7 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
     function initParticles() {
       const targetCount = Math.min(65, Math.floor((width * height) / 14000));
       particles = [];
-      for (let i = 0; i < targetCount; i++) {
+      for(let i = 0;i < targetCount;i++) {
         particles.push(new Particle());
       }
     }
@@ -911,13 +993,13 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
       ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.02)`;
       ctx.lineWidth = 1;
       const step = 45;
-      for (let x = 0; x < width; x += step) {
+      for(let x = 0;x < width;x += step) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
         ctx.lineTo(x, height);
         ctx.stroke();
       }
-      for (let y = 0; y < height; y += step) {
+      for(let y = 0;y < height;y += step) {
         ctx.beginPath();
         ctx.moveTo(0, y);
         ctx.lineTo(width, y);
@@ -928,13 +1010,13 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
         p.update();
         p.draw();
 
-        for (let j = index + 1; j < particles.length; j++) {
+        for(let j = index + 1;j < particles.length;j++) {
           const p2 = particles[j];
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 110) {
+          if(dist < 110) {
             const alphaFactor = (1 - dist / 110) * 0.15 * Math.min(p.alpha, p2.alpha);
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
@@ -951,7 +1033,7 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
       const urlParams = new URLSearchParams(window.location.search);
       const colorParam = urlParams.get('color') || '00f3ff';
       const cleanHex = colorParam.startsWith('#') ? colorParam : '#' + colorParam;
-      
+
       activeColor = cleanHex;
       activeRgb = parseHexToRgb(cleanHex);
 
@@ -966,7 +1048,7 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
         const dx = p.x - e.clientX;
         const dy = p.y - e.clientY;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 130) {
+        if(dist < 130) {
           const force = (130 - dist) / 130 * 0.4;
           const angle = Math.atan2(dy, dx);
           p.x += Math.cos(angle) * force;
@@ -981,7 +1063,7 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
     requestAnimationFrame(animate);
 
     window.addEventListener('message', (e) => {
-      if (e.data && e.data.type === 'THEME_COLOR_UPDATE') {
+      if(e.data && e.data.type === 'THEME_COLOR_UPDATE') {
         const urlParams = new URLSearchParams(window.location.search);
         urlParams.set('color', e.data.color.replace('#', ''));
         window.history.replaceState({}, '', '?' + urlParams.toString());
@@ -995,11 +1077,12 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+        if(targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth'});
         }
       });
     });
   </script>
 </body>
+
 </html>

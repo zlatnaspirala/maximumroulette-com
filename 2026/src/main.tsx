@@ -270,6 +270,7 @@ if(root) {
   const MORE_LINKS=[
     { name: 'About Matrix-Engine-WebGPU', url: '/the-beast.html' },
     { name: 'Codepen examples', url: 'https://codepen.io/zlatnaspirala/pen/OJZXMWR' },
+    { name: 'Credits&&Licence', url: '/credits.html' },
   ];
 
   MORE_LINKS.forEach(link => {
