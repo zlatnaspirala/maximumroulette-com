@@ -32,11 +32,7 @@
          https://play.google.com/store/apps/details?id=com.CompanyZlatnaspirala.hang3d
       </a>
       </div>
-      
-      <div class="brm-logo" > <h3>Download Hang3d Space Android App on Google Play</h3> <br>
-      <a href='https://play.google.com/store/apps/details?id=com.nikolalukic.hangspace'>
-         https://play.google.com/store/apps/details?id=com.nikolalukic.hangspace
-      </div>
+
 
       <div class="brm-logo" > <h3>Hang3d Nightmare Beta</h3> <br>
         <a href="https://maximumroulette.com/downloads/hang3d-nightmare/beta/Hang3dNightmareWin64.zip" download>

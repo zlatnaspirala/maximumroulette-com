@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT: matrix-engine-wgpu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #050505;
+      color: #e0e0e0;
+      font-family: 'Radio Canada', sans-serif;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 40px 20px;
+    }
+
+    /* Background dots pattern */
+    .net-background {
+      position: fixed;
+      inset: 0;
+      opacity: 0.15;
+      pointer-events: none;
+      background-image: 
+        radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
+        linear-gradient(rgba(20, 20, 25, 0.4) 1px, transparent 1px);
+      background-size: 24px 24px, 100% 4px;
+      z-index: 1;
+    }
+
+    /* Content Card - optimized for long reading */
+    .container {
+      position: relative;
+      z-index: 10;
+      max-width: 740px;
+      width: 100%;
+      background-color: rgba(9, 9, 11, 0.93);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 4px;
+      padding: 45px 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(12px);
+      transition: border-color 0.4s ease;
+    }
+
+    /* Corner design hints */
+    .corner {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-color: var(--accent-color, #00f3ff);
+      border-style: solid;
+      opacity: 0.4;
+      transition: border-color 0.4s ease;
+    }
+    .top-left { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
+    .top-right { top: 12px; right: 12px; border-width: 1px 1px 0 0; }
+    .bottom-left { bottom: 12px; left: 12px; border-width: 0 0 1px 1px; }
+    .bottom-right { bottom: 12px; right: 12px; border-width: 0 1px 1px 0; }
+
+    /* Heading typography */
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: var(--accent-color, #00f3ff);
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-weight: bold;
+      transition: color 0.4s ease;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .divider {
+      height: 1px;
+      width: 120px;
+      background-color: rgba(255, 255, 255, 0.08);
+      margin: 20px auto 30px auto;
+    }
+
+    /* Section titles */
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 35px;
+      margin-bottom: 12px;
+      border-left: 2px solid var(--accent-color, #00f3ff);
+      padding-left: 12px;
+      transition: border-color 0.4s ease;
+    }
+
+    /* Paragraph info text */
+    p {
+      font-size: 13px;
+      color: #a1a1aa;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    /* Features list */
+    ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 13px;
+      color: #a1a1aa;
+      line-height: 1.7;
+      margin-bottom: 8px;
+      list-style-type: square;
+    }
+    
+    li::marker {
+      color: var(--accent-color, #00f3ff);
+    }
+
+    /* Code blocks */
+    pre, code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+    }
+
+    pre {
+      background-color: #0b0b0e;
+      border: 1px solid #14141a;
+      border-radius: 4px;
+      padding: 18px;
+      margin: 18px 0;
+      overflow-x: auto;
+      color: #cbd5e1;
+    }
+
+    /* Active graphics badge marker */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 6px 14px;
+      border-radius: 2px;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: #a1a1aa;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .status-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--accent-color, #00f3ff);
+      box-shadow: 0 0 6px var(--accent-color, #00f3ff);
+      transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* GitHub CTA Button */
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 14px 24px;
+      background-color: transparent;
+      border: 1px solid var(--accent-color, #00f3ff);
+      border-radius: 2px;
+      color: #ffffff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-github:hover {
+      background-color: var(--accent-color, #00f3ff);
+      color: #000000;
+      box-shadow: 0 0 15px var(--accent-glow-color, rgba(0, 243, 255, 0.3));
+    }
+
+    .badge-rust {
+      background: rgba(183, 65, 14, 0.15);
+      border: 1px solid rgba(183, 65, 14, 0.3);
+      color: #f97316;
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .badge-webgpu {
+      background: rgba(0, 243, 255, 0.1);
+      border: 1px solid rgba(0, 243, 255, 0.25);
+      color: var(--accent-color, #00f3ff);
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 26px;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="net-background" id="net-bg"></div>
+  <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas>
+
+  <div class="container" id="panel">
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <div style="text-align: center;">
+      <div class="status-badge">
+        <span class="status-dot" id="dot"></span>
+        <span>NEXT-GEN PIPELINE DOCUMENTATION</span>
+      </div>
+    </div>
+
+    <h1>matrix-engine-wgpu</h1>
+    <div class="subtitle" id="subtitle">Cross-Platform Rust Graphics Architecture</div>
+
+    <div class="divider"></div>
+
+    <p>
+      The <strong style="color: #ffffff">matrix-engine-wgpu</strong> is Nikola Lukic's lightweight, pure Rust graphics platform built entirely on top of the cross-platform <strong class="badge-webgpu">WebGPU</strong> backend interface (<strong style="color: #ffffff">wgpu-rs</strong>). Operating as a system orchestration engine, it abstracts pipeline instantiation, GPU shader bindings, and vector math routines.
+    </p>
+
+    <h2>Core Architecture Features</h2>
+    <ul>
+      <li><strong>Native Rust Safety:</strong> Leverages strict type-safety, absolute memory layouts, and thread safety to map raw matrices straight to high performance rendering grids.</li>
+      <li><strong>Platform Portability:</strong> Compile target maps flawlessly to native client displays via Vulkan, Metal, DX12, or run browser setups using WASM over safe WebAssembly binds.</li>
+      <li><strong>Dynamic Pipeline Orchestration:</strong> Simplifies command pipelines, render layers, bind groups, vertex state setup, and frame-pass execution with minimalistic boilerplate.</li>
+      <li><strong>Custom WGSL Integration:</strong> Supports WebGPU Shading Language natively, enabling user-defined matrix loops and shaders to communicate in parallel with modern hardware.</li>
+    </ul>
+
+    <h2>Quick Setup & Code Usage</h2>
+    <p>
+      Defining an active rendering app runtime inside a client container is minimal. Add the cargo dependency to your cargo configurations and spin up the engine instance:
+    </p>
+
+    <pre><code>[dependencies]
+matrix-engine-wgpu = { git = "https://github.com/zlatnaspirala/matrix-engine-wgpu" }
+wgpu = "22.0.0"</code></pre>
+
+    <p>
+      And initialize your native graphics stage with clean Rust definitions:
+    </p>
+
+    <pre><code>use matrix_engine_wgpu::{EngineInstance, GraphicsStage};
+
+fn main() {
+    let mut instance = EngineInstance::new()
+        .with_title("WebGL & WGPU Matrix Space")
+        .with_dimensions(1280, 720);
+
+    // Boot real-time rendering loop
+    instance.run(|stage, render_pass| {
+        // Core pipeline transformations and drawing updates
+        stage.clear_color(0.05, 0.05, 0.07, 1.0);
+    });
+}</code></pre>
+
+    <h2>Project Trajectory</h2>
+    <p>
+      Designed to function as a modular, hardware-level container for 3D physics, real-time particle structures, and complex matrix transforms. It facilitates the immediate porting of traditional algorithms from WebGL to pure GPU performance targets.
+    </p>
+
+    <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu" target="_blank" class="btn-github" id="github-link">
+      VIEW ON GITHUB REPOSITORY ↗
+    </a>
+  </div>
+
+  <script>
+    // --- HIGH-PERFORMANCE 2D VECTOR FIELD SIMULATION ---
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let width = 0;
+    let height = 0;
+    let activeColor = '#00f3ff';
+    let activeRgb = { r: 0, g: 243, b: 255 };
+
+    // Convert hex to rgb helper
+    function parseHexToRgb(hex) {
+      let c = hex.startsWith('#') ? hex.substring(1) : hex;
+      if (c.length === 3) {
+        c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
+      }
+      const r = parseInt(c.slice(0, 2), 16) || 0;
+      const g = parseInt(c.slice(2, 4), 16) || 0;
+      const b = parseInt(c.slice(4, 6), 16) || 0;
+      return { r, g, b };
+    }
+
+    class Particle {
+      constructor() {
+        this.reset(true);
+      }
+
+      reset(init = false) {
+        this.x = Math.random() * width;
+        this.y = init ? Math.random() * height : height + 10;
+        this.size = Math.random() * 2 + 0.5;
+        // Float upwards and drift sideways
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = -(Math.random() * 0.4 + 0.1);
+        this.alpha = Math.random() * 0.4 + 0.15;
+        this.originalAlpha = this.alpha;
+        this.pulseSpeed = Math.random() * 0.02 + 0.005;
+        this.pulseTime = Math.random() * Math.PI;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Sine drift
+        this.pulseTime += this.pulseSpeed;
+        this.alpha = this.originalAlpha * (0.6 + 0.4 * Math.sin(this.pulseTime));
+
+        if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+          this.reset(false);
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, ${this.alpha})`;
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      const targetCount = Math.min(65, Math.floor((width * height) / 14000));
+      particles = [];
+      for (let i = 0; i < targetCount; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initParticles();
+    }
+
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Clear dark slate background
+      ctx.fillStyle = '#050505';
+      ctx.fillRect(0, 0, width, height);
+
+      // Draw mathematical coordinate grid
+      ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.02)`;
+      ctx.lineWidth = 1;
+      const step = 45;
+      for (let x = 0; x < width; x += step) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height; y += step) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      // Render connected systems mesh
+      particles.forEach((p, index) => {
+        p.update();
+        p.draw();
+
+        for (let j = index + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p.x - p2.x;
+          const dy = p.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          // Mesh threshold
+          if (dist < 110) {
+            const alphaFactor = (1 - dist / 110) * 0.15 * Math.min(p.alpha, p2.alpha);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, ${alphaFactor})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      });
+    }
+
+    // Theme color updater based on color parameter from viewport URL query address
+    function updateColors() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const colorParam = urlParams.get('color') || '00f3ff';
+      const cleanHex = colorParam.startsWith('#') ? colorParam : '#' + colorParam;
+      
+      activeColor = cleanHex;
+      activeRgb = parseHexToRgb(cleanHex);
+
+      const glowStr = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.3)`;
+
+      document.documentElement.style.setProperty('--accent-color', cleanHex);
+      document.documentElement.style.setProperty('--accent-glow-color', glowStr);
+    }
+
+    // Interactive mouse reactions if mouse moves over welcoming frame stage
+    window.addEventListener('mousemove', (e) => {
+      particles.forEach(p => {
+        const dx = p.x - e.clientX;
+        const dy = p.y - e.clientY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          const force = (130 - dist) / 130 * 0.4;
+          const angle = Math.atan2(dy, dx);
+          // Drift gently away
+          p.x += Math.cos(angle) * force;
+          p.y += Math.sin(angle) * force;
+        }
+      });
+    });
+
+    // Boot
+    window.addEventListener('resize', resizeCanvas);
+    updateColors();
+    resizeCanvas();
+    requestAnimationFrame(animate);
+
+    // Communicate with parent container context
+    window.addEventListener('message', (e) => {
+      if (e.data && e.data.type === 'THEME_COLOR_UPDATE') {
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('color', e.data.color.replace('#', ''));
+        window.history.replaceState({}, '', '?' + urlParams.toString());
+        updateColors();
+      }
+    });
+  </script>
+</body>
+</html>

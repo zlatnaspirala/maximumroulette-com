@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome // Nikola Lukic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #050505;
+      color: #e0e0e0;
+      font-family: 'Radio Canada', sans-serif;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    /* Background dots pattern */
+    .net-background {
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      pointer-events: none;
+      background-image: 
+        radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
+        linear-gradient(rgba(20, 20, 25, 0.4) 1px, transparent 1px);
+      background-size: 24px 24px, 100% 4px;
+      z-index: 1;
+    }
+
+    /* Content Card */
+    .container {
+      position: relative;
+      z-index: 10;
+      max-width: 580px;
+      width: 100%;
+      background-color: rgba(9, 9, 11, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 4px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      transition: border-color 0.4s ease;
+    }
+
+    /* Corner design hints */
+    .corner {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-color: var(--accent-color, #00f3ff);
+      border-style: solid;
+      opacity: 0.35;
+      transition: border-color 0.4s ease;
+    }
+    .top-left { top: 8px; left: 8px; border-width: 1px 0 0 1px; }
+    .top-right { top: 8px; right: 8px; border-width: 1px 1px 0 0; }
+    .bottom-left { bottom: 8px; left: 8px; border-width: 0 0 1px 1px; }
+    .bottom-right { bottom: 8px; right: 8px; border-width: 0 1px 1px 0; }
+
+    /* Heading typography */
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 8px;
+      margin-top: 15px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .subtitle {
+      font-family: 'Oswald', sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      color: var(--accent-color, #00f3ff);
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      font-weight: bold;
+      transition: color 0.4s ease;
+      line-height: 1.6;
+    }
+
+    .divider {
+      height: 1px;
+      width: 80px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 15px auto 25px auto;
+    }
+
+    /* Motto quote styling */
+    .motto-wrapper {
+      margin: 25px 0;
+      position: relative;
+    }
+
+    .motto {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .motto span {
+      color: var(--accent-color, #00f3ff);
+      transition: color 0.4s ease;
+      text-shadow: 0 0 15px var(--accent-glow-color, rgba(0, 243, 255, 0.25));
+    }
+
+    /* Paragraph info text */
+    .description {
+      font-size: 11px;
+      color: #71717a;
+      line-height: 1.7;
+      max-width: 440px;
+      margin: 0 auto;
+      letter-spacing: 0.05em;
+    }
+
+    /* Active graphics badge marker */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 6px 14px;
+      border-radius: 2px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #a1a1aa;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .status-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--accent-color, #00f3ff);
+      box-shadow: 0 0 6px var(--accent-color, #00f3ff);
+      transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Custom Color Query handler script so welcome.html adopts hue theme on load */
+    @media (max-width: 640px) {
+      .motto {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .container {
+        padding: 25px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="net-background" id="net-bg"></div>
+  <!-- <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas> -->
+   <iframe src="https://maximumroulette.com/apps/webgpu/examples.html?demo=9" id="bg-canvas" style="border: none;position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></iframe>
+
+  <div class="container" id="panel">
+    <div class="corner top-left"></div>
+    <div class="corner top-right"></div>
+    <div class="corner bottom-left"></div>
+    <div class="corner bottom-right"></div>
+
+    <div class="status-badge">
+      <span class="status-dot" id="dot"></span>
+      <span>Browser rendering from the ground up.</span>
+    </div>
+
+    <h1>Nikola Lukic</h1>
+    <div class="subtitle" id="subtitle">Graphics Programmer</div>
+
+    <div class="divider"></div>
+
+    <div class="motto-wrapper">
+      <div class="motto">"Everything is <span>possible</span>"</div>
+    </div>
+
+    <p class="description">
+      WebGL · WebGPU · Canvas2D · WebRTC — browser rendering from the ground up.
+      Physics simulations, PBR pipelines, skeletal animation, real-time peer-to-peer.
+      Performance-first. Runs everywhere — desktop, mobile, any screen.
+      Years across Unity, Unreal, Three.js and beyond.
+      12 years of professional experience in casino games. All posted examples are free time project not 
+      professional part.
+    </p>
+  </div>
+
+  <!-- <script>
+    // --- HIGH-PERFORMANCE 2D VECTOR FIELD SIMULATION ---
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let width = 0;
+    let height = 0;
+    let activeColor = '#00f3ff';
+    let activeRgb = { r: 0, g: 243, b: 255 };
+
+    // Convert hex to rgb helper
+    function parseHexToRgb(hex) {
+      let c = hex.startsWith('#') ? hex.substring(1) : hex;
+      if (c.length === 3) {
+        c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
+      }
+      const r = parseInt(c.slice(0, 2), 16) || 0;
+      const g = parseInt(c.slice(2, 4), 16) || 0;
+      const b = parseInt(c.slice(4, 6), 16) || 0;
+      return { r, g, b };
+    }
+
+    class Particle {
+      constructor() {
+        this.reset(true);
+      }
+
+      reset(init = false) {
+        this.x = Math.random() * width;
+        this.y = init ? Math.random() * height : height + 10;
+        this.size = Math.random() * 2 + 0.5;
+        // Float upwards and drift sideways
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = -(Math.random() * 0.4 + 0.1);
+        this.alpha = Math.random() * 0.4 + 0.15;
+        this.life = Math.random() * 100 + 100;
+        this.originalAlpha = this.alpha;
+        this.pulseSpeed = Math.random() * 0.02 + 0.005;
+        this.pulseTime = Math.random() * Math.PI;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        // Sine drift
+        this.pulseTime += this.pulseSpeed;
+        this.alpha = this.originalAlpha * (0.6 + 0.4 * Math.sin(this.pulseTime));
+
+        if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+          this.reset(false);
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, ${this.alpha})`;
+        ctx.fill();
+      }
+    }
+
+    function initParticles() {
+      const targetCount = Math.min(65, Math.floor((width * height) / 14000));
+      particles = [];
+      for (let i = 0; i < targetCount; i++) {
+        particles.push(new Particle());
+      }
+    }
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initParticles();
+    }
+
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame(animate);
+
+      // Clear dark slate background
+      ctx.fillStyle = '#050505';
+      ctx.fillRect(0, 0, width, height);
+
+      // Draw mathematical coordinate grid
+      ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.02)`;
+      ctx.lineWidth = 1;
+      const step = 45;
+      for (let x = 0; x < width; x += step) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height; y += step) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      // Render connected systems mesh
+      particles.forEach((p, index) => {
+        p.update();
+        p.draw();
+
+        for (let j = index + 1; j < particles.length; j++) {
+          const p2 = particles[j];
+          const dx = p.x - p2.x;
+          const dy = p.y - p2.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          // Mesh threshold
+          if (dist < 110) {
+            const alphaFactor = (1 - dist / 110) * 0.15 * Math.min(p.alpha, p2.alpha);
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, ${alphaFactor})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      });
+    }
+
+    // Theme color updater based on color parameter from viewport URL query address
+    function updateColors() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const colorParam = urlParams.get('color') || '00f3ff';
+      const cleanHex = colorParam.startsWith('#') ? colorParam : '#' + colorParam;
+      
+      activeColor = cleanHex;
+      activeRgb = parseHexToRgb(cleanHex);
+
+      const glowStr = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.3)`;
+
+      document.documentElement.style.setProperty('--accent-color', cleanHex);
+      document.documentElement.style.setProperty('--accent-glow-color', glowStr);
+    }
+
+    // Interactive mouse reactions if mouse moves over welcoming frame stage
+    window.addEventListener('mousemove', (e) => {
+      particles.forEach(p => {
+        const dx = p.x - e.clientX;
+        const dy = p.y - e.clientY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          const force = (130 - dist) / 130 * 0.4;
+          const angle = Math.atan2(dy, dx);
+          // Drift gently away
+          p.x += Math.cos(angle) * force;
+          p.y += Math.sin(angle) * force;
+        }
+      });
+    });
+
+    // Boot
+    window.addEventListener('resize', resizeCanvas);
+    updateColors();
+    resizeCanvas();
+    requestAnimationFrame(animate);
+
+    // Communicate with parent container context
+    window.addEventListener('message', (e) => {
+      if (e.data && e.data.type === 'THEME_COLOR_UPDATE') {
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('color', e.data.color.replace('#', ''));
+        window.history.replaceState({}, '', '?' + urlParams.toString());
+        updateColors();
+      }
+    });
+  </script> -->
+</body>
+</html>

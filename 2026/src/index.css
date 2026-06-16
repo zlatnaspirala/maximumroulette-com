@@ -1,0 +1,174 @@
+/* Clean, high-performance pure CSS design system for Nikola Lukic */
+
+:root {
+  --neon-color: #00f3ff;
+  --neon-glow: rgba(0, 243, 255, 0.35);
+  --neon-rgb: 0, 243, 255;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #050505;
+  color: #e0e0e0;
+  font-family: monospace, ui-sans-serif, system-ui, sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Core Layout styles replacement of Tailwind utility classes */
+.w-screen { width: 100vw; }
+.h-screen { height: 100vh; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-grow { flex-grow: 1; }
+.flex-1 { flex: 1 1 0%; }
+.hidden { display: none; }
+.border-none { border: none !important; }
+
+/* Alignment and gaps */
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: space-center; }
+.space-x-1 > * + * { margin-left: 0.25rem; }
+.space-x-2 > * + * { margin-left: 0.5rem; }
+.space-x-3 > * + * { margin-left: 0.75rem; }
+.space-x-4 > * + * { margin-left: 1rem; }
+.space-x-5 > * + * { margin-left: 1.25rem; }
+.space-x-6 > * + * { margin-left: 1.5rem; }
+
+/* Transitions, cursor, pointers */
+.transition-all { transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+.duration-150 { transition-duration: 150ms; }
+.duration-200 { transition-duration: 200ms; }
+.duration-300 { transition-duration: 300ms; }
+.cursor-pointer { cursor: pointer; }
+.select-none { user-select: none; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+.overflow-hidden { overflow: hidden; }
+
+/* Padding and styling offsets */
+.p-0 { padding: 0; }
+.m-0 { margin: 0; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-1.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+/* Custom Fonts & Typo scale */
+.font-sans { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.uppercase { text-transform: uppercase; }
+.text-xs { font-size: 11px; }
+.text-sm { font-size: 13px; }
+.text-white { color: #ffffff; }
+.tracking-widest { letter-spacing: 0.2em; }
+.tracking-wider { letter-spacing: 0.1em; }
+.leading-tight { line-height: 1.25; }
+
+/* Interactive custom styled components */
+header {
+  background-color: #080808;
+  border-bottom: 1px solid #141416;
+}
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e22;
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-color);
+}
+
+/* Dropdown list specifics */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  font-family: 'Radio Canada', sans-serif;
+  color: #71717a;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: all 0.15s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #121216;
+}
+
+/* Custom indicator state transitions */
+.opacity-0 { opacity: 0; }
+.opacity-100 { opacity: 1; }
+.pointer-events-none { pointer-events: none; }
+.pointer-events-auto { pointer-events: auto; }
+.scale-95 { transform: scale(0.95); }
+.scale-100 { transform: scale(1); }
+.rotate-180 { transform: rotate(180deg); }
+
+/* Custom circles/dots */
+.rounded-sm { border-radius: 2px; }
+
+/* Responsive utility support on md screen sizes */
+/* Custom Fonts declarations */
+.font-tint {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.font-convergence {
+  font-family: 'Radio Canada', sans-serif !important;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile { display: none !important; }
+}

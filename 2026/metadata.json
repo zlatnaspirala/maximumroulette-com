@@ -1,0 +1,6 @@
+{
+  "name": "Nikola Lukic Portfolio",
+  "description": "A high-performance portfolio for Nikola Lukic, graphics programmer. Built in pure Vanilla JS with a discrete neon theme, custom interactive canvas graphics, and an immersive iframe viewer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
