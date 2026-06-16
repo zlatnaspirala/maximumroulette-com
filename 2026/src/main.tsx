@@ -5,7 +5,6 @@ interface MenuLink {
   url: string;
 }
 
-// Pre-defined set of high performance graphic pipeline urls
 const LINKS: MenuLink[]=[
   { name: 'Apps', url: '/welcome.html' },
   { name: 'THE BEAST - EXAMPLES', url: 'https://maximumroulette.com/apps/webgpu/examples.html?demo=20' },
@@ -99,7 +98,7 @@ if(root) {
   demoDropdownTrigger.style.backgroundColor='#0e0e11';
   demoDropdownTrigger.style.border='1px solid #1a1a1f';
   demoDropdownTrigger.style.outline='none';
-  demoDropdownTrigger.style.minWidth='180px';
+  // demoDropdownTrigger.style.minWidth='180px';
 
   const demoTriggerText=document.createElement('span');
   demoTriggerText.textContent=LINKS[0].name;
@@ -159,7 +158,7 @@ if(root) {
   sourceDropdownTrigger.style.backgroundColor='#0e0e11';
   sourceDropdownTrigger.style.border='1px solid #1a1a1f';
   sourceDropdownTrigger.style.outline='none';
-  sourceDropdownTrigger.style.minWidth='180px';
+  // sourceDropdownTrigger.style.minWidth='180px';
 
   const sourceTriggerText=document.createElement('span');
   sourceTriggerText.textContent='SOURCE CODE';
@@ -193,6 +192,7 @@ if(root) {
     { name: 'Matrix Engine WebGL core', url: 'https://github.com/zlatnaspirala/matrix-engine-examples' },
     { name: 'Matrix Engine WebGL starter', url: 'https://github.com/zlatnaspirala/matrix-engine' },
     { name: 'Visual-ts-game-engine (matter.ts)', url: 'https://github.com/zlatnaspirala/visual-ts-game-engine' },
+    { name: 'All UE4 projects vs Nodejs/MongoDB Source', url: 'https://github.com/RocketCraftingServer' },
     { name: 'NUI-commander', url: 'https://github.com/zlatnaspirala/nui-commander' },
     { name: 'MagicTree Based on Three.js', url: 'https://github.com/zlatnaspirala/magic-three' },
     { name: 'My 3d youtube Based on Three.js', url: 'https://github.com/zlatnaspirala/vuletube' },
@@ -238,7 +238,7 @@ if(root) {
   moreDropdownTrigger.style.backgroundColor='#0e0e11';
   moreDropdownTrigger.style.border='1px solid #1a1a1f';
   moreDropdownTrigger.style.outline='none';
-  moreDropdownTrigger.style.minWidth='180px';
+  // moreDropdownTrigger.style.minWidth='180px';
 
   const moreTriggerText=document.createElement('span');
   moreTriggerText.textContent='SOURCE CODE & CREDITS';
@@ -269,6 +269,7 @@ if(root) {
 
   const MORE_LINKS=[
     { name: 'About Matrix-Engine-WebGPU', url: '/the-beast.html' },
+    { name: 'goldenspiral.itch.io', url: 'https://goldenspiral.itch.io' },
     { name: 'Codepen examples', url: 'https://codepen.io/zlatnaspirala/pen/OJZXMWR' },
     { name: 'Credits&&Licence', url: '/credits.html' },
   ];
@@ -330,9 +331,13 @@ if(root) {
   viewportIframe.style.outline='none';
   viewportIframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
   viewportIframe.setAttribute('allowfullscreen', 'true');
-
   mainViewport.appendChild(loaderOverlay);
   mainViewport.appendChild(viewportIframe);
+  mainViewport.addEventListener('click', (e) => {
+    toggleDemoDropdown(false);
+    toggleSourceDropdown(false);
+    toggleMoreDropdown(false);
+  });
 
   // Mount clean, elegant DOM to root
   root.appendChild(header);
@@ -427,16 +432,12 @@ if(root) {
     toggleMoreDropdown();
   });
 
-  // Close when browser registers outside click
   document.addEventListener('click', (e) => {
-    const target=e.target as Node;
-    if(isDemoDropdownOpen&&!demoDropdownWrapper.contains(target)) {
-      toggleDemoDropdown(false);
-    }
-    if(isSourceDropdownOpen&&!sourceDropdownWrapper.contains(target)) {
-      toggleSourceDropdown(false);
-    }
-  });
+    e.stopPropagation();
+    if(isDemoDropdownOpen) toggleDemoDropdown(false);
+    if(isSourceDropdownOpen) toggleSourceDropdown(false);
+    if(isMoreDropdownOpen) toggleMoreDropdown(false);
+  })
 
   // Highlight selected dropdown option
   function highlightSelectedOption() {
@@ -483,7 +484,7 @@ if(root) {
     modalTitle.textContent=type==='terms'? 'TERMS OF USE':'COOKIE POLICY';
 
     const closeIconBtn=document.createElement('button');
-    closeIconBtn.className='text-[#71717a] hover:text-white font-mono text-xs cursor-pointer';
+    closeIconBtn.className='text-[#ffffff] hover:text-white font-mono text-xs cursor-pointer';
     closeIconBtn.textContent='[ CLOSE ]';
 
     modalHeader.appendChild(modalTitle);
@@ -576,7 +577,7 @@ if(root) {
     linksRow.className='flex items-center gap-3';
 
     const termsLink=document.createElement('button');
-    termsLink.className='font-mono text-[#71717a] hover:text-white transition-all cursor-pointer';
+    termsLink.className='font-mono text-[#ffffff] hover:text-white transition-all cursor-pointer';
     termsLink.style.fontSize='8px';
     termsLink.style.textDecoration='underline';
     termsLink.style.border='none';
@@ -588,7 +589,7 @@ if(root) {
     });
 
     const cookieLink=document.createElement('button');
-    cookieLink.className='font-mono text-[#71717a] hover:text-white transition-all cursor-pointer';
+    cookieLink.className='font-mono text-[#ffffff] hover:text-white transition-all cursor-pointer';
     cookieLink.style.fontSize='8px';
     cookieLink.style.textDecoration='underline';
     cookieLink.style.border='none';
