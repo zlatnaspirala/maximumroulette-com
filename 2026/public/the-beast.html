@@ -16,7 +16,7 @@
     
     body {
       background-color: #050505;
-      color: #e0e0e0;
+      color: #cbd5e1;
       font-family: 'Radio Canada', sans-serif;
       min-height: 100vh;
       width: 100vw;
@@ -33,7 +33,7 @@
     .net-background {
       position: fixed;
       inset: 0;
-      opacity: 0.15;
+      opacity: 0.12;
       pointer-events: none;
       background-image: 
         radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
@@ -42,18 +42,78 @@
       z-index: 1;
     }
 
-    /* Content Card - optimized for long reading */
-    .container {
+    /* Outer Wrapper for Page Layout (Sidebar + Main Article) */
+    .view-wrapper {
       position: relative;
       z-index: 10;
-      max-width: 740px;
+      max-width: 1100px;
       width: 100%;
-      background-color: rgba(9, 9, 11, 0.93);
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* Sidebar Navigation Guide */
+    .spec-sidebar {
+      position: sticky;
+      top: 30px;
+      height: fit-content;
+      background: rgba(9, 9, 12, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 4px;
+      padding: 24px 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    .sidebar-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-color, #00f3ff);
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 8px;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-item {
+      margin-bottom: 8px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #94a3b8;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 6px 10px;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+      border-left: 2px solid transparent;
+    }
+
+    .nav-link:hover {
+      background: rgba(255, 255, 255, 0.02);
+      color: #ffffff;
+      border-left-color: var(--accent-color, #00f3ff);
+    }
+
+    /* Content Card */
+    .container {
+      background-color: rgba(9, 9, 11, 0.94);
       border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 4px;
-      padding: 45px 40px;
-      margin-bottom: 40px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.82);
+      padding: 50px 45px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(12px);
       transition: border-color 0.4s ease;
     }
@@ -61,11 +121,11 @@
     /* Corner design hints */
     .corner {
       position: absolute;
-      width: 12px;
-      height: 12px;
+      width: 14px;
+      height: 14px;
       border-color: var(--accent-color, #00f3ff);
       border-style: solid;
-      opacity: 0.4;
+      opacity: 0.5;
       transition: border-color 0.4s ease;
     }
     .top-left { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
@@ -76,26 +136,51 @@
     /* Heading typography */
     h1 {
       font-family: 'Oswald', sans-serif;
-      font-size: 34px;
+      font-size: 44px;
       font-weight: 300;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #ffffff;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       text-align: center;
     }
 
     .subtitle {
       font-family: 'Oswald', sans-serif;
       font-size: 11px;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.16em;
       color: var(--accent-color, #00f3ff);
       text-transform: uppercase;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       font-weight: bold;
       transition: color 0.4s ease;
       line-height: 1.6;
       text-align: center;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #a1a1aa;
+      margin-bottom: 30px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 2px;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta-item strong {
+      color: var(--accent-color, #00f3ff);
     }
 
     .divider {
@@ -105,50 +190,136 @@
       margin: 20px auto 30px auto;
     }
 
-    /* Section titles */
+    /* Section titles with code markers */
     h2 {
       font-family: 'Oswald', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 45px;
+      margin-bottom: 18px;
+      border-left: 2px solid var(--accent-color, #00f3ff);
+      padding-left: 14px;
+      transition: border-color 0.4s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-anchor {
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      color: rgba(255,255,255,0.2);
+    }
+
+    h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px;
       font-weight: 400;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: #ffffff;
-      margin-top: 35px;
+      color: #eaeaea;
+      margin-top: 30px;
       margin-bottom: 12px;
-      border-left: 2px solid var(--accent-color, #00f3ff);
-      padding-left: 12px;
-      transition: border-color 0.4s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3::before {
+      content: "▪";
+      color: var(--accent-color, #00f3ff);
     }
 
     /* Paragraph info text */
     p {
-      font-size: 13px;
+      font-size: 13.5px;
       color: #a1a1aa;
-      line-height: 1.7;
-      margin-bottom: 16px;
-      letter-spacing: 0.02em;
+      line-height: 1.75;
+      margin-bottom: 18px;
+      letter-spacing: 0.01em;
     }
 
     strong {
       color: #ffffff;
     }
 
-    /* Features list */
-    ul {
-      margin-bottom: 20px;
-      padding-left: 20px;
+    /* Features grid list */
+    .grid-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 15px;
+      margin-bottom: 25px;
     }
 
-    li {
-      font-size: 13px;
-      color: #a1a1aa;
-      line-height: 1.7;
-      margin-bottom: 8px;
-      list-style-type: square;
+    .feature-card {
+      background: rgba(255, 255, 255, 0.012);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      padding: 16px 20px;
+      border-radius: 2px;
+      display: flex;
+      gap: 14px;
+      transition: border-color 0.3s ease;
     }
-    
-    li::marker {
+
+    .feature-card:hover {
+      border-color: rgba(255,255,255,0.08);
+    }
+
+    .feature-card .icon {
       color: var(--accent-color, #00f3ff);
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .feature-card-content h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 13.5px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .feature-card-content p {
+      font-size: 11.5px;
+      color: #8f8f9e;
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+
+    /* Detailed tabular parameters */
+    .param-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0 25px 0;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .param-table th {
+      background: rgba(255, 255, 255, 0.02);
+      color: #ffffff;
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .param-table td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      color: #a1a1aa;
+    }
+
+    .param-table tr:hover td {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.01);
     }
 
     /* Code blocks */
@@ -165,6 +336,26 @@
       margin: 18px 0;
       overflow-x: auto;
       color: #cbd5e1;
+      position: relative;
+    }
+
+    pre::before {
+      content: "CODE //";
+      position: absolute;
+      top: 6px;
+      right: 12px;
+      font-size: 8px;
+      color: rgba(255, 255, 255, 0.15);
+      letter-spacing: 0.1em;
+    }
+
+    code.inline-code {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1px 5px;
+      border-radius: 2px;
+      color: #00f3ff;
+      font-size: 11.5px;
     }
 
     /* Active graphics badge marker */
@@ -192,31 +383,60 @@
       transition: background-color 0.4s ease, box-shadow 0.4s ease;
     }
 
-    /* GitHub CTA Button */
-    .btn-github {
+    /* Grid list */
+    ul {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 13px;
+      color: #a1a1aa;
+      line-height: 1.7;
+      margin-bottom: 8px;
+      list-style-type: square;
+    }
+    
+    li::marker {
+      color: var(--accent-color, #00f3ff);
+    }
+
+    /* GitHub CTA Buttons */
+    .links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .btn-action {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      padding: 14px 24px;
+      padding: 14px 20px;
       background-color: transparent;
       border: 1px solid var(--accent-color, #00f3ff);
       border-radius: 2px;
       color: #ffffff;
       font-family: 'Oswald', sans-serif;
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer;
-      margin-top: 30px;
       transition: all 0.3s ease;
+      text-align: center;
     }
 
-    .btn-github:hover {
+    .btn-action:hover {
       background-color: var(--accent-color, #00f3ff);
       color: #000000;
       box-shadow: 0 0 15px var(--accent-glow-color, rgba(0, 243, 255, 0.3));
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color, #00f3ff);
+      color: #000000;
     }
 
     .badge-rust {
@@ -239,12 +459,36 @@
       font-family: 'JetBrains Mono', monospace;
     }
 
+    .badge-version {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    @media (max-width: 900px) {
+      .view-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .spec-sidebar {
+        position: relative;
+        top: 0;
+        margin-bottom: 10px;
+      }
+    }
+
     @media (max-width: 640px) {
       h1 {
-        font-size: 26px;
+        font-size: 30px;
       }
       .container {
-        padding: 30px 20px;
+        padding: 30px 18px;
+      }
+      .links-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -253,71 +497,336 @@
   <div class="net-background" id="net-bg"></div>
   <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas>
 
-  <div class="container" id="panel">
-    <div class="corner top-left"></div>
-    <div class="corner top-right"></div>
-    <div class="corner bottom-left"></div>
-    <div class="corner bottom-right"></div>
+  <!-- Outer layout wrapper -->
+  <div class="view-wrapper">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="spec-sidebar">
+      <div class="sidebar-title">NAVIGATION INDEX</div>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#introduction" class="nav-link"><span>▪</span> Overview</a></li>
+        <li class="nav-item"><a href="#benchmarks" class="nav-link"><span>▪</span> Architecture Spec</a></li>
+        <li class="nav-item"><a href="#editorx" class="nav-link"><span>▪</span> FluxCodex Scripting</a></li>
+        <li class="nav-item"><a href="#api-scene" class="nav-link"><span>▪</span> Scene & Camera</a></li>
+        <li class="nav-item"><a href="#api-physics" class="nav-link"><span>▪</span> Physics Workers</a></li>
+        <li class="nav-item"><a href="#api-lights" class="nav-link"><span>▪</span> Lights & Updates</a></li>
+        <li class="nav-item"><a href="#api-materials" class="nav-link"><span>▪</span> Materials & Env</a></li>
+        <li class="nav-item"><a href="#api-advanced" class="nav-link"><span>▪</span> Shaders & Instancing</a></li>
+        <li class="nav-item"><a href="#network" class="nav-link"><span>▪</span> WebRTC Messaging</a></li>
+        <li class="nav-item"><a href="#parameters" class="nav-link"><span>▪</span> URL Query Flags</a></li>
+      </ul>
+    </aside>
 
-    <div style="text-align: center;">
-      <div class="status-badge">
-        <span class="status-dot" id="dot"></span>
-        <span>NEXT-GEN PIPELINE DOCUMENTATION</span>
+    <!-- Main Content Panel -->
+    <main class="container" id="panel">
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+
+      <div style="text-align: center;">
+        <div class="status-badge">
+          <span class="status-dot" id="dot"></span>
+          <span>PIPELINE ENGINE: THE BEAST</span>
+        </div>
       </div>
-    </div>
 
-    <h1>matrix-engine-wgpu</h1>
-    <div class="subtitle" id="subtitle">Cross-Platform Rust Graphics Architecture</div>
+      <h1>matrix-engine-wgpu</h1>
+      <div class="subtitle" id="subtitle">High Performance Rust & WebGPU Engine</div>
 
-    <div class="divider"></div>
+      <div class="project-meta">
+        <div class="meta-item">🧑‍💻 <strong>Author:</strong> Nikola Lukić</div>
+        <div class="meta-item">📧 <strong>Email:</strong> zlatnaspirala@gmail.com</div>
+        <div class="meta-item">📦 <strong>Registry:</strong> npm i matrix-engine-wgpu</div>
+        <div class="meta-item">🚀 <strong>Version:</strong> <span class="badge-version">v1.11.3</span></div>
+      </div>
 
-    <p>
-      The <strong style="color: #ffffff">matrix-engine-wgpu</strong> is Nikola Lukic's lightweight, pure Rust graphics platform built entirely on top of the cross-platform <strong class="badge-webgpu">WebGPU</strong> backend interface (<strong style="color: #ffffff">wgpu-rs</strong>). Operating as a system orchestration engine, it abstracts pipeline instantiation, GPU shader bindings, and vector math routines.
-    </p>
+      <div class="divider"></div>
 
-    <h2>Core Architecture Features</h2>
-    <ul>
-      <li><strong>Native Rust Safety:</strong> Leverages strict type-safety, absolute memory layouts, and thread safety to map raw matrices straight to high performance rendering grids.</li>
-      <li><strong>Platform Portability:</strong> Compile target maps flawlessly to native client displays via Vulkan, Metal, DX12, or run browser setups using WASM over safe WebAssembly binds.</li>
-      <li><strong>Dynamic Pipeline Orchestration:</strong> Simplifies command pipelines, render layers, bind groups, vertex state setup, and frame-pass execution with minimalistic boilerplate.</li>
-      <li><strong>Custom WGSL Integration:</strong> Supports WebGPU Shading Language natively, enabling user-defined matrix loops and shaders to communicate in parallel with modern hardware.</li>
-    </ul>
+      <!-- Introduction Section -->
+      <section id="introduction">
+        <h2>Engine Overview <span class="section-anchor">01 // INTRODUCTION</span></h2>
+        <p>
+          The <strong class="badge-webgpu">matrix-engine-wgpu</strong> is a stable, high-performance, and continually evolving WebGPU rendering platform written in Rust. Inspired by the designs of the original WebGL-based matrix-engine, it has been fully rebuilt from the ground up for the next-generation WebGPU hardware standard.
+        </p>
+        <p>
+          By dropping legacy gl-matrix bindings in favor of the optimized <code class="inline-code">wgpu-matrix</code> mathematical pipeline, "The Beast" handles heavy model-view-projection translations with absolute memory spatial layout maps and minimal thread latency. It compiles smoothly across native client drivers (Vulkan, Metal, Direct3D 12) or to web targets via WASM.
+        </p>
+      </section>
 
-    <h2>Quick Setup & Code Usage</h2>
-    <p>
-      Defining an active rendering app runtime inside a client container is minimal. Add the cargo dependency to your cargo configurations and spin up the engine instance:
-    </p>
+      <!-- Engine Benchmarks & Technical Spec -->
+      <section id="benchmarks">
+        <h2>Architecture Specs <span class="section-anchor">02 // STABLE FEATURES</span></h2>
+        <p>
+          The graphics core orchestrates buffers and shaders elegantly to deliver peak rendering optimization across standard desktop environments including Chrome, Edge, and Opera <em>(Note: v1.1x.0 Firefox pipeline renders are currently undergoing active optimization)</em>.
+        </p>
 
-    <pre><code>[dependencies]
-matrix-engine-wgpu = { git = "https://github.com/zlatnaspirala/matrix-engine-wgpu" }
-wgpu = "22.0.0"</code></pre>
+        <div class="grid-features">
+          <div class="feature-card">
+            <span class="icon">⚡</span>
+            <div class="feature-card-content">
+              <h4>PipelineManager Draw Loops</h4>
+              <p>Sequences are bound dynamically per-pipeline rather than per-individual-mesh over a shared material index to yield power draw optimization benefits.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="icon">⚛️</span>
+            <div class="feature-card-content">
+              <h4>Offloaded Web-Worker Physics</h4>
+              <p>Built-in integrations for Ammo.js, cannonES, and Jolt Physics engines. Physics computations are performed cleanly via secondary worker threads to prevent main thread blocking.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="icon">🎬</span>
+            <div class="feature-card-content">
+              <h4>Post Processing & Shaders</h4>
+              <p>Supports Bloom Filters, Volumetric Scattering, Hierarchical Z-Buffer (HZB) passes, custom WGSL-based shadow casting on skinned rigs, and real-time viewport culling overrides.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="icon">🏔️</span>
+            <div class="feature-card-content">
+              <h4>Procedural Morph Entities</h4>
+              <p>Dynamic geometric interpolation allowing Morph-blending between procedural configurations (e.g. circles, cones, klein shells, or mobius strips) with exact shadow tracking recalculations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <p>
-      And initialize your native graphics stage with clean Rust definitions:
-    </p>
+      <!-- FluxCodex Scripting suite -->
+      <section id="editorx">
+        <h2>FluxCodex Scripting <span class="section-anchor">03 // FLOW_EDITORS</span></h2>
+        <p>
+          Available when executing the workspace environment directly from source using the alias <code class="inline-code">npm run editorx</code>, Nikola Lukić's platform features two dual-graph visual node environments designed for rapid prototype flows:
+        </p>
+        <ul>
+          <li><strong>FluxCodexVertex:</strong> Interactive client execution logic graphs. Connect events, math parameters, update functions, variable popups, and track direct SceneObject reference attributes.</li>
+          <li><strong>FluxCodexShader:</strong> Shader materials graph generator. Draw customizable procedural outputs with visual pipelines.</li>
+          <li><strong>Audio Reactive Nodes:</strong> Hook direct frequency analysis (Low, Mid, High, Energy, Beat values) straight to object positions, scaling transforms, or vertex morph factors.</li>
+          <li><strong>Experimental Ollama AI Copilot:</strong> Automates graph configurations by linking instructions straight with local Groq or Ollama neural setups.</li>
+        </ul>
+        <p>
+          Saved layouts are cached directly on localStorage or outputted to physical filesystem JSON descriptors, compiling to clean JS nodes injected into target runtimes.
+        </p>
+      </section>
 
-    <pre><code>use matrix_engine_wgpu::{EngineInstance, GraphicsStage};
+      <!-- API - Scene & Camera -->
+      <section id="api-scene">
+        <h2>Scene & Camera Guides <span class="section-anchor">04 // MAIN CORE</span></h2>
+        <p>
+          The engine completely abstracts HTML boilerplates by generating the canvas interface programmatically inside memory:
+        </p>
+        <pre><code>import MatrixEngineWGPU from "./src/world.js";
 
-fn main() {
-    let mut instance = EngineInstance::new()
-        .with_title("WebGL & WGPU Matrix Space")
-        .with_dimensions(1280, 720);
+const app = new MatrixEngineWGPU({
+  useSingleRenderPass: true,
+  canvasSize: "fullscreen",
+  mainCameraParams: {
+    type: "WASD", // Options: WASD, RPGCamera, FirstPersonCamera, cinematicCamera
+    responseCoef: 1000
+  }
+}, () => {
+  console.log("WebGPU Ready");
+});</code></pre>
+        <h3>Manipulating Camera Instances & Bounded Paths</h3>
+        <p>
+          Adjust yaw, pitch, and positional parameters directly. For cinematic cutscenes, you can orchestrate multi-point bezier curves:
+        </p>
+        <pre><code>const cam = app.getCamera();
+cam.setPosition(x, y, z);
+cam._dirtyAngle = true; // Flag position matrix recalculation
 
-    // Boot real-time rendering loop
-    instance.run(|stage, render_pass| {
-        // Core pipeline transformations and drawing updates
-        stage.clear_color(0.05, 0.05, 0.07, 1.0);
-    });
-}</code></pre>
+// Cinematic Arc Splines
+const path = new CameraPath([
+  { position: [0, 5, 20], target: [0, 0, 0] },
+  { position: [10, 12, 10], target: [0, 1, 0] }
+], { parameterization: 'arc' });
 
-    <h2>Project Trajectory</h2>
-    <p>
-      Designed to function as a modular, hardware-level container for 3D physics, real-time particle structures, and complex matrix transforms. It facilitates the immediate porting of traditional algorithms from WebGL to pure GPU performance targets.
-    </p>
+cam.setPath(path).play({ speed: 0.3 });</code></pre>
+      </section>
 
-    <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu" target="_blank" class="btn-github" id="github-link">
-      VIEW ON GITHUB REPOSITORY ↗
-    </a>
+      <!-- API - Physics Workers -->
+      <section id="api-physics">
+        <h2>Physics Web Workers <span class="section-anchor">05 // SIMULATION</span></h2>
+        <p>
+          In version 1.11.0, physics bodies execute asynchronously within dedicated thread pools. To access items, use secure body IDs instead of direct element pointer variables:
+        </p>
+        <pre><code>// Bind event listeners for raycasted collisions
+app.canvas.addEventListener("ray.hit.event", e => {
+  const physics = app.matrixPhysics;
+  const bodyId = physics.getBodyByName(e.detail.hitObject.name);
+  
+  if (bodyId) {
+    // 1. Emit instant impulse vectors
+    physics.applyImpulse(bodyId, new PVector(0, 5, 0));
+    
+    // 2. Explode at specific ray impact positions
+    const hitPoint = new PVector(e.detail.hitPoint.x, e.detail.hitPoint.y, e.detail.hitPoint.z);
+    physics.explode(bodyId, hitPoint, 10, 50);
+  }
+});</code></pre>
+      </section>
+
+      <!-- API - Lights -->
+      <section id="api-lights">
+        <h2>Dynamic Light Entities <span class="section-anchor">06 // RENDERING LAYERS</span></h2>
+        <p>
+          Unlike legacy environments where lights exist only on camera vectors, matrix-engine-wgpu decouples lighting into distinct objects that can be placed, and supports light behaviors:
+        </p>
+        <pre><code>// Spawn standard light entities
+app.addLight();
+
+const light = app.getSceneLightByName("light1");
+// Standard oscillation setup: setPath0 moving back/forth
+light.behavior.setOsc0(-1.0, 1.0, 0.01);
+app.lightContainer[0].updater.push(item => {
+  item.setPosX(item.behavior.setPath0());
+});</code></pre>
+      </section>
+
+      <!-- API - Materials & Env Map -->
+      <section id="api-materials">
+        <h2>Materials & Env Mapping <span class="section-anchor">07 // TEXTURES</span></h2>
+        <p>
+          The pipeline supports dedicated materials such as <code class="inline-code">standard</code>, <code class="inline-code">pong</code>, <code class="inline-code">power</code>, <code class="inline-code">water</code>, <code class="inline-code">metal</code>, and <code class="inline-code">mirror</code>.
+        </p>
+        <h3>Highly Configurable Water Parameters</h3>
+        <p>
+          Configure liquid depth, surface crest height, and wave travel parameters dynamically:
+        </p>
+        <pre><code>// Assign deep navy to cyan water with custom wave heights and sharp specular glares
+app.mainRenderBundle[0].updateWaterParams(
+  [0.0, 0.1, 0.3], // Deep Color
+  [0.3, 0.8, 1.0], // Shallow Color
+  1.2,             // Wave speed
+  2.5,             // Wave scale
+  0.3,             // Wave amplitude height
+  2.5,             // Fresnel reflection coefficient
+  100.0            // Specular shiny factor
+);</code></pre>
+        <h3>Standard Mirrored Environments</h3>
+        <pre><code>app.addGlbObj({
+  material: { type: 'mirror' },
+  envMapParams: {
+    baseColorMix: 0.55,
+    mirrorTint: [0.9, 0.95, 1.0],
+    reflectivity: 0.95,
+    illuminateColor: [0.3, 0.7, 1.0],
+    illuminateStrength: 0.1,
+    fresnelPower: 5.0,
+    envLodBias: 2.5,
+    usePlanarReflection: false
+  }
+});</code></pre>
+      </section>
+
+      <!-- API Advanced: Shaders, Videos & Instancing -->
+      <section id="api-advanced">
+        <h2>Instancing & Media <span class="section-anchor">08 // BUFFERS</span></h2>
+        <p>
+          For optimal drawing of repetitive objects, use the <code class="inline-code">MEMeshObjInstances</code> subsystem. It renders massive duplicate structures within single drawing pipelines (supports independent colors, scaling index, and movement offsets):
+        </p>
+        <pre><code>// Populate mesh arrays
+app.addGlbObjInstance({
+  material: { type: "standard", useTextureFromGlb: true },
+  scale: [20, 20, 20],
+  texturesPaths: ["mutant_color.webp"]
+}, null, glbBuffer);
+
+// Translate instanced offset item dynamically
+app.mainRenderBundle[1].instanceTargets[1].position[2] = 10;
+app.mainRenderBundle[1].updateInstances(5); // Sync changes to buffer</code></pre>
+        <h3>Real-time Video Render Streams</h3>
+        <p>
+          You can actively pipe live HTML5 video elements, webcams, or Canvas2D context buffers straight into WebGPU texture samplers at runtime:
+        </p>
+        <pre><code>app.loadVideoTexture({
+  type: "video", // Or type 'camera' / 'canvas2d'
+  src: "res/videos/tunel.mp4"
+});</code></pre>
+      </section>
+
+      <!-- WebRTC Multiplayer Network -->
+      <section id="network">
+        <h2>Multiplayer WebRTC Messaging <span class="section-anchor">09 // CHANNELS</span></h2>
+        <p>
+          Version 1.7.0 embeds out-of-the-box multi-client alignment over dedicated WebRTC signaling channels. Using Kurento/OpenVidu middleware servers, you can sync positions across separate connected browser instances:
+        </p>
+        <pre><code>app.net = new MatrixStream({
+  active: true,
+  domain: "maximumroulette.com",
+  port: 2020,
+  sessionName: "forest-arena",
+  isDataOnly: true,
+  customData: player.data
+});
+
+// Configure automated position broadcast targets
+sceneObject.position.netObject = sceneObject.name;
+sceneObject.rotation.emitY = sceneObject.name;</code></pre>
+      </section>
+
+      <!-- URL Query parameters -->
+      <section id="parameters">
+        <h2>URL Controller Flags <span class="section-anchor">10 // PARAMS</span></h2>
+        <p>
+          Manipulate system-level engine variables directly by passing URL search search variables at runtime. This provides key testing flexibility over mobile client performance levels:
+        </p>
+        <table class="param-table">
+          <thead>
+            <tr>
+              <th>QUERY FLAG</th>
+              <th>DEFAULT VALUE</th>
+              <th>FUNCTIONAL OUTCOME</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>?PHYSICS_GROUND_Y=[num]</td>
+              <td>0</td>
+              <td>Adjusts physical world floor vertical index</td>
+            </tr>
+            <tr>
+              <td>?fs=true</td>
+              <td>false</td>
+              <td>Forces fullscreen client overlays on initialization</td>
+            </tr>
+            <tr>
+              <td>?MAX_BONES=[num]</td>
+              <td>RIG DEFAULT</td>
+              <td>Limits bone weights (Set 0 to optimize mobile rendering)</td>
+            </tr>
+            <tr>
+              <td>?MAX_SPOTLIGHTS=[num]</td>
+              <td>4</td>
+              <td>Limits overall shadow spotlight configurations</td>
+            </tr>
+            <tr>
+              <td>?SHADOW_RES=[num]</td>
+              <td>1024</td>
+              <td>Alters shadow texture resolutions (e.g., 250 for low-end)</td>
+            </tr>
+            <tr>
+              <td>?GRAVITY_Y_AXIS=[num]</td>
+              <td>-9.8</td>
+              <td>Overrides engine physics gravity level</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- Live Demos & API Footer Link Grid -->
+      <div class="links-grid">
+        <a href="https://maximumroulette.com/apps/webgpu/api-docs/" target="_blank" class="btn-action btn-primary" id="api-docs-link">
+          📚 OPEN LIVE API DOCS
+        </a>
+        <a href="https://github.com/zlatnaspirala/matrix-engine-wgpu" target="_blank" class="btn-action" id="github-repo-link">
+          🔗 GITHUB REPOSITORY ↗
+        </a>
+      </div>
+    </main>
   </div>
 
   <script>
@@ -331,7 +840,6 @@ fn main() {
     let activeColor = '#00f3ff';
     let activeRgb = { r: 0, g: 243, b: 255 };
 
-    // Convert hex to rgb helper
     function parseHexToRgb(hex) {
       let c = hex.startsWith('#') ? hex.substring(1) : hex;
       if (c.length === 3) {
@@ -352,7 +860,6 @@ fn main() {
         this.x = Math.random() * width;
         this.y = init ? Math.random() * height : height + 10;
         this.size = Math.random() * 2 + 0.5;
-        // Float upwards and drift sideways
         this.vx = (Math.random() - 0.5) * 0.3;
         this.vy = -(Math.random() * 0.4 + 0.1);
         this.alpha = Math.random() * 0.4 + 0.15;
@@ -365,7 +872,6 @@ fn main() {
         this.x += this.vx;
         this.y += this.vy;
 
-        // Sine drift
         this.pulseTime += this.pulseSpeed;
         this.alpha = this.originalAlpha * (0.6 + 0.4 * Math.sin(this.pulseTime));
 
@@ -396,15 +902,12 @@ fn main() {
       initParticles();
     }
 
-    // Animation Loop
     function animate() {
       requestAnimationFrame(animate);
 
-      // Clear dark slate background
       ctx.fillStyle = '#050505';
       ctx.fillRect(0, 0, width, height);
 
-      // Draw mathematical coordinate grid
       ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.02)`;
       ctx.lineWidth = 1;
       const step = 45;
@@ -421,7 +924,6 @@ fn main() {
         ctx.stroke();
       }
 
-      // Render connected systems mesh
       particles.forEach((p, index) => {
         p.update();
         p.draw();
@@ -432,7 +934,6 @@ fn main() {
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          // Mesh threshold
           if (dist < 110) {
             const alphaFactor = (1 - dist / 110) * 0.15 * Math.min(p.alpha, p2.alpha);
             ctx.beginPath();
@@ -446,7 +947,6 @@ fn main() {
       });
     }
 
-    // Theme color updater based on color parameter from viewport URL query address
     function updateColors() {
       const urlParams = new URLSearchParams(window.location.search);
       const colorParam = urlParams.get('color') || '00f3ff';
@@ -461,7 +961,6 @@ fn main() {
       document.documentElement.style.setProperty('--accent-glow-color', glowStr);
     }
 
-    // Interactive mouse reactions if mouse moves over welcoming frame stage
     window.addEventListener('mousemove', (e) => {
       particles.forEach(p => {
         const dx = p.x - e.clientX;
@@ -470,20 +969,17 @@ fn main() {
         if (dist < 130) {
           const force = (130 - dist) / 130 * 0.4;
           const angle = Math.atan2(dy, dx);
-          // Drift gently away
           p.x += Math.cos(angle) * force;
           p.y += Math.sin(angle) * force;
         }
       });
     });
 
-    // Boot
     window.addEventListener('resize', resizeCanvas);
     updateColors();
     resizeCanvas();
     requestAnimationFrame(animate);
 
-    // Communicate with parent container context
     window.addEventListener('message', (e) => {
       if (e.data && e.data.type === 'THEME_COLOR_UPDATE') {
         const urlParams = new URLSearchParams(window.location.search);
@@ -491,6 +987,18 @@ fn main() {
         window.history.replaceState({}, '', '?' + urlParams.toString());
         updateColors();
       }
+    });
+
+    // Handle smooth scrolling for sidebar links
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   </script>
 </body>

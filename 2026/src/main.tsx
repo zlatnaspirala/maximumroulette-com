@@ -232,7 +232,7 @@ if(root) {
   sourceDropdownWrapper3.className='relative';
 
   const moreDropdownTrigger=document.createElement('button');
-  moreDropdownTrigger.id='source-dropdown-trigger';
+  moreDropdownTrigger.id='more-dropdown-trigger';
   moreDropdownTrigger.className='flex items-center justify-between px-3 py-2 transition-all duration-200 text-white rounded-sm cursor-pointer font-convergence';
   moreDropdownTrigger.style.fontSize='11px';
   moreDropdownTrigger.style.backgroundColor='#0e0e11';
@@ -241,7 +241,7 @@ if(root) {
   moreDropdownTrigger.style.minWidth='180px';
 
   const moreTriggerText=document.createElement('span');
-  moreTriggerText.textContent='SOURCE CODE';
+  moreTriggerText.textContent='SOURCE CODE & CREDITS';
 
   const moreTriggerIcon=document.createElement('span');
   moreTriggerIcon.className='transition-all duration-200';
@@ -268,9 +268,8 @@ if(root) {
   moreDropdownList.style.boxShadow='0 15px 35px rgba(0,0,0,0.8)';
 
   const MORE_LINKS=[
-    { name: 'Matrix Engine WebGPU core', url: 'https://github.com/zlatnaspirala/matrix-engine-wgpu' },
-    { name: 'Matrix Engine WebGL core', url: 'https://github.com/zlatnaspirala/matrix-engine-examples' },
-    { name: 'Matrix Engine WebGL starter', url: 'https://github.com/zlatnaspirala/matrix-engine' },
+    { name: 'About Matrix-Engine-WebGPU', url: '/the-beast.html' },
+    { name: 'Codepen examples', url: 'https://codepen.io/zlatnaspirala/pen/OJZXMWR' },
   ];
 
   MORE_LINKS.forEach(link => {
@@ -280,19 +279,16 @@ if(root) {
 
     itemBtn.addEventListener('click', () => {
       window.open(link.url, '_blank');
-      toggleSourceDropdown(false);
+      toggleMoreDropdown(false);
     });
 
     moreDropdownList.appendChild(itemBtn);
   });
 
-  moreDropdownTrigger.appendChild(moreDropdownTrigger);
-  moreDropdownTrigger.appendChild(moreDropdownList);
-
-  dropdownsContainer.appendChild(demoDropdownWrapper);
-  dropdownsContainer.appendChild(moreDropdownTrigger);
+  sourceDropdownWrapper3.appendChild(moreDropdownTrigger);
+  sourceDropdownWrapper3.appendChild(moreDropdownList);
+  dropdownsContainer.appendChild(sourceDropdownWrapper3);
   // --- end 
-
 
   // Theme control/Colors & Motivation (Right side)
   const rightContainer=document.createElement('div');
@@ -342,10 +338,9 @@ if(root) {
   root.appendChild(mainViewport);
 
 
-  // --- INTERACTION LOGIC (PURE TS, 0 RUNTIME DEPENDENCY) ---
-
   let isDemoDropdownOpen=false;
   let isSourceDropdownOpen=false;
+  let isMoreDropdownOpen=false;
 
   function toggleDemoDropdown(open?: boolean) {
     const targetState=typeof open==='boolean'? open:!isDemoDropdownOpen;
@@ -353,6 +348,7 @@ if(root) {
 
     if(isDemoDropdownOpen) {
       if(isSourceDropdownOpen) toggleSourceDropdown(false);
+      if(isMoreDropdownOpen) toggleMoreDropdown(false);
       demoDropdownList.classList.remove('opacity-0', 'pointer-events-none');
       demoDropdownList.classList.add('opacity-100', 'pointer-events-auto');
       demoDropdownList.style.transform='translateX(-50%) scale(1)';
@@ -375,6 +371,7 @@ if(root) {
 
     if(isSourceDropdownOpen) {
       if(isDemoDropdownOpen) toggleDemoDropdown(false);
+      if(isMoreDropdownOpen) toggleMoreDropdown(false);
       sourceDropdownList.classList.remove('opacity-0', 'pointer-events-none');
       sourceDropdownList.classList.add('opacity-100', 'pointer-events-auto');
       sourceDropdownList.style.transform='translateX(-50%) scale(1)';
@@ -391,6 +388,28 @@ if(root) {
     }
   }
 
+  function toggleMoreDropdown(open?: boolean) {
+    const targetState=typeof open==='boolean'? open:!isMoreDropdownOpen;
+    isMoreDropdownOpen=targetState;
+
+    if(isMoreDropdownOpen) {
+      if(isDemoDropdownOpen) toggleDemoDropdown(false);
+      if(isSourceDropdownOpen) toggleSourceDropdown(false);
+      moreDropdownList.classList.remove('opacity-0', 'pointer-events-none');
+      moreDropdownList.classList.add('opacity-100', 'pointer-events-auto');
+      moreDropdownList.style.transform='translateX(-50%) scale(1)';
+      moreTriggerIcon.style.color=currentThemeColor;
+      moreTriggerIcon.style.transform='rotate(180deg)';
+      moreDropdownTrigger.style.borderColor=currentThemeColor;
+    } else {
+      moreDropdownList.classList.remove('opacity-100', 'pointer-events-auto');
+      moreDropdownList.classList.add('opacity-0', 'pointer-events-none');
+      moreDropdownList.style.transform='translateX(-50%) scale(0.95)';
+      moreTriggerIcon.style.color='#52525b';
+      moreTriggerIcon.style.transform='rotate(0deg)';
+      moreDropdownTrigger.style.borderColor='#1a1a1f';
+    }
+  }
   // Toggle active menu dropdown triggers
   demoDropdownTrigger.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -400,6 +419,11 @@ if(root) {
   sourceDropdownTrigger.addEventListener('click', (e) => {
     e.stopPropagation();
     toggleSourceDropdown();
+  });
+
+  moreDropdownTrigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMoreDropdown();
   });
 
   // Close when browser registers outside click
@@ -621,6 +645,10 @@ if(root) {
     if(isDemoDropdownOpen) {
       demoTriggerIcon.style.color=color;
       demoDropdownTrigger.style.borderColor=color;
+    }
+    if(isSourceDropdownOpen) {
+      sourceTriggerIcon.style.color=color;
+      sourceDropdownTrigger.style.borderColor=color;
     }
     if(isSourceDropdownOpen) {
       sourceTriggerIcon.style.color=color;
