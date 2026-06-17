@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       background-color: #050505;
       color: #cbd5e1;
@@ -29,13 +30,35 @@
       padding: 40px 20px;
     }
 
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+      border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent-color, #00f3ff);
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: background 0.2s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-color, #00f3ff);
+      filter: brightness(1.2);
+    }
+
     /* Background dots pattern */
     .net-background {
       position: fixed;
       inset: 0;
       opacity: 0.12;
       pointer-events: none;
-      background-image: 
+      background-image:
         radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
         linear-gradient(rgba(20, 20, 25, 0.4) 1px, transparent 1px);
       background-size: 24px 24px, 100% 4px;
@@ -128,10 +151,30 @@
       opacity: 0.5;
       transition: border-color 0.4s ease;
     }
-    .top-left { top: 12px; left: 12px; border-width: 1px 0 0 1px; }
-    .top-right { top: 12px; right: 12px; border-width: 1px 1px 0 0; }
-    .bottom-left { bottom: 12px; left: 12px; border-width: 0 0 1px 1px; }
-    .bottom-right { bottom: 12px; right: 12px; border-width: 0 1px 1px 0; }
+
+    .top-left {
+      top: 12px;
+      left: 12px;
+      border-width: 1px 0 0 1px;
+    }
+
+    .top-right {
+      top: 12px;
+      right: 12px;
+      border-width: 1px 1px 0 0;
+    }
+
+    .bottom-left {
+      bottom: 12px;
+      left: 12px;
+      border-width: 0 0 1px 1px;
+    }
+
+    .bottom-right {
+      bottom: 12px;
+      right: 12px;
+      border-width: 0 1px 1px 0;
+    }
 
     /* Typography */
     h1 {
@@ -185,7 +228,7 @@
     .section-anchor {
       font-size: 10px;
       font-family: 'JetBrains Mono', monospace;
-      color: rgba(255,255,255,0.2);
+      color: rgba(255, 255, 255, 0.2);
     }
 
     h3 {
@@ -311,6 +354,7 @@
       .view-wrapper {
         grid-template-columns: 1fr;
       }
+
       .spec-sidebar {
         position: relative;
         top: 0;
@@ -322,12 +366,14 @@
       h1 {
         font-size: 28px;
       }
+
       .container {
         padding: 30px 18px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="net-background" id="net-bg"></div>
   <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas>
@@ -389,7 +435,8 @@
         <div class="asset-block">
           <h4>Ray Tracing & Graphics Book Guides</h4>
           <p>
-            The basic OBJ layout structures are modeled from the <a href="http://math.hws.edu/graphicsbook/source/webgl/cube-camera.html" target="_blank">Mathematical HWS Cube-Camera WebGL</a> examples, while the raw mathematical Ray Casting steps are inspired by the <a href="https://maierfelix.github.io/2020-01-13-webgpu-ray-tracing/" target="_blank">Maier Felix WebGPU Ray Tracing Index</a>.
+            The basic OBJ layout structures are modeled from the <a href="http://math.hws.edu/graphicsbook/source/webgl/cube-camera.html" target="_blank">Mathematical HWS Cube-Camera WebGL</a> examples, while the raw mathematical Ray Casting steps are inspired by the <a
+              href="https://maierfelix.github.io/2020-01-13-webgpu-ray-tracing/" target="_blank">Maier Felix WebGPU Ray Tracing Index</a>.
           </p>
         </div>
       </section>
@@ -411,7 +458,8 @@
         <div class="asset-block">
           <h4>Glow Shaders & WebGL2 Fundamentals</h4>
           <p>
-            The shadow GLSL mathematics and fragment shader structures map logic from <a href="https://webgl2fundamentals.org/webgl/lessons/webgl-shadows.html" target="_blank">WebGL2 Fundamentals</a> and the <a href="https://webgl-shaders.com/shaders/frag-lens.glsl" target="_blank">WebGL Frag Lens Shader</a> collection.
+            The shadow GLSL mathematics and fragment shader structures map logic from <a href="https://webgl2fundamentals.org/webgl/lessons/webgl-shadows.html" target="_blank">WebGL2 Fundamentals</a> and the <a href="https://webgl-shaders.com/shaders/frag-lens.glsl" target="_blank">WebGL Frag Lens
+              Shader</a> collection.
           </p>
         </div>
 
@@ -466,20 +514,22 @@
       <!-- License Texts -->
       <section id="licenses">
         <h2>System Licensing & Terms <span class="section-anchor">05 // LICENSE</span></h2>
-        
+
         <h3>BSD 3-Clause License (WebGPU Samples adaptation)</h3>
         <p>
           Adapted algorithms and shadow matrices are distributed under BSD 3-Clause parameters:
         </p>
         <div class="license-box">Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+          1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+          2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+          3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</div>
+          THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+          CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+          WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</div>
 
         <h3>MIT License & Shaders</h3>
         <p>
@@ -581,17 +631,17 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     let width = 0;
     let height = 0;
     let activeColor = '#00f3ff';
-    let activeRgb = { r: 0, g: 243, b: 255 };
+    let activeRgb = {r: 0, g: 243, b: 255};
 
     function parseHexToRgb(hex) {
       let c = hex.startsWith('#') ? hex.substring(1) : hex;
-      if (c.length === 3) {
+      if(c.length === 3) {
         c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
       }
       const r = parseInt(c.slice(0, 2), 16) || 0;
       const g = parseInt(c.slice(2, 4), 16) || 0;
       const b = parseInt(c.slice(4, 6), 16) || 0;
-      return { r, g, b };
+      return {r, g, b};
     }
 
     class Particle {
@@ -618,7 +668,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
         this.pulseTime += this.pulseSpeed;
         this.alpha = this.originalAlpha * (0.6 + 0.4 * Math.sin(this.pulseTime));
 
-        if (this.y < -10 || this.x < -10 || this.x > width + 10) {
+        if(this.y < -10 || this.x < -10 || this.x > width + 10) {
           this.reset(false);
         }
       }
@@ -634,7 +684,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     function initParticles() {
       const targetCount = Math.min(65, Math.floor((width * height) / 14000));
       particles = [];
-      for (let i = 0; i < targetCount; i++) {
+      for(let i = 0;i < targetCount;i++) {
         particles.push(new Particle());
       }
     }
@@ -654,13 +704,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       ctx.strokeStyle = `rgba(${activeRgb.r}, ${activeRgb.g}, ${activeRgb.b}, 0.02)`;
       ctx.lineWidth = 1;
       const step = 45;
-      for (let x = 0; x < width; x += step) {
+      for(let x = 0;x < width;x += step) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
         ctx.lineTo(x, height);
         ctx.stroke();
       }
-      for (let y = 0; y < height; y += step) {
+      for(let y = 0;y < height;y += step) {
         ctx.beginPath();
         ctx.moveTo(0, y);
         ctx.lineTo(width, y);
@@ -671,13 +721,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
         p.update();
         p.draw();
 
-        for (let j = index + 1; j < particles.length; j++) {
+        for(let j = index + 1;j < particles.length;j++) {
           const p2 = particles[j];
           const dx = p.x - p2.x;
           const dy = p.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 110) {
+          if(dist < 110) {
             const alphaFactor = (1 - dist / 110) * 0.15 * Math.min(p.alpha, p2.alpha);
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
@@ -694,7 +744,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
       const urlParams = new URLSearchParams(window.location.search);
       const colorParam = urlParams.get('color') || '00f3ff';
       const cleanHex = colorParam.startsWith('#') ? colorParam : '#' + colorParam;
-      
+
       activeColor = cleanHex;
       activeRgb = parseHexToRgb(cleanHex);
 
@@ -709,7 +759,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
         const dx = p.x - e.clientX;
         const dy = p.y - e.clientY;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 130) {
+        if(dist < 130) {
           const force = (130 - dist) / 130 * 0.4;
           const angle = Math.atan2(dy, dx);
           p.x += Math.cos(angle) * force;
@@ -724,7 +774,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     requestAnimationFrame(animate);
 
     window.addEventListener('message', (e) => {
-      if (e.data && e.data.type === 'THEME_COLOR_UPDATE') {
+      if(e.data && e.data.type === 'THEME_COLOR_UPDATE') {
         const urlParams = new URLSearchParams(window.location.search);
         urlParams.set('color', e.data.color.replace('#', ''));
         window.history.replaceState({}, '', '?' + urlParams.toString());
@@ -738,11 +788,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+        if(targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth'});
         }
       });
     });
   </script>
 </body>
+
 </html>

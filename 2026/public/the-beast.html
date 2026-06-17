@@ -15,12 +15,19 @@
       padding: 0;
     }
 
+    html {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+
     body {
       background-color: #050505;
       color: #cbd5e1;
       font-family: 'Radio Canada', sans-serif;
       min-height: 100vh;
-      width: 100vw;
+      width: 100%;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -28,6 +35,28 @@
       overflow-x: hidden;
       overflow-y: auto;
       padding: 40px 20px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+      border-left: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--accent-color, #00f3ff);
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: background 0.2s ease;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-color, #00f3ff);
+      filter: brightness(1.2);
     }
 
     /* Background dots pattern */
@@ -50,7 +79,7 @@
       max-width: 1100px;
       width: 100%;
       display: grid;
-      grid-template-columns: 260px 1fr;
+      grid-template-columns: 260px minmax(0, 1fr);
       gap: 30px;
       margin-top: 20px;
     }
@@ -110,6 +139,7 @@
 
     /* Content Card */
     .container {
+      position: relative;
       background-color: rgba(9, 9, 11, 0.94);
       border: 1px solid rgba(255, 255, 255, 0.04);
       border-radius: 4px;
@@ -117,6 +147,9 @@
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(12px);
       transition: border-color 0.4s ease;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
     }
 
     /* Corner design hints */
@@ -202,6 +235,27 @@
 
     .meta-item strong {
       color: var(--accent-color, #00f3ff);
+    }
+
+    /* Project Logo Image styling with subtle scale zoom on hover */
+    .project-image-container {
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin: 15px 0 25px 0;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .project-image-container:hover img {
+      transform: scale(1.015);
     }
 
     .divider {
@@ -357,6 +411,7 @@
       padding: 18px;
       margin: 18px 0;
       overflow-x: auto;
+      max-width: 100%;
       color: #cbd5e1;
       position: relative;
     }
@@ -494,6 +549,7 @@
     @media (max-width: 900px) {
       .view-wrapper {
         grid-template-columns: 1fr;
+        width: 100%;
       }
 
       .spec-sidebar {
@@ -510,32 +566,57 @@
 
       .container {
         padding: 30px 18px;
+        width: 100%;
       }
 
       .links-grid {
         grid-template-columns: 1fr;
       }
+
+      .grid-features {
+        grid-template-columns: 1fr;
+      }
     }
 
-    /* Project Logo Image styling with subtle scale zoom on hover */
-    .project-image-container {
-      width: 100%;
-      border-radius: 4px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      margin: 15px 0 25px 0;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px;
+      }
 
-    .project-image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.6s ease;
-    }
+      .container {
+        padding: 24px 12px;
+      }
 
-    .project-image-container:hover img {
-      transform: scale(1.5);
+      h1 {
+        font-size: 24px;
+        letter-spacing: 0.05em;
+      }
+
+      .subtitle {
+        font-size: 10px;
+      }
+
+      h2 {
+        font-size: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .spec-sidebar {
+        padding: 16px 12px;
+      }
+
+      pre {
+        padding: 12px;
+        font-size: 11px;
+      }
+
+      .param-table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -579,7 +660,7 @@
       </div>
 
       <h1>matrix-engine-wgpu</h1>
-      <div class="subtitle" id="subtitle">High Performance WebGPU Engine</div>
+      <div class="subtitle" id="subtitle">High Performance Rust & WebGPU Engine</div>
 
       <div class="project-meta">
         <div class="meta-item">🧑‍💻 <strong>Author:</strong> Nikola Lukić</div>
@@ -588,17 +669,23 @@
         <div class="meta-item">🚀 <strong>Version:</strong> <span class="badge-version">v1.11.3</span></div>
       </div>
 
+      <!-- High precision 3D Graphic Generated Banner -->
+      <div class="project-image-container">
+        <img src="/images/512.webp" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
+      </div>
+
       <div class="divider"></div>
 
       <!-- Introduction Section -->
       <section id="introduction">
         <h2>Engine Overview <span class="section-anchor">01 // INTRODUCTION</span></h2>
         <p>
-          The <strong class="badge-webgpu">matrix-engine-wgpu</strong> is a stable, high-performance, and continually evolving WebGPU rendering platform written in JavaScript. Inspired by the designs of the original WebGL-based matrix-engine, it has been fully rebuilt from the ground up for the
+          The <strong class="badge-webgpu">matrix-engine-wgpu</strong> is a stable, high-performance, and continually evolving WebGPU rendering platform written in Rust. Inspired by the designs of the original WebGL-based matrix-engine, it has been fully rebuilt from the ground up for the
           next-generation WebGPU hardware standard.
         </p>
         <p>
-          By dropping legacy gl-matrix bindings in favor of the optimized <code class="inline-code">wgpu-matrix</code> mathematical pipeline, "The Beast" handles heavy model-view-projection translations with absolute memory spatial layout maps and minimal thread latency. It compiles smoothly across all supported web targets via WASM specially mobile devices.
+          By dropping legacy gl-matrix bindings in favor of the optimized <code class="inline-code">wgpu-matrix</code> mathematical pipeline, "The Beast" handles heavy model-view-projection translations with absolute memory spatial layout maps and minimal thread latency. It compiles smoothly across
+          native client drivers (Vulkan, Metal, Direct3D 12) or to web targets via WASM.
         </p>
       </section>
 
@@ -606,7 +693,7 @@
       <section id="benchmarks">
         <h2>Architecture Specs <span class="section-anchor">02 // STABLE FEATURES</span></h2>
         <p>
-          The graphics core orchestrates buffers and shaders elegantly to deliver peak rendering optimization across standard desktop environments including Chrome, Edge, Firefox(desktop) and Opera <em>(Note: v1.1x.0 Firefox pipeline renders are currently undergoing active optimization)</em>.
+          The graphics core orchestrates buffers and shaders elegantly to deliver peak rendering optimization across standard desktop environments including Chrome, Edge, and Opera <em>(Note: v1.1x.0 Firefox pipeline renders are currently undergoing active optimization)</em>.
         </p>
 
         <div class="grid-features">
@@ -621,7 +708,7 @@
             <span class="icon">⚛️</span>
             <div class="feature-card-content">
               <h4>Offloaded Web-Worker Physics</h4>
-              <p>Built-in integrations for Ammo.js, cannonES, matterjs and Jolt Physics engines. Physics computations are performed cleanly via secondary worker threads to prevent main thread blocking.</p>
+              <p>Built-in integrations for Ammo.js, cannonES, and Jolt Physics engines. Physics computations are performed cleanly via secondary worker threads to prevent main thread blocking.</p>
             </div>
           </div>
           <div class="feature-card">
@@ -643,7 +730,7 @@
 
       <!-- FluxCodex Scripting suite -->
       <section id="editorx">
-        <h2>FluxCodexVertex Scripting <span class="section-anchor">03 // FLOW_EDITORS</span></h2>
+        <h2>FluxCodex Scripting <span class="section-anchor">03 // FLOW_EDITORS</span></h2>
         <p>
           Available when executing the workspace environment directly from source using the alias <code class="inline-code">npm run editorx</code>, Nikola Lukić's platform features two dual-graph visual node environments designed for rapid prototype flows:
         </p>
@@ -656,39 +743,6 @@
         <p>
           Saved layouts are cached directly on localStorage or outputted to physical filesystem JSON descriptors, compiling to clean JS nodes injected into target runtimes.
         </p>
-
-        <p> FluxCodexVertex Editor API Docs
-          Creating project
-          Clone engine from https://github.com/zlatnaspirala/matrix-engine-wgpu (Must be from source no support for npm i matrix-engine-wgpu).
-          Run npm i intro root folder also in src/tools/editor/backend/
-          Run npm run editorx
-          Run local any web server (like xampp) Go to https://localhost/PATH_TO_ENGINE./public/ or if you wanna web server from engine with npm run hosts and navigate to http://127.0.0.1:3000/matrix-engine.html
-          Editor is visible on startup if you hide editor after that Pressing F4 to make editor visible again.
-        </p>
-
-        <div class="project-image-container">
-          <img src="/assets/images/onLoad.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
-
-        <div class="project-image-container">
-          <img src="/assets/images/getSubObject.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
-
-        <div class="project-image-container">
-          <img src="/assets/images/oscilator.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
-
-        <div class="project-image-container">
-          <img src="/assets/images/onkey.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
-
-        <div class="project-image-container">
-          <img src="/assets/images/onDraw.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
-        
-        <div class="project-image-container">
-          <img src="/assets/images/visual-scripting-math.png" alt="matrix-engine-wgpu Technical Architecture Banner" referrerPolicy="no-referrer">
-        </div>
       </section>
 
       <!-- API - Scene & Camera -->

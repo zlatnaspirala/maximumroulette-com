@@ -19,11 +19,11 @@ const LINKS: MenuLink[]=[
   { name: 'FPS based on three.js', url: 'https://maximumroulette.com/apps/magic/public/module.html' },
 ];
 
-const THEME_COLORS=[
-  { name: 'cyan', color: '#00f3ff' },
-  { name: 'pink', color: '#ff007f' },
-  { name: 'green', color: '#39ff14' },
-];
+// const THEME_COLORS=[
+//   { name: 'cyan', color: '#00f3ff' },
+//   { name: 'pink', color: '#ff007f' },
+//   { name: 'green', color: '#39ff14' },
+// ];
 
 let activeLinkId=LINKS[0].name;
 let currentThemeColor='#00f3ff';
@@ -43,18 +43,13 @@ function hexToRgbValues(hex: string): string {
 const root=document.getElementById('root');
 if(root) {
   root.textContent='';
-  // Zero framework wrapper
   root.className='w-screen h-screen flex flex-col overflow-hidden';
-
-  // --- HEADER ELEMENT ---
   const header=document.createElement('header');
   header.id='app-header';
-  header.className='relative z-50 w-full h-16 flex items-center justify-between px-6 select-none';
-
+  header.className='relative z-50 w-full h-16 flex items-center justify-between select-none';
   // Brand (Left side)
   const brandContainer=document.createElement('div');
   brandContainer.className='flex items-center space-x-3';
-
   // Real-time custom neon light
   const neonCircle=document.createElement('div');
   neonCircle.id='neon-circle-tag';
@@ -75,7 +70,7 @@ if(root) {
   const subtitleNode=document.createElement('span');
   subtitleNode.className='text-[#52525b] uppercase font-convergence';
   subtitleNode.style.fontSize='9px';
-  subtitleNode.textContent='Graphics Programmer - focus on web';
+  subtitleNode.textContent='Graphics Programmer';
 
   textGroup.appendChild(titleNode);
   textGroup.appendChild(subtitleNode);
@@ -98,7 +93,8 @@ if(root) {
   demoDropdownTrigger.style.backgroundColor='#0e0e11';
   demoDropdownTrigger.style.border='1px solid #1a1a1f';
   demoDropdownTrigger.style.outline='none';
-  // demoDropdownTrigger.style.minWidth='180px';
+  demoDropdownTrigger.style.marginRight='5px';
+  demoDropdownTrigger.style.minWidth='90px';
 
   const demoTriggerText=document.createElement('span');
   demoTriggerText.textContent=LINKS[0].name;
@@ -145,92 +141,10 @@ if(root) {
 
   demoDropdownWrapper.appendChild(demoDropdownTrigger);
   demoDropdownWrapper.appendChild(demoDropdownList);
-
-
-  // --- DROPDOWN 2: SOURCE CODE REPOSITORIES ---
-  const sourceDropdownWrapper=document.createElement('div');
-  sourceDropdownWrapper.className='relative';
-
-  const sourceDropdownTrigger=document.createElement('button');
-  sourceDropdownTrigger.id='source-dropdown-trigger';
-  sourceDropdownTrigger.className='flex items-center justify-between px-3 py-2 transition-all duration-200 text-white rounded-sm cursor-pointer font-convergence';
-  sourceDropdownTrigger.style.fontSize='11px';
-  sourceDropdownTrigger.style.backgroundColor='#0e0e11';
-  sourceDropdownTrigger.style.border='1px solid #1a1a1f';
-  sourceDropdownTrigger.style.outline='none';
-  // sourceDropdownTrigger.style.minWidth='180px';
-
-  const sourceTriggerText=document.createElement('span');
-  sourceTriggerText.textContent='SOURCE CODE';
-
-  const sourceTriggerIcon=document.createElement('span');
-  sourceTriggerIcon.className='transition-all duration-200';
-  sourceTriggerIcon.style.color='#52525b';
-  sourceTriggerIcon.style.fontSize='9px';
-  sourceTriggerIcon.style.marginLeft='8px';
-  sourceTriggerIcon.textContent='▼';
-
-  sourceDropdownTrigger.appendChild(sourceTriggerText);
-  sourceDropdownTrigger.appendChild(sourceTriggerIcon);
-
-  // Dropdown list container for sources
-  const sourceDropdownList=document.createElement('div');
-  sourceDropdownList.className='absolute transition-all duration-150 scale-95 opacity-0 pointer-events-none';
-  sourceDropdownList.style.top='100%';
-  sourceDropdownList.style.left='50%';
-  sourceDropdownList.style.transform='translateX(-50%) scale(0.95)';
-  sourceDropdownList.style.marginTop='8px';
-  sourceDropdownList.style.width='210px';
-  sourceDropdownList.style.backgroundColor='#0a0a0d';
-  sourceDropdownList.style.border='1px solid #1d1d2b';
-  sourceDropdownList.style.borderRadius='2px';
-  sourceDropdownList.style.padding='4px 0';
-  sourceDropdownList.style.boxShadow='0 15px 35px rgba(0,0,0,0.8)';
-
-  const SOURCE_LINKS=[
-    { name: 'Matrix Engine WebGPU core', url: 'https://github.com/zlatnaspirala/matrix-engine-wgpu' },
-    { name: 'Matrix Engine WebGL core', url: 'https://github.com/zlatnaspirala/matrix-engine-examples' },
-    { name: 'Matrix Engine WebGL starter', url: 'https://github.com/zlatnaspirala/matrix-engine' },
-    { name: 'Visual-ts-game-engine (matter.ts)', url: 'https://github.com/zlatnaspirala/visual-ts-game-engine' },
-    { name: 'All UE4 projects vs Nodejs/MongoDB Source', url: 'https://github.com/RocketCraftingServer' },
-    { name: 'NUI-commander', url: 'https://github.com/zlatnaspirala/nui-commander' },
-    { name: 'MagicTree Based on Three.js', url: 'https://github.com/zlatnaspirala/magic-three' },
-    { name: 'My 3d youtube Based on Three.js', url: 'https://github.com/zlatnaspirala/vuletube' },
-    { name: 'My first JS online editor (historical)', url: 'https://github.com/zlatnaspirala/visualjs' },
-    { name: 'Server part for web page - remote control based on c#', url: 'https://github.com/zlatnaspirala/ActaNonVerba' },
-    { name: 'bvh-loader', url: 'https://github.com/zlatnaspirala/bvh-loader' },
-    { name: 'Visual editor based on kivi python ', url: 'https://github.com/zlatnaspirala/cross-k' },
-    { name: '2d map Creator for visual-ts', url: 'https://github.com/zlatnaspirala/creator-2dmap' },
-    { name: 'Audio vs canvas2d', url: 'https://jsfiddle.net/zlatnaspirala/ye2h2cgt/39/' },
-    { name: 'Physics vs webcam', url: 'https://codepen.io/zlatnaspirala/pen/wvJapLm' },
-    { name: '3d anatomy native (only for window/exe)', url: 'https://maximumroulette.com/downloads/UA0.2free/UAinstaller.rar' },
-    { name: 'Portfolio Source', url: 'https://github.com/zlatnaspirala/maximumroulette-com' },
-    { name: 'All GitHub Repos', url: 'https://github.com/zlatnaspirala' }
-  ];
-
-  SOURCE_LINKS.forEach(link => {
-    const itemBtn=document.createElement('button');
-    itemBtn.className='dropdown-item';
-    itemBtn.textContent=link.name;
-
-    itemBtn.addEventListener('click', () => {
-      window.open(link.url, '_blank');
-      toggleSourceDropdown(false);
-    });
-
-    sourceDropdownList.appendChild(itemBtn);
-  });
-
-  sourceDropdownWrapper.appendChild(sourceDropdownTrigger);
-  sourceDropdownWrapper.appendChild(sourceDropdownList);
-
   dropdownsContainer.appendChild(demoDropdownWrapper);
-  dropdownsContainer.appendChild(sourceDropdownWrapper);
-
   // More
   const sourceDropdownWrapper3=document.createElement('div');
   sourceDropdownWrapper3.className='relative';
-
   const moreDropdownTrigger=document.createElement('button');
   moreDropdownTrigger.id='more-dropdown-trigger';
   moreDropdownTrigger.className='flex items-center justify-between px-3 py-2 transition-all duration-200 text-white rounded-sm cursor-pointer font-convergence';
@@ -238,10 +152,9 @@ if(root) {
   moreDropdownTrigger.style.backgroundColor='#0e0e11';
   moreDropdownTrigger.style.border='1px solid #1a1a1f';
   moreDropdownTrigger.style.outline='none';
-  // moreDropdownTrigger.style.minWidth='180px';
-
+  moreDropdownTrigger.style.minWidth='90px';
   const moreTriggerText=document.createElement('span');
-  moreTriggerText.textContent='SOURCE CODE & CREDITS';
+  moreTriggerText.textContent='CREDITS';
 
   const moreTriggerIcon=document.createElement('span');
   moreTriggerIcon.className='transition-all duration-200';
@@ -268,10 +181,11 @@ if(root) {
   moreDropdownList.style.boxShadow='0 15px 35px rgba(0,0,0,0.8)';
 
   const MORE_LINKS=[
-    { name: 'About Matrix-Engine-WebGPU', url: '/the-beast.html' },
-    { name: 'goldenspiral.itch.io', url: 'https://goldenspiral.itch.io' },
-    { name: 'Codepen examples', url: 'https://codepen.io/zlatnaspirala/pen/OJZXMWR' },
-    { name: 'Credits&&Licence', url: '/credits.html' },
+    { name: 'About Matrix-Engine-WebGPU', url: '/the-beast.html', newtab: false },
+    { name: 'itch.io ↗️', url: 'https://goldenspiral.itch.io', newtab: true },
+    { name: 'Codepen ↗️', url: 'https://codepen.io/zlatnaspirala/pen/OJZXMWR', newtab: true },
+    { name: 'Source code', url: '/source.html', newtab: false },
+    { name: 'Credits', url: '/credits.html', newtab: false },
   ];
 
   MORE_LINKS.forEach(link => {
@@ -280,7 +194,13 @@ if(root) {
     itemBtn.textContent=link.name;
 
     itemBtn.addEventListener('click', () => {
-      window.open(link.url, '_blank');
+      if(link.newtab===true) {
+        window.open(link.url, '_blank');
+      } else {
+        loadIframeSource(link.name, link.url);
+        toggleDemoDropdown(false);
+        toggleMoreDropdown(false);
+      }
       toggleMoreDropdown(false);
     });
 
@@ -335,7 +255,6 @@ if(root) {
   mainViewport.appendChild(viewportIframe);
   mainViewport.addEventListener('click', (e) => {
     toggleDemoDropdown(false);
-    toggleSourceDropdown(false);
     toggleMoreDropdown(false);
   });
 
@@ -353,7 +272,6 @@ if(root) {
     isDemoDropdownOpen=targetState;
 
     if(isDemoDropdownOpen) {
-      if(isSourceDropdownOpen) toggleSourceDropdown(false);
       if(isMoreDropdownOpen) toggleMoreDropdown(false);
       demoDropdownList.classList.remove('opacity-0', 'pointer-events-none');
       demoDropdownList.classList.add('opacity-100', 'pointer-events-auto');
@@ -371,36 +289,12 @@ if(root) {
     }
   }
 
-  function toggleSourceDropdown(open?: boolean) {
-    const targetState=typeof open==='boolean'? open:!isSourceDropdownOpen;
-    isSourceDropdownOpen=targetState;
-
-    if(isSourceDropdownOpen) {
-      if(isDemoDropdownOpen) toggleDemoDropdown(false);
-      if(isMoreDropdownOpen) toggleMoreDropdown(false);
-      sourceDropdownList.classList.remove('opacity-0', 'pointer-events-none');
-      sourceDropdownList.classList.add('opacity-100', 'pointer-events-auto');
-      sourceDropdownList.style.transform='translateX(-50%) scale(1)';
-      sourceTriggerIcon.style.color=currentThemeColor;
-      sourceTriggerIcon.style.transform='rotate(180deg)';
-      sourceDropdownTrigger.style.borderColor=currentThemeColor;
-    } else {
-      sourceDropdownList.classList.remove('opacity-100', 'pointer-events-auto');
-      sourceDropdownList.classList.add('opacity-0', 'pointer-events-none');
-      sourceDropdownList.style.transform='translateX(-50%) scale(0.95)';
-      sourceTriggerIcon.style.color='#52525b';
-      sourceTriggerIcon.style.transform='rotate(0deg)';
-      sourceDropdownTrigger.style.borderColor='#1a1a1f';
-    }
-  }
-
   function toggleMoreDropdown(open?: boolean) {
     const targetState=typeof open==='boolean'? open:!isMoreDropdownOpen;
     isMoreDropdownOpen=targetState;
 
     if(isMoreDropdownOpen) {
       if(isDemoDropdownOpen) toggleDemoDropdown(false);
-      if(isSourceDropdownOpen) toggleSourceDropdown(false);
       moreDropdownList.classList.remove('opacity-0', 'pointer-events-none');
       moreDropdownList.classList.add('opacity-100', 'pointer-events-auto');
       moreDropdownList.style.transform='translateX(-50%) scale(1)';
@@ -422,11 +316,6 @@ if(root) {
     toggleDemoDropdown();
   });
 
-  sourceDropdownTrigger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleSourceDropdown();
-  });
-
   moreDropdownTrigger.addEventListener('click', (e) => {
     e.stopPropagation();
     toggleMoreDropdown();
@@ -435,7 +324,6 @@ if(root) {
   document.addEventListener('click', (e) => {
     e.stopPropagation();
     if(isDemoDropdownOpen) toggleDemoDropdown(false);
-    if(isSourceDropdownOpen) toggleSourceDropdown(false);
     if(isMoreDropdownOpen) toggleMoreDropdown(false);
   })
 
@@ -547,54 +435,56 @@ if(root) {
     });
   }
 
+
   // Build the minimalist Cookies and Terms Consent Banner
   function renderCookieConsentBanner() {
-    const cookiesAccepted=localStorage.getItem('nikola_portfolio_cookies_accepted');
-    if(cookiesAccepted) return;
+    const cookiesAccepted = localStorage.getItem('nikola_portfolio_cookies_accepted');
+    if (cookiesAccepted) return;
 
-    const cookieBanner=document.createElement('div');
-    cookieBanner.id='cookie-consent-banner';
-    cookieBanner.className='fixed transition-all duration-300 transform translate-y-20 opacity-0 z-50 flex flex-col sm:flex-row items-center justify-between p-4 px-6 gap-4';
-    cookieBanner.style.bottom='16px';
-    cookieBanner.style.right='16px';
-    cookieBanner.style.maxWidth='420px';
-    cookieBanner.style.width='calc(100% - 32px)';
-    cookieBanner.style.backgroundColor='#08080c';
-    cookieBanner.style.border=`1px solid ${currentThemeColor}`;
-    cookieBanner.style.borderRadius='2px';
-    cookieBanner.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.9)';
-
+    const cookieBanner = document.createElement('div');
+    cookieBanner.id = 'cookie-consent-banner';
+    cookieBanner.className = 'absolute transition-all duration-300 transform translate-y-20 opacity-0 z-50 flex flex-col sm:flex-row items-center justify-between p-4 px-6 gap-4';
+    cookieBanner.style.position = 'absolute';
+    cookieBanner.style.bottom = '16px';
+    cookieBanner.style.right = '16px';
+    cookieBanner.style.maxWidth = '420px';
+    cookieBanner.style.width = 'calc(100% - 32px)';
+    cookieBanner.style.backgroundColor = '#08080c';
+    cookieBanner.style.border = `1px solid ${currentThemeColor}`;
+    cookieBanner.style.borderRadius = '2px';
+    cookieBanner.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.9)';
+    
     // Left section text & links
-    const textAndLinksGroup=document.createElement('div');
-    textAndLinksGroup.className='flex flex-col gap-1.5 pr-2';
+    const textAndLinksGroup = document.createElement('div');
+    textAndLinksGroup.className = 'flex flex-col gap-1.5 pr-2';
+    
+    const bannerText = document.createElement('p');
+    bannerText.className = 'font-convergence leading-normal text-[#e0e0e0]';
+    bannerText.style.fontSize = '9px';
+    bannerText.textContent = 'This graphics portfolio uses cookies to preserve visual theme profiles and experience levels. By continuing, you agree.';
 
-    const bannerText=document.createElement('p');
-    bannerText.className='font-convergence leading-normal text-[#e0e0e0]';
-    bannerText.style.fontSize='9px';
-    bannerText.textContent='This graphics portfolio uses cookies to preserve visual theme profiles and experience levels. By continuing, you agree.';
-
-    const linksRow=document.createElement('div');
-    linksRow.className='flex items-center gap-3';
-
-    const termsLink=document.createElement('button');
-    termsLink.className='font-mono text-[#ffffff] hover:text-white transition-all cursor-pointer';
-    termsLink.style.fontSize='8px';
-    termsLink.style.textDecoration='underline';
-    termsLink.style.border='none';
-    termsLink.style.background='transparent';
-    termsLink.textContent='TERMS OF USE';
+    const linksRow = document.createElement('div');
+    linksRow.className = 'flex items-center gap-3';
+    
+    const termsLink = document.createElement('button');
+    termsLink.className = 'font-mono text-[#71717a] hover:text-white transition-all cursor-pointer';
+    termsLink.style.fontSize = '8px';
+    termsLink.style.textDecoration = 'underline';
+    termsLink.style.border = 'none';
+    termsLink.style.background = 'transparent';
+    termsLink.textContent = 'TERMS OF USE';
     termsLink.addEventListener('click', (e) => {
       e.stopPropagation();
       showTermsModal('terms');
     });
 
-    const cookieLink=document.createElement('button');
-    cookieLink.className='font-mono text-[#ffffff] hover:text-white transition-all cursor-pointer';
-    cookieLink.style.fontSize='8px';
-    cookieLink.style.textDecoration='underline';
-    cookieLink.style.border='none';
-    cookieLink.style.background='transparent';
-    cookieLink.textContent='COOKIE POLICY';
+    const cookieLink = document.createElement('button');
+    cookieLink.className = 'font-mono text-[#71717a] hover:text-white transition-all cursor-pointer';
+    cookieLink.style.fontSize = '8px';
+    cookieLink.style.textDecoration = 'underline';
+    cookieLink.style.border = 'none';
+    cookieLink.style.background = 'transparent';
+    cookieLink.textContent = 'COOKIE POLICY';
     cookieLink.addEventListener('click', (e) => {
       e.stopPropagation();
       showTermsModal('cookies');
@@ -607,13 +497,13 @@ if(root) {
     textAndLinksGroup.appendChild(linksRow);
 
     // Accept button
-    const acceptBtn=document.createElement('button');
-    acceptBtn.className='px-3 py-1.5 text-xs text-black font-bold uppercase tracking-wider rounded-sm transition-all duration-200 hover:scale-105 select-none font-convergence shrink-0';
-    acceptBtn.style.backgroundColor=currentThemeColor;
-    acceptBtn.style.border='none';
-    acceptBtn.style.cursor='pointer';
-    acceptBtn.textContent='ACCEPT';
-
+    const acceptBtn = document.createElement('button');
+    acceptBtn.className = 'px-3 py-1.5 text-xs text-black font-bold uppercase tracking-wider rounded-sm transition-all duration-200 hover:scale-105 select-none font-convergence shrink-0';
+    acceptBtn.style.backgroundColor = currentThemeColor;
+    acceptBtn.style.border = 'none';
+    acceptBtn.style.cursor = 'pointer';
+    acceptBtn.textContent = 'ACCEPT';
+    
     acceptBtn.addEventListener('click', () => {
       localStorage.setItem('nikola_portfolio_cookies_accepted', 'true');
       cookieBanner.classList.add('opacity-0', 'translate-y-4');
@@ -648,16 +538,6 @@ if(root) {
       demoTriggerIcon.style.color=color;
       demoDropdownTrigger.style.borderColor=color;
     }
-    if(isSourceDropdownOpen) {
-      sourceTriggerIcon.style.color=color;
-      sourceDropdownTrigger.style.borderColor=color;
-    }
-    if(isSourceDropdownOpen) {
-      sourceTriggerIcon.style.color=color;
-      sourceDropdownTrigger.style.borderColor=color;
-    }
-
-    // Paint active cookie banner border and accept btn
     const banner=document.getElementById('cookie-consent-banner');
     if(banner) {
       banner.style.borderColor=color;
@@ -666,11 +546,7 @@ if(root) {
         accept.style.backgroundColor=color;
       }
     }
-
-    // Refresh layout color indications
     highlightSelectedOption();
-
-    // Notify welcome page inside the active frame context to align visual glows
     if(viewportIframe.contentWindow) {
       viewportIframe.contentWindow.postMessage({
         type: 'THEME_COLOR_UPDATE',
@@ -690,26 +566,26 @@ if(root) {
     });
   }
 
-  // Generate theme color swappers
-  THEME_COLORS.forEach(tc => {
-    const btn=document.createElement('button');
-    btn.dataset.color=tc.color;
-    btn.className='transition-all duration-150 cursor-pointer';
-    btn.style.width='12px';
-    btn.style.height='12px';
-    btn.style.borderRadius='2px';
-    btn.style.backgroundColor=tc.color;
-    btn.style.border='1px solid transparent';
-    btn.style.outline='none';
-    btn.title=`${tc.name.toUpperCase()} ACCENT`;
+  // // Generate theme color swappers
+  // THEME_COLORS.forEach(tc => {
+  //   const btn=document.createElement('button');
+  //   btn.dataset.color=tc.color;
+  //   btn.className='transition-all duration-150 cursor-pointer';
+  //   btn.style.width='12px';
+  //   btn.style.height='12px';
+  //   btn.style.borderRadius='2px';
+  //   btn.style.backgroundColor=tc.color;
+  //   btn.style.border='1px solid transparent';
+  //   btn.style.outline='none';
+  //   btn.title=`${tc.name.toUpperCase()} ACCENT`;
 
-    btn.addEventListener('click', () => {
-      applyColorTheme(tc.color);
-    });
+  //   btn.addEventListener('click', () => {
+  //     applyColorTheme(tc.color);
+  //   });
 
-    hueContainer.appendChild(btn);
-    themeControls.push(btn);
-  });
+  //   hueContainer.appendChild(btn);
+  //   themeControls.push(btn);
+  // });
 
   // Load selected stream directly into decoupled frame viewport
   function loadIframeSource(name: string, url: string) {
