@@ -859,6 +859,20 @@
         updateColors();
       }
     });
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+
+        const target = document.querySelector(link.getAttribute("href"));
+        if(!target) return;
+
+        window.scrollTo({
+          top: target.offsetTop - 20,
+          behavior: "smooth"
+        });
+      });
+    });
   </script>
 </body>
 

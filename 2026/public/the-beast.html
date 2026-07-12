@@ -1132,7 +1132,10 @@ sceneObject.rotation.emitY = sceneObject.name;</code></pre>
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         if(targetElement) {
-          targetElement.scrollIntoView({behavior: 'smooth'});
+          window.scrollTo({
+            top: targetElement.offsetTop - 20,
+            behavior: "smooth"
+          });
         }
       });
     });

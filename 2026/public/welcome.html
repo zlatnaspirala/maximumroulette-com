@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       background-color: #050505;
       color: #e0e0e0;
@@ -34,7 +35,7 @@
       inset: 0;
       opacity: 0.15;
       pointer-events: none;
-      background-image: 
+      background-image:
         radial-gradient(var(--accent-glow-color, #00f3ff) 0.7px, transparent 0.7px),
         linear-gradient(rgba(20, 20, 25, 0.4) 1px, transparent 1px);
       background-size: 24px 24px, 100% 4px;
@@ -67,10 +68,30 @@
       opacity: 0.35;
       transition: border-color 0.4s ease;
     }
-    .top-left { top: 8px; left: 8px; border-width: 1px 0 0 1px; }
-    .top-right { top: 8px; right: 8px; border-width: 1px 1px 0 0; }
-    .bottom-left { bottom: 8px; left: 8px; border-width: 0 0 1px 1px; }
-    .bottom-right { bottom: 8px; right: 8px; border-width: 0 1px 1px 0; }
+
+    .top-left {
+      top: 8px;
+      left: 8px;
+      border-width: 1px 0 0 1px;
+    }
+
+    .top-right {
+      top: 8px;
+      right: 8px;
+      border-width: 1px 1px 0 0;
+    }
+
+    .bottom-left {
+      bottom: 8px;
+      left: 8px;
+      border-width: 0 0 1px 1px;
+    }
+
+    .bottom-right {
+      bottom: 8px;
+      right: 8px;
+      border-width: 0 1px 1px 0;
+    }
 
     /* Heading typography */
     h1 {
@@ -165,19 +186,22 @@
       .motto {
         font-size: 16px;
       }
+
       h1 {
         font-size: 24px;
       }
+
       .container {
         padding: 25px 15px;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="net-background" id="net-bg"></div>
   <!-- <canvas id="bg-canvas" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></canvas> -->
-   <iframe src="https://maximumroulette.com/apps/webgpu/landpage.html" id="bg-canvas" style="border: none;position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></iframe>
+  <iframe src="https://maximumroulette.com/apps/webgpu/landpage.html" id="bg-canvas" style="border: none;position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: block;"></iframe>
 
   <div class="container" id="panel">
     <div class="corner top-left"></div>
@@ -204,7 +228,7 @@
       Physics simulations, PBR pipelines, skeletal animation, real-time peer-to-peer.
       Performance-first. Runs everywhere — desktop, mobile, any screen.
       Years across Unity, Unreal, Three.js and beyond.
-      12 years of professional experience in casino games. All posted examples are free time project not 
+      12 years of professional experience in casino games. All posted examples are free time project not
       professional part.
     </p>
   </div>
@@ -384,4 +408,5 @@
     });
   </script> -->
 </body>
+
 </html>

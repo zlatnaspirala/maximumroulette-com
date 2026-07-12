@@ -8,27 +8,23 @@ interface MenuLink {
 const LINKS: MenuLink[]=[
   { name: 'Apps', url: '/welcome.html' },
   { name: 'THE BEAST - EXAMPLES', url: 'https://maximumroulette.com/apps/webgpu/examples.html?demo=20' },
+  { name: '3d Yacht', url: 'https://maximumroulette.com/apps/webgpu/yacht.html' },
   { name: 'My webGL engine', url: 'https://maximumroulette.com/apps/matrix-engine/examples-build.html' },
   { name: 'webGL slot mashine', url: 'https://maximumroulette.com/apps/matrix-engine-starter/projects/matrix-slot/index.html' },
   { name: 'Roulette based on three.js', url: 'https://roulette.maximumroulette.com/' },
   { name: 'Shader editor matrix-engine webGL', url: 'https://maximumroulette.com/apps/glsl-editor/' },
+  { name: 'Race with zombies (Only desktop)', url: 'https://brm.maximumroulette.com/' },
   { name: 'Shoot the zombie (Only desktop)', url: 'https://maximumroulette.com/apps/shoot-the-zombie' },
   { name: 'Hang3d Nightmare (Only desktop)', url: 'https://maximumroulette.com/apps/shooter/hang3d-nightmare.html' },
   { name: 'Realistic example from UE4', url: 'https://maximumroulette.com/apps/realistic-rendering' },
   { name: 'Visual-Ts game engine', url: 'https://maximumroulette.com/apps/visual-ts/singleplayer/app.html' },
   { name: 'FPS based on three.js', url: 'https://maximumroulette.com/apps/magic/public/module.html' },
+  { name: 'From vanilla to MOBA', url: 'https://maximumroulette.com/apps/fohb' },
 ];
-
-// const THEME_COLORS=[
-//   { name: 'cyan', color: '#00f3ff' },
-//   { name: 'pink', color: '#ff007f' },
-//   { name: 'green', color: '#39ff14' },
-// ];
 
 let activeLinkId=LINKS[0].name;
 let currentThemeColor='#00f3ff';
 
-// Hex decimal conversion to rgb components
 function hexToRgbValues(hex: string): string {
   let c=hex.substring(1);
   if(c.length===3) {
@@ -64,12 +60,12 @@ if(root) {
 
   const titleNode=document.createElement('span');
   titleNode.className='text-white leading-tight font-tint';
-  titleNode.style.fontSize='15px';
+  titleNode.style.fontSize='16px';
   titleNode.textContent='Nikola Lukic';
 
   const subtitleNode=document.createElement('span');
   subtitleNode.className='text-[#52525b] uppercase font-convergence';
-  subtitleNode.style.fontSize='9px';
+  subtitleNode.style.fontSize='10px';
   subtitleNode.textContent='Graphics Programmer';
 
   textGroup.appendChild(titleNode);
@@ -89,7 +85,7 @@ if(root) {
   const demoDropdownTrigger=document.createElement('button');
   demoDropdownTrigger.id='demo-dropdown-trigger';
   demoDropdownTrigger.className='flex items-center justify-between px-3 py-2 transition-all duration-200 text-white rounded-sm cursor-pointer font-convergence';
-  demoDropdownTrigger.style.fontSize='11px';
+  demoDropdownTrigger.style.fontSize='13px';
   demoDropdownTrigger.style.backgroundColor='#0e0e11';
   demoDropdownTrigger.style.border='1px solid #1a1a1f';
   demoDropdownTrigger.style.outline='none';
@@ -102,7 +98,7 @@ if(root) {
   const demoTriggerIcon=document.createElement('span');
   demoTriggerIcon.className='transition-all duration-200';
   demoTriggerIcon.style.color='#52525b';
-  demoTriggerIcon.style.fontSize='9px';
+  demoTriggerIcon.style.fontSize='10px';
   demoTriggerIcon.style.marginLeft='8px';
   demoTriggerIcon.textContent='▼';
 
@@ -232,18 +228,13 @@ if(root) {
   header.appendChild(dropdownsContainer);
   header.appendChild(rightContainer);
 
-
-  // --- MAIN VIEWPORT & IFRAME CONTROLLER ---
   const mainViewport=document.createElement('main');
   mainViewport.className='flex-grow w-full h-full flex flex-col bg-[#050505] overflow-hidden relative';
-
-  // Secure mounting micro loader spinner (leaves clean solid black stage during transitioning)
   const loaderOverlay=document.createElement('div');
   loaderOverlay.id='iframe-loader';
   loaderOverlay.className='absolute inset-0 z-40 transition-opacity duration-300 pointer-events-none opacity-0';
   loaderOverlay.style.backgroundColor='#050505';
 
-  // Pure decoupled viewport page iframe
   const viewportIframe=document.createElement('iframe');
   viewportIframe.id='viewport-iframe';
   viewportIframe.className='w-full h-full flex-grow m-0 p-0 block bg-[#050505] z-10';
@@ -330,11 +321,9 @@ if(root) {
   // Highlight selected dropdown option
   function highlightSelectedOption() {
     demoTriggerText.textContent=activeLinkId;
-
     LINKS.forEach((link, idx) => {
       const btn=demoItemButtons[idx];
       if(!btn) return;
-
       const isSelected=link.name===activeLinkId;
       if(isSelected) {
         btn.style.color=currentThemeColor;
@@ -511,29 +500,24 @@ if(root) {
         cookieBanner.remove();
       }, 300);
     });
-
     cookieBanner.appendChild(textAndLinksGroup);
     cookieBanner.appendChild(acceptBtn);
     document.body.appendChild(cookieBanner);
 
-    // Trigger fade-in
     setTimeout(() => {
       cookieBanner.classList.remove('translate-y-20', 'opacity-0');
       cookieBanner.classList.add('translate-y-0', 'opacity-100');
     }, 1000);
   }
 
-  // Handle color transitions
   const themeControls: HTMLButtonElement[]=[];
 
   function applyColorTheme(color: string) {
     currentThemeColor=color;
     document.documentElement.style.setProperty('--neon-color', color);
     document.documentElement.style.setProperty('--neon-glow', `rgba(${hexToRgbValues(color)}, 0.35)`);
-
     neonCircle.style.backgroundColor=color;
     neonCircle.style.boxShadow=`0 0 10px ${color}`;
-
     if(isDemoDropdownOpen) {
       demoTriggerIcon.style.color=color;
       demoDropdownTrigger.style.borderColor=color;
@@ -554,7 +538,6 @@ if(root) {
       }, '*');
     }
 
-    // Border highlights
     themeControls.forEach(btn => {
       if(btn.dataset.color===color) {
         btn.style.borderColor='#ffffff';
@@ -566,36 +549,10 @@ if(root) {
     });
   }
 
-  // // Generate theme color swappers
-  // THEME_COLORS.forEach(tc => {
-  //   const btn=document.createElement('button');
-  //   btn.dataset.color=tc.color;
-  //   btn.className='transition-all duration-150 cursor-pointer';
-  //   btn.style.width='12px';
-  //   btn.style.height='12px';
-  //   btn.style.borderRadius='2px';
-  //   btn.style.backgroundColor=tc.color;
-  //   btn.style.border='1px solid transparent';
-  //   btn.style.outline='none';
-  //   btn.title=`${tc.name.toUpperCase()} ACCENT`;
-
-  //   btn.addEventListener('click', () => {
-  //     applyColorTheme(tc.color);
-  //   });
-
-  //   hueContainer.appendChild(btn);
-  //   themeControls.push(btn);
-  // });
-
-  // Load selected stream directly into decoupled frame viewport
   function loadIframeSource(name: string, url: string) {
     activeLinkId=name;
-
-    // Open load indicator overlay
     loaderOverlay.classList.remove('opacity-0');
     loaderOverlay.classList.add('opacity-100');
-
-    // Dynamic query parameter injection for local welcome station
     let target=url;
     if(url==='/welcome.html') {
       target=`/welcome.html?color=${encodeURIComponent(currentThemeColor)}`;
@@ -605,12 +562,9 @@ if(root) {
     highlightSelectedOption();
   }
 
-  // Complete iframe response handler
   viewportIframe.addEventListener('load', () => {
     loaderOverlay.classList.remove('opacity-100');
     loaderOverlay.classList.add('opacity-0');
-
-    // Make sure we post secondary message to frame the precise moment it is fully ready
     if(viewportIframe.contentWindow) {
       viewportIframe.contentWindow.postMessage({
         type: 'THEME_COLOR_UPDATE',
@@ -619,12 +573,9 @@ if(root) {
     }
   });
 
-  // Start Sequence
   applyColorTheme('#00f3ff');
   highlightSelectedOption();
   renderCookieConsentBanner();
-
-  // Primary boot
   if(LINKS.length>0) {
     loadIframeSource(LINKS[0].name, LINKS[0].url);
   }
