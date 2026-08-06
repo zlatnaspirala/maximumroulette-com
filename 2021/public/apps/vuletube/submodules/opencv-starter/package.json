@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/zlatnaspirala/opencv-starter#readme",
   "dependencies": {
-    "eslint": "^7.8.1",
+    "eslint": "^10.0.1",
     "webrtc-adapter": "^7.7.0"
   }
 }
